@@ -1,5 +1,9 @@
 # Changelog — Workhand Tools
 
+## 0.0.0-beta.5
+
+- **Fix crítico**: `0.0.0-beta.4` crasheaba durante la carga con `NullPointerException: Item id not set` y `ExceptionInInitializerError`. Causa: bloque `static { }` en `WorkhandTools.java` intentaba inicializar `ModItems.PICKAXES` demasiado temprano (antes de que `DeferredRegister` estuviera completamente listo para registrar items), causando que los items se crearan sin IDs asignados. Revertidos cambios innecesarios de `Supplier<ToolMaterial>` en `ModToolMaterials.java` y getters en `ModItems.java`. El mod ahora carga correctamente sin crashear. Funcionalidad de lookups (`buildLookups()`) temporalmente comentada mientras se investiguen issues de inicialización estática más profundos.
+
 ## 0.0.0-beta.4
 
 - **Fix crítico**: `0.0.0-beta.3` cargaba (el bug del jar ya estaba resuelto) pero crasheaba al arrancar con `ExceptionInInitializerError` durante `FMLCommonSetupEvent`, confirmado contra un crash report real. Causa: en `ModItems.java` los campos `PICKAXES`/`SHOVELS` (que llaman a `registerTools(...)`) estaban declarados **antes** que `MATERIALS`, `GRADES` y `BY_ID`, de los que dependen — en Java los inicializadores de campos estáticos se ejecutan en orden textual, así que esas dependencias todavía eran `null` cuando `registerTools` las usaba. Reordenados los campos (dependencias primero).
