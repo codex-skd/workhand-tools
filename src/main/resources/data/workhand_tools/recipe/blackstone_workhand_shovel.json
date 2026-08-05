@@ -7,9 +7,7 @@
   ],
   "key": {
     "m": "minecraft:blackstone",
-    "p": {
-      "item": "minecraft:stick"
-    }
+    "p": "minecraft:stick"
   },
   "result": {
     "count": 1,

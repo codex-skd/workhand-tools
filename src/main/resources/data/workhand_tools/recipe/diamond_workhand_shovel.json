@@ -7,9 +7,7 @@
   ],
   "key": {
     "m": "minecraft:diamond",
-    "p": {
-      "item": "minecraft:stick"
-    }
+    "p": "minecraft:stick"
   },
   "result": {
     "count": 1,

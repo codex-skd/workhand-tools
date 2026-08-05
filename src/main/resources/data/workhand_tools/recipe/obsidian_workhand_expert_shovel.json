@@ -8,9 +8,7 @@
   "key": {
     "m": "minecraft:obsidian",
     "a": "minecraft:obsidian",
-    "r": {
-      "item": "workhand_tools:robust_stick"
-    }
+    "r": "workhand_tools:robust_stick"
   },
   "result": {
     "count": 1,

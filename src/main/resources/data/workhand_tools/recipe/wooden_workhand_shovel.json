@@ -7,9 +7,7 @@
   ],
   "key": {
     "m": "#minecraft:planks",
-    "p": {
-      "item": "minecraft:stick"
-    }
+    "p": "minecraft:stick"
   },
   "result": {
     "count": 1,

@@ -6,9 +6,7 @@
     " pp"
   ],
   "key": {
-    "p": {
-      "item": "minecraft:stick"
-    }
+    "p": "minecraft:stick"
   },
   "result": {
     "count": 1,

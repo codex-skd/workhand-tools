@@ -8,9 +8,7 @@
   "key": {
     "m": "#minecraft:planks",
     "a": "#minecraft:planks",
-    "r": {
-      "item": "workhand_tools:robust_stick"
-    }
+    "r": "workhand_tools:robust_stick"
   },
   "result": {
     "count": 1,
