@@ -1,0 +1,251 @@
+{
+  "communities": {
+    "0": [
+      "blockpos",
+      "blockstate",
+      "breakblockevent",
+      "itemtooltipevent",
+      "level",
+      "player",
+      "rightclickitem",
+      "src_main_java_com_skd_workhandtools_aoemininghandler",
+      "src_main_java_com_skd_workhandtools_aoemininghandler_aoemininghandler",
+      "src_main_java_com_skd_workhandtools_aoemininghandler_aoemininghandler_breakareablock",
+      "src_main_java_com_skd_workhandtools_aoemininghandler_aoemininghandler_computepattern",
+      "src_main_java_com_skd_workhandtools_aoemininghandler_aoemininghandler_onblockbreak",
+      "src_main_java_com_skd_workhandtools_aoemininghandler_aoemininghandler_onrightclickitem",
+      "src_main_java_com_skd_workhandtools_aoemininghandler_aoemininghandler_ontooltip",
+      "src_main_java_com_skd_workhandtools_aoemininghandler_aoemininghandler_verticaloffsets",
+      "src_main_java_com_skd_workhandtools_aoemininghandler_java_itemstack",
+      "src_main_java_com_skd_workhandtools_aoemininghandler_java_subscribeevent"
+    ],
+    "1": [
+      "creativemodetab",
+      "fmlcommonsetupevent",
+      "ieventbus",
+      "items",
+      "logger",
+      "serverstartingevent",
+      "src_main_java_com_skd_workhandtools_moditems_moditems_buildlookups",
+      "src_main_java_com_skd_workhandtools_workhandtools",
+      "src_main_java_com_skd_workhandtools_workhandtools_java_deferredholder",
+      "src_main_java_com_skd_workhandtools_workhandtools_java_deferredregister",
+      "src_main_java_com_skd_workhandtools_workhandtools_java_mod",
+      "src_main_java_com_skd_workhandtools_workhandtools_java_modcontainer",
+      "src_main_java_com_skd_workhandtools_workhandtools_java_subscribeevent",
+      "src_main_java_com_skd_workhandtools_workhandtools_workhandtools",
+      "src_main_java_com_skd_workhandtools_workhandtools_workhandtools_commonsetup",
+      "src_main_java_com_skd_workhandtools_workhandtools_workhandtools_onserverstarting",
+      "src_main_java_com_skd_workhandtools_workhandtools_workhandtools_workhandtools"
+    ],
+    "2": [
+      "src_main_java_com_skd_workhandtools_moditems",
+      "src_main_java_com_skd_workhandtools_moditems_gradedata",
+      "src_main_java_com_skd_workhandtools_moditems_java_deferredholder",
+      "src_main_java_com_skd_workhandtools_moditems_java_item",
+      "src_main_java_com_skd_workhandtools_moditems_java_itemstack",
+      "src_main_java_com_skd_workhandtools_moditems_java_toolmaterial",
+      "src_main_java_com_skd_workhandtools_moditems_materialdata",
+      "src_main_java_com_skd_workhandtools_moditems_moditems",
+      "src_main_java_com_skd_workhandtools_moditems_moditems_get",
+      "src_main_java_com_skd_workhandtools_moditems_moditems_gradeof",
+      "src_main_java_com_skd_workhandtools_moditems_moditems_id",
+      "src_main_java_com_skd_workhandtools_moditems_moditems_isworkhandtool",
+      "src_main_java_com_skd_workhandtools_moditems_moditems_moditems",
+      "src_main_java_com_skd_workhandtools_moditems_moditems_registertools"
+    ],
+    "3": [
+      "src_main_java_com_skd_workhandtools_grade",
+      "src_main_java_com_skd_workhandtools_grade_depth",
+      "src_main_java_com_skd_workhandtools_grade_grade",
+      "src_main_java_com_skd_workhandtools_grade_grade_grade_1",
+      "src_main_java_com_skd_workhandtools_grade_grade_grade_2",
+      "src_main_java_com_skd_workhandtools_grade_grade_grade_3",
+      "src_main_java_com_skd_workhandtools_grade_grade_grade_4",
+      "src_main_java_com_skd_workhandtools_grade_hasmode",
+      "src_main_java_com_skd_workhandtools_grade_height",
+      "src_main_java_com_skd_workhandtools_grade_lateralhalf"
+    ],
+    "4": [
+      "override",
+      "src_main_java_com_skd_workhandtools_aoemode",
+      "src_main_java_com_skd_workhandtools_aoemode_aoemode",
+      "src_main_java_com_skd_workhandtools_aoemode_aoemode_cubic",
+      "src_main_java_com_skd_workhandtools_aoemode_aoemode_flat",
+      "src_main_java_com_skd_workhandtools_aoemode_fromname",
+      "src_main_java_com_skd_workhandtools_aoemode_getserializedname",
+      "stringrepresentable"
+    ],
+    "5": [
+      "src_main_java_com_skd_workhandtools_modtoolmaterials",
+      "src_main_java_com_skd_workhandtools_modtoolmaterials_java_item",
+      "src_main_java_com_skd_workhandtools_modtoolmaterials_java_toolmaterial",
+      "src_main_java_com_skd_workhandtools_modtoolmaterials_modtoolmaterials",
+      "src_main_java_com_skd_workhandtools_modtoolmaterials_modtoolmaterials_modtoolmaterials",
+      "src_main_java_com_skd_workhandtools_modtoolmaterials_modtoolmaterials_repairtag",
+      "tagkey"
+    ],
+    "6": [
+      "datacomponenttype",
+      "src_main_java_com_skd_workhandtools_moddatacomponents",
+      "src_main_java_com_skd_workhandtools_moddatacomponents_java_deferredholder",
+      "src_main_java_com_skd_workhandtools_moddatacomponents_java_deferredregister",
+      "src_main_java_com_skd_workhandtools_moddatacomponents_moddatacomponents",
+      "src_main_java_com_skd_workhandtools_moddatacomponents_moddatacomponents_moddatacomponents"
+    ],
+    "7": [
+      "eventbussubscriber",
+      "src_main_java_com_skd_workhandtools_workhandtoolsclient",
+      "src_main_java_com_skd_workhandtools_workhandtoolsclient_java_mod",
+      "src_main_java_com_skd_workhandtools_workhandtoolsclient_java_modcontainer",
+      "src_main_java_com_skd_workhandtools_workhandtoolsclient_workhandtoolsclient",
+      "src_main_java_com_skd_workhandtools_workhandtoolsclient_workhandtoolsclient_workhandtoolsclient"
+    ],
+    "8": [
+      "builder",
+      "doublevalue",
+      "modconfigspec",
+      "src_main_java_com_skd_workhandtools_config",
+      "src_main_java_com_skd_workhandtools_config_config"
+    ],
+    "9": [
+      "gradlew",
+      "gradlew__entry",
+      "gradlew_die",
+      "gradlew_warn"
+    ],
+    "10": [
+      "build"
+    ],
+    "11": [
+      "image_1"
+    ],
+    "12": [
+      "settings"
+    ]
+  },
+  "cohesion": {
+    "0": 0.22794117647058823,
+    "1": 0.19117647058823528,
+    "2": 0.2967032967032967,
+    "3": 0.2,
+    "4": 0.32142857142857145,
+    "5": 0.42857142857142855,
+    "6": 0.5333333333333333,
+    "7": 0.5333333333333333,
+    "8": 0.5,
+    "9": 0.8333333333333334,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+  },
+  "gods": [
+    {
+      "id": "src_main_java_com_skd_workhandtools_moditems_moditems",
+      "label": "ModItems",
+      "degree": 13
+    },
+    {
+      "id": "src_main_java_com_skd_workhandtools_workhandtools_workhandtools",
+      "label": "WorkhandTools",
+      "degree": 10
+    },
+    {
+      "id": "src_main_java_com_skd_workhandtools_aoemininghandler_aoemininghandler",
+      "label": "AoEMiningHandler",
+      "degree": 8
+    },
+    {
+      "id": "src_main_java_com_skd_workhandtools_aoemode_aoemode",
+      "label": "AoEMode",
+      "degree": 8
+    },
+    {
+      "id": "src_main_java_com_skd_workhandtools_grade_grade",
+      "label": "Grade",
+      "degree": 8
+    },
+    {
+      "id": "src_main_java_com_skd_workhandtools_moddatacomponents_moddatacomponents",
+      "label": "ModDataComponents",
+      "degree": 6
+    },
+    {
+      "id": "src_main_java_com_skd_workhandtools_config_config",
+      "label": "Config",
+      "degree": 4
+    },
+    {
+      "id": "src_main_java_com_skd_workhandtools_moditems_materialdata",
+      "label": "MaterialData",
+      "degree": 4
+    },
+    {
+      "id": "src_main_java_com_skd_workhandtools_modtoolmaterials_modtoolmaterials",
+      "label": "ModToolMaterials",
+      "degree": 4
+    },
+    {
+      "id": "src_main_java_com_skd_workhandtools_workhandtoolsclient_workhandtoolsclient",
+      "label": "WorkhandToolsClient",
+      "degree": 4
+    }
+  ],
+  "surprises": [
+    {
+      "source": "depth()",
+      "target": "AoEMode",
+      "source_files": [
+        "src/main/java/com/skd/workhandtools/Grade.java",
+        "src/main/java/com/skd/workhandtools/AoEMode.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities; peripheral node `depth()` unexpectedly reaches hub `AoEMode`"
+    },
+    {
+      "source": "ModDataComponents",
+      "target": "AoEMode",
+      "source_files": [
+        "src/main/java/com/skd/workhandtools/ModDataComponents.java",
+        "src/main/java/com/skd/workhandtools/AoEMode.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "ModItems",
+      "target": "Grade",
+      "source_files": [
+        "src/main/java/com/skd/workhandtools/ModItems.java",
+        "src/main/java/com/skd/workhandtools/Grade.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `AoEMode` connect `AoE Mode` to `Block Break Handling`, `Grade System`, `Data Components`?",
+      "why": "High betweenness centrality (0.184) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `ModItems` connect `Item Data Management` to `Mod Initialization`, `Grade System`?",
+      "why": "High betweenness centrality (0.175) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Grade` connect `Grade System` to `Block Break Handling`, `Item Data Management`?",
+      "why": "High betweenness centrality (0.166) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `CUBIC`, `FLAT`, `GRADE_1` to the rest of the system?",
+      "why": "7 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}
