@@ -7,7 +7,7 @@ import com.mojang.logging.LogUtils;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -31,12 +31,20 @@ public class WorkhandTools {
     // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "workhand_tools" namespace
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
-    // Creative tab for the mod's tools. Icon and displayItems get wired once the tool items exist (see docs/DESIGN_WORKHAND_TOOLS.md).
+    // Creative tab for the mod's tools. Order follows docs/DESIGN_WORKHAND_TOOLS.md: pickaxes first,
+    // then shovels; within each tool by material progression (Wood -> Netherite) and by grade ascending.
+    // Icon: iron_workhand_pickaxe (grade 1).
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> WORKHAND_TAB = CREATIVE_MODE_TABS.register("workhand_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.workhand_tools"))
-            .icon(() -> Items.IRON_PICKAXE.getDefaultInstance())
+            .icon(() -> ModItems.get("iron_workhand_pickaxe").get().getDefaultInstance())
             .displayItems((parameters, output) -> {
-                // Tool items are added here as they get registered.
+                for (DeferredHolder<Item, ? extends Item> holder : ModItems.PICKAXES) {
+                    output.accept(holder.get());
+                }
+                for (DeferredHolder<Item, ? extends Item> holder : ModItems.SHOVELS) {
+                    output.accept(holder.get());
+                }
+                output.accept(ModItems.ROBUST_STICK.get());
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
