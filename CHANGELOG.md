@@ -1,5 +1,9 @@
 # Changelog — Workhand Tools
 
+## 0.0.0-beta.2
+
+- Primera subida a CurseForge con contenido jugable real (hasta ahora solo el scaffold vacío de `0.0.0-beta.1`): los 80 items, recetas, encantamientos y la mecánica de minado en área completa. Release notes: `docs/curseforge/versions/0.0.0-beta.2.md`.
+
 ## 0.0.0-beta.1
 
 - Scaffold inicial desde el esqueleto `codex-docs/mod_template/neoforge/26.2-26.2.0.32-beta` (NeoForge 26.2 / NeoForge 26.2.0.32-beta).
