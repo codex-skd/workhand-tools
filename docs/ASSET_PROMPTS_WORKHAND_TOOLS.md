@@ -57,7 +57,7 @@ Implementación (modelo de item, ejemplo `assets/workhand_tools/models/item/iron
 }
 ```
 
-Icono del mod: sin cambios, sigue haciendo falta un `icon.png` propio (ver prompts arriba) — no hay placeholder vanilla razonable para el logo del mod en sí.
+Icono del mod: **hecho** — `assets/workhand_tools/icon.png` (64×64, generado a partir del prompt principal y reducido desde 1024×1024), wireado en `neoforge.mods.toml` (`logoFile`).
 
 ## Fase futura — arte custom (pospuesta)
 
@@ -70,7 +70,7 @@ Cuando se aborde el arte propio, la estrategia de generación queda documentada 
 
 ## Checklist de assets pendientes
 
-- [ ] `assets/workhand_tools/icon.png` (64×64, logo cuadrado) — único asset de imagen real pendiente ahora mismo
+- [x] `assets/workhand_tools/icon.png` (64×64, logo cuadrado) — generado (`ChatGPT Image 5 ago 2026, 13_33_26.png`), redimensionado a 64×64 y wireado en `neoforge.mods.toml`
 - [x] Banner CurseForge — generado (`ChatGPT Image 5 ago 2026, 13_21_34.png`), usado solo en `project_description.md`, no se empaqueta en el jar
 - [x] ~~80 texturas de herramienta~~ — pospuesto, se usan placeholders vanilla (ver tabla arriba), no bloquea el desarrollo
 - [x] ~~Textura de `robust_stick`~~ — pospuesto, placeholder = textura vanilla de `minecraft:stick`

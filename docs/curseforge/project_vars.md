@@ -4,16 +4,17 @@
 
 | Variable | Valor |
 |----------|-------|
-| `curseforge_project_id` | *(pendiente — se rellena al crear el proyecto en CurseForge)* |
+| `curseforge_project_id` | `1640361` |
 | `mod_id` | `workhand_tools` |
 | `display_name` | `Workhand Tools` |
+| Summary (tagline) | *Pickaxe and shovel for every material — 4 grades each, unlocking 3×3 to 5×5 area mining. Durability, speed and enchants always match vanilla.* |
 
 ## Tokens
 
 | API | Token | Uso |
 |-----|-------|-----|
-| Upload | *(mismo token de cuenta que el resto de mods — copiar de `ascendant_equipment/neoforge/26.2/docs/curseforge/project_vars.md` u otro mod)* | Subir archivos JAR |
-| Core (GET) | *(ídem)* | Consultar datos del mod |
+| Upload | `ee776b0a-ee95-4850-b554-06be02a8657f` | Subir archivos JAR |
+| Core (GET) | `$2a$10$yGwryAfmRkS9ZJsJUDf5YOKZpOIsmHB8Fji2D8JVCKBSZEKYlwmaO` | Consultar datos del mod |
 
 Autenticación Upload: cabecera `X-Api-Token`
 Autenticación Core: cabecera `x-api-key`
@@ -22,10 +23,10 @@ Autenticación Core: cabecera `x-api-key`
 
 ## Variables para script (lectura automática)
 
-project_id =
-api_token =
-release_type = release
-game_versions =
+project_id = 1640361
+api_token = ee776b0a-ee95-4850-b554-06be02a8657f
+release_type = beta
+game_versions = 9638, 9639, 16498, 10150
 relations =
 
 El script lee `project_id`, `api_token` y `game_versions` de este archivo, y `mod_id`, `mod_name`, `minecraft_version`, `mod_version` de `gradle.properties`. Sube automáticamente el JAR desde `build/libs/` con el changelog de `docs/curseforge/versions/<version>.md`.
