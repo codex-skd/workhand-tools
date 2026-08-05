@@ -4,6 +4,7 @@
 
 - Ampliado el diseño a 10 materiales (+ Copper, Deepslate, Blackstone, Obsidian, con stats propuestos pendientes de confirmar) y 4 grados por material (obrero/avanzado/experto/profesional) con minado en área (3×3×1, 3×3×3, 5×5×1, 5×5×5), doble función clic izq./der. en grados 2 y 4, override al agacharse y anclaje vertical dependiente del pitch para los patrones de 5 de alto. Total de items: 12 → 80. Ver `docs/DESIGN_WORKHAND_TOOLS.md`.
 - Ampliados los prompts de imagen (`docs/ASSET_PROMPTS_WORKHAND_TOOLS.md`) con los 4 materiales nuevos y una propuesta de diferenciación visual por grado.
+- Cerradas las recetas de los 4 grados (pico y pala, formas distintas) + nuevo item `robust_stick` (Robust Stick) usado en grados 3-4 + tabla `m`/`a` de ingredientes por material. JEI se integra gratis vía recetas vanilla estándar, sin plugin propio.
 
 ## 0.0.0-beta.1
 

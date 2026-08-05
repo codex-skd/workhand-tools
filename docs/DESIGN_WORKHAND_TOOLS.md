@@ -106,31 +106,66 @@ Sin cambios respecto al diseño original — aplica a los 80 items por igual. A�
 
 100% data-driven, sin lógica Java.
 
-## Recetas
+## Recetas (confirmadas)
 
-**Pendiente de que nos pases la forma de receta de cada uno de los 4 grados** (una vez por grado, se aplica igual a los 10 materiales sustituyendo el ingrediente — como ya hicimos con el grado 1 en la v1 de este documento).
+Leyenda:
+- `x` = vacío
+- `m` = material básico del tier — lingote si es mineral, bloque básico si no lo es (ver tabla `m`/`a` más abajo)
+- `a` = bloque del material — bloque compacto (9×) si es mineral, bloque "cocido"/fundido si no es mineral y tiene variante, o el mismo bloque que `m` si no tiene variante cocida (caso obsidiana)
+- `p` = `minecraft:stick`
+- `r` = `workhand_tools:robust_stick` (item nuevo, ver abajo)
 
-Plantilla para pasarla en el chat (uno de estos bloques por grado, `M` = ingrediente del material del tier, `S` = stick, `P` = herramienta del grado anterior si el grado se craftea como "mejora" en vez de desde cero — indícanoslo si aplica):
+### Robust Stick — item nuevo
 
-```
-Grado <N> — <pico o pala>:
-[ _ ][ _ ][ _ ]
-[ _ ][ _ ][ _ ]
-[ _ ][ _ ][ _ ]
-```
-
-Rellena cada celda con `M`, `S`, `P` o vacío (`_`). Si grado 2/3/4 consume el grado anterior como ingrediente (p.ej. "grado 2 = grado 1 + materiales extra"), dínoslo explícitamente — cambia la receta de un simple shaped a una receta que referencia el item del grado anterior.
-
-Grado 1 ya definido en la v1 (sin cambios, se mantiene salvo que digas lo contrario):
+ID `workhand_tools:robust_stick` ("Robust Stick"). Receta en mesa de crafteo, sin material de tier (solo palos):
 
 ```
-Pico grado 1:     Pala grado 1:
-M M M              M
-_ S _              S
-_ S _              S
+x p p
+x p p
+x p p
 ```
 
-**Netherite** (los 4 grados): igual que vanilla, sin receta shaped directa — smithing transform (netherite upgrade template + tool de diamante del mismo grado + netherite ingot).
+6 × `minecraft:stick` → **1** × `workhand_tools:robust_stick`.
+
+### Pico, por grado (igual para los 9 materiales con receta shaped — netherite excluido, ver más abajo)
+
+```
+Grado 1        Grado 2        Grado 3        Grado 4
+m m m          a a a          m a m          a a a
+x p m          x p a          x r a          x r a
+x p x          x p x          x r x          x r x
+```
+
+### Pala, por grado
+
+```
+Grado 1        Grado 2        Grado 3        Grado 4
+x m m          x a a          x a m          x a a
+x p x          x p x          x r x          x r x
+x p x          x p x          x r x          x r x
+```
+
+### Tabla `m` / `a` por material (9 materiales con receta shaped)
+
+| Material | ¿Mineral? | `m` (grados 1-2 top / grado 3 mixto) | `a` (grados 2-4) |
+|---|---|---|---|
+| Wood | No | `#minecraft:planks` | `#minecraft:planks` *(sin variante cocida, igual que `m`)* |
+| Stone | No | `minecraft:cobblestone` | `minecraft:stone` *(cocido de cobblestone)* |
+| Copper | Sí | `minecraft:copper_ingot` | `minecraft:copper_block` |
+| Deepslate | No | `minecraft:cobbled_deepslate` | `minecraft:deepslate` *(cocido)* |
+| Iron | Sí | `minecraft:iron_ingot` | `minecraft:iron_block` |
+| Blackstone | No | `minecraft:blackstone` | `minecraft:blackstone` *(sin variante cocida)* |
+| Gold | Sí | `minecraft:gold_ingot` | `minecraft:gold_block` |
+| Diamond | Sí | `minecraft:diamond` | `minecraft:diamond_block` |
+| Obsidian | No | `minecraft:obsidian` | `minecraft:obsidian` *(sin variante cocida)* |
+
+### Netherite (los 4 grados)
+
+Sin receta shaped — **smithing transform**, igual que vanilla `diamond_pickaxe` → `netherite_pickaxe`:
+
+`minecraft:netherite_upgrade_smithing_template` + `diamond_workhand[_<grado>]_<tool>` + `minecraft:netherite_ingot` → `netherite_workhand[_<grado>]_<tool>`
+
+Es decir, cada grado de netherite se fabrica mejorando el mismo grado en diamante (grado 3 netherite viene de grado 3 diamante, etc.), no desde cero.
 
 ## Texturas y modelos
 
@@ -151,6 +186,12 @@ Orden en `displayItems`: por tipo (picos primero, luego palas), dentro de cada t
 - Fase de localización se aborda **después** de cerrar los items/recetas/AoE (evita retraducir si cambian nombres/grados durante el desarrollo).
 - Alcance real (cuántos idiomas y con qué nivel de revisión humana vs. traducción automática) se decide al llegar a esa fase — no bloquea el resto del roadmap.
 
+## Integración con JEI
+
+Todas las recetas del mod usan **tipos de receta vanilla estándar** (`minecraft:crafting_shaped` y `minecraft:smithing_transform`), tanto para las 9 líneas de material con shaped como para las 10 líneas de netherite con smithing (incluye Robust Stick, que también es `crafting_shaped`). JEI detecta y muestra automáticamente cualquier receta de esos tipos registrada vía datapack — **no hace falta ningún plugin ni código JEI propio**. Confirmado alcance: solo exposición automática de recetas, sin categoría custom para el patrón AoE (eso no es una receta, es comportamiento en juego, no tiene sentido en JEI).
+
+Único requisito técnico: declarar JEI como dependencia `optional` en `neoforge.mods.toml` si se quiere evitar un warning de "unknown mod" en el log cuando JEI no está instalado (el mod funciona igual sin JEI, es puramente informativo).
+
 ## Configuración y compatibilidad con Configured
 
 Si se añade configuración (p. ej. activar/desactivar el AoE por grado, ajustar el umbral de pitch, permitir romper bloques de otros mods en el área), debe seguir usando `net.neoforged.neoforge.common.ModConfigSpec` (como ya hace `Config.java` desde el scaffold inicial) — **Configured** lee automáticamente cualquier `ModConfigSpec` registrado vía `ModContainer.registerConfig`, no requiere integración manual ni dependencia añadida. Solo hay que evitar tipos de config fuera de `ModConfigSpec` (JSON custom, etc.) si se quiere mantener esa compatibilidad gratis.
@@ -158,12 +199,12 @@ Si se añade configuración (p. ej. activar/desactivar el AoE por grado, ajustar
 ## Roadmap de implementación (fases)
 
 1. **Fase 1 — Materiales**: confirmar stats de Copper/Deepslate/Blackstone/Obsidian, crear sus `Tier` propios.
-2. **Fase 2 — Items base (grado 1, los 10 materiales)**: 20 items, reusando el trabajo de la v1 para los 6 materiales vanilla + los 4 nuevos.
+2. **Fase 2 — Items base (grado 1, los 10 materiales)**: 20 items, reusando el trabajo de la v1 para los 6 materiales vanilla + los 4 nuevos + `robust_stick`.
 3. **Fase 3 — Grados 2-4**: 60 items adicionales (mismas clases `PickaxeItem`/`ShovelItem` y mismo `Tier` que el grado 1 del mismo material — el grado no cambia stats).
-4. **Fase 4 — Recetas**: a la espera de que nos pases las 4 formas (ver `## Recetas`).
+4. **Fase 4 — Recetas**: cerradas (ver `## Recetas (confirmadas)`) — 9 líneas shaped (pico+pala×4 grados por material) + `robust_stick` + 4 smithing transform de netherite. Recetas y JEI son data-driven, JEI las muestra gratis.
 5. **Fase 5 — Mecánica de minado en área**: la parte de código NeoForge más sustancial del mod (evento de rotura de bloque, detección de patrón según grado/clic/agachado/pitch, comprobación de bloque correcto por bloque, consumo de durabilidad). Se delega en OpenCode por su envergadura, con este documento como especificación.
 6. **Fase 6 — Tags de encantamiento**: extender tags vanilla `enchantable/*` con los 80 items.
-7. **Fase 7 — Assets**: texturas de los 80 items + diferenciación visual por grado.
+7. **Fase 7 — Assets**: texturas de los 80 items + diferenciación visual por grado + textura de `robust_stick`.
 8. **Fase 8 — Localización**: traducción a los idiomas objetivo.
 9. **Fase 9 — QA**: validar en juego stats, AoE (incluido el anclaje de pitch), encantamientos y reparación para cada material/grado.
 
@@ -171,5 +212,6 @@ Si se añade configuración (p. ej. activar/desactivar el AoE por grado, ajustar
 
 - **v1**: 6 materiales vanilla, 1 grado, minado 1×1 estándar.
 - **v2**: +4 materiales (Copper, Deepslate, Blackstone, Obsidian) con stats propuestos pendientes de confirmar · +4 grados por material con patrones de minado en área (3×3×1 / 3×3×3 / 5×5×1 / 5×5×5), doble función clic izq./der. en grados 2 y 4, override total al agacharse, y anclaje vertical dependiente del pitch para los patrones de 5 de alto · total de items pasa de 12 a 80.
+- **v3**: recetas de los 4 grados cerradas (pico y pala, forma distinta entre ambos) + nuevo item `robust_stick` (Robust Stick, 6 stick → 1) usado como ingrediente en grados 3-4 · tabla `m`/`a` por material confirmada · JEI: exposición automática vía recetas vanilla estándar, sin plugin propio.
 
 Cambios a este documento requieren confirmación del usuario antes de implementarse (no asumir variaciones de balance ni de mecánica sin pedirlo explícitamente).
