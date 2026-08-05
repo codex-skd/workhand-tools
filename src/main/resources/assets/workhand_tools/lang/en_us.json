@@ -1,5 +1,7 @@
 {
   "itemGroup.workhand_tools": "Workhand Tools",
+  "message.workhand_tools.mode.cubic": "Mode: Cubic",
+  "message.workhand_tools.mode.flat": "Mode: Flat",
   "item.workhand_tools.wooden_workhand_pickaxe": "Wooden Workhand Pickaxe",
   "item.workhand_tools.wooden_workhand_shovel": "Wooden Workhand Shovel",
   "item.workhand_tools.wooden_workhand_advanced_pickaxe": "Wooden Workhand Advanced Pickaxe",

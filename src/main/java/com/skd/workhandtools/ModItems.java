@@ -1,12 +1,14 @@
 package com.skd.workhandtools;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.BiFunction;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.ToolMaterial;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -26,9 +28,29 @@ public final class ModItems {
             registerTools("shovel", "Shovel", (material, properties) -> new ShovelItem(material, 1.5F, -3.0F, properties));
 
     private static final Map<String, DeferredHolder<Item, ? extends Item>> BY_ID = new LinkedHashMap<>();
+    private static final Map<Item, Grade> ITEM_GRADES = new HashMap<>();
 
     public static DeferredHolder<Item, ? extends Item> get(String id) {
         return BY_ID.get(id);
+    }
+
+    public static boolean isWorkhandTool(ItemStack stack) {
+        return !stack.isEmpty() && ITEM_GRADES.containsKey(stack.getItem());
+    }
+
+    public static Grade gradeOf(ItemStack stack) {
+        return stack.isEmpty() ? null : ITEM_GRADES.get(stack.getItem());
+    }
+
+    // Populated once the registry is filled (from commonSetup). Holder order is
+    // material-major, grade-minor, so grade is index modulo grade count.
+    static void buildLookups() {
+        for (int i = 0; i < PICKAXES.size(); i++) {
+            ITEM_GRADES.put(PICKAXES.get(i).get(), Grade.values()[i % GRADES.size()]);
+        }
+        for (int i = 0; i < SHOVELS.size(); i++) {
+            ITEM_GRADES.put(SHOVELS.get(i).get(), Grade.values()[i % GRADES.size()]);
+        }
     }
 
     private record MaterialData(String prefix, String displayName, ToolMaterial material, boolean fireResistant) {
