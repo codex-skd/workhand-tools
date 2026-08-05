@@ -10,3 +10,4 @@
 - Cerradas las recetas de los 4 grados (pico y pala, formas distintas) + nuevo item `robust_stick` (Robust Stick) usado en grados 3-4 + tabla `m`/`a` de ingredientes por material. JEI se integra gratis vía recetas vanilla estándar, sin plugin propio.
 - Corregido `archivesName` en `build.gradle` para seguir la convención `<mod_id>-<mc>-neoforge`.
 - Primera subida a CurseForge para validar el proyecto mientras se desarrollan los 80 items y la mecánica de minado en área.
+- Assets pospuestos: los 80 items usan placeholders de texturas vanilla (sin arte propio por ahora) — mapeo completo en `docs/ASSET_PROMPTS_WORKHAND_TOOLS.md`. Encargo completo de arte para diseñador (83 assets, nombres de archivo exactos, specs y paleta) documentado en `docs/ASSET_LIST_WORKHAND_TOOLS.md`.
