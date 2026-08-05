@@ -38,6 +38,9 @@ publish-public:
     # Optional files (may not exist in some mods)
     - git checkout "$CI_COMMIT_SHA" -- libs/ 2>/dev/null || true
 
+    # Workhand Tools: publish the designer asset brief only (rest of docs/ stays private, e.g. curseforge/project_vars.md tokens)
+    - git checkout "$CI_COMMIT_SHA" -- docs/ASSET_LIST_WORKHAND_TOOLS.md 2>/dev/null || true
+
     # Sanitize secrets in gradle.properties
     - sed -i 's/^mod_version=.*/mod_version=0.0.0/' gradle.properties
     - sed -i 's/^mod_group_id=.*/mod_group_id=com\.skd\.placeholder/' gradle.properties

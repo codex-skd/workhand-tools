@@ -1,70 +1,97 @@
-# Lista de assets pendientes — Workhand Tools (para el diseñador)
+# 🎨 Workhand Tools — Encargo de arte para el diseñador
 
-> Documento de encargo, pensado para pasar directamente a un diseñador. Todo el arte listado aquí está pospuesto en el desarrollo (el mod usa placeholders con texturas vanilla mientras tanto, ver `docs/ASSET_PROMPTS_WORKHAND_TOOLS.md`), pero la lista de lo que hace falta ya está cerrada y no cambiará salvo que se añadan materiales/grados nuevos.
+> **Documento autocontenido** — pensado para compartir directamente con el diseñador, sin necesidad de acceso al resto del repositorio (el resto de `docs/` es interno y no es público). Todo el arte listado aquí está pospuesto en el desarrollo — el mod funciona hoy con texturas vanilla de placeholder — pero la lista ya está **cerrada** y no cambia salvo que se añadan materiales o grados nuevos.
 
-## Resumen
+<br>
+
+## 📋 Resumen del encargo
 
 | Categoría | Cantidad | Formato |
-|---|---|---|
-| Icono del mod | 1 | PNG, 64×64 px, fondo transparente |
-| Banner promocional (opcional, solo CurseForge) | 1 | PNG/JPG, horizontal, resolución libre (~900×250 px orientativo) |
-| Texturas de herramienta (pico + pala × 10 materiales × 4 grados) | 80 | PNG, 16×16 px exactos, fondo transparente |
-| Textura de item nuevo (Robust Stick) | 1 | PNG, 16×16 px exactos, fondo transparente |
+|---|:---:|---|
+| 🖼️ Icono del mod | 1 | PNG · 64×64 px · fondo transparente |
+| 🏳️ Banner promocional (opcional, solo CurseForge) | 1 | PNG/JPG · horizontal · ~900×250 px orientativo |
+| ⛏️ Texturas de herramienta (pico + pala × 10 materiales × 4 grados) | 80 | PNG · 16×16 px exactos · fondo transparente |
+| 🪵 Textura del item nuevo *Robust Stick* | 1 | PNG · 16×16 px exactos · fondo transparente |
 | **Total** | **83** | |
 
-## Especificación técnica común (las 81 texturas de 16×16)
+<br>
+
+## 📐 Especificación técnica (las 81 texturas de 16×16)
 
 - **16×16 px exactos** — es el tamaño real de renderizado de los iconos de item en Minecraft, no un múltiplo escalado.
-- Pixel art plano: sin antialiasing, sin degradados, bordes de píxel duros (estilo idéntico al de las texturas vanilla del juego).
+- Pixel art plano: sin antialiasing, sin degradados, bordes de píxel duros — el mismo estilo que las texturas vanilla del juego.
 - Fondo transparente (canal alfa).
-- Perspectiva: la misma que usan los picos/palas vanilla — mango recto en la esquina inferior-izquierda, cabeza de la herramienta en diagonal ocupando la esquina superior-derecha.
+- Perspectiva vanilla: mango recto en la esquina inferior-izquierda, cabeza de la herramienta en diagonal ocupando la esquina superior-derecha.
 - El mango es **igual en las 80 herramientas** (madera clara, sin variación por material ni grado) — solo cambia la cabeza.
-- Referencia directa más simple: abrir las texturas vanilla `wooden_pickaxe.png`, `stone_pickaxe.png`, `iron_pickaxe.png`, `golden_pickaxe.png`, `diamond_pickaxe.png`, `netherite_pickaxe.png` (y sus `_shovel` equivalentes) del jar de Minecraft como punto de partida de forma y proporción.
+- Referencia más rápida: abrir `wooden_pickaxe.png`, `stone_pickaxe.png`, `iron_pickaxe.png`, `golden_pickaxe.png`, `diamond_pickaxe.png`, `netherite_pickaxe.png` (y sus `_shovel`) del propio juego como punto de partida de forma y proporción.
 
-## Icono del mod
+<br>
 
-- Archivo: `assets/workhand_tools/icon.png`, 64×64 px.
-- Contenido: pico y pala cruzados en X, estilo pixel art plano, colores sólidos, sin texto.
-- Prompt de referencia (para IA, si se usa como boceto): ver `docs/ASSET_PROMPTS_WORKHAND_TOOLS.md` → `## Logo del mod`.
+## 🖼️ Icono del mod
 
-## Banner promocional (opcional)
+64×64 px, pico y pala cruzados en X, pixel art plano, colores sólidos, sin texto.
 
-- Solo para la página de CurseForge, no se empaqueta en el mod.
-- Prompt de referencia: `docs/ASSET_PROMPTS_WORKHAND_TOOLS.md` → `## Logo del mod` → banner horizontal.
+<details>
+<summary><strong>Prompt de referencia (opcional, si se usa IA como boceto de partida)</strong></summary>
 
-## Paleta por material (referencia de color para las 80 texturas)
+```
+A square Minecraft mod icon for "Workhand Tools", 1:1 aspect ratio, designed to read clearly at 64x64px. Subject: a pickaxe and a shovel crossed in an X, blade-and-head tools of a sturdy, industrious worker's toolkit — not shiny or magical, grounded and utilitarian. The pickaxe head is angular and metallic gray with a brushed-steel highlight along its top edge; the shovel head is a broad rounded iron-gray blade with a faint worn sheen; both handles are warm honey-oak wood with visible woodgrain shading, wrapped near the head with a dark leather strap for grip. Composition: tools crossed dead-center, symmetric, filling about 80% of the frame, angled diagonally like a classic crest/emblem, with a thin circular or hexagonal badge outline behind them in a muted dark slate color to anchor the silhouette. Lighting: soft single top-left light source, subtle cel-shaded gradients on the metal (2-3 shading bands, not smooth photographic gradients) to suggest weight and material without breaking the blocky Minecraft aesthetic. Color palette: iron gray and steel blue for the metal heads, warm oak brown for the handles, dark charcoal/slate for the background badge, one small warm amber accent (a rivet or a subtle glow line) as a focal highlight. Style: Minecraft voxel/pixel-art derived but polished mod-icon style — blocky forms, hard silhouette edges, no photorealism, no painterly blending, no text, no watermark, no signature. Background: transparent or flat dark slate, no scenery, no ground, no additional props.
+```
+
+</details>
+
+<br>
+
+## 🏳️ Banner promocional (opcional)
+
+Solo para la página de CurseForge, no se empaqueta en el mod. Ya generado — no es parte de este encargo.
+
+<br>
+
+## 🎨 Paleta por material
 
 | Material | Paleta | Notas |
 |---|---|---|
-| Wood | Marrón tostado mate | Igual que `oak_planks` |
-| Stone | Gris piedra granulado | Textura simple, sin brillo |
-| Copper | Naranja-cobrizo cálido | Con leve brillo metálico, sin la pátina verde de cobre oxidado |
-| Deepslate | Gris carbón denso | Más oscuro y "compacto" que Stone |
-| Iron | Plata clara | Brillo metálico sutil, sin llegar a blanco |
-| Blackstone | Negro con motas violáceas | Más "roca" que "metal", mate |
-| Gold | Amarillo dorado saturado | Brillo metálico en el filo |
-| Diamond | Cian brillante | Reflejos angulares tipo cristal facetado |
-| Obsidian | Púrpura-negro cristalino | Más oscuro que Diamond, reflejos angulares tipo vidrio |
-| Netherite | Gunmetal casi negro | Sutil tinte violeta |
+| 🪵 Wood | Marrón tostado mate | Igual que `oak_planks` |
+| 🪨 Stone | Gris piedra granulado | Textura simple, sin brillo |
+| 🟠 Copper | Naranja-cobrizo cálido | Leve brillo metálico, sin pátina verde |
+| ⚫ Deepslate | Gris carbón denso | Más oscuro y "compacto" que Stone |
+| ⚪ Iron | Plata clara | Brillo metálico sutil, sin llegar a blanco |
+| ⬛ Blackstone | Negro con motas violáceas | Más "roca" que "metal", mate |
+| 🟡 Gold | Amarillo dorado saturado | Brillo metálico en el filo |
+| 🔵 Diamond | Cian brillante | Reflejos angulares tipo cristal facetado |
+| 🟣 Obsidian | Púrpura-negro cristalino | Más oscuro que Diamond, reflejos tipo vidrio |
+| ⬛ Netherite | Gunmetal casi negro | Sutil tinte violeta |
 
-## Diferenciación visual por grado (las 4 versiones de un mismo material deben distinguirse a simple vista)
+<br>
+
+## ⭐ Diferenciación visual por grado
+
+Las 4 versiones de un mismo material deben distinguirse **a simple vista** en el hotbar/inventario:
 
 | Grado | Detalle visual progresivo |
 |---|---|
-| 1 (base, sin sufijo) | Cabeza limpia, sin detalles extra — diseño base tipo vanilla |
-| 2 — Advanced | + un remache de refuerzo pequeño en la base de la cabeza |
-| 3 — Expert | + dos remaches de refuerzo + contorno ligeramente más grueso |
-| 4 — Professional | + remaches + contorno grueso + una fina línea de brillo en el filo, del color del material |
+| 1 · Base *(sin sufijo)* | Cabeza limpia, sin detalles extra — diseño base tipo vanilla |
+| 2 · Advanced | + un remache de refuerzo pequeño en la base de la cabeza |
+| 3 · Expert | + dos remaches de refuerzo + contorno ligeramente más grueso |
+| 4 · Professional | + remaches + contorno grueso + una fina línea de brillo en el filo, del color del material |
 
-## Item nuevo: Robust Stick
+<br>
 
-- Archivo: `assets/workhand_tools/textures/item/robust_stick.png`.
+## 🪵 Item nuevo: Robust Stick
+
+- Archivo: `robust_stick.png`.
 - Concepto: como el palo vanilla pero más grueso, con una banda metálica gris oscuro envolviendo el centro.
-- Se usa como ingrediente de crafteo en las recetas de grado 3 y 4 (ver `docs/DESIGN_WORKHAND_TOOLS.md` → `## Recetas`).
+- Se usa como ingrediente de crafteo en las herramientas de grado 3 y 4.
 
-## Listado completo — 80 texturas de herramienta
+<br>
 
-Nombre de archivo final: `assets/workhand_tools/textures/item/<archivo>` (columna "Archivo" de la tabla). Orden: picos (1-40) primero, luego palas (41-80); dentro de cada tipo, por material (Wood → Netherite); dentro de cada material, por grado (1 → Professional).
+## ⛏️ Listado completo — 80 texturas de herramienta
+
+Nombre de archivo final: `<archivo>` (columna **Archivo**). Orden: picos (1-40) primero, luego palas (41-80); dentro de cada tipo, por material (Wood → Netherite); dentro de cada material, por grado (1 → Professional).
+
+<details>
+<summary><strong>▶ Ver las 80 filas (pulsa para desplegar)</strong></summary>
 
 | # | Archivo | Nombre in-game | Material | Grado |
 |---|---|---|---|---|
@@ -149,6 +176,14 @@ Nombre de archivo final: `assets/workhand_tools/textures/item/<archivo>` (column
 | 79 | `netherite_workhand_expert_shovel.png` | Netherite Workhand Expert Shovel | Netherite | Expert |
 | 80 | `netherite_workhand_professional_shovel.png` | Netherite Workhand Professional Shovel | Netherite | Professional |
 
-## Estado actual (mientras no haya arte propio)
+</details>
 
-El mod funciona hoy con placeholders — cada una de las 80 texturas de esta lista apunta temporalmente a la textura vanilla más parecida (ver `docs/ASSET_PROMPTS_WORKHAND_TOOLS.md` → `## Texturas de herramientas (placeholder vanilla)`). Esta lista no bloquea el desarrollo, es el encargo para cuando el diseñador tenga disponibilidad.
+<br>
+
+## ✅ Estado actual
+
+El mod ya funciona hoy con placeholders — cada una de las 80 texturas de esta lista apunta temporalmente a la textura vanilla más parecida, así que **este encargo no bloquea nada** del desarrollo. Es el trabajo para cuando el diseñador tenga disponibilidad.
+
+- [ ] Icono del mod
+- [ ] 80 texturas de herramienta
+- [ ] Textura de Robust Stick
