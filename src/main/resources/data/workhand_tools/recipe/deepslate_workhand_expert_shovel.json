@@ -8,9 +8,7 @@
   "key": {
     "m": "minecraft:cobbled_deepslate",
     "a": "minecraft:deepslate",
-    "r": {
-      "item": "workhand_tools:robust_stick"
-    }
+    "r": "workhand_tools:robust_stick"
   },
   "result": {
     "count": 1,

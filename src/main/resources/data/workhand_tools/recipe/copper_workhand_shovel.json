@@ -7,9 +7,7 @@
   ],
   "key": {
     "m": "minecraft:copper_ingot",
-    "p": {
-      "item": "minecraft:stick"
-    }
+    "p": "minecraft:stick"
   },
   "result": {
     "count": 1,

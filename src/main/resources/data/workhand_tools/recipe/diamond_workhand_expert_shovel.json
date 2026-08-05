@@ -8,9 +8,7 @@
   "key": {
     "m": "minecraft:diamond",
     "a": "minecraft:diamond_block",
-    "r": {
-      "item": "workhand_tools:robust_stick"
-    }
+    "r": "workhand_tools:robust_stick"
   },
   "result": {
     "count": 1,

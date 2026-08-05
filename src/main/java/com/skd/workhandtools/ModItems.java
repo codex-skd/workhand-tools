@@ -45,7 +45,7 @@ public final class ModItems {
             new GradeData("professional", " Professional"));
 
     public static final DeferredHolder<Item, ? extends Item> ROBUST_STICK =
-            WorkhandTools.ITEMS.register("robust_stick", () -> new Item(new Item.Properties()));
+            WorkhandTools.ITEMS.registerItem("robust_stick", Item::new, Item.Properties::new);
 
     // Creative tab order: pickaxes first, then shovels; within each tool by material
     // progression (Wood -> Netherite) and by grade ascending (1 -> 4).
@@ -100,12 +100,19 @@ public final class ModItems {
             for (GradeData grade : GRADES) {
                 String id = id(material, grade, tool);
                 ToolMaterial toolMaterial = material.material();
-                Item.Properties properties = new Item.Properties();
-                if (material.fireResistant()) {
-                    properties.fireResistant();
-                }
-                DeferredHolder<Item, ? extends Item> holder =
-                        WorkhandTools.ITEMS.register(id, () -> factory.apply(toolMaterial, properties));
+                boolean fireResistant = material.fireResistant();
+                // registerItem sets the item id on Item.Properties before the factory runs (26.2 API);
+                // the plain register(String, Supplier) path leaves the id unset and throws "Item id not set".
+                DeferredHolder<Item, ? extends Item> holder = WorkhandTools.ITEMS.registerItem(
+                        id,
+                        (properties) -> factory.apply(toolMaterial, properties),
+                        () -> {
+                            Item.Properties properties = new Item.Properties();
+                            if (fireResistant) {
+                                properties.fireResistant();
+                            }
+                            return properties;
+                        });
                 holders.add(holder);
                 BY_ID.put(id, holder);
             }

@@ -7,9 +7,7 @@
   ],
   "key": {
     "a": "minecraft:iron_block",
-    "p": {
-      "item": "minecraft:stick"
-    }
+    "p": "minecraft:stick"
   },
   "result": {
     "count": 1,

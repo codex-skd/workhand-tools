@@ -50,6 +50,12 @@ public class WorkhandTools {
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public WorkhandTools(IEventBus modEventBus, ModContainer modContainer) {
+        // Force ModItems static initialization BEFORE the item RegisterEvent fires. ModItems'
+        // static fields call ITEMS.register(...) to populate the DeferredRegister; without this
+        // eager touch, the only references to ModItems are the creative-tab lambdas below, which
+        // are evaluated after the item registry is already processed and the tools never register.
+        ModItems.PICKAXES.isEmpty();
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
