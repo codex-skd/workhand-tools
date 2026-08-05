@@ -93,14 +93,12 @@ Ejemplo completo para Iron:
 
 ## Encantamientos
 
-Sin cambios respecto al diseño original — aplica a los 80 items por igual. Añadir cada item a los tags vanilla de encantamiento vía datapack (`src/main/resources/data/minecraft/tags/item/enchantable/...`):
+Aplica a los 80 items por igual. **Implementado y verificado contra el jar real de Minecraft 26.2** — no existen tags separados `pickaxe`/`shovel` ni `curse`/`vanishing_curse` (nombres reales: `vanishing`, sin tag `curse` propio). Camino real:
 
-- `enchantable/pickaxe.json` (picos) / `enchantable/shovel.json` (palas)
-- `enchantable/mining.json` (Eficiencia)
-- `enchantable/mining_loot.json` (Fortuna, Toque de Seda)
-- `enchantable/durability.json` (Irrompibilidad)
-- `enchantable/curse.json` y `enchantable/vanishing_curse.json`
-- `enchantable/equippable.json` si aplica a Mending — verificar contra las tags reales del build 26.2
+- Los 80 items extienden `data/minecraft/tags/item/pickaxes.json` / `shovels.json` (tags `#minecraft:pickaxes`/`#minecraft:shovels`), de los que ya cuelgan `enchantable/durability`, `enchantable/mining` y `enchantable/mining_loot` en vanilla — esto ya cubre Eficiencia, Fortuna, Toque de Seda e Irrompibilidad automáticamente.
+- Además, listados explícitamente (redundante pero inofensivo) en `enchantable/durability.json`, `enchantable/mining.json`, `enchantable/mining_loot.json` y `enchantable/vanishing.json` (Maldición de Desvanecimiento).
+- **Mending (Reparación)**: no necesita tag propio — el encantamiento vanilla `mending.json` usa `supported_items: "#minecraft:enchantable/durability"`, ya cubierto arriba.
+- `enchantable/equippable.json` es solo para armadura/elytra/cascos, no aplica a herramientas — no se toca.
 
 100% data-driven, sin lógica Java.
 
@@ -196,12 +194,12 @@ Si se añade configuración (p. ej. activar/desactivar el AoE por grado, ajustar
 
 ## Roadmap de implementación (fases)
 
-1. **Fase 1 — Materiales**: confirmar stats de Copper/Deepslate/Blackstone/Obsidian, crear sus `Tier` propios.
-2. **Fase 2 — Items base (grado 1, los 10 materiales)**: 20 items, reusando el trabajo de la v1 para los 6 materiales vanilla + los 4 nuevos + `robust_stick`.
-3. **Fase 3 — Grados 2-4**: 60 items adicionales (mismas clases `PickaxeItem`/`ShovelItem` y mismo `Tier` que el grado 1 del mismo material — el grado no cambia stats).
-4. **Fase 4 — Recetas**: cerradas (ver `## Recetas (confirmadas)`) — 9 líneas shaped (pico+pala×4 grados por material) + `robust_stick` + 4 smithing transform de netherite. Recetas y JEI son data-driven, JEI las muestra gratis.
-5. **Fase 5 — Mecánica de minado en área**: la parte de código NeoForge más sustancial del mod (evento de rotura de bloque, detección de patrón según grado/clic/agachado/pitch, comprobación de bloque correcto por bloque, consumo de durabilidad). Se delega en OpenCode por su envergadura, con este documento como especificación.
-6. **Fase 6 — Tags de encantamiento**: extender tags vanilla `enchantable/*` con los 80 items.
+1. **Fase 1 — Materiales**: ✅ hecho. `ModToolMaterials.java` con `ToolMaterial` propio para Copper/Deepslate/Blackstone/Obsidian, valores exactos de la tabla.
+2. **Fase 2 — Items base (grado 1, los 10 materiales)**: ✅ hecho, junto con la Fase 3.
+3. **Fase 3 — Grados 2-4**: ✅ hecho. Los 80 items registrados en `ModItems.java` (`PickaxeItem`/`ShovelItem` vanilla + Tier correspondiente) + `robust_stick`, todos en el creative tab en el orden del diseño. Modelos de item (los 80 + `robust_stick`) con `layer0` apuntando a la textura vanilla placeholder de `ASSET_PROMPTS_WORKHAND_TOOLS.md`.
+4. **Fase 4 — Recetas**: ✅ hecho. 81 recetas (72 shaped por material/grado + `robust_stick` + 8 smithing transform de netherite), formas verificadas contra `## Recetas (confirmadas)`.
+5. **Fase 5 — Mecánica de minado en área**: pendiente. La parte de código NeoForge más sustancial del mod (evento de rotura de bloque, detección de patrón según grado/clic/agachado/pitch, comprobación de bloque correcto por bloque, consumo de durabilidad). Se delega en OpenCode por su envergadura, con este documento como especificación.
+6. **Fase 6 — Tags de encantamiento**: ✅ hecho. Los 80 items extienden `#minecraft:pickaxes`/`#minecraft:shovels` (con lo que heredan durability/mining/mining_loot/vanishing automáticamente) además de estar listados explícitamente en esos 4 tags de `enchantable/`. Nota: los nombres reales de los tags vanilla en 26.2 son `mining`/`mining_loot`/`durability`/`vanishing` (sin sufijo `_curse`) y no existen tags separados `pickaxe`/`shovel` ni `curse` — verificado contra el jar de Minecraft 26.2, se corrige respecto a la mención inicial de este documento.
 7. **Fase 7 — Assets**: pospuesta a cuando el diseñador entregue arte (encargo completo en `docs/ASSET_LIST_WORKHAND_TOOLS.md`). Mientras tanto los 80 items + `robust_stick` usan placeholders de texturas vanilla — no bloquea el resto de fases.
 8. **Fase 8 — Localización**: traducción a los idiomas objetivo.
 9. **Fase 9 — QA**: validar en juego stats, AoE (incluido el anclaje de pitch), encantamientos y reparación para cada material/grado.
