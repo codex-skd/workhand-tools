@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " aa",
+    " r ",
+    " r "
+  ],
+  "key": {
+    "a": "minecraft:blackstone",
+    "r": {
+      "item": "workhand_tools:robust_stick"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "workhand_tools:blackstone_workhand_professional_shovel"
+  }
+}

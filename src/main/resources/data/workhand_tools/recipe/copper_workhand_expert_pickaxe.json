@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mam",
+    " ra",
+    " r "
+  ],
+  "key": {
+    "m": "minecraft:copper_ingot",
+    "a": "minecraft:copper_block",
+    "r": {
+      "item": "workhand_tools:robust_stick"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "workhand_tools:copper_workhand_expert_pickaxe"
+  }
+}
