@@ -17,41 +17,8 @@ public final class ModItems {
     private ModItems() {
     }
 
-    public static final DeferredHolder<Item, ? extends Item> ROBUST_STICK =
-            WorkhandTools.ITEMS.register("robust_stick", () -> new Item(new Item.Properties()));
-
-    // Creative tab order: pickaxes first, then shovels; within each tool by material
-    // progression (Wood -> Netherite) and by grade ascending (1 -> 4).
-    public static final List<DeferredHolder<Item, ? extends Item>> PICKAXES =
-            registerTools("pickaxe", "Pickaxe", (material, properties) -> new Item(properties.pickaxe(material, 1.0F, -2.8F)));
-    public static final List<DeferredHolder<Item, ? extends Item>> SHOVELS =
-            registerTools("shovel", "Shovel", (material, properties) -> new ShovelItem(material, 1.5F, -3.0F, properties));
-
     private static final Map<String, DeferredHolder<Item, ? extends Item>> BY_ID = new LinkedHashMap<>();
     private static final Map<Item, Grade> ITEM_GRADES = new HashMap<>();
-
-    public static DeferredHolder<Item, ? extends Item> get(String id) {
-        return BY_ID.get(id);
-    }
-
-    public static boolean isWorkhandTool(ItemStack stack) {
-        return !stack.isEmpty() && ITEM_GRADES.containsKey(stack.getItem());
-    }
-
-    public static Grade gradeOf(ItemStack stack) {
-        return stack.isEmpty() ? null : ITEM_GRADES.get(stack.getItem());
-    }
-
-    // Populated once the registry is filled (from commonSetup). Holder order is
-    // material-major, grade-minor, so grade is index modulo grade count.
-    static void buildLookups() {
-        for (int i = 0; i < PICKAXES.size(); i++) {
-            ITEM_GRADES.put(PICKAXES.get(i).get(), Grade.values()[i % GRADES.size()]);
-        }
-        for (int i = 0; i < SHOVELS.size(); i++) {
-            ITEM_GRADES.put(SHOVELS.get(i).get(), Grade.values()[i % GRADES.size()]);
-        }
-    }
 
     private record MaterialData(String prefix, String displayName, ToolMaterial material, boolean fireResistant) {
     }
@@ -76,6 +43,39 @@ public final class ModItems {
             new GradeData("advanced", " Advanced"),
             new GradeData("expert", " Expert"),
             new GradeData("professional", " Professional"));
+
+    public static final DeferredHolder<Item, ? extends Item> ROBUST_STICK =
+            WorkhandTools.ITEMS.register("robust_stick", () -> new Item(new Item.Properties()));
+
+    // Creative tab order: pickaxes first, then shovels; within each tool by material
+    // progression (Wood -> Netherite) and by grade ascending (1 -> 4).
+    public static final List<DeferredHolder<Item, ? extends Item>> PICKAXES =
+            registerTools("pickaxe", "Pickaxe", (material, properties) -> new Item(properties.pickaxe(material, 1.0F, -2.8F)));
+    public static final List<DeferredHolder<Item, ? extends Item>> SHOVELS =
+            registerTools("shovel", "Shovel", (material, properties) -> new ShovelItem(material, 1.5F, -3.0F, properties));
+
+    public static DeferredHolder<Item, ? extends Item> get(String id) {
+        return BY_ID.get(id);
+    }
+
+    public static boolean isWorkhandTool(ItemStack stack) {
+        return !stack.isEmpty() && ITEM_GRADES.containsKey(stack.getItem());
+    }
+
+    public static Grade gradeOf(ItemStack stack) {
+        return stack.isEmpty() ? null : ITEM_GRADES.get(stack.getItem());
+    }
+
+    // Populated once the registry is filled (from commonSetup). Holder order is
+    // material-major, grade-minor, so grade is index modulo grade count.
+    static void buildLookups() {
+        for (int i = 0; i < PICKAXES.size(); i++) {
+            ITEM_GRADES.put(PICKAXES.get(i).get(), Grade.values()[i % GRADES.size()]);
+        }
+        for (int i = 0; i < SHOVELS.size(); i++) {
+            ITEM_GRADES.put(SHOVELS.get(i).get(), Grade.values()[i % GRADES.size()]);
+        }
+    }
 
     private static List<DeferredHolder<Item, ? extends Item>> registerTools(
             String tool, String toolDisplayName, BiFunction<ToolMaterial, Item.Properties, ? extends Item> factory) {
