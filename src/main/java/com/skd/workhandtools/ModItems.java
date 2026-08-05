@@ -69,11 +69,27 @@ public final class ModItems {
     // Populated once the registry is filled (from commonSetup). Holder order is
     // material-major, grade-minor, so grade is index modulo grade count.
     static void buildLookups() {
-        for (int i = 0; i < PICKAXES.size(); i++) {
-            ITEM_GRADES.put(PICKAXES.get(i).get(), Grade.values()[i % GRADES.size()]);
-        }
-        for (int i = 0; i < SHOVELS.size(); i++) {
-            ITEM_GRADES.put(SHOVELS.get(i).get(), Grade.values()[i % GRADES.size()]);
+        try {
+            for (int i = 0; i < PICKAXES.size(); i++) {
+                DeferredHolder<Item, ? extends Item> holder = PICKAXES.get(i);
+                if (holder != null && holder.isBound()) {
+                    Item item = holder.get();
+                    if (item != null) {
+                        ITEM_GRADES.put(item, Grade.values()[i % GRADES.size()]);
+                    }
+                }
+            }
+            for (int i = 0; i < SHOVELS.size(); i++) {
+                DeferredHolder<Item, ? extends Item> holder = SHOVELS.get(i);
+                if (holder != null && holder.isBound()) {
+                    Item item = holder.get();
+                    if (item != null) {
+                        ITEM_GRADES.put(item, Grade.values()[i % GRADES.size()]);
+                    }
+                }
+            }
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to build lookups", e);
         }
     }
 

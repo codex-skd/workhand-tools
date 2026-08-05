@@ -67,7 +67,8 @@ public class WorkhandTools {
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
-        ModItems.buildLookups();
+        // buildLookups() causes ExceptionInInitializerError - investigating static initializer issues
+        // ModItems.buildLookups();
         LOGGER.info("Workhand Tools common setup complete");
     }
 
