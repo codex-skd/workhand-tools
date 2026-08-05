@@ -56,15 +56,18 @@ public class WorkhandTools {
         // Register the Deferred Registers to the mod event bus
         ITEMS.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
+        ModDataComponents.DATA_COMPONENT_TYPES.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         NeoForge.EVENT_BUS.register(this);
+        NeoForge.EVENT_BUS.register(new AoEMiningHandler());
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
+        ModItems.buildLookups();
         LOGGER.info("Workhand Tools common setup complete");
     }
 
