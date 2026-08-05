@@ -1,5 +1,9 @@
 # Changelog — Workhand Tools
 
+## 0.0.0-beta.3
+
+- **Fix crítico**: `0.0.0-beta.2` no cargaba en absoluto en el juego (`WARN: Skipping jar. File ... is not a valid mod file`, detectado probando en una instancia real de CurseForge). Causa: `build.gradle` apuntaba la tarea `generateModMetadata` a `src/main/templates` (carpeta inexistente) en vez de `src/main/resources/templates`, así que la tarea quedaba `NO-SOURCE` y el jar nunca incluía un `META-INF/neoforge.mods.toml` resuelto — solo la copia sin procesar en `templates/META-INF/`. Bug heredado del scaffold `codex-docs/mod_template` (comparado con `ageforged_armor`, que sí tiene la ruta correcta). Corregido aquí y en el template para que no se repita en mods futuros.
+
 ## 0.0.0-beta.2
 
 - Primera subida a CurseForge con contenido jugable real (hasta ahora solo el scaffold vacío de `0.0.0-beta.1`): los 80 items, recetas, encantamientos y la mecánica de minado en área completa. Release notes: `docs/curseforge/versions/0.0.0-beta.2.md`.
