@@ -69,12 +69,16 @@ El patrón de 3×3 (alto=3) no necesita este ajuste: 1 abajo / 1 arriba ya es el
 
 > **Umbral de pitch propuesto, no confirmado**: hay que ajustarlo en pruebas de juego una vez implementado — el valor exacto (grados) es una decisión de *feel*, no de diseño cerrado.
 
-### Clic izquierdo vs. clic derecho (grados 2 y 4)
+### Clic izquierdo vs. clic derecho (grados 2 y 4) — confirmado
 
-- **Clic izquierdo** = minado normal de Minecraft (mantener para romper) → patrón "grande" (3×3×3 o 5×5×5).
-- **Clic derecho** = patrón "plano" (3×3×1 o 5×5×1), replicando el comportamiento del grado inferior/superior de una sola capa.
+**El clic derecho no rompe nada por sí mismo: alterna el modo activo de la herramienta.** El minado sigue siendo siempre el normal de Minecraft (mantener clic izquierdo sobre un bloque) — lo único que cambia es qué patrón de AoE se aplica cuando ese minado normal rompe el bloque objetivo:
 
-Los grados 1 y 3 (obrero, experto) solo tienen la función plana — no reaccionan a clic derecho de forma distinta al minado normal.
+- Clic derecho (sobre bloque o aire, sin romper nada) → alterna el modo del item entre **Cúbico** (3×3×3 / 5×5×5) y **Plano** (3×3×1 / 5×5×1). El modo se guarda en el propio ItemStack (data component/NBT) y persiste hasta el siguiente clic derecho.
+- Clic izquierdo (minado normal, tal cual vanilla) → al completarse la rotura del bloque objetivo, aplica el patrón del modo actualmente activo en el item.
+- Modo por defecto al craftear/obtener el item: Cúbico (3×3×3 / 5×5×5).
+- Debe mostrarse feedback al jugador del modo activo (action bar / tooltip del item) para que sea visible sin adivinar.
+
+Los grados 1 y 3 (obrero, experto) no tienen modo ni reaccionan al clic derecho — su patrón (3×3×1 / 5×5×1 respectivamente) es fijo y se aplica siempre al minar normal.
 
 ## Naming e IDs
 
