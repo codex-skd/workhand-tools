@@ -1,7 +1,7 @@
 # Diseño técnico — Workhand Tools
 
 > Documento de diseño y especificación funcional. No es el workflow (ver `docs/WORKFLOW_WORKHAND_TOOLS_26-2.md`). Sirve de base para la implementación (propia o delegada en OpenCode) y para las siguientes fases del roadmap.
-> **Estado**: v2 — amplía el diseño inicial (6 materiales × 1 grado) con 4 materiales nuevos y un sistema de 4 grados por material con minado en área (AoE). Ver `## Historial de decisiones` al final.
+> **Estado**: v3 — amplía el diseño inicial (6 materiales × 1 grado) con 4 materiales nuevos, un sistema de 4 grados por material con minado en área (AoE), recetas cerradas y assets pospuestos a placeholders vanilla. Ver `## Historial de decisiones` al final.
 
 ## Concepto
 
@@ -167,10 +167,10 @@ Es decir, cada grado de netherite se fabrica mejorando el mismo grado en diamant
 
 ## Texturas y modelos
 
-- Modelo de item: parent `minecraft:item/handheld`, `layer0` con la textura propia. Igual para los 80 items (el modelo no cambia, solo la textura referenciada).
-- Textura: 16×16 px. Prompts para los 6 materiales originales + los 4 nuevos en `docs/ASSET_PROMPTS_WORKHAND_TOOLS.md`.
-- **Diferenciación visual por grado** (grados 2-4 deben distinguirse a simple vista del grado 1 del mismo material): ver sección específica en `docs/ASSET_PROMPTS_WORKHAND_TOOLS.md` — propuesta de escalado visual (remaches/refuerzos/tamaño de cabeza progresivo).
-- Icono del mod: sin cambios respecto a v1.
+- Modelo de item: parent `minecraft:item/handheld`, `layer0` con la textura. Igual estructura para los 80 items (el modelo no cambia, solo la textura referenciada).
+- **Decisión (v3)**: diseñar arte propio para las 80 texturas de golpe no es viable a corto plazo. Fase actual: cada modelo de item apunta a la textura vanilla del pico/pala más parecido (`layer0` referencia `minecraft:item/<vanilla_id>`, sin duplicar el `.png`) — ver mapeo completo material→textura vanilla en `docs/ASSET_PROMPTS_WORKHAND_TOOLS.md` → `## Texturas de herramientas (placeholder vanilla)`. No hay diferenciación visual por grado mientras se usen placeholders.
+- El encargo completo de arte propio (80 texturas + icono + Robust Stick, con nombres de archivo exactos, specs técnicas y paleta por material) está documentado para pasar a diseño en `docs/ASSET_LIST_WORKHAND_TOOLS.md`. No bloquea el desarrollo.
+- Icono del mod: sin placeholder razonable (no hay icono vanilla que sustituya al logo propio) — sigue pendiente, ver `docs/ASSET_PROMPTS_WORKHAND_TOOLS.md` → `## Logo del mod`.
 
 ## Creative tab
 
@@ -202,7 +202,7 @@ Si se añade configuración (p. ej. activar/desactivar el AoE por grado, ajustar
 4. **Fase 4 — Recetas**: cerradas (ver `## Recetas (confirmadas)`) — 9 líneas shaped (pico+pala×4 grados por material) + `robust_stick` + 4 smithing transform de netherite. Recetas y JEI son data-driven, JEI las muestra gratis.
 5. **Fase 5 — Mecánica de minado en área**: la parte de código NeoForge más sustancial del mod (evento de rotura de bloque, detección de patrón según grado/clic/agachado/pitch, comprobación de bloque correcto por bloque, consumo de durabilidad). Se delega en OpenCode por su envergadura, con este documento como especificación.
 6. **Fase 6 — Tags de encantamiento**: extender tags vanilla `enchantable/*` con los 80 items.
-7. **Fase 7 — Assets**: texturas de los 80 items + diferenciación visual por grado + textura de `robust_stick`.
+7. **Fase 7 — Assets**: pospuesta a cuando el diseñador entregue arte (encargo completo en `docs/ASSET_LIST_WORKHAND_TOOLS.md`). Mientras tanto los 80 items + `robust_stick` usan placeholders de texturas vanilla — no bloquea el resto de fases.
 8. **Fase 8 — Localización**: traducción a los idiomas objetivo.
 9. **Fase 9 — QA**: validar en juego stats, AoE (incluido el anclaje de pitch), encantamientos y reparación para cada material/grado.
 
@@ -210,6 +210,6 @@ Si se añade configuración (p. ej. activar/desactivar el AoE por grado, ajustar
 
 - **v1**: 6 materiales vanilla, 1 grado, minado 1×1 estándar.
 - **v2**: +4 materiales (Copper, Deepslate, Blackstone, Obsidian) con stats propuestos (confirmados en v3) · +4 grados por material con patrones de minado en área (3×3×1 / 3×3×3 / 5×5×1 / 5×5×5), doble función clic izq./der. en grados 2 y 4, override total al agacharse, y anclaje vertical dependiente del pitch para los patrones de 5 de alto · total de items pasa de 12 a 80.
-- **v3**: recetas de los 4 grados cerradas (pico y pala, forma distinta entre ambos) + nuevo item `robust_stick` (Robust Stick, 6 stick → 1) usado como ingrediente en grados 3-4 · tabla `m`/`a` por material confirmada · JEI: exposición automática vía recetas vanilla estándar, sin plugin propio.
+- **v3**: recetas de los 4 grados cerradas (pico y pala, forma distinta entre ambos) + nuevo item `robust_stick` (Robust Stick, 6 stick → 1) usado como ingrediente en grados 3-4 · tabla `m`/`a` por material confirmada · JEI: exposición automática vía recetas vanilla estándar, sin plugin propio · stats de los 4 materiales nuevos confirmados · assets pospuestos: los 80 items usan placeholders de texturas vanilla, encargo completo para diseñador documentado en `docs/ASSET_LIST_WORKHAND_TOOLS.md`.
 
 Cambios a este documento requieren confirmación del usuario antes de implementarse (no asumir variaciones de balance ni de mecánica sin pedirlo explícitamente).

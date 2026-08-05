@@ -1,21 +1,11 @@
 # Prompts de imagen — Workhand Tools
 
-> Prompts para generación de arte (logo del mod + texturas de herramientas) con modelos de imagen (Midjourney, DALL-E, GPT Image, Stable Diffusion, etc.). Los prompts se escriben en inglés porque los modelos de imagen rinden mejor con prompts en inglés, aunque el resto de esta doc es en castellano.
-
-## Nota importante sobre texturas de item (16×16 px)
-
-Las texturas de herramientas de Minecraft son pixel art de **16×16 px**, un formato muy específico que la mayoría de generadores de imagen no reproducen bien de forma nativa (generan a 512-1024px con "estilo pixel art" pero sin cuadrícula real de 16px). Dos caminos:
-
-1. **Recomendado**: generar a alta resolución con los prompts de abajo como *referencia de forma/paleta*, y luego recrear la textura final a mano en Blockbench o Aseprite, partiendo de la silueta del pico/pala vanilla (mango recto + cabeza en diagonal ocupando la esquina) y recoloreando según el material — es el método más fiable para que encaje pixel a pixel con el resto de vanilla.
-2. **Alternativa rápida**: usar los prompts igualmente en un generador con modo "pixel art 16x16" o "Minecraft texture" si el modelo lo soporta explícitamente, y post-procesar (downscale + reducción de paleta) con un script o Aseprite.
-
-En ambos casos, la instrucción de estilo común a todos los prompts de textura es:
-
-> `16x16 pixel art texture, Minecraft item icon style, flat colors, hard pixel edges, no anti-aliasing, no gradients, transparent background, isometric-diagonal tool head like vanilla Minecraft pickaxe/shovel icons`
+> Prompts para generación de arte (logo del mod) con modelos de imagen (Midjourney, DALL-E, GPT Image, Stable Diffusion, etc.). Los prompts se escriben en inglés porque los modelos de imagen rinden mejor con prompts en inglés, aunque el resto de esta doc es en castellano.
+> **Decisión (v2)**: diseñar arte propio para las 80 texturas de herramienta de golpe no es viable ahora mismo (demasiado tiempo). Fase temporal: **reutilizar texturas vanilla existentes** como placeholder — ver `## Texturas de herramientas (placeholder vanilla)`. Los prompts de generación de arte custom quedan pospuestos a una fase futura (`## Fase futura — arte custom`), no se descartan.
 
 ## Logo del mod
 
-Usado en `assets/workhand_tools/icon.png` (64×64, `neoforge.mods.toml` → `logoFile`) y como logo de CurseForge/GitLab.
+Sigue haciendo falta (son solo 2 imágenes, no 80). Usado en `assets/workhand_tools/icon.png` (64×64, `neoforge.mods.toml` → `logoFile`) y como logo de CurseForge/GitLab.
 
 ### Prompt — icono cuadrado (64×64 / mods.toml + CurseForge project icon)
 
@@ -29,63 +19,50 @@ A square Minecraft mod icon, flat pixel-art style, 64x64px grid, depicting a cro
 Wide horizontal banner, flat pixel-art Minecraft style, a crossed pickaxe and shovel icon on the left, bold sans-serif pixel-style text "WORKHAND TOOLS" on the right, color palette of iron gray, oak brown and diamond cyan accents, dark background, no gradients, no anti-aliasing, blocky voxel aesthetic
 ```
 
-## Texturas de herramientas (80 items = 10 materiales × 4 grados × 2 tipos)
+## Texturas de herramientas (placeholder vanilla)
 
-Prompt base común (sustituir `<TOOL_SHAPE>`, `<MATERIAL_DESC>` y `<GRADE_DESC>` por fila de las tablas de abajo):
+Los 80 items **no llevan textura propia por ahora**: el modelo de cada item apunta directamente a la textura vanilla del pico/pala más parecido, referenciando el namespace `minecraft:` desde el modelo del mod (no hace falta copiar ni duplicar el `.png`, solo el JSON de modelo referencia la textura vanilla). Los 4 grados de un mismo material comparten la misma textura placeholder — no hay diferenciación visual por grado en esta fase (se retoma en la fase futura de arte custom).
 
-```
-16x16 pixel art texture, Minecraft item icon style, <TOOL_SHAPE>, <MATERIAL_DESC>, <GRADE_DESC>, flat colors, hard pixel edges, no anti-aliasing, no gradients, transparent background, diagonal tool head in the upper-right pointing down-left, wooden stick handle in the lower-left, matching the proportions of vanilla Minecraft pickaxe/shovel icons
-```
-
-`<TOOL_SHAPE>`:
-- Pico: `a pickaxe with a wide triangular double-pointed head`
-- Pala: `a shovel with a flat rounded blade head`
-
-### Materiales (10)
-
-| Material | `<MATERIAL_DESC>` | Notas de paleta |
+| Material | Textura vanilla reutilizada (pico) | Textura vanilla reutilizada (pala) |
 |---|---|---|
-| Wood | `head made of light oak wood planks, matte tan-brown color` | Igual que `oak_planks`, sin brillo |
-| Stone | `head made of rough gray cobblestone, matte stone gray` | Textura granulada simple |
-| Copper | `head made of raw copper metal, warm orange-brown with subtle metallic sheen` | Naranja rojizo, sin la pátina verde del cobre oxidado |
-| Deepslate | `head made of dense dark gray deepslate rock, matte charcoal gray, slightly darker and denser-looking than cobblestone` | Más oscuro y "compacto" que stone |
-| Iron | `head made of polished iron metal, light silver-gray with subtle metallic highlights` | Gris más claro que stone, sin ser blanco |
-| Blackstone | `head made of dark polished blackstone rock, near-black with subtle purple-gray flecks` | Negro mate con motas violáceas, más "roca" que "metal" |
-| Gold | `head made of polished gold metal, bright yellow-gold with metallic shine` | Amarillo saturado, brillo sutil en el filo |
-| Diamond | `head made of faceted diamond crystal, bright cyan-blue with sharp light reflections` | Cian brillante, reflejos angulares |
-| Obsidian | `head made of dark faceted obsidian glass, deep purple-black with sharp glassy reflections` | Más oscuro y "cristalino" que netherite, reflejos angulares como el diamante |
-| Netherite | `head made of dark netherite metal, near-black gunmetal with subtle purple-gray sheen` | Casi negro, sutil tinte violeta |
+| Wood | `minecraft:item/wooden_pickaxe` | `minecraft:item/wooden_shovel` |
+| Stone | `minecraft:item/stone_pickaxe` | `minecraft:item/stone_shovel` |
+| Copper | `minecraft:item/iron_pickaxe` *(sin equivalente vanilla, se reutiliza hierro por tono metálico similar)* | `minecraft:item/iron_shovel` |
+| Deepslate | `minecraft:item/stone_pickaxe` *(sin equivalente vanilla, se reutiliza piedra)* | `minecraft:item/stone_shovel` |
+| Iron | `minecraft:item/iron_pickaxe` | `minecraft:item/iron_shovel` |
+| Blackstone | `minecraft:item/netherite_pickaxe` *(sin equivalente vanilla, se reutiliza netherite por tono oscuro)* | `minecraft:item/netherite_shovel` |
+| Gold | `minecraft:item/golden_pickaxe` | `minecraft:item/golden_shovel` |
+| Diamond | `minecraft:item/diamond_pickaxe` | `minecraft:item/diamond_shovel` |
+| Obsidian | `minecraft:item/diamond_pickaxe` *(sin equivalente vanilla, se reutiliza diamante por aspecto de gema/cristal)* | `minecraft:item/diamond_shovel` |
+| Netherite | `minecraft:item/netherite_pickaxe` | `minecraft:item/netherite_shovel` |
 
-Handle (mango) en los 10: `plain oak wood stick handle, brown color, same as vanilla tool handles` (constante, no cambia por material ni grado).
+`robust_stick` (item nuevo, no es herramienta): placeholder `minecraft:item/stick` (mismo modelo/textura que el palo vanilla).
 
-### Diferenciación visual por grado (4)
+Implementación (modelo de item, ejemplo `assets/workhand_tools/models/item/iron_workhand_advanced_pickaxe.json`):
 
-Los 4 grados de un mismo material comparten paleta y forma base, pero deben distinguirse a simple vista en el hotbar/inventario. Propuesta de escalado visual progresivo vía `<GRADE_DESC>`:
-
-| Grado | `<GRADE_DESC>` | Idea |
-|---|---|---|
-| 1 — *(sin sufijo)* | `plain tool head, no extra details` | Diseño base, igual que vanilla |
-| 2 — Advanced | `tool head with a single small reinforcement rivet at the base` | Un detalle sutil |
-| 3 — Expert | `tool head with two reinforcement rivets and a slightly thicker outline` | Refuerzo visible + contorno más grueso |
-| 4 — Professional | `tool head with reinforcement rivets, a thicker outline, and a small glowing accent line along the edge matching the material color` | Máximo detalle, ligero "glow" en el filo |
-
-Esto mantiene la silueta reconocible (pico/pala + material) mientras el grado se lee por nivel de detalle, sin necesitar un rediseño de forma por grado.
-
-### Ejemplos completos
-
-**Wooden Workhand Pickaxe** (material Wood, grado 1):
-```
-16x16 pixel art texture, Minecraft item icon style, a pickaxe with a wide triangular double-pointed head, head made of light oak wood planks, matte tan-brown color, plain tool head, no extra details, flat colors, hard pixel edges, no anti-aliasing, no gradients, transparent background, diagonal tool head in the upper-right pointing down-left, plain oak wood stick handle in the lower-left, matching the proportions of vanilla Minecraft pickaxe/shovel icons
+```json
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "minecraft:item/iron_pickaxe"
+  }
+}
 ```
 
-**Netherite Workhand Professional Shovel** (material Netherite, grado 4):
-```
-16x16 pixel art texture, Minecraft item icon style, a shovel with a flat rounded blade head, head made of dark netherite metal, near-black gunmetal with subtle purple-gray sheen, tool head with reinforcement rivets, a thicker outline, and a small glowing accent line along the edge matching the material color, flat colors, hard pixel edges, no anti-aliasing, no gradients, transparent background, diagonal tool head in the upper-right pointing down-left, plain oak wood stick handle in the lower-left, matching the proportions of vanilla Minecraft pickaxe/shovel icons
-```
+Icono del mod: sin cambios, sigue haciendo falta un `icon.png` propio (ver prompts arriba) — no hay placeholder vanilla razonable para el logo del mod en sí.
+
+## Fase futura — arte custom (pospuesta)
+
+Cuando se aborde el arte propio, la estrategia de generación queda documentada aquí para no perderla:
+
+- Las texturas de herramientas de Minecraft son pixel art de **16×16 px**, formato que la mayoría de generadores de imagen no reproducen bien de forma nativa. Camino recomendado: generar a alta resolución como *referencia de forma/paleta* y recrear la textura final a mano en Blockbench/Aseprite partiendo de la silueta vanilla (mango recto + cabeza en diagonal) y recoloreando según el material.
+- Paleta sugerida por material (para cuando se retome): Wood tostado mate, Stone gris granulado, Copper naranja-cobrizo, Deepslate gris carbón denso, Iron plata clara, Blackstone negro con motas violáceas, Gold amarillo saturado, Diamond cian brillante con reflejos, Obsidian púrpura-negro cristalino, Netherite gunmetal casi negro.
+- Diferenciación visual por grado sugerida: grado 1 sin detalles, grado 2 un remache, grado 3 dos remaches + contorno más grueso, grado 4 remaches + contorno + leve brillo en el filo del color del material.
+- Prompt base a reconstruir cuando llegue el momento: `16x16 pixel art texture, Minecraft item icon style, <tool shape>, <material description>, <grade detail>, flat colors, hard pixel edges, no anti-aliasing, no gradients, transparent background, diagonal tool head in the upper-right pointing down-left, wooden stick handle in the lower-left, matching the proportions of vanilla Minecraft pickaxe/shovel icons`.
 
 ## Checklist de assets pendientes
 
-- [ ] `assets/workhand_tools/icon.png` (64×64, logo cuadrado)
+- [ ] `assets/workhand_tools/icon.png` (64×64, logo cuadrado) — único asset de imagen real pendiente ahora mismo
 - [ ] Banner CurseForge (usado solo en `project_description.md`, no se empaqueta en el jar)
-- [ ] 80 texturas de herramienta en `assets/workhand_tools/textures/item/<id>.png`, una por cada combinación de material (10) × grado (4) × tipo (2) definida en `docs/DESIGN_WORKHAND_TOOLS.md` → tabla de Naming e IDs. No se listan una a una aquí porque el nombre de archivo es siempre `<id>.png` con el `id` exacto de esa tabla.
-- [ ] `assets/workhand_tools/textures/item/robust_stick.png` — prompt: `16x16 pixel art texture, Minecraft item icon style, a stick shape like the vanilla stick icon but thicker with a subtle metal band wrapped around the middle, matte oak-brown wood with a dark gray metal wrap, flat colors, hard pixel edges, no anti-aliasing, no gradients, transparent background, diagonal orientation matching vanilla minecraft:stick icon`
+- [x] ~~80 texturas de herramienta~~ — pospuesto, se usan placeholders vanilla (ver tabla arriba), no bloquea el desarrollo
+- [x] ~~Textura de `robust_stick`~~ — pospuesto, placeholder = textura vanilla de `minecraft:stick`
