@@ -11,7 +11,7 @@ Una línea de picos y palas "de obrero" (Workhand), en **10 materiales** y **4 g
 
 ## Materiales y tiers
 
-6 materiales tienen tier vanilla directo (`net.minecraft.world.item.Tiers`) y se implementan reutilizando esos valores tal cual — ver `## Nota de implementación clave`. Los 4 materiales nuevos (cobre, pizarra/deepslate, roca negra/blackstone, obsidiana) no existen como herramienta en vanilla: los valores de la tabla son una **propuesta en progresión equilibrada**, pendiente de tu confirmación antes de implementar.
+6 materiales tienen tier vanilla directo (`net.minecraft.world.item.Tiers`) y se implementan reutilizando esos valores tal cual — ver `## Nota de implementación clave`. Los 4 materiales nuevos (cobre, pizarra/deepslate, roca negra/blackstone, obsidiana) no existen como herramienta en vanilla: los valores de la tabla son una progresión equilibrada, **confirmados**.
 
 Orden de progresión (accesibilidad in-game, de más temprano a más tardío):
 
@@ -19,13 +19,13 @@ Orden de progresión (accesibilidad in-game, de más temprano a más tardío):
 |---|---|---|---|---|---|---|---|
 | 1 | Wood | Vanilla (`Tiers.WOOD`) | 59 | 2.0 | 15 | 0 | `#minecraft:planks` |
 | 2 | Stone | Vanilla (`Tiers.STONE`) | 131 | 4.0 | 5 | 1 | `#minecraft:stone_tool_materials` |
-| 3 | Copper | **Propuesta** | 185 | 4.5 | 8 | 1 | `minecraft:copper_ingot` |
-| 4 | Deepslate (pizarra) | **Propuesta** | 205 | 5.0 | 6 | 1 | `minecraft:cobbled_deepslate` |
+| 3 | Copper | Confirmado | 185 | 4.5 | 8 | 1 | `minecraft:copper_ingot` |
+| 4 | Deepslate (pizarra) | Confirmado | 205 | 5.0 | 6 | 1 | `minecraft:cobbled_deepslate` |
 | 5 | Iron | Vanilla (`Tiers.IRON`) | 250 | 6.0 | 14 | 2 | `minecraft:iron_ingot` |
-| 6 | Blackstone (roca negra) | **Propuesta** | 270 | 6.5 | 9 | 2 | `minecraft:blackstone` |
+| 6 | Blackstone (roca negra) | Confirmado | 270 | 6.5 | 9 | 2 | `minecraft:blackstone` |
 | 7 | Gold | Vanilla (`Tiers.GOLD`) | 32 | 12.0 | 22 | 0 | `minecraft:gold_ingot` |
 | 8 | Diamond | Vanilla (`Tiers.DIAMOND`) | 1561 | 8.0 | 10 | 3 | `minecraft:diamond` |
-| 9 | Obsidian | **Propuesta** | 1800 | 7.0 | 12 | 3 | `minecraft:obsidian` |
+| 9 | Obsidian | Confirmado | 1800 | 7.0 | 12 | 3 | `minecraft:obsidian` |
 | 10 | Netherite | Vanilla (`Tiers.NETHERITE`) | 2031 | 9.0 | 15 | 4 | `minecraft:netherite_ingot` |
 
 Justificación de las propuestas:
@@ -36,11 +36,9 @@ Justificación de las propuestas:
 
 Gold mantiene su rareza vanilla (baja durabilidad, alta velocidad, alta encantabilidad) — no se "arregla", es intencional en el juego base.
 
-**Pendiente de tu confirmación** antes de fijar estos 4 valores en la implementación.
-
 ## Nota de implementación clave (materiales vanilla)
 
-Para los 6 materiales con tier vanilla, **no redefinir stats a mano**: registrar usando directamente `net.minecraft.world.item.Tiers` (`Tiers.WOOD/STONE/IRON/GOLD/DIAMOND/NETHERITE`) como `Tier` de `PickaxeItem`/`ShovelItem`, igual que vanilla. Para los 4 materiales nuevos, crear un `SimpleTier`/`Tier` propio por material con los valores de la tabla (una vez confirmados).
+Para los 6 materiales con tier vanilla, **no redefinir stats a mano**: registrar usando directamente `net.minecraft.world.item.Tiers` (`Tiers.WOOD/STONE/IRON/GOLD/DIAMOND/NETHERITE`) como `Tier` de `PickaxeItem`/`ShovelItem`, igual que vanilla. Para los 4 materiales nuevos, crear un `SimpleTier`/`Tier` propio por material con los valores confirmados de la tabla.
 
 ## Grados y minado en área (AoE)
 
@@ -211,7 +209,7 @@ Si se añade configuración (p. ej. activar/desactivar el AoE por grado, ajustar
 ## Historial de decisiones
 
 - **v1**: 6 materiales vanilla, 1 grado, minado 1×1 estándar.
-- **v2**: +4 materiales (Copper, Deepslate, Blackstone, Obsidian) con stats propuestos pendientes de confirmar · +4 grados por material con patrones de minado en área (3×3×1 / 3×3×3 / 5×5×1 / 5×5×5), doble función clic izq./der. en grados 2 y 4, override total al agacharse, y anclaje vertical dependiente del pitch para los patrones de 5 de alto · total de items pasa de 12 a 80.
+- **v2**: +4 materiales (Copper, Deepslate, Blackstone, Obsidian) con stats propuestos (confirmados en v3) · +4 grados por material con patrones de minado en área (3×3×1 / 3×3×3 / 5×5×1 / 5×5×5), doble función clic izq./der. en grados 2 y 4, override total al agacharse, y anclaje vertical dependiente del pitch para los patrones de 5 de alto · total de items pasa de 12 a 80.
 - **v3**: recetas de los 4 grados cerradas (pico y pala, forma distinta entre ambos) + nuevo item `robust_stick` (Robust Stick, 6 stick → 1) usado como ingrediente en grados 3-4 · tabla `m`/`a` por material confirmada · JEI: exposición automática vía recetas vanilla estándar, sin plugin propio.
 
 Cambios a este documento requieren confirmación del usuario antes de implementarse (no asumir variaciones de balance ni de mecánica sin pedirlo explícitamente).
