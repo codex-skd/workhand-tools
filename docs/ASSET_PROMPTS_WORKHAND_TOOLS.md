@@ -5,19 +5,27 @@
 
 ## Logo del mod
 
-Sigue haciendo falta (son solo 2 imágenes, no 80). Usado en `assets/workhand_tools/icon.png` (64×64, `neoforge.mods.toml` → `logoFile`) y como logo de CurseForge/GitLab.
+Banner ya generado (`ChatGPT Image 5 ago 2026, 13_21_34.png`, en Descargas) — solo falta el icono cuadrado. Usado en `assets/workhand_tools/icon.png` (64×64, `neoforge.mods.toml` → `logoFile`) y como icono de proyecto en CurseForge/GitLab. Al ser un icono de mod (no una textura de item 16×16 in-game), admite algo más de detalle/sombreado que las texturas de herramienta — se genera a alta resolución (1024×1024) y se reduce a 64×64 al final.
 
-### Prompt — icono cuadrado (64×64 / mods.toml + CurseForge project icon)
-
-```
-A square Minecraft mod icon, flat pixel-art style, 64x64px grid, depicting a crossed pickaxe and shovel forming an X, both with wooden handles and simple gray/brown tool heads, centered composition, bold thick outlines, flat solid colors, no gradients, no anti-aliasing, transparent or dark slate background, blocky voxel aesthetic consistent with vanilla Minecraft item icons, no text
-```
-
-### Prompt — banner horizontal (CurseForge header / footer del `project_description.md`)
+### Prompt — icono cuadrado, principal
 
 ```
-Wide horizontal banner, flat pixel-art Minecraft style, a crossed pickaxe and shovel icon on the left, bold sans-serif pixel-style text "WORKHAND TOOLS" on the right, color palette of iron gray, oak brown and diamond cyan accents, dark background, no gradients, no anti-aliasing, blocky voxel aesthetic
+A square Minecraft mod icon for "Workhand Tools", 1:1 aspect ratio, designed to read clearly at 64x64px. Subject: a pickaxe and a shovel crossed in an X, blade-and-head tools of a sturdy, industrious worker's toolkit — not shiny or magical, grounded and utilitarian. The pickaxe head is angular and metallic gray with a brushed-steel highlight along its top edge; the shovel head is a broad rounded iron-gray blade with a faint worn sheen; both handles are warm honey-oak wood with visible woodgrain shading, wrapped near the head with a dark leather strap for grip. Composition: tools crossed dead-center, symmetric, filling about 80% of the frame, angled diagonally like a classic crest/emblem, with a thin circular or hexagonal badge outline behind them in a muted dark slate color to anchor the silhouette. Lighting: soft single top-left light source, subtle cel-shaded gradients on the metal (2-3 shading bands, not smooth photographic gradients) to suggest weight and material without breaking the blocky Minecraft aesthetic. Color palette: iron gray and steel blue for the metal heads, warm oak brown for the handles, dark charcoal/slate for the background badge, one small warm amber accent (a rivet or a subtle glow line) as a focal highlight. Style: Minecraft voxel/pixel-art derived but polished mod-icon style (comparable to official Minecraft mod list icons) — blocky forms, hard silhouette edges, no photorealism, no painterly blending, no text, no watermark, no signature. Background: transparent or flat dark slate, no scenery, no ground, no additional props.
 ```
+
+### Prompt — variante alternativa (más plana, fiel 100% a pixel-art vanilla)
+
+Por si la principal sale "demasiado ilustrada" y prefieres algo más cercano al estilo plano de un item vanilla escalado a icono:
+
+```
+A square Minecraft mod icon, strict flat pixel-art style with visible hard-edged pixel blocks (as if built on a 64x64 grid, no smooth curves), depicting a pickaxe and a shovel crossed in an X at the center. Pickaxe head: angular double point, flat mid-gray with a single lighter gray highlight band and a single darker gray shadow band, no gradients beyond those two bands. Shovel head: flat rounded blade, same gray tones. Both handles: flat warm brown, matching vanilla Minecraft tool handle color, no woodgrain detail. Thin black pixel outline around the whole silhouette. Centered, symmetric, filling most of the frame. Flat dark slate background or fully transparent. No text, no logos, no extra ornamentation, no anti-aliasing, no gradients beyond the described shading bands, consistent with vanilla Minecraft item/mod icon aesthetics.
+```
+
+### Notas para elegir/ajustar
+
+- Si el generador mete texto o marca de agua pese al `no text`, añade explícitamente `no letters, no typography, no watermark, no signature` al final.
+- Si sale demasiado "3D/render" (photorealistic metal, reflejos de estudio), refuerza `flat colors, cel-shaded, not photorealistic, not 3D render, illustration only`.
+- El badge circular/hexagonal de fondo en la variante principal es opcional — quítalo del prompt (`with a thin circular or hexagonal badge outline behind them...`) si prefieres las herramientas sueltas sin marco, más parecido al banner que ya tienes.
 
 ## Texturas de herramientas (placeholder vanilla)
 
@@ -63,6 +71,6 @@ Cuando se aborde el arte propio, la estrategia de generación queda documentada 
 ## Checklist de assets pendientes
 
 - [ ] `assets/workhand_tools/icon.png` (64×64, logo cuadrado) — único asset de imagen real pendiente ahora mismo
-- [ ] Banner CurseForge (usado solo en `project_description.md`, no se empaqueta en el jar)
+- [x] Banner CurseForge — generado (`ChatGPT Image 5 ago 2026, 13_21_34.png`), usado solo en `project_description.md`, no se empaqueta en el jar
 - [x] ~~80 texturas de herramienta~~ — pospuesto, se usan placeholders vanilla (ver tabla arriba), no bloquea el desarrollo
 - [x] ~~Textura de `robust_stick`~~ — pospuesto, placeholder = textura vanilla de `minecraft:stick`
