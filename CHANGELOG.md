@@ -1,5 +1,9 @@
 # Changelog — Workhand Tools
 
+## 0.0.0-beta.4
+
+- **Fix crítico**: `0.0.0-beta.3` cargaba (el bug del jar ya estaba resuelto) pero crasheaba al arrancar con `ExceptionInInitializerError` durante `FMLCommonSetupEvent`, confirmado contra un crash report real. Causa: en `ModItems.java` los campos `PICKAXES`/`SHOVELS` (que llaman a `registerTools(...)`) estaban declarados **antes** que `MATERIALS`, `GRADES` y `BY_ID`, de los que dependen — en Java los inicializadores de campos estáticos se ejecutan en orden textual, así que esas dependencias todavía eran `null` cuando `registerTools` las usaba. Reordenados los campos (dependencias primero).
+
 ## 0.0.0-beta.3
 
 - **Fix crítico**: `0.0.0-beta.2` no cargaba en absoluto en el juego (`WARN: Skipping jar. File ... is not a valid mod file`, detectado probando en una instancia real de CurseForge). Causa: `build.gradle` apuntaba la tarea `generateModMetadata` a `src/main/templates` (carpeta inexistente) en vez de `src/main/resources/templates`, así que la tarea quedaba `NO-SOURCE` y el jar nunca incluía un `META-INF/neoforge.mods.toml` resuelto — solo la copia sin procesar en `templates/META-INF/`. Bug heredado del scaffold `codex-docs/mod_template` (comparado con `ageforged_armor`, que sí tiene la ruta correcta). Corregido aquí y en el template para que no se repita en mods futuros.
