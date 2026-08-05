@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    " pm",
+    " p "
+  ],
+  "key": {
+    "m": "minecraft:blackstone",
+    "p": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "workhand_tools:blackstone_workhand_pickaxe"
+  }
+}

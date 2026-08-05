@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " aa",
+    " r ",
+    " r "
+  ],
+  "key": {
+    "a": "#minecraft:planks",
+    "r": {
+      "item": "workhand_tools:robust_stick"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "workhand_tools:wooden_workhand_professional_shovel"
+  }
+}

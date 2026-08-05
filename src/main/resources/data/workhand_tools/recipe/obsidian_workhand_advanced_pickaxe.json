@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    " pa",
+    " p "
+  ],
+  "key": {
+    "a": "minecraft:obsidian",
+    "p": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "workhand_tools:obsidian_workhand_advanced_pickaxe"
+  }
+}

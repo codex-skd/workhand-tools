@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " mm",
+    " p ",
+    " p "
+  ],
+  "key": {
+    "m": "minecraft:cobblestone",
+    "p": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "workhand_tools:stone_workhand_shovel"
+  }
+}

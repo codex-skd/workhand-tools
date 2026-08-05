@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mam",
+    " ra",
+    " r "
+  ],
+  "key": {
+    "m": "minecraft:cobblestone",
+    "a": "minecraft:stone",
+    "r": {
+      "item": "workhand_tools:robust_stick"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "workhand_tools:stone_workhand_expert_pickaxe"
+  }
+}

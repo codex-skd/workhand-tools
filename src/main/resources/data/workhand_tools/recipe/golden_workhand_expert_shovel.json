@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " am",
+    " r ",
+    " r "
+  ],
+  "key": {
+    "m": "minecraft:gold_ingot",
+    "a": "minecraft:gold_block",
+    "r": {
+      "item": "workhand_tools:robust_stick"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "workhand_tools:golden_workhand_expert_shovel"
+  }
+}
