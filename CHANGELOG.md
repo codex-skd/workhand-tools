@@ -1,5 +1,11 @@
 # Changelog — Workhand Tools
 
+## [0.0.0-beta.7] - 2026-08-06
+
+### Fix
+
+- **Modelo de items registrado correctamente**: Los archivos JSON de modelo (`assets/workhand_tools/models/item/`) ahora se cargan correctamente. Todos los 80 tools y robust_stick usan texturas vanilla como placeholder mientras se implementan assets propios. Verificado que los modelos JSON usan parent `minecraft:item/handheld` y texturas vanilla correctas (wooden_pickaxe, stone_shovel, etc.).
+
 ## 0.0.0-beta.5
 
 - **Fix crítico**: `0.0.0-beta.4` crasheaba durante la carga con `NullPointerException: Item id not set` y `ExceptionInInitializerError`. Causa: bloque `static { }` en `WorkhandTools.java` intentaba inicializar `ModItems.PICKAXES` demasiado temprano (antes de que `DeferredRegister` estuviera completamente listo para registrar items), causando que los items se crearan sin IDs asignados. Revertidos cambios innecesarios de `Supplier<ToolMaterial>` en `ModToolMaterials.java` y getters en `ModItems.java`. El mod ahora carga correctamente sin crashear. Funcionalidad de lookups (`buildLookups()`) temporalmente comentada mientras se investiguen issues de inicialización estática más profundos.
