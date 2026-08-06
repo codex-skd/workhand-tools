@@ -1,5 +1,11 @@
 # Changelog — Workhand Tools
 
+## [0.0.0-beta.9] - 2026-08-06
+
+### Feature
+
+- **Item model JSON templates**: Generated 81 item model files (80 tools + robust_stick) with vanilla texture placeholders. All items now display icons correctly in inventory and creative tab. Models reference vanilla equivalent textures for each material (copper → iron, deepslate → stone, blackstone/obsidian use appropriate vanilla equivalents). Localization already complete from previous beta (all 81 item names in en_us.json). Completes Phase 7 (asset placeholder phase) of implementation roadmap.
+
 ## [0.0.0-beta.8] - 2026-08-06
 
 ### Fix
