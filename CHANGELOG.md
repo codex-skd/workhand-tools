@@ -1,5 +1,11 @@
 # Changelog — Workhand Tools
 
+## [0.0.0-beta.8] - 2026-08-06
+
+### Fix
+
+- **Modelos de items generados correctamente**: Los modelos JSON se generan ahora en `src/generated/resources` durante la compilación. Todos los 80 tools (pickaxes y shovels) y robust_stick usan texturas vanilla como placeholder (wooden_pickaxe, stone_shovel, diamond_pickaxe, etc.). Ahora los iconos de items se ven correctamente ingame sin texturas de error.
+
 ## [0.0.0-beta.7] - 2026-08-06
 
 ### Fix
