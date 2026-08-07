@@ -1,6 +1,6 @@
-﻿{
-    "textures":  {
-                     "layer0":  "minecraft:item/iron_pickaxe"
-                 },
-    "parent":  "minecraft:item/handheld"
+{
+    "textures": {
+        "layer0": "workhand_tools:item/iron_workhand_advanced_pickaxe"
+    },
+    "parent": "minecraft:item/handheld"
 }

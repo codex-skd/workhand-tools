@@ -1,6 +1,0 @@
-﻿{
-    "textures":  {
-                     "layer0":  "minecraft:item/stone_pickaxe"
-                 },
-    "parent":  "minecraft:item/handheld"
-}

@@ -5,40 +5,25 @@
 
 ## Concepto
 
-Una línea de picos y palas "de obrero" (Workhand), en **10 materiales** y **4 grados** cada uno. La diferencia entre materiales es durabilidad/velocidad/encantabilidad (calcada de vanilla cuando existe equivalente). La diferencia entre grados **no es de stats**: es la receta y el **patrón de minado en área (AoE)** que activa la herramienta.
+Una línea de picos y palas "de obrero" (Workhand), en **3 materiales** (Stone, Iron, Diamond) y **4 grados** cada uno. La diferencia entre materiales es durabilidad/velocidad/encantabilidad (calcada de vanilla). La diferencia entre grados **no es de stats**: es la receta y el **patrón de minado en área (AoE)** que activa la herramienta.
 
-**Total: 10 materiales × 4 grados × 2 herramientas = 80 items.**
+**Total: 3 materiales × 4 grados × 2 herramientas = 24 items.**
 
 ## Materiales y tiers
 
-6 materiales tienen tier vanilla directo (`net.minecraft.world.item.Tiers`) y se implementan reutilizando esos valores tal cual — ver `## Nota de implementación clave`. Los 4 materiales nuevos (cobre, pizarra/deepslate, roca negra/blackstone, obsidiana) no existen como herramienta en vanilla: los valores de la tabla son una progresión equilibrada, **confirmados**.
+Los 3 materiales tienen tier vanilla directo (`net.minecraft.world.item.ToolMaterial`) y se implementan reutilizando esos valores tal cual — ver `## Nota de implementación clave`.
 
 Orden de progresión (accesibilidad in-game, de más temprano a más tardío):
 
 | # | Material | Origen stats | Durabilidad (uses) | Velocidad (speed) | Encantabilidad | Bonus daño ataque | Item de reparación |
 |---|---|---|---|---|---|---|---|
-| 1 | Wood | Vanilla (`Tiers.WOOD`) | 59 | 2.0 | 15 | 0 | `#minecraft:planks` |
-| 2 | Stone | Vanilla (`Tiers.STONE`) | 131 | 4.0 | 5 | 1 | `#minecraft:stone_tool_materials` |
-| 3 | Copper | Confirmado | 185 | 4.5 | 8 | 1 | `minecraft:copper_ingot` |
-| 4 | Deepslate (pizarra) | Confirmado | 205 | 5.0 | 6 | 1 | `minecraft:cobbled_deepslate` |
-| 5 | Iron | Vanilla (`Tiers.IRON`) | 250 | 6.0 | 14 | 2 | `minecraft:iron_ingot` |
-| 6 | Blackstone (roca negra) | Confirmado | 270 | 6.5 | 9 | 2 | `minecraft:blackstone` |
-| 7 | Gold | Vanilla (`Tiers.GOLD`) | 32 | 12.0 | 22 | 0 | `minecraft:gold_ingot` |
-| 8 | Diamond | Vanilla (`Tiers.DIAMOND`) | 1561 | 8.0 | 10 | 3 | `minecraft:diamond` |
-| 9 | Obsidian | Confirmado | 1800 | 7.0 | 12 | 3 | `minecraft:obsidian` |
-| 10 | Netherite | Vanilla (`Tiers.NETHERITE`) | 2031 | 9.0 | 15 | 4 | `minecraft:netherite_ingot` |
-
-Justificación de las propuestas:
-- **Copper**: entre Stone e Iron — se obtiene con esfuerzo similar (necesita horno), algo más accesible que hierro.
-- **Deepslate**: ligeramente por encima de Copper — material denso (en vanilla tarda ~3× más que stone en romperse a mano), pero sigue siendo temprano/medio.
-- **Blackstone**: justo por encima de Iron — requiere acceso al Nether, en paralelo a la carrera del oro.
-- **Obsidian**: entre Diamond y Netherite — solo se puede minar con pico de diamante o superior en vanilla, coherente con ser un tier tardío; velocidad más baja que diamante (material denso/pesado) pero muy duradero.
-
-Gold mantiene su rareza vanilla (baja durabilidad, alta velocidad, alta encantabilidad) — no se "arregla", es intencional en el juego base.
+| 1 | Stone | Vanilla (`ToolMaterial.STONE`) | 131 | 4.0 | 5 | 1 | `#minecraft:stone_tool_materials` |
+| 2 | Iron | Vanilla (`ToolMaterial.IRON`) | 250 | 6.0 | 14 | 2 | `minecraft:iron_ingot` |
+| 3 | Diamond | Vanilla (`ToolMaterial.DIAMOND`) | 1561 | 8.0 | 10 | 3 | `minecraft:diamond` |
 
 ## Nota de implementación clave (materiales vanilla)
 
-Para los 6 materiales con tier vanilla, **no redefinir stats a mano**: registrar usando directamente `net.minecraft.world.item.Tiers` (`Tiers.WOOD/STONE/IRON/GOLD/DIAMOND/NETHERITE`) como `Tier` de `PickaxeItem`/`ShovelItem`, igual que vanilla. Para los 4 materiales nuevos, crear un `SimpleTier`/`Tier` propio por material con los valores confirmados de la tabla.
+Los 3 materiales usan tier vanilla directo (`net.minecraft.world.item.ToolMaterial`): `ToolMaterial.STONE`, `ToolMaterial.IRON`, `ToolMaterial.DIAMOND`. No hay materiales personalizados registrados en `ModToolMaterials.java`.
 
 ## Grados y minado en área (AoE)
 

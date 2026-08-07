@@ -8,9 +8,9 @@
 
 | Categoría | Cantidad | Formato |
 |---|:---:|---|
-| ⛏️ Texturas de herramienta (pico + pala × 10 materiales × 4 grados) | 80 | PNG · 16×16 px exactos · fondo transparente |
+| ⛏️ Texturas de herramienta (pico + pala × 3 materiales × 4 grados) | 24 | PNG · 16×16 px exactos · fondo transparente |
 | 🪵 Textura del nuevo item *Palo Robusto* | 1 | PNG · 16×16 px exactos · fondo transparente |
-| **Total** | **81** | |
+| **Total** | **25** | |
 
 El icono del mod y el banner promocional **ya están hechos** — no forman parte de lo que queda pendiente.
 

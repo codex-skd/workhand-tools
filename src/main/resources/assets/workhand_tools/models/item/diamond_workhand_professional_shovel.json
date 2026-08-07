@@ -1,6 +1,6 @@
-﻿{
-    "textures":  {
-                     "layer0":  "minecraft:item/diamond_shovel"
-                 },
-    "parent":  "minecraft:item/handheld"
+{
+    "textures": {
+        "layer0": "workhand_tools:item/diamond_workhand_professional_shovel"
+    },
+    "parent": "minecraft:item/handheld"
 }

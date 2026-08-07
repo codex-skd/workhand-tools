@@ -1,7 +1,7 @@
 # Prompts de imagen — Workhand Tools
 
 > Prompts para generación de arte (logo del mod) con modelos de imagen (Midjourney, DALL-E, GPT Image, Stable Diffusion, etc.). Los prompts se escriben en inglés porque los modelos de imagen rinden mejor con prompts en inglés, aunque el resto de esta doc es en castellano.
-> **Decisión (v2)**: diseñar arte propio para las 80 texturas de herramienta de golpe no es viable ahora mismo (demasiado tiempo). Fase temporal: **reutilizar texturas vanilla existentes** como placeholder — ver `## Texturas de herramientas (placeholder vanilla)`. Los prompts de generación de arte custom quedan pospuestos a una fase futura (`## Fase futura — arte custom`), no se descartan.
+> **Decisión (v3)**: El mod ahora solo tiene 24 texturas de herramienta (3 materiales × 4 grados × 2 herramientas). Cada textura tiene su propio archivo PNG placeholder en `textures/item/`. Los archivos están listos para que el diseñador los reemplace con arte final — no requiere cambios de código.
 
 ## Logo del mod
 
@@ -27,17 +27,42 @@ A square Minecraft mod icon, strict flat pixel-art style with visible hard-edged
 - Si sale demasiado "3D/render" (photorealistic metal, reflejos de estudio), refuerza `flat colors, cel-shaded, not photorealistic, not 3D render, illustration only`.
 - El badge circular/hexagonal de fondo en la variante principal es opcional — quítalo del prompt (`with a thin circular or hexagonal badge outline behind them...`) si prefieres las herramientas sueltas sin marco, más parecido al banner que ya tienes.
 
-## Texturas de herramientas (placeholder vanilla)
+## Texturas de herramientas (archivos PNG locales)
 
-Los 80 items **no llevan textura propia por ahora**: el modelo de cada item apunta directamente a la textura vanilla del pico/pala más parecido, referenciando el namespace `minecraft:` desde el modelo del mod (no hace falta copiar ni duplicar el `.png`, solo el JSON de modelo referencia la textura vanilla). Los 4 grados de un mismo material comparten la misma textura placeholder — no hay diferenciación visual por grado en esta fase (se retoma en la fase futura de arte custom).
+Los 24 items tienen su propio archivo PNG en `textures/item/`. Los nombres de archivo son exactos y no requieren cambios de código cuando el diseñador proporcione arte final.
 
-| Material | Textura vanilla reutilizada (pico) | Textura vanilla reutilizada (pala) |
-|---|---|---|
-| Wood | `minecraft:item/wooden_pickaxe` | `minecraft:item/wooden_shovel` |
-| Stone | `minecraft:item/stone_pickaxe` | `minecraft:item/stone_shovel` |
-| Copper | `minecraft:item/iron_pickaxe` *(sin equivalente vanilla, se reutiliza hierro por tono metálico similar)* | `minecraft:item/iron_shovel` |
-| Deepslate | `minecraft:item/stone_pickaxe` *(sin equivalente vanilla, se reutiliza piedra)* | `minecraft:item/stone_shovel` |
-| Iron | `minecraft:item/iron_pickaxe` | `minecraft:item/iron_shovel` |
+**Stone (8 texturas):**
+- `stone_workhand_pickaxe.png` — pico grado 1
+- `stone_workhand_advanced_pickaxe.png` — pico grado 2
+- `stone_workhand_expert_pickaxe.png` — pico grado 3
+- `stone_workhand_professional_pickaxe.png` — pico grado 4
+- `stone_workhand_shovel.png` — pala grado 1
+- `stone_workhand_advanced_shovel.png` — pala grado 2
+- `stone_workhand_expert_shovel.png` — pala grado 3
+- `stone_workhand_professional_shovel.png` — pala grado 4
+
+**Iron (8 texturas):**
+- `iron_workhand_pickaxe.png` — pico grado 1
+- `iron_workhand_advanced_pickaxe.png` — pico grado 2
+- `iron_workhand_expert_pickaxe.png` — pico grado 3
+- `iron_workhand_professional_pickaxe.png` — pico grado 4
+- `iron_workhand_shovel.png` — pala grado 1
+- `iron_workhand_advanced_shovel.png` — pala grado 2
+- `iron_workhand_expert_shovel.png` — pala grado 3
+- `iron_workhand_professional_shovel.png` — pala grado 4
+
+**Diamond (8 texturas):**
+- `diamond_workhand_pickaxe.png` — pico grado 1
+- `diamond_workhand_advanced_pickaxe.png` — pico grado 2
+- `diamond_workhand_expert_pickaxe.png` — pico grado 3
+- `diamond_workhand_professional_pickaxe.png` — pico grado 4
+- `diamond_workhand_shovel.png` — pala grado 1
+- `diamond_workhand_advanced_shovel.png` — pala grado 2
+- `diamond_workhand_expert_shovel.png` — pala grado 3
+- `diamond_workhand_professional_shovel.png` — pala grado 4
+
+**Robust Stick (1 textura):**
+- `robust_stick.png`
 | Blackstone | `minecraft:item/netherite_pickaxe` *(sin equivalente vanilla, se reutiliza netherite por tono oscuro)* | `minecraft:item/netherite_shovel` |
 | Gold | `minecraft:item/golden_pickaxe` | `minecraft:item/golden_shovel` |
 | Diamond | `minecraft:item/diamond_pickaxe` | `minecraft:item/diamond_shovel` |

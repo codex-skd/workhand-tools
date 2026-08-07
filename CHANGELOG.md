@@ -1,5 +1,25 @@
 # Changelog — Workhand Tools
 
+## [0.0.0-beta.10] - 2026-08-07
+
+### Breaking Change
+
+- **Material scope reduction: 10 → 3 materials** (80 items → 24 items). Removed Wooden, Copper, Deepslate, Blackstone, Gold, Obsidian, and Netherite materials entirely. Kept only Stone, Iron, and Diamond — all 4 grades per material remain (24 tools + robust_stick = 25 items total).
+
+### Feature
+
+- **Local PNG texture files for all items**: Created 25 dedicated PNG files in `textures/item/` directory. Each file has exact naming pattern ready for designer art replacement (e.g., `stone_workhand_pickaxe.png`, `iron_workhand_advanced_shovel.png`, `diamond_workhand_expert_pickaxe.png`, `robust_stick.png`). Placeholder PNGs are 16×16 px with material-specific colors; designer can replace files directly without any code changes needed.
+
+### Refactor
+
+- **Java code cleanup**: `ModItems.java` MATERIALS list reduced from 10 to 3 entries. `ModToolMaterials.java` stripped to empty (no custom materials needed for vanilla Stone/Iron/Diamond tiers).
+- **JSON assets trimmed**: 56 model JSON files, 56 recipe JSON files, and corresponding tag entries removed for deleted materials. Remaining 25 models now reference local PNG textures instead of vanilla placeholders.
+- **Documentation updated**: `DESIGN_WORKHAND_TOOLS.md`, `ASSET_LIST_WORKHAND_TOOLS.md`, `ASSET_PROMPTS_WORKHAND_TOOLS.md` all updated to reflect 3-material scope and local texture approach.
+
+### Note
+
+This beta closes scope to 3 core materials for focused art delivery. All gameplay mechanics (AoE mining, enchantments, durability, recipes) remain fully functional on remaining materials and grades. Worlds from beta.9 will lose the 56 removed items but existing crafted Stone/Iron/Diamond tools remain playable.
+
 ## [0.0.0-beta.9] - 2026-08-06
 
 ### Feature
