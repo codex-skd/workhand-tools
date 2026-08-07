@@ -2,50 +2,170 @@ package com.skd.workhandtools;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.function.BiFunction;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.ToolMaterial;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredItem;
 
 public final class ModItems {
     private ModItems() {
     }
 
-    private static final Map<String, DeferredHolder<Item, ? extends Item>> BY_ID = new LinkedHashMap<>();
+    private static final Map<String, DeferredHolder<Item, ? extends Item>> BY_ID = new HashMap<>();
     private static final Map<Item, Grade> ITEM_GRADES = new HashMap<>();
-
-    private record MaterialData(String prefix, String displayName, ToolMaterial material, boolean fireResistant) {
-    }
-
-    private static final List<MaterialData> MATERIALS = List.of(
-            new MaterialData("stone", "Stone", ToolMaterial.STONE, false),
-            new MaterialData("iron", "Iron", ToolMaterial.IRON, false),
-            new MaterialData("diamond", "Diamond", ToolMaterial.DIAMOND, false));
-
-    private record GradeData(String suffix, String displaySuffix) {
-    }
-
-    private static final List<GradeData> GRADES = List.of(
-            new GradeData("", ""),
-            new GradeData("advanced", " Advanced"),
-            new GradeData("expert", " Expert"),
-            new GradeData("professional", " Professional"));
 
     public static final DeferredHolder<Item, ? extends Item> ROBUST_STICK =
             WorkhandTools.ITEMS.registerItem("robust_stick", Item::new, Item.Properties::new);
 
-    // Creative tab order: pickaxes first, then shovels; within each tool by material
-    // progression (Wood -> Netherite) and by grade ascending (1 -> 4).
-    public static final List<DeferredHolder<Item, ? extends Item>> PICKAXES =
-            registerTools("pickaxe", "Pickaxe", (material, properties) -> new Item(properties.pickaxe(material, 1.0F, -2.8F)));
-    public static final List<DeferredHolder<Item, ? extends Item>> SHOVELS =
-            registerTools("shovel", "Shovel", (material, properties) -> new ShovelItem(material, 1.5F, -3.0F, properties));
+    // Stone Pickaxes
+    public static final DeferredItem<WorkhandPickaxeItem> STONE_WORKHAND_PICKAXE =
+            WorkhandTools.ITEMS.registerItem("stone_workhand_pickaxe",
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.STONE, 1.0F, -2.8F));
+
+    public static final DeferredItem<WorkhandPickaxeItem> STONE_WORKHAND_ADVANCED_PICKAXE =
+            WorkhandTools.ITEMS.registerItem("stone_workhand_advanced_pickaxe",
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.STONE, 1.0F, -2.8F));
+
+    public static final DeferredItem<WorkhandPickaxeItem> STONE_WORKHAND_EXPERT_PICKAXE =
+            WorkhandTools.ITEMS.registerItem("stone_workhand_expert_pickaxe",
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.STONE, 1.0F, -2.8F));
+
+    public static final DeferredItem<WorkhandPickaxeItem> STONE_WORKHAND_PROFESSIONAL_PICKAXE =
+            WorkhandTools.ITEMS.registerItem("stone_workhand_professional_pickaxe",
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.STONE, 1.0F, -2.8F));
+
+    // Iron Pickaxes
+    public static final DeferredItem<WorkhandPickaxeItem> IRON_WORKHAND_PICKAXE =
+            WorkhandTools.ITEMS.registerItem("iron_workhand_pickaxe",
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.IRON, 1.0F, -2.8F));
+
+    public static final DeferredItem<WorkhandPickaxeItem> IRON_WORKHAND_ADVANCED_PICKAXE =
+            WorkhandTools.ITEMS.registerItem("iron_workhand_advanced_pickaxe",
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.IRON, 1.0F, -2.8F));
+
+    public static final DeferredItem<WorkhandPickaxeItem> IRON_WORKHAND_EXPERT_PICKAXE =
+            WorkhandTools.ITEMS.registerItem("iron_workhand_expert_pickaxe",
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.IRON, 1.0F, -2.8F));
+
+    public static final DeferredItem<WorkhandPickaxeItem> IRON_WORKHAND_PROFESSIONAL_PICKAXE =
+            WorkhandTools.ITEMS.registerItem("iron_workhand_professional_pickaxe",
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.IRON, 1.0F, -2.8F));
+
+    // Diamond Pickaxes
+    public static final DeferredItem<WorkhandPickaxeItem> DIAMOND_WORKHAND_PICKAXE =
+            WorkhandTools.ITEMS.registerItem("diamond_workhand_pickaxe",
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.DIAMOND, 1.0F, -2.8F));
+
+    public static final DeferredItem<WorkhandPickaxeItem> DIAMOND_WORKHAND_ADVANCED_PICKAXE =
+            WorkhandTools.ITEMS.registerItem("diamond_workhand_advanced_pickaxe",
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.DIAMOND, 1.0F, -2.8F));
+
+    public static final DeferredItem<WorkhandPickaxeItem> DIAMOND_WORKHAND_EXPERT_PICKAXE =
+            WorkhandTools.ITEMS.registerItem("diamond_workhand_expert_pickaxe",
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.DIAMOND, 1.0F, -2.8F));
+
+    public static final DeferredItem<WorkhandPickaxeItem> DIAMOND_WORKHAND_PROFESSIONAL_PICKAXE =
+            WorkhandTools.ITEMS.registerItem("diamond_workhand_professional_pickaxe",
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.DIAMOND, 1.0F, -2.8F));
+
+    // Stone Shovels
+    public static final DeferredHolder<Item, ? extends Item> STONE_WORKHAND_SHOVEL =
+            WorkhandTools.ITEMS.registerItem("stone_workhand_shovel",
+                    props -> new ShovelItem(ToolMaterial.STONE, 1.5F, -3.0F, props),
+                    () -> new Item.Properties());
+
+    public static final DeferredHolder<Item, ? extends Item> STONE_WORKHAND_ADVANCED_SHOVEL =
+            WorkhandTools.ITEMS.registerItem("stone_workhand_advanced_shovel",
+                    props -> new ShovelItem(ToolMaterial.STONE, 1.5F, -3.0F, props),
+                    () -> new Item.Properties());
+
+    public static final DeferredHolder<Item, ? extends Item> STONE_WORKHAND_EXPERT_SHOVEL =
+            WorkhandTools.ITEMS.registerItem("stone_workhand_expert_shovel",
+                    props -> new ShovelItem(ToolMaterial.STONE, 1.5F, -3.0F, props),
+                    () -> new Item.Properties());
+
+    public static final DeferredHolder<Item, ? extends Item> STONE_WORKHAND_PROFESSIONAL_SHOVEL =
+            WorkhandTools.ITEMS.registerItem("stone_workhand_professional_shovel",
+                    props -> new ShovelItem(ToolMaterial.STONE, 1.5F, -3.0F, props),
+                    () -> new Item.Properties());
+
+    // Iron Shovels
+    public static final DeferredHolder<Item, ? extends Item> IRON_WORKHAND_SHOVEL =
+            WorkhandTools.ITEMS.registerItem("iron_workhand_shovel",
+                    props -> new ShovelItem(ToolMaterial.IRON, 1.5F, -3.0F, props),
+                    () -> new Item.Properties());
+
+    public static final DeferredHolder<Item, ? extends Item> IRON_WORKHAND_ADVANCED_SHOVEL =
+            WorkhandTools.ITEMS.registerItem("iron_workhand_advanced_shovel",
+                    props -> new ShovelItem(ToolMaterial.IRON, 1.5F, -3.0F, props),
+                    () -> new Item.Properties());
+
+    public static final DeferredHolder<Item, ? extends Item> IRON_WORKHAND_EXPERT_SHOVEL =
+            WorkhandTools.ITEMS.registerItem("iron_workhand_expert_shovel",
+                    props -> new ShovelItem(ToolMaterial.IRON, 1.5F, -3.0F, props),
+                    () -> new Item.Properties());
+
+    public static final DeferredHolder<Item, ? extends Item> IRON_WORKHAND_PROFESSIONAL_SHOVEL =
+            WorkhandTools.ITEMS.registerItem("iron_workhand_professional_shovel",
+                    props -> new ShovelItem(ToolMaterial.IRON, 1.5F, -3.0F, props),
+                    () -> new Item.Properties());
+
+    // Diamond Shovels
+    public static final DeferredHolder<Item, ? extends Item> DIAMOND_WORKHAND_SHOVEL =
+            WorkhandTools.ITEMS.registerItem("diamond_workhand_shovel",
+                    props -> new ShovelItem(ToolMaterial.DIAMOND, 1.5F, -3.0F, props),
+                    () -> new Item.Properties());
+
+    public static final DeferredHolder<Item, ? extends Item> DIAMOND_WORKHAND_ADVANCED_SHOVEL =
+            WorkhandTools.ITEMS.registerItem("diamond_workhand_advanced_shovel",
+                    props -> new ShovelItem(ToolMaterial.DIAMOND, 1.5F, -3.0F, props),
+                    () -> new Item.Properties());
+
+    public static final DeferredHolder<Item, ? extends Item> DIAMOND_WORKHAND_EXPERT_SHOVEL =
+            WorkhandTools.ITEMS.registerItem("diamond_workhand_expert_shovel",
+                    props -> new ShovelItem(ToolMaterial.DIAMOND, 1.5F, -3.0F, props),
+                    () -> new Item.Properties());
+
+    public static final DeferredHolder<Item, ? extends Item> DIAMOND_WORKHAND_PROFESSIONAL_SHOVEL =
+            WorkhandTools.ITEMS.registerItem("diamond_workhand_professional_shovel",
+                    props -> new ShovelItem(ToolMaterial.DIAMOND, 1.5F, -3.0F, props),
+                    () -> new Item.Properties());
+
+    // Lists for creative tab and utility
+    public static final List<DeferredHolder<Item, ? extends Item>> PICKAXES = List.of(
+            STONE_WORKHAND_PICKAXE,
+            STONE_WORKHAND_ADVANCED_PICKAXE,
+            STONE_WORKHAND_EXPERT_PICKAXE,
+            STONE_WORKHAND_PROFESSIONAL_PICKAXE,
+            IRON_WORKHAND_PICKAXE,
+            IRON_WORKHAND_ADVANCED_PICKAXE,
+            IRON_WORKHAND_EXPERT_PICKAXE,
+            IRON_WORKHAND_PROFESSIONAL_PICKAXE,
+            DIAMOND_WORKHAND_PICKAXE,
+            DIAMOND_WORKHAND_ADVANCED_PICKAXE,
+            DIAMOND_WORKHAND_EXPERT_PICKAXE,
+            DIAMOND_WORKHAND_PROFESSIONAL_PICKAXE
+    );
+
+    public static final List<DeferredHolder<Item, ? extends Item>> SHOVELS = List.of(
+            STONE_WORKHAND_SHOVEL,
+            STONE_WORKHAND_ADVANCED_SHOVEL,
+            STONE_WORKHAND_EXPERT_SHOVEL,
+            STONE_WORKHAND_PROFESSIONAL_SHOVEL,
+            IRON_WORKHAND_SHOVEL,
+            IRON_WORKHAND_ADVANCED_SHOVEL,
+            IRON_WORKHAND_EXPERT_SHOVEL,
+            IRON_WORKHAND_PROFESSIONAL_SHOVEL,
+            DIAMOND_WORKHAND_SHOVEL,
+            DIAMOND_WORKHAND_ADVANCED_SHOVEL,
+            DIAMOND_WORKHAND_EXPERT_SHOVEL,
+            DIAMOND_WORKHAND_PROFESSIONAL_SHOVEL
+    );
 
     public static DeferredHolder<Item, ? extends Item> get(String id) {
         return BY_ID.get(id);
@@ -57,63 +177,5 @@ public final class ModItems {
 
     public static Grade gradeOf(ItemStack stack) {
         return stack.isEmpty() ? null : ITEM_GRADES.get(stack.getItem());
-    }
-
-    // Populated once the registry is filled (from commonSetup). Holder order is
-    // material-major, grade-minor, so grade is index modulo grade count.
-    static void buildLookups() {
-        try {
-            for (int i = 0; i < PICKAXES.size(); i++) {
-                DeferredHolder<Item, ? extends Item> holder = PICKAXES.get(i);
-                if (holder != null && holder.isBound()) {
-                    Item item = holder.get();
-                    if (item != null) {
-                        ITEM_GRADES.put(item, Grade.values()[i % GRADES.size()]);
-                    }
-                }
-            }
-            for (int i = 0; i < SHOVELS.size(); i++) {
-                DeferredHolder<Item, ? extends Item> holder = SHOVELS.get(i);
-                if (holder != null && holder.isBound()) {
-                    Item item = holder.get();
-                    if (item != null) {
-                        ITEM_GRADES.put(item, Grade.values()[i % GRADES.size()]);
-                    }
-                }
-            }
-        } catch (Exception e) {
-            throw new RuntimeException("Failed to build lookups", e);
-        }
-    }
-
-    private static List<DeferredHolder<Item, ? extends Item>> registerTools(
-            String tool, String toolDisplayName, BiFunction<ToolMaterial, Item.Properties, ? extends Item> factory) {
-        List<DeferredHolder<Item, ? extends Item>> holders = new ArrayList<>();
-        for (MaterialData material : MATERIALS) {
-            for (GradeData grade : GRADES) {
-                String id = id(material, grade, tool);
-                ToolMaterial toolMaterial = material.material();
-                boolean fireResistant = material.fireResistant();
-                // registerItem sets the item id on Item.Properties before the factory runs (26.2 API);
-                // the plain register(String, Supplier) path leaves the id unset and throws "Item id not set".
-                DeferredHolder<Item, ? extends Item> holder = WorkhandTools.ITEMS.registerItem(
-                        id,
-                        (properties) -> factory.apply(toolMaterial, properties),
-                        () -> {
-                            Item.Properties properties = new Item.Properties();
-                            if (fireResistant) {
-                                properties.fireResistant();
-                            }
-                            return properties;
-                        });
-                holders.add(holder);
-                BY_ID.put(id, holder);
-            }
-        }
-        return holders;
-    }
-
-    static String id(MaterialData material, GradeData grade, String tool) {
-        return material.prefix() + "_workhand" + (grade.suffix().isEmpty() ? "" : "_" + grade.suffix()) + "_" + tool;
     }
 }
