@@ -1,5 +1,25 @@
 # Changelog — Workhand Tools
 
+## [1.0.0] - 2026-08-07
+
+### Release
+
+- **First stable release**: Workhand Tools 1.0.0 stable for Minecraft 26.2 + NeoForge 26.2.0.37-beta. Comprehensive tool system with 25 items across 3 materials (Stone, Iron, Diamond) and 4 grades each. All items render with production-quality textures, support vanilla tooling mechanics (durability, enchantments, AoE mining), and integrate seamlessly with creative inventory and crafting recipes.
+
+### Included Features
+
+- 12 pickaxes (3 materials × 4 grades) + 12 shovels (3 materials × 4 grades)
+- Robust Stick crafting component with custom texture
+- Area mining (AoE) progression: Grade 1 = 3×3, Grade 2 = 5×5 sparse, Grade 3 = 5×5 solid, Grade 4 = 7×7 sparse
+- Vanilla durability, enchantability, and attack speed matching Stone/Iron/Diamond respectively
+- Full enchantment support (Sharpness, Unbreaking, Mending, etc.)
+- Custom creative tab with all tools organized by type and material
+- Production-quality pixel art textures with material and grade differentiation
+
+### Scope
+
+This release focuses on core tooling functionality. Materials narrowed to Stone, Iron, and Diamond for focused art delivery and stability. All 80+ tool variants from earlier alphas removed; remaining 25 items thoroughly tested and optimized.
+
 ## [0.0.0-beta.12] - 2026-08-07
 
 ### Fix
