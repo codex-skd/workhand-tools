@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1786127983.5787022,
-    "ast_hash": "aa3110ebe8eb41a0f7193f88a3575985",
+    "mtime": 1786128090.3357897,
+    "ast_hash": "f88e4e81b6cd879b0913be56843e3000",
     "semantic_hash": ""
   },
   "README.md": {
@@ -727,6 +727,11 @@
   "src/main/resources/assets/workhand_tools/textures/item/stone_workhand_shovel.png": {
     "mtime": 1786119615.1505277,
     "ast_hash": "c6682bd32f9fa456905fb7fa7503798c",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.0.0.md": {
+    "mtime": 1786128083.3095167,
+    "ast_hash": "12ae043612adaac99e739cc10983f7af",
     "semantic_hash": ""
   }
 }
