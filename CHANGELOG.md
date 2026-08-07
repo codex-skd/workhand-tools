@@ -1,5 +1,17 @@
 # Changelog — Workhand Tools
 
+## [0.0.0-beta.12] - 2026-08-07
+
+### Fix
+
+- **Item texture rendering**: All items (pickaxes, shovels, robust_stick) now display correct textures in creative inventory instead of magenta placeholders. Root cause: missing item model definition files in `assets/workhand_tools/items/`. Added 25 JSON files linking each item to its corresponding model geometry.
+
+### Technical
+
+- **WorkhandPickaxeItem**: New custom Item subclass for proper pickaxe initialization with vanilla tool properties.
+- **ModItems refactor**: Converted from generic loop-based registration to explicit individual `DeferredItem` declarations for clarity and correctness.
+- **Item definitions**: Created `assets/workhand_tools/items/*.json` for all 25 items, each defining the visual model reference in NeoForge 26.2 data component system.
+
 ## [0.0.0-beta.11] - 2026-08-07
 
 ### Feature
