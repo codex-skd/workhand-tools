@@ -24,16 +24,9 @@ public final class ModItems {
     }
 
     private static final List<MaterialData> MATERIALS = List.of(
-            new MaterialData("wooden", "Wooden", ToolMaterial.WOOD, false),
             new MaterialData("stone", "Stone", ToolMaterial.STONE, false),
-            new MaterialData("copper", "Copper", ModToolMaterials.COPPER, false),
-            new MaterialData("deepslate", "Deepslate", ModToolMaterials.DEEPSLATE, false),
             new MaterialData("iron", "Iron", ToolMaterial.IRON, false),
-            new MaterialData("blackstone", "Blackstone", ModToolMaterials.BLACKSTONE, false),
-            new MaterialData("golden", "Golden", ToolMaterial.GOLD, false),
-            new MaterialData("diamond", "Diamond", ToolMaterial.DIAMOND, false),
-            new MaterialData("obsidian", "Obsidian", ModToolMaterials.OBSIDIAN, false),
-            new MaterialData("netherite", "Netherite", ToolMaterial.NETHERITE, true));
+            new MaterialData("diamond", "Diamond", ToolMaterial.DIAMOND, false));
 
     private record GradeData(String suffix, String displaySuffix) {
     }
