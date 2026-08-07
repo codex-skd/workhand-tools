@@ -1,6 +1,6 @@
 # 🎨 Workhand Tools — Texturas necesarias para completar el mod
 
-> Descripción de las texturas que faltan para que Workhand Tools tenga arte propio. El mod ya funciona hoy con texturas vanilla de placeholder, así que nada de esto bloquea el desarrollo — es lo que queda por completar en la parte visual.
+> Descripción de las texturas que faltan para que Workhand Tools tenga arte propio. El mod ya funciona con texturas placeholder de 16×16 px — esto es lo que queda por completar en la parte visual.
 
 <br>
 
@@ -16,14 +16,14 @@ El icono del mod y el banner promocional **ya están hechos** — no forman part
 
 <br>
 
-## 📐 Especificación técnica (las 81 texturas de 16×16)
+## 📐 Especificación técnica (las 25 texturas de 16×16)
 
 - **16×16 px exactos** — es el tamaño real de renderizado de los iconos de item en Minecraft, no un múltiplo escalado.
 - Pixel art plano: sin antialiasing, sin degradados, bordes de píxel duros — el mismo estilo que las texturas vanilla del juego.
 - Fondo transparente (canal alfa).
 - Perspectiva vanilla: mango recto en la esquina inferior-izquierda, cabeza de la herramienta en diagonal ocupando la esquina superior-derecha.
-- El mango es **igual en las 80 herramientas** (madera clara, sin variación por material ni grado) — solo cambia la cabeza.
-- Referencia más rápida: abrir `wooden_pickaxe.png`, `stone_pickaxe.png`, `iron_pickaxe.png`, `golden_pickaxe.png`, `diamond_pickaxe.png`, `netherite_pickaxe.png` (y sus `_shovel`) del propio juego como punto de partida de forma y proporción.
+- El mango es **igual en las 24 herramientas** (madera clara, sin variación por material ni grado) — solo cambia la cabeza.
+- Referencia visual: abrir `stone_pickaxe.png`, `iron_pickaxe.png`, `diamond_pickaxe.png` (y sus `_shovel`) del propio juego como punto de partida de forma y proporción.
 
 <br>
 
@@ -31,16 +31,9 @@ El icono del mod y el banner promocional **ya están hechos** — no forman part
 
 | Material | Paleta | Notas |
 |---|---|---|
-| 🪵 Madera | Marrón tostado mate | Igual que la tabla de madera (`oak_planks`) |
-| 🪨 Piedra | Gris piedra granulado | Textura simple, sin brillo |
-| 🟠 Cobre | Naranja-cobrizo cálido | Leve brillo metálico, sin pátina verde |
-| ⚫ Pizarra | Gris carbón denso | Más oscuro y "compacto" que la piedra |
-| ⚪ Hierro | Plata clara | Brillo metálico sutil, sin llegar a blanco |
-| ⬛ Roca negra | Negro con motas violáceas | Más "roca" que "metal", mate |
-| 🟡 Oro | Amarillo dorado saturado | Brillo metálico en el filo |
-| 🔵 Diamante | Cian brillante | Reflejos angulares tipo cristal facetado |
-| 🟣 Obsidiana | Púrpura-negro cristalino | Más oscuro que el diamante, reflejos tipo vidrio |
-| ⬛ Netherita | Gunmetal casi negro | Sutil tinte violeta |
+| 🪨 Piedra | Gris piedra granulado | Textura simple, sin brillo; similar a vanilla stone_pickaxe |
+| ⚪ Hierro | Plata clara | Brillo metálico sutil, sin llegar a blanco; similar a vanilla iron_pickaxe |
+| 🔵 Diamante | Cian brillante | Reflejos angulares tipo cristal facetado; similar a vanilla diamond_pickaxe |
 
 <br>
 
@@ -65,103 +58,48 @@ Las 4 versiones de un mismo material deben distinguirse **a simple vista** en el
 
 <br>
 
-## ⛏️ Listado completo — 80 texturas de herramienta
+## ⛏️ Listado completo — 24 texturas de herramienta + 1 robust_stick
 
-Nombre de archivo final: `<archivo>` (columna **Archivo**). Orden: picos (1-40) primero, luego palas (41-80); dentro de cada tipo, por material (Madera → Netherita); dentro de cada material, por grado (Base → Profesional).
+**Nombre de archivo final**: `<archivo>` (columna **Archivo**). 
 
-<details>
-<summary><strong>▶ Ver las 80 filas (pulsa para desplegar)</strong></summary>
+Orden: picos (1-12) primero, luego palas (13-24); dentro de cada tipo, por material (Piedra → Diamante); dentro de cada material, por grado (Base → Profesional).
 
-| # | Archivo | Nombre en el juego (castellano) | Material | Grado |
-|---|---|---|---|---|
-| 1 | `wooden_workhand_pickaxe.png` | Pico de Obrero de Madera | Madera | Base |
-| 2 | `wooden_workhand_advanced_pickaxe.png` | Pico de Obrero Avanzado de Madera | Madera | Avanzado |
-| 3 | `wooden_workhand_expert_pickaxe.png` | Pico de Obrero Experto de Madera | Madera | Experto |
-| 4 | `wooden_workhand_professional_pickaxe.png` | Pico de Obrero Profesional de Madera | Madera | Profesional |
-| 5 | `stone_workhand_pickaxe.png` | Pico de Obrero de Piedra | Piedra | Base |
-| 6 | `stone_workhand_advanced_pickaxe.png` | Pico de Obrero Avanzado de Piedra | Piedra | Avanzado |
-| 7 | `stone_workhand_expert_pickaxe.png` | Pico de Obrero Experto de Piedra | Piedra | Experto |
-| 8 | `stone_workhand_professional_pickaxe.png` | Pico de Obrero Profesional de Piedra | Piedra | Profesional |
-| 9 | `copper_workhand_pickaxe.png` | Pico de Obrero de Cobre | Cobre | Base |
-| 10 | `copper_workhand_advanced_pickaxe.png` | Pico de Obrero Avanzado de Cobre | Cobre | Avanzado |
-| 11 | `copper_workhand_expert_pickaxe.png` | Pico de Obrero Experto de Cobre | Cobre | Experto |
-| 12 | `copper_workhand_professional_pickaxe.png` | Pico de Obrero Profesional de Cobre | Cobre | Profesional |
-| 13 | `deepslate_workhand_pickaxe.png` | Pico de Obrero de Pizarra | Pizarra | Base |
-| 14 | `deepslate_workhand_advanced_pickaxe.png` | Pico de Obrero Avanzado de Pizarra | Pizarra | Avanzado |
-| 15 | `deepslate_workhand_expert_pickaxe.png` | Pico de Obrero Experto de Pizarra | Pizarra | Experto |
-| 16 | `deepslate_workhand_professional_pickaxe.png` | Pico de Obrero Profesional de Pizarra | Pizarra | Profesional |
-| 17 | `iron_workhand_pickaxe.png` | Pico de Obrero de Hierro | Hierro | Base |
-| 18 | `iron_workhand_advanced_pickaxe.png` | Pico de Obrero Avanzado de Hierro | Hierro | Avanzado |
-| 19 | `iron_workhand_expert_pickaxe.png` | Pico de Obrero Experto de Hierro | Hierro | Experto |
-| 20 | `iron_workhand_professional_pickaxe.png` | Pico de Obrero Profesional de Hierro | Hierro | Profesional |
-| 21 | `blackstone_workhand_pickaxe.png` | Pico de Obrero de Roca negra | Roca negra | Base |
-| 22 | `blackstone_workhand_advanced_pickaxe.png` | Pico de Obrero Avanzado de Roca negra | Roca negra | Avanzado |
-| 23 | `blackstone_workhand_expert_pickaxe.png` | Pico de Obrero Experto de Roca negra | Roca negra | Experto |
-| 24 | `blackstone_workhand_professional_pickaxe.png` | Pico de Obrero Profesional de Roca negra | Roca negra | Profesional |
-| 25 | `golden_workhand_pickaxe.png` | Pico de Obrero de Oro | Oro | Base |
-| 26 | `golden_workhand_advanced_pickaxe.png` | Pico de Obrero Avanzado de Oro | Oro | Avanzado |
-| 27 | `golden_workhand_expert_pickaxe.png` | Pico de Obrero Experto de Oro | Oro | Experto |
-| 28 | `golden_workhand_professional_pickaxe.png` | Pico de Obrero Profesional de Oro | Oro | Profesional |
-| 29 | `diamond_workhand_pickaxe.png` | Pico de Obrero de Diamante | Diamante | Base |
-| 30 | `diamond_workhand_advanced_pickaxe.png` | Pico de Obrero Avanzado de Diamante | Diamante | Avanzado |
-| 31 | `diamond_workhand_expert_pickaxe.png` | Pico de Obrero Experto de Diamante | Diamante | Experto |
-| 32 | `diamond_workhand_professional_pickaxe.png` | Pico de Obrero Profesional de Diamante | Diamante | Profesional |
-| 33 | `obsidian_workhand_pickaxe.png` | Pico de Obrero de Obsidiana | Obsidiana | Base |
-| 34 | `obsidian_workhand_advanced_pickaxe.png` | Pico de Obrero Avanzado de Obsidiana | Obsidiana | Avanzado |
-| 35 | `obsidian_workhand_expert_pickaxe.png` | Pico de Obrero Experto de Obsidiana | Obsidiana | Experto |
-| 36 | `obsidian_workhand_professional_pickaxe.png` | Pico de Obrero Profesional de Obsidiana | Obsidiana | Profesional |
-| 37 | `netherite_workhand_pickaxe.png` | Pico de Obrero de Netherita | Netherita | Base |
-| 38 | `netherite_workhand_advanced_pickaxe.png` | Pico de Obrero Avanzado de Netherita | Netherita | Avanzado |
-| 39 | `netherite_workhand_expert_pickaxe.png` | Pico de Obrero Experto de Netherita | Netherita | Experto |
-| 40 | `netherite_workhand_professional_pickaxe.png` | Pico de Obrero Profesional de Netherita | Netherita | Profesional |
-| 41 | `wooden_workhand_shovel.png` | Pala de Obrero de Madera | Madera | Base |
-| 42 | `wooden_workhand_advanced_shovel.png` | Pala de Obrero Avanzado de Madera | Madera | Avanzado |
-| 43 | `wooden_workhand_expert_shovel.png` | Pala de Obrero Experto de Madera | Madera | Experto |
-| 44 | `wooden_workhand_professional_shovel.png` | Pala de Obrero Profesional de Madera | Madera | Profesional |
-| 45 | `stone_workhand_shovel.png` | Pala de Obrero de Piedra | Piedra | Base |
-| 46 | `stone_workhand_advanced_shovel.png` | Pala de Obrero Avanzado de Piedra | Piedra | Avanzado |
-| 47 | `stone_workhand_expert_shovel.png` | Pala de Obrero Experto de Piedra | Piedra | Experto |
-| 48 | `stone_workhand_professional_shovel.png` | Pala de Obrero Profesional de Piedra | Piedra | Profesional |
-| 49 | `copper_workhand_shovel.png` | Pala de Obrero de Cobre | Cobre | Base |
-| 50 | `copper_workhand_advanced_shovel.png` | Pala de Obrero Avanzado de Cobre | Cobre | Avanzado |
-| 51 | `copper_workhand_expert_shovel.png` | Pala de Obrero Experto de Cobre | Cobre | Experto |
-| 52 | `copper_workhand_professional_shovel.png` | Pala de Obrero Profesional de Cobre | Cobre | Profesional |
-| 53 | `deepslate_workhand_shovel.png` | Pala de Obrero de Pizarra | Pizarra | Base |
-| 54 | `deepslate_workhand_advanced_shovel.png` | Pala de Obrero Avanzado de Pizarra | Pizarra | Avanzado |
-| 55 | `deepslate_workhand_expert_shovel.png` | Pala de Obrero Experto de Pizarra | Pizarra | Experto |
-| 56 | `deepslate_workhand_professional_shovel.png` | Pala de Obrero Profesional de Pizarra | Pizarra | Profesional |
-| 57 | `iron_workhand_shovel.png` | Pala de Obrero de Hierro | Hierro | Base |
-| 58 | `iron_workhand_advanced_shovel.png` | Pala de Obrero Avanzado de Hierro | Hierro | Avanzado |
-| 59 | `iron_workhand_expert_shovel.png` | Pala de Obrero Experto de Hierro | Hierro | Experto |
-| 60 | `iron_workhand_professional_shovel.png` | Pala de Obrero Profesional de Hierro | Hierro | Profesional |
-| 61 | `blackstone_workhand_shovel.png` | Pala de Obrero de Roca negra | Roca negra | Base |
-| 62 | `blackstone_workhand_advanced_shovel.png` | Pala de Obrero Avanzado de Roca negra | Roca negra | Avanzado |
-| 63 | `blackstone_workhand_expert_shovel.png` | Pala de Obrero Experto de Roca negra | Roca negra | Experto |
-| 64 | `blackstone_workhand_professional_shovel.png` | Pala de Obrero Profesional de Roca negra | Roca negra | Profesional |
-| 65 | `golden_workhand_shovel.png` | Pala de Obrero de Oro | Oro | Base |
-| 66 | `golden_workhand_advanced_shovel.png` | Pala de Obrero Avanzado de Oro | Oro | Avanzado |
-| 67 | `golden_workhand_expert_shovel.png` | Pala de Obrero Experto de Oro | Oro | Experto |
-| 68 | `golden_workhand_professional_shovel.png` | Pala de Obrero Profesional de Oro | Oro | Profesional |
-| 69 | `diamond_workhand_shovel.png` | Pala de Obrero de Diamante | Diamante | Base |
-| 70 | `diamond_workhand_advanced_shovel.png` | Pala de Obrero Avanzado de Diamante | Diamante | Avanzado |
-| 71 | `diamond_workhand_expert_shovel.png` | Pala de Obrero Experto de Diamante | Diamante | Experto |
-| 72 | `diamond_workhand_professional_shovel.png` | Pala de Obrero Profesional de Diamante | Diamante | Profesional |
-| 73 | `obsidian_workhand_shovel.png` | Pala de Obrero de Obsidiana | Obsidiana | Base |
-| 74 | `obsidian_workhand_advanced_shovel.png` | Pala de Obrero Avanzado de Obsidiana | Obsidiana | Avanzado |
-| 75 | `obsidian_workhand_expert_shovel.png` | Pala de Obrero Experto de Obsidiana | Obsidiana | Experto |
-| 76 | `obsidian_workhand_professional_shovel.png` | Pala de Obrero Profesional de Obsidiana | Obsidiana | Profesional |
-| 77 | `netherite_workhand_shovel.png` | Pala de Obrero de Netherita | Netherita | Base |
-| 78 | `netherite_workhand_advanced_shovel.png` | Pala de Obrero Avanzado de Netherita | Netherita | Avanzado |
-| 79 | `netherite_workhand_expert_shovel.png` | Pala de Obrero Experto de Netherita | Netherita | Experto |
-| 80 | `netherite_workhand_professional_shovel.png` | Pala de Obrero Profesional de Netherita | Netherita | Profesional |
-
-</details>
+| # | Archivo | Nombre en el juego (English) | Material | Grado | Tipo |
+|---|---|---|---|---|---|
+| **PICKAXES** | | | | | |
+| 1 | `stone_workhand_pickaxe.png` | Stone Workhand Pickaxe | Piedra | Base | Pico |
+| 2 | `stone_workhand_advanced_pickaxe.png` | Stone Workhand Advanced Pickaxe | Piedra | Avanzado | Pico |
+| 3 | `stone_workhand_expert_pickaxe.png` | Stone Workhand Expert Pickaxe | Piedra | Experto | Pico |
+| 4 | `stone_workhand_professional_pickaxe.png` | Stone Workhand Professional Pickaxe | Piedra | Profesional | Pico |
+| 5 | `iron_workhand_pickaxe.png` | Iron Workhand Pickaxe | Hierro | Base | Pico |
+| 6 | `iron_workhand_advanced_pickaxe.png` | Iron Workhand Advanced Pickaxe | Hierro | Avanzado | Pico |
+| 7 | `iron_workhand_expert_pickaxe.png` | Iron Workhand Expert Pickaxe | Hierro | Experto | Pico |
+| 8 | `iron_workhand_professional_pickaxe.png` | Iron Workhand Professional Pickaxe | Hierro | Profesional | Pico |
+| 9 | `diamond_workhand_pickaxe.png` | Diamond Workhand Pickaxe | Diamante | Base | Pico |
+| 10 | `diamond_workhand_advanced_pickaxe.png` | Diamond Workhand Advanced Pickaxe | Diamante | Avanzado | Pico |
+| 11 | `diamond_workhand_expert_pickaxe.png` | Diamond Workhand Expert Pickaxe | Diamante | Experto | Pico |
+| 12 | `diamond_workhand_professional_pickaxe.png` | Diamond Workhand Professional Pickaxe | Diamante | Profesional | Pico |
+| **SHOVELS** | | | | | |
+| 13 | `stone_workhand_shovel.png` | Stone Workhand Shovel | Piedra | Base | Pala |
+| 14 | `stone_workhand_advanced_shovel.png` | Stone Workhand Advanced Shovel | Piedra | Avanzado | Pala |
+| 15 | `stone_workhand_expert_shovel.png` | Stone Workhand Expert Shovel | Piedra | Experto | Pala |
+| 16 | `stone_workhand_professional_shovel.png` | Stone Workhand Professional Shovel | Piedra | Profesional | Pala |
+| 17 | `iron_workhand_shovel.png` | Iron Workhand Shovel | Hierro | Base | Pala |
+| 18 | `iron_workhand_advanced_shovel.png` | Iron Workhand Advanced Shovel | Hierro | Avanzado | Pala |
+| 19 | `iron_workhand_expert_shovel.png` | Iron Workhand Expert Shovel | Hierro | Experto | Pala |
+| 20 | `iron_workhand_professional_shovel.png` | Iron Workhand Professional Shovel | Hierro | Profesional | Pala |
+| 21 | `diamond_workhand_shovel.png` | Diamond Workhand Shovel | Diamante | Base | Pala |
+| 22 | `diamond_workhand_advanced_shovel.png` | Diamond Workhand Advanced Shovel | Diamante | Avanzado | Pala |
+| 23 | `diamond_workhand_expert_shovel.png` | Diamond Workhand Expert Shovel | Diamante | Experto | Pala |
+| 24 | `diamond_workhand_professional_shovel.png` | Diamond Workhand Professional Shovel | Diamante | Profesional | Pala |
+| **ITEM NUEVO** | | | | | |
+| 25 | `robust_stick.png` | Robust Stick | N/A | N/A | Palo |
 
 <br>
 
 ## 🌐 Tabla de traducciones (castellano → inglés)
 
-Los nombres de archivo y los nombres que se ven en el juego están siempre en inglés (convención del proyecto). El nombre en castellano de la tabla de arriba es una traducción de referencia, no el texto real del juego. Esta tabla traduce cada término a su equivalente real en el juego/código:
+Los nombres de archivo y los nombres que se ven en el juego están en inglés (convención del proyecto):
 
 | Castellano | Inglés (real, en código/juego) |
 |---|---|
@@ -171,16 +109,9 @@ Los nombres de archivo y los nombres que se ven en el juego están siempre en in
 | Pico | Pickaxe |
 | Pala | Shovel |
 | **Materiales** | |
-| Madera | Wood / `wooden` |
 | Piedra | Stone / `stone` |
-| Cobre | Copper / `copper` |
-| Pizarra | Deepslate / `deepslate` |
 | Hierro | Iron / `iron` |
-| Roca negra | Blackstone / `blackstone` |
-| Oro | Gold / `golden` |
 | Diamante | Diamond / `diamond` |
-| Obsidiana | Obsidian / `obsidian` |
-| Netherita | Netherite / `netherite` |
 | **Grados** | |
 | Base *(sin sufijo)* | Base *(no suffix)* |
 | Avanzado | Advanced |
@@ -195,5 +126,7 @@ Los nombres de archivo y los nombres que se ven en el juego están siempre en in
 
 - [x] Icono del mod
 - [x] Banner promocional
-- [ ] 80 texturas de herramienta
-- [ ] Textura de Palo Robusto
+- [ ] 24 texturas de herramienta (PNGs placeholders creados — listos para arte final)
+- [ ] 1 textura de Palo Robusto (PNG placeholder creado — listo para arte final)
+
+**Nota**: Los archivos PNG placeholder (16×16 px) están creados en `src/main/resources/assets/workhand_tools/textures/item/`. El diseñador puede reemplazarlos directamente sin cambios de código.
