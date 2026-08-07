@@ -36,7 +36,7 @@ public class WorkhandTools {
     // Icon: iron_workhand_pickaxe (grade 1).
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> WORKHAND_TAB = CREATIVE_MODE_TABS.register("workhand_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.workhand_tools"))
-            .icon(() -> ModItems.get("iron_workhand_pickaxe").get().getDefaultInstance())
+            .icon(() -> ModItems.IRON_WORKHAND_PICKAXE.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 for (DeferredHolder<Item, ? extends Item> holder : ModItems.PICKAXES) {
                     output.accept(holder.get());
