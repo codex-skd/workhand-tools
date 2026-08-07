@@ -1,5 +1,18 @@
 # Changelog — Workhand Tools
 
+## [0.0.0-beta.11] - 2026-08-07
+
+### Feature
+
+- **Custom texture assets integrated**: All 25 PNG texture files (24 tools + robust_stick) with final designed art delivered and deployed. Stone, Iron, and Diamond tools now display distinct visual appearance with grade progression (1-4) visible at a glance. Robust Stick shows thickened handle with metal reinforcement band. Mod icon (64×64) updated to custom emblem. Replaces all placeholder PNGs with production-quality textures.
+
+### Visual
+
+- Icons now display custom pixel art in inventory, creative tab, hotbar, and held state
+- Material differentiation: stone (gray), iron (metallic silver), diamond (cyan crystalline)
+- Grade progression: base design → +reinforcements → +thicker outline → +brillo filo (grades 1-4)
+- All 16×16 textures render crisp and clear in-game
+
 ## [0.0.0-beta.10] - 2026-08-07
 
 ### Breaking Change
