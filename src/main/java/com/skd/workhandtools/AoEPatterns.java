@@ -15,7 +15,6 @@ public final class AoEPatterns {
         List<BlockPos> positions = new ArrayList<>();
         int half = grade.lateralHalf();
         int depth = grade.depth(mode);
-        int depthHalf = depth / 2;
         Direction facing = player.getDirection();
         Direction lateral = facing.getClockWise();
         int[] vertical = verticalOffsets(grade.height(), lookingUp);
@@ -23,7 +22,7 @@ public final class AoEPatterns {
         BlockPos.MutableBlockPos mutable = new BlockPos.MutableBlockPos();
         for (int dy : vertical) {
             for (int dx = -half; dx <= half; dx++) {
-                for (int dz = -depthHalf; dz <= depthHalf; dz++) {
+                for (int dz = 0; dz < depth; dz++) {
                     mutable.set(center).move(Direction.UP, dy).move(lateral, dx).move(facing, dz);
                     positions.add(mutable.immutable());
                 }
