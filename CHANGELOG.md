@@ -1,5 +1,26 @@
 # Changelog — Workhand Tools
 
+## [1.3.0] - 2026-08-08
+
+### Release
+
+- **Functional release**: All core features stable and working as intended. Consolidates all fixes from 1.2.x into a clean release.
+
+### Included Features
+
+- 12 pickaxes + 12 shovels across 3 materials x 4 grades
+- Area mining with adaptive direction: horizontal, vertical down, vertical up
+- Cubic / Flat mode toggle (right-click on Advanced & Professional)
+- White outline preview on solid blocks showing affected area
+- 10 language translations with descriptive tooltips
+- Full enchantment support matching vanilla material tiers
+
+## [1.2.3] - 2026-08-08
+
+### Fix
+
+- **Outline only on solid blocks**: Skip air blocks when rendering area preview. Cleaner look without empty wireframes.
+
 ## [1.2.2] - 2026-08-08
 
 ### Fix
