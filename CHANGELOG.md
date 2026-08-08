@@ -1,5 +1,12 @@
 # Changelog — Workhand Tools
 
+## [1.2.1] - 2026-08-08
+
+### Fix
+
+- **Highlight system rewritten**: Switched from `ExtractLevelRenderStateEvent` + gizmos to `SubmitCustomGeometryEvent` + `RenderTypes.LINES_TRANSLUCENT` + `submitCustomGeometry`. This renders soft white line borders around affected blocks — the same technique used by CoKTools. The previous gizmo-based approach would flicker or fail depending on update timing.
+- **Vertical threshold lowered**: Reduced from 60° to 50° for a more natural transition between horizontal and vertical mining modes.
+
 ## [1.2.0] - 2026-08-08
 
 ### Feature
