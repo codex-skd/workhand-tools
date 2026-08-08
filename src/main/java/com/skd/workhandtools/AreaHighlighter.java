@@ -66,6 +66,9 @@ public final class AreaHighlighter {
         poseStack.translate(-camPos.x, -camPos.y, -camPos.z);
 
         for (BlockPos pos : pattern) {
+            if (player.level().getBlockState(pos).isAir()) {
+                continue;
+            }
             VoxelShape shape = Shapes.create(new AABB(pos).inflate(0.002));
             event.getSubmitNodeCollector().submitShapeOutline(
                     poseStack,
