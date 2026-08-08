@@ -1,16 +1,16 @@
 # Graph Report - 26.2  (2026-08-08)
 
 ## Corpus Check
-- 137 files · ~18,828 words
+- 138 files · ~18,872 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 226 nodes · 252 edges · 40 communities (38 shown, 2 thin omitted)
+- 227 nodes · 252 edges · 41 communities (39 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `83ff6e2e`
+- Built from commit: `0daf5fd8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -60,7 +60,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (40 total, 2 thin omitted)
+## Communities (41 total, 2 thin omitted)
 
 ### Community 0 - "Block Break Handling"
 Cohesion: 0.16
@@ -143,7 +143,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `AoEMiningHandler` connect `Block Break Handling` to `Mod Initialization`?**
   _High betweenness centrality (0.042) - this node is a cross-community bridge._
 - **Why does `ModItems` connect `Item Data Management` to `Block Break Handling`?**
-  _High betweenness centrality (0.042) - this node is a cross-community bridge._
+  _High betweenness centrality (0.041) - this node is a cross-community bridge._
 - **What connects `CUBIC`, `FLAT`, `GRADE_1` to the rest of the system?**
   _78 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `AoE Mode` be split into smaller, more focused modules?**

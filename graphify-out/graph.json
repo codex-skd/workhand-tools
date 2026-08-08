@@ -473,7 +473,7 @@
       "label": ".register()",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/workhandtools/AreaHighlighter.java",
-      "source_location": "L82",
+      "source_location": "L85",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_areahighlighter_areahighlighter_register",
       "community": 7,
@@ -2270,6 +2270,16 @@
       "norm_label": "1.2.2.md"
     },
     {
+      "label": "1.2.3.md",
+      "file_type": "document",
+      "source_file": "docs/curseforge/versions/1.2.3.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_curseforge_versions_1_2_3",
+      "community": 40,
+      "norm_label": "1.2.3.md"
+    },
+    {
       "file_type": "image",
       "source_file": "src/main/resources/assets/workhand_tools/icon.png",
       "label": "Mod Icon",
@@ -3086,7 +3096,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/workhandtools/AreaHighlighter.java",
-      "source_location": "L87",
+      "source_location": "L90",
       "weight": 1.0,
       "context": "call",
       "source": "src_main_java_com_skd_workhandtools_areahighlighter_areahighlighter_register",
@@ -4912,5 +4922,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "83ff6e2ed774c94f3e8a4dbf1603fc6e148aa148"
+  "built_at_commit": "0daf5fd89a9ec371af6ca01fcd55c216960fd0d0"
 }
