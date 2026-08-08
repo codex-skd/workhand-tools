@@ -178,4 +178,60 @@ public final class ModItems {
     public static Grade gradeOf(ItemStack stack) {
         return stack.isEmpty() ? null : ITEM_GRADES.get(stack.getItem());
     }
+
+    static void buildLookups() {
+        BY_ID.put("robust_stick", ROBUST_STICK);
+
+        BY_ID.put("stone_workhand_pickaxe", STONE_WORKHAND_PICKAXE);
+        BY_ID.put("stone_workhand_advanced_pickaxe", STONE_WORKHAND_ADVANCED_PICKAXE);
+        BY_ID.put("stone_workhand_expert_pickaxe", STONE_WORKHAND_EXPERT_PICKAXE);
+        BY_ID.put("stone_workhand_professional_pickaxe", STONE_WORKHAND_PROFESSIONAL_PICKAXE);
+        BY_ID.put("iron_workhand_pickaxe", IRON_WORKHAND_PICKAXE);
+        BY_ID.put("iron_workhand_advanced_pickaxe", IRON_WORKHAND_ADVANCED_PICKAXE);
+        BY_ID.put("iron_workhand_expert_pickaxe", IRON_WORKHAND_EXPERT_PICKAXE);
+        BY_ID.put("iron_workhand_professional_pickaxe", IRON_WORKHAND_PROFESSIONAL_PICKAXE);
+        BY_ID.put("diamond_workhand_pickaxe", DIAMOND_WORKHAND_PICKAXE);
+        BY_ID.put("diamond_workhand_advanced_pickaxe", DIAMOND_WORKHAND_ADVANCED_PICKAXE);
+        BY_ID.put("diamond_workhand_expert_pickaxe", DIAMOND_WORKHAND_EXPERT_PICKAXE);
+        BY_ID.put("diamond_workhand_professional_pickaxe", DIAMOND_WORKHAND_PROFESSIONAL_PICKAXE);
+
+        BY_ID.put("stone_workhand_shovel", STONE_WORKHAND_SHOVEL);
+        BY_ID.put("stone_workhand_advanced_shovel", STONE_WORKHAND_ADVANCED_SHOVEL);
+        BY_ID.put("stone_workhand_expert_shovel", STONE_WORKHAND_EXPERT_SHOVEL);
+        BY_ID.put("stone_workhand_professional_shovel", STONE_WORKHAND_PROFESSIONAL_SHOVEL);
+        BY_ID.put("iron_workhand_shovel", IRON_WORKHAND_SHOVEL);
+        BY_ID.put("iron_workhand_advanced_shovel", IRON_WORKHAND_ADVANCED_SHOVEL);
+        BY_ID.put("iron_workhand_expert_shovel", IRON_WORKHAND_EXPERT_SHOVEL);
+        BY_ID.put("iron_workhand_professional_shovel", IRON_WORKHAND_PROFESSIONAL_SHOVEL);
+        BY_ID.put("diamond_workhand_shovel", DIAMOND_WORKHAND_SHOVEL);
+        BY_ID.put("diamond_workhand_advanced_shovel", DIAMOND_WORKHAND_ADVANCED_SHOVEL);
+        BY_ID.put("diamond_workhand_expert_shovel", DIAMOND_WORKHAND_EXPERT_SHOVEL);
+        BY_ID.put("diamond_workhand_professional_shovel", DIAMOND_WORKHAND_PROFESSIONAL_SHOVEL);
+
+        ITEM_GRADES.put(STONE_WORKHAND_PICKAXE.get(), Grade.GRADE_1);
+        ITEM_GRADES.put(STONE_WORKHAND_ADVANCED_PICKAXE.get(), Grade.GRADE_2);
+        ITEM_GRADES.put(STONE_WORKHAND_EXPERT_PICKAXE.get(), Grade.GRADE_3);
+        ITEM_GRADES.put(STONE_WORKHAND_PROFESSIONAL_PICKAXE.get(), Grade.GRADE_4);
+        ITEM_GRADES.put(IRON_WORKHAND_PICKAXE.get(), Grade.GRADE_1);
+        ITEM_GRADES.put(IRON_WORKHAND_ADVANCED_PICKAXE.get(), Grade.GRADE_2);
+        ITEM_GRADES.put(IRON_WORKHAND_EXPERT_PICKAXE.get(), Grade.GRADE_3);
+        ITEM_GRADES.put(IRON_WORKHAND_PROFESSIONAL_PICKAXE.get(), Grade.GRADE_4);
+        ITEM_GRADES.put(DIAMOND_WORKHAND_PICKAXE.get(), Grade.GRADE_1);
+        ITEM_GRADES.put(DIAMOND_WORKHAND_ADVANCED_PICKAXE.get(), Grade.GRADE_2);
+        ITEM_GRADES.put(DIAMOND_WORKHAND_EXPERT_PICKAXE.get(), Grade.GRADE_3);
+        ITEM_GRADES.put(DIAMOND_WORKHAND_PROFESSIONAL_PICKAXE.get(), Grade.GRADE_4);
+
+        ITEM_GRADES.put(STONE_WORKHAND_SHOVEL.get(), Grade.GRADE_1);
+        ITEM_GRADES.put(STONE_WORKHAND_ADVANCED_SHOVEL.get(), Grade.GRADE_2);
+        ITEM_GRADES.put(STONE_WORKHAND_EXPERT_SHOVEL.get(), Grade.GRADE_3);
+        ITEM_GRADES.put(STONE_WORKHAND_PROFESSIONAL_SHOVEL.get(), Grade.GRADE_4);
+        ITEM_GRADES.put(IRON_WORKHAND_SHOVEL.get(), Grade.GRADE_1);
+        ITEM_GRADES.put(IRON_WORKHAND_ADVANCED_SHOVEL.get(), Grade.GRADE_2);
+        ITEM_GRADES.put(IRON_WORKHAND_EXPERT_SHOVEL.get(), Grade.GRADE_3);
+        ITEM_GRADES.put(IRON_WORKHAND_PROFESSIONAL_SHOVEL.get(), Grade.GRADE_4);
+        ITEM_GRADES.put(DIAMOND_WORKHAND_SHOVEL.get(), Grade.GRADE_1);
+        ITEM_GRADES.put(DIAMOND_WORKHAND_ADVANCED_SHOVEL.get(), Grade.GRADE_2);
+        ITEM_GRADES.put(DIAMOND_WORKHAND_EXPERT_SHOVEL.get(), Grade.GRADE_3);
+        ITEM_GRADES.put(DIAMOND_WORKHAND_PROFESSIONAL_SHOVEL.get(), Grade.GRADE_4);
+    }
 }
