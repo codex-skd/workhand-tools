@@ -1,5 +1,11 @@
 # Changelog — Workhand Tools
 
+## [1.2.2] - 2026-08-08
+
+### Fix
+
+- **Area highlight crash fixed**: Replaced manual `VertexConsumer` line drawing with `submitShapeOutline`. The previous approach caused `Missing elements in vertex` crash because `LINES_TRANSLUCENT` requires additional vertex attributes (UV) not set by the custom draw calls. Using the built-in `SubmitNodeCollector.submitShapeOutline()` handles the vertex format correctly.
+
 ## [1.2.1] - 2026-08-08
 
 ### Fix
