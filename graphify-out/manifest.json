@@ -55,8 +55,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandToolsClient.java": {
-    "mtime": 1786147563.180103,
-    "ast_hash": "130f593a7d58ff8e8b6190ceecca770f",
+    "mtime": 1786148375.2503748,
+    "ast_hash": "da5f20bb7e3aa114feb2e0053e7f667c",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/en_us.json": {
@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1786147669.521145,
-    "ast_hash": "fd2b47224735a82c0dd28c93b8437ff2",
+    "mtime": 1786148405.8461916,
+    "ast_hash": "82e734d8ff4071b2fee8723d77d1af17",
     "semantic_hash": ""
   },
   "README.md": {
@@ -739,11 +739,6 @@
     "ast_hash": "dddef876d84b245f49d73b77eef93edc",
     "semantic_hash": ""
   },
-  "src/main/java/com/skd/workhandtools/AreaHighlighter.java": {
-    "mtime": 1786147559.1771169,
-    "ast_hash": "374f186f7cfb55f9f6441667ea01c22b",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/workhand_tools/lang/de_de.json": {
     "mtime": 1786147315.8054833,
     "ast_hash": "218de1dfebc7c2cf9fbd7ebbfd8142ce",
@@ -792,6 +787,11 @@
   "docs/curseforge/versions/1.1.0.md": {
     "mtime": 1786147680.8756936,
     "ast_hash": "445db7c105305bba9da9a795d09f262b",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.1.1.md": {
+    "mtime": 1786148412.7471695,
+    "ast_hash": "21cce28842adcd461d08ece560c46fd9",
     "semantic_hash": ""
   }
 }
