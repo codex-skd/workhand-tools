@@ -12,6 +12,5 @@ import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 public class WorkhandToolsClient {
     public WorkhandToolsClient(ModContainer container) {
         container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
-        AreaHighlighter.register();
     }
 }

@@ -1,5 +1,11 @@
 # Changelog — Workhand Tools
 
+## [1.1.1] - 2026-08-08
+
+### Fix
+
+- **Removed area preview highlight**: The `AreaHighlighter` caused a crash on startup (`Cannot register listeners for abstract class RenderLevelStageEvent`). In NeoForge 26.2, `RenderLevelStageEvent` is abstract with concrete subclasses (`AfterSky`, `AfterTranslucentBlocks`, etc.), and the gizmos system is inaccessible from render-level events (gizmos are collected during the extract phase before rendering). The highlight feature will be reimplemented using `SubmitCustomGeometryEvent` in a future version.
+
 ## [1.1.0] - 2026-08-08
 
 ### Fix
