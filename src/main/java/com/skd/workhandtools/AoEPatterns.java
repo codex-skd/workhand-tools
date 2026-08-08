@@ -9,7 +9,7 @@ import net.minecraft.world.entity.player.Player;
 
 public final class AoEPatterns {
 
-    private static final float VERTICAL_THRESHOLD = 60.0F;
+    private static final float VERTICAL_THRESHOLD = 50.0F;
 
     private AoEPatterns() {
     }
