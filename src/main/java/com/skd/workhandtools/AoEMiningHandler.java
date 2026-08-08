@@ -1,11 +1,9 @@
 package com.skd.workhandtools;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -43,7 +41,7 @@ public class AoEMiningHandler {
                 ? stack.getOrDefault(ModDataComponents.AOE_MODE, AoEMode.CUBIC)
                 : AoEMode.CUBIC;
         boolean lookingUp = player.getXRot() < Config.PITCH_THRESHOLD_DEGREES.get();
-        List<BlockPos> pattern = computePattern(event.getPos(), player, grade, mode, lookingUp);
+        List<BlockPos> pattern = AoEPatterns.computePattern(event.getPos(), player, grade, mode, lookingUp);
 
         for (BlockPos pos : pattern) {
             if (pos.equals(event.getPos())) {
@@ -94,14 +92,35 @@ public class AoEMiningHandler {
     public void onTooltip(ItemTooltipEvent event) {
         ItemStack stack = event.getItemStack();
         Grade grade = ModItems.gradeOf(stack);
-        if (grade == null || !grade.hasMode()) {
+        if (grade == null) {
             return;
         }
-        AoEMode mode = stack.getOrDefault(ModDataComponents.AOE_MODE, AoEMode.CUBIC);
-        event.getToolTip().add(Component.translatable(
-                mode == AoEMode.CUBIC
-                        ? "message.workhand_tools.mode.cubic"
-                        : "message.workhand_tools.mode.flat").withStyle(ChatFormatting.GRAY));
+
+        AoEMode mode = grade.hasMode()
+                ? stack.getOrDefault(ModDataComponents.AOE_MODE, AoEMode.CUBIC)
+                : AoEMode.CUBIC;
+        event.getToolTip().add(Component.translatable(areaKey(grade, mode)).withStyle(ChatFormatting.GOLD));
+
+        if (grade.hasMode()) {
+            event.getToolTip().add(Component.translatable(
+                    mode == AoEMode.CUBIC
+                            ? "message.workhand_tools.mode.cubic"
+                            : "message.workhand_tools.mode.flat").withStyle(ChatFormatting.GRAY));
+            event.getToolTip().add(Component.translatable("tooltip.workhand_tools.right_click"));
+        }
+
+        event.getToolTip().add(Component.translatable("tooltip.workhand_tools.hold_shift"));
+    }
+
+    private static String areaKey(Grade grade, AoEMode mode) {
+        int w = grade.lateralHalf() * 2 + 1;
+        int h = grade.height();
+        int d = grade.depth(mode);
+        String base = "tooltip.workhand_tools.area." + w + "x" + h + "x" + d;
+        if (grade.hasMode() && mode == AoEMode.FLAT) {
+            base += "_flat";
+        }
+        return base;
     }
 
     private void breakAreaBlock(Level level, BlockPos pos, BlockState state, Player player, ItemStack stack) {
@@ -120,36 +139,5 @@ public class AoEMiningHandler {
         }
 
         level.setBlock(pos, fluidState.createLegacyBlock(), 3);
-    }
-
-    private List<BlockPos> computePattern(BlockPos center, Player player, Grade grade, AoEMode mode, boolean lookingUp) {
-        List<BlockPos> positions = new ArrayList<>();
-        int half = grade.lateralHalf();
-        int depth = grade.depth(mode);
-        int depthHalf = depth / 2;
-        Direction facing = player.getDirection();
-        Direction lateral = facing.getClockWise();
-        int[] vertical = verticalOffsets(grade.height(), lookingUp);
-
-        BlockPos.MutableBlockPos mutable = new BlockPos.MutableBlockPos();
-        for (int dy : vertical) {
-            for (int dx = -half; dx <= half; dx++) {
-                for (int dz = -depthHalf; dz <= depthHalf; dz++) {
-                    mutable.set(center).move(Direction.UP, dy).move(lateral, dx).move(facing, dz);
-                    positions.add(mutable.immutable());
-                }
-            }
-        }
-        return positions;
-    }
-
-    private int[] verticalOffsets(int height, boolean lookingUp) {
-        if (height == 3) {
-            return new int[]{-1, 0, 1};
-        }
-        if (lookingUp) {
-            return new int[]{-2, -1, 0, 1, 2};
-        }
-        return new int[]{-1, 0, 1, 2, 3};
     }
 }

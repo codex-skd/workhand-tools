@@ -73,8 +73,7 @@ public class WorkhandTools {
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
-        // buildLookups() causes ExceptionInInitializerError - investigating static initializer issues
-        // ModItems.buildLookups();
+        event.enqueueWork(ModItems::buildLookups);
         LOGGER.info("Workhand Tools common setup complete");
     }
 
