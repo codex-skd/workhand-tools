@@ -1,16 +1,16 @@
 # Graph Report - 26.2  (2026-08-08)
 
 ## Corpus Check
-- 136 files · ~18,958 words
+- 137 files · ~18,828 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 229 nodes · 263 edges · 39 communities (37 shown, 2 thin omitted)
+- 226 nodes · 252 edges · 40 communities (38 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6e6b469c`
+- Built from commit: `83ff6e2e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -43,36 +43,36 @@
 5. `AoEMode` - 9 edges
 6. `Grade` - 9 edges
 7. `🎨 Workhand Tools — Texturas necesarias para completar el mod` - 9 edges
-8. `AoEMiningHandler` - 7 edges
-9. `Changelog — Workhand Tools` - 7 edges
+8. `Changelog — Workhand Tools` - 8 edges
+9. `AoEMiningHandler` - 7 edges
 10. `CurseForge — Variables del proyecto` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `depth()` --references--> `AoEMode`  [EXTRACTED]
   src/main/java/com/skd/workhandtools/Grade.java → src/main/java/com/skd/workhandtools/AoEMode.java
-- `ModItems` --references--> `WorkhandPickaxeItem`  [EXTRACTED]
-  src/main/java/com/skd/workhandtools/ModItems.java → src/main/java/com/skd/workhandtools/WorkhandPickaxeItem.java
-- `ModDataComponents` --references--> `AoEMode`  [EXTRACTED]
-  src/main/java/com/skd/workhandtools/ModDataComponents.java → src/main/java/com/skd/workhandtools/AoEMode.java
 - `ModItems` --references--> `Grade`  [EXTRACTED]
   src/main/java/com/skd/workhandtools/ModItems.java → src/main/java/com/skd/workhandtools/Grade.java
+- `ModDataComponents` --references--> `AoEMode`  [EXTRACTED]
+  src/main/java/com/skd/workhandtools/ModDataComponents.java → src/main/java/com/skd/workhandtools/AoEMode.java
+- `ModItems` --references--> `WorkhandPickaxeItem`  [EXTRACTED]
+  src/main/java/com/skd/workhandtools/ModItems.java → src/main/java/com/skd/workhandtools/WorkhandPickaxeItem.java
 
 ## Import Cycles
 - None detected.
 
-## Communities (39 total, 2 thin omitted)
+## Communities (40 total, 2 thin omitted)
 
 ### Community 0 - "Block Break Handling"
-Cohesion: 0.23
-Nodes (10): BlockState, BreakBlockEvent, ItemTooltipEvent, Level, RightClickItem, AoEMiningHandler, BlockPos, ItemStack (+2 more)
+Cohesion: 0.16
+Nodes (15): BlockState, BreakBlockEvent, ItemTooltipEvent, Level, RightClickItem, AoEMiningHandler, BlockPos, ItemStack (+7 more)
 
 ### Community 1 - "Mod Initialization"
-Cohesion: 0.16
-Nodes (14): CreativeModeTab, FMLCommonSetupEvent, IEventBus, Item, Items, Logger, ServerStartingEvent, WorkhandPickaxeItem (+6 more)
+Cohesion: 0.21
+Nodes (12): CreativeModeTab, FMLCommonSetupEvent, IEventBus, Items, Logger, ServerStartingEvent, DeferredHolder, DeferredRegister (+4 more)
 
 ### Community 2 - "Item Data Management"
-Cohesion: 0.19
-Nodes (10): DeferredItem, Grade, GRADE_1, GRADE_2, GRADE_3, GRADE_4, DeferredHolder, Item (+2 more)
+Cohesion: 0.22
+Nodes (7): DeferredItem, Item, DeferredHolder, Item, ItemStack, ModItems, WorkhandPickaxeItem
 
 ### Community 3 - "Grade System"
 Cohesion: 0.40
@@ -87,8 +87,8 @@ Cohesion: 0.08
 Nodes (23): Anclaje vertical para patrones de 5 de alto (5×5×1 / 5×5×5), Clic izquierdo vs. clic derecho (grados 2 y 4) — confirmado, Concepto, Configuración y compatibilidad con Configured, Creative tab, Diseño técnico — Workhand Tools, Encantamientos, Grados y minado en área (AoE) (+15 more)
 
 ### Community 7 - "Client-Side Workhand Tools"
-Cohesion: 0.19
-Nodes (11): AABB, EventBusSubscriber, Matrix4f, Pose, AreaHighlighter, SubscribeEvent, Mod, ModContainer (+3 more)
+Cohesion: 0.24
+Nodes (7): EventBusSubscriber, AreaHighlighter, SubscribeEvent, Mod, ModContainer, WorkhandToolsClient, SubmitCustomGeometryEvent
 
 ### Community 8 - "Configuration Management"
 Cohesion: 0.50
@@ -115,8 +115,8 @@ Cohesion: 0.25
 Nodes (7): CurseForge — Variables del proyecto, Nota, Proyecto, Rama, Tag, Tokens, Variables para script (lectura automática)
 
 ### Community 17 - "Changelog — Workhand Tools"
-Cohesion: 0.12
-Nodes (16): [1.0.0] - 2026-08-07, [1.1.0] - 2026-08-08, [1.1.1] - 2026-08-08, [1.1.2] - 2026-08-08, [1.2.0] - 2026-08-08, [1.2.1] - 2026-08-08, Changelog — Workhand Tools, Feature (+8 more)
+Cohesion: 0.11
+Nodes (18): [1.0.0] - 2026-08-07, [1.1.0] - 2026-08-08, [1.1.1] - 2026-08-08, [1.1.2] - 2026-08-08, [1.2.0] - 2026-08-08, [1.2.1] - 2026-08-08, [1.2.2] - 2026-08-08, Changelog — Workhand Tools (+10 more)
 
 ### Community 18 - "Workhand Tools"
 Cohesion: 0.29
@@ -131,7 +131,7 @@ Cohesion: 0.50
 Nodes (3): CLAUDE.md — workhand_tools (26.2), Prioridad de instrucciones, Workflow del mod
 
 ## Knowledge Gaps
-- **77 isolated node(s):** `CUBIC`, `FLAT`, `GRADE_1`, `GRADE_2`, `GRADE_3` (+72 more)
+- **78 isolated node(s):** `CUBIC`, `FLAT`, `GRADE_1`, `GRADE_2`, `GRADE_3` (+73 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -139,16 +139,16 @@ Nodes (3): CLAUDE.md — workhand_tools (26.2), Prioridad de instrucciones, Work
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `AoEMode` connect `AoE Mode` to `Block Break Handling`, `Grade System`?**
-  _High betweenness centrality (0.047) - this node is a cross-community bridge._
-- **Why does `ModItems` connect `Item Data Management` to `Mod Initialization`?**
-  _High betweenness centrality (0.044) - this node is a cross-community bridge._
+  _High betweenness centrality (0.045) - this node is a cross-community bridge._
 - **Why does `AoEMiningHandler` connect `Block Break Handling` to `Mod Initialization`?**
-  _High betweenness centrality (0.044) - this node is a cross-community bridge._
+  _High betweenness centrality (0.042) - this node is a cross-community bridge._
+- **Why does `ModItems` connect `Item Data Management` to `Block Break Handling`?**
+  _High betweenness centrality (0.042) - this node is a cross-community bridge._
 - **What connects `CUBIC`, `FLAT`, `GRADE_1` to the rest of the system?**
-  _77 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _78 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `AoE Mode` be split into smaller, more focused modules?**
   _Cohesion score 0.13450292397660818 - nodes in this community are weakly interconnected._
 - **Should `Data Components` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
 - **Should `Changelog — Workhand Tools` be split into smaller, more focused modules?**
-  _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
