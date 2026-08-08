@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1786149683.5496418,
-    "ast_hash": "b377886651aed926f64ca24f7f9b0141",
+    "mtime": 1786152257.71877,
+    "ast_hash": "68667a3223212349eb459054c8a6f1cc",
     "semantic_hash": ""
   },
   "README.md": {
@@ -735,8 +735,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/AoEPatterns.java": {
-    "mtime": 1786149659.2191155,
-    "ast_hash": "4de7189d24e6f35e275f2367cfe861e5",
+    "mtime": 1786152243.1289606,
+    "ast_hash": "f3df84411b9e2cf2412343982fdf165b",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/de_de.json": {
@@ -802,6 +802,11 @@
   "docs/curseforge/versions/1.1.2.md": {
     "mtime": 1786149690.7755876,
     "ast_hash": "b679660f9b7a21f4265633cdf728ecf2",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.2.0.md": {
+    "mtime": 1786152263.6536186,
+    "ast_hash": "eaefa0d6f0350cf35c3b88fcbd794f31",
     "semantic_hash": ""
   }
 }

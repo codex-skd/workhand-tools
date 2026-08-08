@@ -343,7 +343,7 @@
       "label": ".AoEPatterns()",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
-      "source_location": "L11",
+      "source_location": "L14",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_aoepatterns",
       "community": 3,
@@ -353,7 +353,7 @@
       "label": ".computePattern()",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
-      "source_location": "L14",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computepattern",
       "community": 3,
@@ -380,10 +380,40 @@
       "norm_label": "player"
     },
     {
+      "label": ".computeHorizontalPattern()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computehorizontalpattern",
+      "community": 3,
+      "norm_label": ".computehorizontalpattern()"
+    },
+    {
+      "label": ".computeVerticalPattern()",
+      "file_type": "code",
+      "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computeverticalpattern",
+      "community": 3,
+      "norm_label": ".computeverticalpattern()"
+    },
+    {
+      "label": "Direction",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "direction",
+      "community": 3,
+      "norm_label": "direction"
+    },
+    {
       "label": ".verticalOffsets()",
       "file_type": "code",
       "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
-      "source_location": "L34",
+      "source_location": "L66",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_verticaloffsets",
       "community": 3,
@@ -506,7 +536,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_grade",
-      "community": 4,
+      "community": 34,
       "norm_label": "grade.java"
     },
     {
@@ -516,7 +546,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_grade_grade",
-      "community": 2,
+      "community": 34,
       "norm_label": "grade"
     },
     {
@@ -526,7 +556,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_grade_grade_grade_1",
-      "community": 2,
+      "community": 34,
       "norm_label": "grade_1"
     },
     {
@@ -536,7 +566,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_grade_grade_grade_2",
-      "community": 2,
+      "community": 34,
       "norm_label": "grade_2"
     },
     {
@@ -546,7 +576,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_grade_grade_grade_3",
-      "community": 2,
+      "community": 34,
       "norm_label": "grade_3"
     },
     {
@@ -556,7 +586,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_grade_grade_grade_4",
-      "community": 2,
+      "community": 34,
       "norm_label": "grade_4"
     },
     {
@@ -566,7 +596,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_grade_lateralhalf",
-      "community": 4,
+      "community": 34,
       "norm_label": "lateralhalf()"
     },
     {
@@ -576,7 +606,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_grade_height",
-      "community": 4,
+      "community": 34,
       "norm_label": "height()"
     },
     {
@@ -586,7 +616,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_grade_hasmode",
-      "community": 4,
+      "community": 34,
       "norm_label": "hasmode()"
     },
     {
@@ -596,7 +626,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_grade_depth",
-      "community": 4,
+      "community": 34,
       "norm_label": "depth()"
     },
     {
@@ -756,7 +786,7 @@
       "source_location": "L178",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_moditems_moditems_gradeof",
-      "community": 2,
+      "community": 0,
       "norm_label": ".gradeof()"
     },
     {
@@ -806,7 +836,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_workhandpickaxeitem",
-      "community": 34,
+      "community": 2,
       "norm_label": "workhandpickaxeitem.java"
     },
     {
@@ -816,7 +846,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_workhandpickaxeitem_workhandpickaxeitem",
-      "community": 34,
+      "community": 2,
       "norm_label": "workhandpickaxeitem"
     },
     {
@@ -826,7 +856,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "item",
-      "community": 34,
+      "community": 2,
       "norm_label": "item"
     },
     {
@@ -836,7 +866,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_workhandpickaxeitem_workhandpickaxeitem_workhandpickaxeitem",
-      "community": 34,
+      "community": 2,
       "norm_label": ".workhandpickaxeitem()"
     },
     {
@@ -1120,10 +1150,30 @@
       "norm_label": "changelog \u2014 workhand tools"
     },
     {
-      "label": "[1.1.2] - 2026-08-08",
+      "label": "[1.2.0] - 2026-08-08",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
       "source_location": "L3",
+      "_origin": "ast",
+      "id": "changelog_1_2_0_2026_08_08",
+      "community": 17,
+      "norm_label": "[1.2.0] - 2026-08-08"
+    },
+    {
+      "label": "Feature",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "changelog_feature",
+      "community": 17,
+      "norm_label": "feature"
+    },
+    {
+      "label": "[1.1.2] - 2026-08-08",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L9",
       "_origin": "ast",
       "id": "changelog_1_1_2_2026_08_08",
       "community": 17,
@@ -1133,7 +1183,7 @@
       "label": "Fix",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L5",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "changelog_fix",
       "community": 17,
@@ -1143,7 +1193,7 @@
       "label": "Technical",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L10",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "changelog_technical",
       "community": 17,
@@ -1153,31 +1203,11 @@
       "label": "[1.1.1] - 2026-08-08",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L15",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "changelog_1_1_1_2026_08_08",
       "community": 17,
       "norm_label": "[1.1.1] - 2026-08-08"
-    },
-    {
-      "label": "Fix",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L17",
-      "_origin": "ast",
-      "id": "changelog_fix_17",
-      "community": 17,
-      "norm_label": "fix"
-    },
-    {
-      "label": "[1.1.0] - 2026-08-08",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L21",
-      "_origin": "ast",
-      "id": "changelog_1_1_0_2026_08_08",
-      "community": 17,
-      "norm_label": "[1.1.0] - 2026-08-08"
     },
     {
       "label": "Fix",
@@ -1190,12 +1220,32 @@
       "norm_label": "fix"
     },
     {
-      "label": "Feature",
+      "label": "[1.1.0] - 2026-08-08",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
       "source_location": "L27",
       "_origin": "ast",
-      "id": "changelog_feature",
+      "id": "changelog_1_1_0_2026_08_08",
+      "community": 17,
+      "norm_label": "[1.1.0] - 2026-08-08"
+    },
+    {
+      "label": "Fix",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "changelog_fix_29",
+      "community": 17,
+      "norm_label": "fix"
+    },
+    {
+      "label": "Feature",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "changelog_feature_33",
       "community": 17,
       "norm_label": "feature"
     },
@@ -1203,7 +1253,7 @@
       "label": "Refactor",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L33",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "changelog_refactor",
       "community": 17,
@@ -1213,9 +1263,9 @@
       "label": "Technical",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L37",
+      "source_location": "L43",
       "_origin": "ast",
-      "id": "changelog_technical_37",
+      "id": "changelog_technical_43",
       "community": 17,
       "norm_label": "technical"
     },
@@ -1223,7 +1273,7 @@
       "label": "[1.0.0] - 2026-08-07",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L42",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "changelog_1_0_0_2026_08_07",
       "community": 17,
@@ -2150,6 +2200,16 @@
       "norm_label": "1.1.2.md"
     },
     {
+      "label": "1.2.0.md",
+      "file_type": "document",
+      "source_file": "docs/curseforge/versions/1.2.0.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_curseforge_versions_1_2_0",
+      "community": 38,
+      "norm_label": "1.2.0.md"
+    },
+    {
       "file_type": "image",
       "source_file": "src/main/resources/assets/workhand_tools/icon.png",
       "label": "Mod Icon",
@@ -2666,7 +2726,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
-      "source_location": "L14",
+      "source_location": "L17",
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computepattern",
@@ -2707,6 +2767,17 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_workhandtools_aoepatterns",
+      "target": "direction",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
@@ -2742,7 +2813,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
-      "source_location": "L11",
+      "source_location": "L14",
       "weight": 1.0,
       "source": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns",
       "target": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_aoepatterns",
@@ -2752,7 +2823,17 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
-      "source_location": "L14",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns",
+      "target": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computehorizontalpattern",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
+      "source_location": "L17",
       "weight": 1.0,
       "source": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns",
       "target": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computepattern",
@@ -2762,7 +2843,17 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
-      "source_location": "L34",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns",
+      "target": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computeverticalpattern",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
+      "source_location": "L66",
       "weight": 1.0,
       "source": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns",
       "target": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_verticaloffsets",
@@ -2773,17 +2864,28 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
-      "source_location": "L20",
+      "source_location": "L28",
       "weight": 1.0,
       "source": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computepattern",
-      "target": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_verticaloffsets",
+      "target": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computehorizontalpattern",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computepattern",
+      "target": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computeverticalpattern",
       "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
-      "source_location": "L14",
+      "source_location": "L17",
       "weight": 1.0,
       "context": "generic_arg",
       "source": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computepattern",
@@ -2794,7 +2896,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
-      "source_location": "L14",
+      "source_location": "L17",
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computepattern",
@@ -2805,7 +2907,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
-      "source_location": "L14",
+      "source_location": "L17",
       "weight": 1.0,
       "context": "parameter_type",
       "source": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computepattern",
@@ -2822,6 +2924,61 @@
       "weight": 1.0,
       "source": "src_main_java_com_skd_workhandtools_areahighlighter_areahighlighter_onextractlevelrenderstate",
       "target": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computepattern"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computehorizontalpattern",
+      "target": "src_main_java_com_skd_workhandtools_aoepatterns_java_blockpos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
+      "source_location": "L50",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computeverticalpattern",
+      "target": "src_main_java_com_skd_workhandtools_aoepatterns_java_blockpos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computehorizontalpattern",
+      "target": "src_main_java_com_skd_workhandtools_aoepatterns_java_player",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computehorizontalpattern",
+      "target": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_verticaloffsets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/com/skd/workhandtools/AoEPatterns.java",
+      "source_location": "L50",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computeverticalpattern",
+      "target": "direction",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -3837,7 +3994,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L42",
+      "source_location": "L48",
       "weight": 1.0,
       "source": "changelog_changelog_workhand_tools",
       "target": "changelog_1_0_0_2026_08_07",
@@ -3847,7 +4004,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L21",
+      "source_location": "L27",
       "weight": 1.0,
       "source": "changelog_changelog_workhand_tools",
       "target": "changelog_1_1_0_2026_08_08",
@@ -3857,7 +4014,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L15",
+      "source_location": "L21",
       "weight": 1.0,
       "source": "changelog_changelog_workhand_tools",
       "target": "changelog_1_1_1_2026_08_08",
@@ -3867,7 +4024,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L3",
+      "source_location": "L9",
       "weight": 1.0,
       "source": "changelog_changelog_workhand_tools",
       "target": "changelog_1_1_2_2026_08_08",
@@ -3877,7 +4034,27 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "changelog_changelog_workhand_tools",
+      "target": "changelog_1_2_0_2026_08_08",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
       "source_location": "L5",
+      "weight": 1.0,
+      "source": "changelog_1_2_0_2026_08_08",
+      "target": "changelog_feature",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L11",
       "weight": 1.0,
       "source": "changelog_1_1_2_2026_08_08",
       "target": "changelog_fix",
@@ -3887,7 +4064,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L10",
+      "source_location": "L16",
       "weight": 1.0,
       "source": "changelog_1_1_2_2026_08_08",
       "target": "changelog_technical",
@@ -3897,29 +4074,9 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L17",
-      "weight": 1.0,
-      "source": "changelog_1_1_1_2026_08_08",
-      "target": "changelog_fix_17",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L27",
-      "weight": 1.0,
-      "source": "changelog_1_1_0_2026_08_08",
-      "target": "changelog_feature",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
       "source_location": "L23",
       "weight": 1.0,
-      "source": "changelog_1_1_0_2026_08_08",
+      "source": "changelog_1_1_1_2026_08_08",
       "target": "changelog_fix_23",
       "confidence_score": 1.0
     },
@@ -3930,6 +4087,26 @@
       "source_location": "L33",
       "weight": 1.0,
       "source": "changelog_1_1_0_2026_08_08",
+      "target": "changelog_feature_33",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "changelog_1_1_0_2026_08_08",
+      "target": "changelog_fix_29",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "changelog_1_1_0_2026_08_08",
       "target": "changelog_refactor",
       "confidence_score": 1.0
     },
@@ -3937,10 +4114,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L37",
+      "source_location": "L43",
       "weight": 1.0,
       "source": "changelog_1_1_0_2026_08_08",
-      "target": "changelog_technical_37",
+      "target": "changelog_technical_43",
       "confidence_score": 1.0
     },
     {
@@ -4635,5 +4812,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "307d4a421ca177a0badb30d3e7deed4c3a55cda0"
+  "built_at_commit": "b2f061ec574a3bfae97fd5be0e24f1a35310911f"
 }
