@@ -1,5 +1,11 @@
 # Changelog — Workhand Tools
 
+## [1.2.0] - 2026-08-08
+
+### Feature
+
+- **Adaptive mining direction**: The AoE pattern now adapts to where you're looking. Looking horizontally: pattern extends forward into the wall. Looking down (pitch > 60°): pattern is centered and extends downward (floor mining). Looking up (pitch < -60°): pattern is centered and extends upward (ceiling mining). Lateral width is always centered on the aimed block.
+
 ## [1.1.2] - 2026-08-08
 
 ### Fix
