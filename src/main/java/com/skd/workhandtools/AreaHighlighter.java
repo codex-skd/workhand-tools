@@ -8,6 +8,7 @@ import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.rendertype.RenderTypes;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.AABB;
@@ -52,7 +53,8 @@ public final class AreaHighlighter {
                 ? stack.getOrDefault(ModDataComponents.AOE_MODE, AoEMode.CUBIC)
                 : AoEMode.CUBIC;
         boolean lookingUp = player.getXRot() < Config.PITCH_THRESHOLD_DEGREES.get();
-        List<BlockPos> pattern = AoEPatterns.computePattern(target, player, grade, mode, lookingUp);
+        Direction digDir = AoEPatterns.digDirection(player, target);
+        List<BlockPos> pattern = AoEPatterns.computePattern(target, grade, mode, digDir, lookingUp);
 
         if (pattern.isEmpty()) {
             return;

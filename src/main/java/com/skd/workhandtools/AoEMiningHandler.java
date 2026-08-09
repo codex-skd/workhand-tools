@@ -4,6 +4,7 @@ import java.util.List;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -41,7 +42,8 @@ public class AoEMiningHandler {
                 ? stack.getOrDefault(ModDataComponents.AOE_MODE, AoEMode.CUBIC)
                 : AoEMode.CUBIC;
         boolean lookingUp = player.getXRot() < Config.PITCH_THRESHOLD_DEGREES.get();
-        List<BlockPos> pattern = AoEPatterns.computePattern(event.getPos(), player, grade, mode, lookingUp);
+        Direction digDir = AoEPatterns.digDirection(player, event.getPos());
+        List<BlockPos> pattern = AoEPatterns.computePattern(event.getPos(), grade, mode, digDir, lookingUp);
 
         for (BlockPos pos : pattern) {
             if (pos.equals(event.getPos())) {

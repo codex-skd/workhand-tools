@@ -6,33 +6,48 @@ import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.phys.Vec3;
 
 public final class AoEPatterns {
-
-    private static final float VERTICAL_THRESHOLD = 50.0F;
 
     private AoEPatterns() {
     }
 
-    public static List<BlockPos> computePattern(BlockPos center, Player player, Grade grade, AoEMode mode, boolean lookingUp) {
+    public static List<BlockPos> computePattern(BlockPos center, Grade grade, AoEMode mode,
+            Direction digDir, boolean lookingUp) {
         List<BlockPos> positions = new ArrayList<>();
         int half = grade.lateralHalf();
         int depth = grade.depth(mode);
-        float pitch = player.getXRot();
 
-        if (pitch > VERTICAL_THRESHOLD) {
-            computeVerticalPattern(positions, center, Direction.DOWN, half, depth);
-        } else if (pitch < -VERTICAL_THRESHOLD) {
-            computeVerticalPattern(positions, center, Direction.UP, half, depth);
+        if (digDir.getAxis() == Direction.Axis.Y) {
+            computeVerticalPattern(positions, center, digDir, half, depth);
         } else {
-            computeHorizontalPattern(positions, center, player, half, depth, grade.height(), lookingUp);
+            computeHorizontalPattern(positions, center, digDir, half, depth, grade.height(), lookingUp);
         }
         return positions;
     }
 
-    private static void computeHorizontalPattern(List<BlockPos> positions, BlockPos center, Player player,
-            int half, int depth, int height, boolean lookingUp) {
-        Direction facing = player.getDirection();
+    /**
+     * Derives the digging direction from the face of the aimed block that the player is looking at:
+     * a side face digs into the wall, the top face (floor) digs down, the bottom face (ceiling) digs up.
+     */
+    static Direction digDirection(Player player, BlockPos center) {
+        Vec3 eye = player.getEyePosition();
+        Vec3 block = Vec3.atCenterOf(center);
+        Direction hitFace = Direction.getNearest(
+                (int) Math.round(eye.x - block.x),
+                (int) Math.round(eye.y - block.y),
+                (int) Math.round(eye.z - block.z),
+                Direction.UP);
+        return switch (hitFace) {
+            case UP -> Direction.DOWN;
+            case DOWN -> Direction.UP;
+            default -> hitFace;
+        };
+    }
+
+    private static void computeHorizontalPattern(List<BlockPos> positions, BlockPos center,
+            Direction facing, int half, int depth, int height, boolean lookingUp) {
         Direction lateral = facing.getClockWise();
         int[] vertical = verticalOffsets(height, lookingUp);
 
@@ -49,14 +64,11 @@ public final class AoEPatterns {
 
     private static void computeVerticalPattern(List<BlockPos> positions, BlockPos center,
             Direction verticalDir, int half, int depth) {
-        Direction axisA = verticalDir.getAxis() == Direction.Axis.Y ? Direction.EAST : Direction.UP;
-        Direction axisB = verticalDir.getAxis() == Direction.Axis.Y ? Direction.SOUTH : Direction.UP;
-
         BlockPos.MutableBlockPos mutable = new BlockPos.MutableBlockPos();
         for (int d = 0; d < depth; d++) {
             for (int a = -half; a <= half; a++) {
                 for (int b = -half; b <= half; b++) {
-                    mutable.set(center).move(verticalDir, d).move(axisA, a).move(axisB, b);
+                    mutable.set(center).move(verticalDir, d).move(Direction.EAST, a).move(Direction.SOUTH, b);
                     positions.add(mutable.immutable());
                 }
             }
