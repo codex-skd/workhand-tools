@@ -1,5 +1,11 @@
 # Changelog — Workhand Tools
 
+## [1.5.0] - 2026-08-10
+
+### Update
+
+- **Item textures revamped**: All item textures replaced with new artwork.
+
 ## [1.4.0] - 2026-08-09
 
 ### Feature
