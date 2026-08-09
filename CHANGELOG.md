@@ -1,5 +1,11 @@
 # Changelog — Workhand Tools
 
+## [1.4.0] - 2026-08-09
+
+### Feature
+
+- **Face-based mining direction**: The AoE mining direction is now derived from the face of the aimed block instead of the camera pitch. A side face (wall) digs forward into the wall, the top face (floor) digs down, and the bottom face (ceiling) digs up. Applies equally to pickaxes and shovels, and the area preview uses the same logic so highlight and mining always match.
+
 ## [1.3.0] - 2026-08-08
 
 ### Release
