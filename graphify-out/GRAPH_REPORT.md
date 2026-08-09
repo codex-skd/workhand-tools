@@ -1,16 +1,16 @@
-# Graph Report - 26.2  (2026-08-09)
+# Graph Report - 26.2  (2026-08-10)
 
 ## Corpus Check
-- 140 files · ~19,505 words
+- 141 files · ~19,953 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 237 nodes · 267 edges · 44 communities (42 shown, 2 thin omitted)
+- 240 nodes · 269 edges · 45 communities (43 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a43de90c`
+- Built from commit: `c35cc076`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -38,8 +38,8 @@
 
 ## God Nodes (most connected - your core abstractions)
 1. `Diseño técnico — Workhand Tools` - 15 edges
-2. `ModItems` - 11 edges
-3. `Changelog — Workhand Tools` - 11 edges
+2. `Changelog — Workhand Tools` - 12 edges
+3. `ModItems` - 11 edges
 4. `Flujo de trabajo — Workhand Tools (NeoForge)` - 11 edges
 5. `WorkhandTools` - 10 edges
 6. `AoEMode` - 9 edges
@@ -61,7 +61,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (44 total, 2 thin omitted)
+## Communities (45 total, 2 thin omitted)
 
 ### Community 0 - "Block Break Handling"
 Cohesion: 0.22
@@ -116,8 +116,8 @@ Cohesion: 0.25
 Nodes (7): CurseForge — Variables del proyecto, Nota, Proyecto, Rama, Tag, Tokens, Variables para script (lectura automática)
 
 ### Community 17 - "Changelog — Workhand Tools"
-Cohesion: 0.08
-Nodes (25): [1.0.0] - 2026-08-07, [1.1.0] - 2026-08-08, [1.1.1] - 2026-08-08, [1.1.2] - 2026-08-08, [1.2.0] - 2026-08-08, [1.2.1] - 2026-08-08, [1.2.2] - 2026-08-08, [1.2.3] - 2026-08-08 (+17 more)
+Cohesion: 0.07
+Nodes (27): [1.0.0] - 2026-08-07, [1.1.0] - 2026-08-08, [1.1.1] - 2026-08-08, [1.1.2] - 2026-08-08, [1.2.0] - 2026-08-08, [1.2.1] - 2026-08-08, [1.2.2] - 2026-08-08, [1.2.3] - 2026-08-08 (+19 more)
 
 ### Community 18 - "Workhand Tools"
 Cohesion: 0.29
@@ -136,7 +136,7 @@ Cohesion: 0.20
 Nodes (6): depth(), Grade, GRADE_1, GRADE_2, GRADE_3, GRADE_4
 
 ## Knowledge Gaps
-- **82 isolated node(s):** `CUBIC`, `FLAT`, `GRADE_1`, `GRADE_2`, `GRADE_3` (+77 more)
+- **83 isolated node(s):** `CUBIC`, `FLAT`, `GRADE_1`, `GRADE_2`, `GRADE_3` (+78 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -144,14 +144,14 @@ Nodes (6): depth(), Grade, GRADE_1, GRADE_2, GRADE_3, GRADE_4
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `AoEMode` connect `AoE Mode` to `Block Break Handling`, `Grade`, `Grade System`?**
-  _High betweenness centrality (0.042) - this node is a cross-community bridge._
+  _High betweenness centrality (0.041) - this node is a cross-community bridge._
 - **Why does `AoEMiningHandler` connect `Block Break Handling` to `Mod Initialization`?**
   _High betweenness centrality (0.038) - this node is a cross-community bridge._
 - **Why does `ModItems` connect `Item Data Management` to `Block Break Handling`, `Grade`?**
-  _High betweenness centrality (0.038) - this node is a cross-community bridge._
+  _High betweenness centrality (0.037) - this node is a cross-community bridge._
 - **What connects `CUBIC`, `FLAT`, `GRADE_1` to the rest of the system?**
-  _82 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _83 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Data Components` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
 - **Should `Changelog — Workhand Tools` be split into smaller, more focused modules?**
-  _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._

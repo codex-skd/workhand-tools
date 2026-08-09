@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1786301646.6293714,
-    "ast_hash": "85ba83e71b9aa71fedfdcddb0939ed17",
+    "mtime": 1786312972.696255,
+    "ast_hash": "4c05de2b0d56696aaea0287c32eaa50e",
     "semantic_hash": ""
   },
   "README.md": {
@@ -605,128 +605,128 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_advanced_pickaxe.png": {
-    "mtime": 1786119615.0227716,
-    "ast_hash": "b2d17c616f069fbcc53d961a06e3cfcd",
+    "mtime": 1786312500.318493,
+    "ast_hash": "e0969f3c51e09f262367caa21297eb49",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_advanced_shovel.png": {
-    "mtime": 1786119615.0283735,
-    "ast_hash": "8a7ee68a4da7b5d9d0123e39a068b511",
+    "mtime": 1786312500.327693,
+    "ast_hash": "01573d83bfe0afd21ee0d0a6670c073c",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_expert_pickaxe.png": {
-    "mtime": 1786119615.034061,
-    "ast_hash": "086400077a48dac710225c0674739710",
+    "mtime": 1786312500.3377159,
+    "ast_hash": "8bd6104ae99be55c15e5ced0a796f5e7",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_expert_shovel.png": {
-    "mtime": 1786119615.0392592,
-    "ast_hash": "c89cdc5d381f14f6d4a891773e2cac44",
+    "mtime": 1786312500.3458233,
+    "ast_hash": "0e35f49d3f5e809e5601dbdf883236c7",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_pickaxe.png": {
-    "mtime": 1786119615.0452387,
-    "ast_hash": "ebeb9eb638a46a683d33e6b008b47657",
+    "mtime": 1786312500.354619,
+    "ast_hash": "ce3116b92e91349e54374b9b814bc528",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_professional_pickaxe.png": {
-    "mtime": 1786119615.0493815,
-    "ast_hash": "89993517b806c045e90d24a9d90a75de",
+    "mtime": 1786312500.2697384,
+    "ast_hash": "ee98efd0a982a5da8de594e5301a684a",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_professional_shovel.png": {
-    "mtime": 1786119615.055287,
-    "ast_hash": "269239f0ee540a393f2666b3e5c25c4d",
+    "mtime": 1786312500.277635,
+    "ast_hash": "c15e6ddfd0fc18bc886bd87d486fb602",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_shovel.png": {
-    "mtime": 1786119615.0606403,
-    "ast_hash": "4039a752e9ae301b921d3d8608700a45",
+    "mtime": 1786312500.3626595,
+    "ast_hash": "25f2d5f152a353c6078946b4e2efc99b",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/iron_workhand_advanced_pickaxe.png": {
-    "mtime": 1786119615.0653567,
-    "ast_hash": "6b594cf8f78836fb48613692ffc06027",
+    "mtime": 1786312500.3714018,
+    "ast_hash": "fc605e4d0c7d87addac347f03c7b2b8a",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/iron_workhand_advanced_shovel.png": {
-    "mtime": 1786119615.070815,
-    "ast_hash": "42b80b268641059d14a9ee0c4899ed10",
+    "mtime": 1786312500.3801248,
+    "ast_hash": "95fe34f3301441f17119dc9ceb1c4947",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/iron_workhand_expert_pickaxe.png": {
-    "mtime": 1786119615.076777,
-    "ast_hash": "fdade8465d267a7f5d9703436cb2bba3",
+    "mtime": 1786312500.3896804,
+    "ast_hash": "e53ac3688377bc78e07c6e7024ca1b0c",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/iron_workhand_expert_shovel.png": {
-    "mtime": 1786119615.0818024,
-    "ast_hash": "7f0bfb6f4e12fff90971df8f76d08a93",
+    "mtime": 1786312500.3978465,
+    "ast_hash": "d686e280ccd31362a0d8c062ce14168c",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/iron_workhand_pickaxe.png": {
-    "mtime": 1786119615.0862653,
-    "ast_hash": "c6f773ef6f5ee55f0b1c2f2141acdced",
+    "mtime": 1786312500.4093177,
+    "ast_hash": "8edd8fdef0b0db0ffcfb32f408a4ce01",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/iron_workhand_professional_pickaxe.png": {
-    "mtime": 1786119615.0927982,
-    "ast_hash": "1285efe90398a9cb09386b98ac443633",
+    "mtime": 1786312500.2865098,
+    "ast_hash": "4e42cbaba9206b1ce8ea3d2e839093ee",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/iron_workhand_professional_shovel.png": {
-    "mtime": 1786119615.0981555,
-    "ast_hash": "95265439b01432c6c035f4d02d27e179",
+    "mtime": 1786312500.2945921,
+    "ast_hash": "ca8d7ed997e7bcc22b67388095aa8304",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/iron_workhand_shovel.png": {
-    "mtime": 1786119615.1034088,
-    "ast_hash": "620e562866859113b31489f8bcae823a",
+    "mtime": 1786312500.4187942,
+    "ast_hash": "5a97fb35ca7043aa20eb986b5ae01176",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/robust_stick.png": {
-    "mtime": 1786119615.1090212,
+    "mtime": 1786312500.2331047,
     "ast_hash": "f651dd55abaa18652dcc2c4e697c3eb9",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/stone_workhand_advanced_pickaxe.png": {
-    "mtime": 1786119615.1137204,
-    "ast_hash": "1507fa1952d23ece9ca3b5ef34639bc0",
+    "mtime": 1786312500.4277313,
+    "ast_hash": "15902e94a6bbdf1c44aef46b149a14ac",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/stone_workhand_advanced_shovel.png": {
-    "mtime": 1786119615.1183438,
-    "ast_hash": "75da5c1e051d2a89b73a9273f7f408e1",
+    "mtime": 1786312500.4365816,
+    "ast_hash": "e0fda303547c20f990f6144b802c75d0",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/stone_workhand_expert_pickaxe.png": {
-    "mtime": 1786119615.124203,
-    "ast_hash": "21eb868e078b59fdee13a39f68ef3fd1",
+    "mtime": 1786312500.4450214,
+    "ast_hash": "cffa3ff442717bb4c10c9991aac938f1",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/stone_workhand_expert_shovel.png": {
-    "mtime": 1786119615.1299024,
-    "ast_hash": "1870f249ff7413fc38f5f55f63612524",
+    "mtime": 1786312500.2424953,
+    "ast_hash": "955d2f2821c35d49f889483eced98b80",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/stone_workhand_pickaxe.png": {
-    "mtime": 1786119615.1352367,
-    "ast_hash": "bb98dc37127b9959289dcc1939f3c20d",
+    "mtime": 1786312500.2506263,
+    "ast_hash": "1ff83b189171d83679f8968246e318e2",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/stone_workhand_professional_pickaxe.png": {
-    "mtime": 1786119615.140808,
-    "ast_hash": "b924b2489746f7558a5b3445eabe2ff0",
+    "mtime": 1786312500.3023322,
+    "ast_hash": "367589bd436c2902ac2535f21a59155c",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/stone_workhand_professional_shovel.png": {
-    "mtime": 1786119615.1465096,
-    "ast_hash": "2dfd154f14b6596edc610c27fc62608c",
+    "mtime": 1786312500.310223,
+    "ast_hash": "f72dd542bb4008a7730f6d08dd1b87cc",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/stone_workhand_shovel.png": {
-    "mtime": 1786119615.1505277,
-    "ast_hash": "c6682bd32f9fa456905fb7fa7503798c",
+    "mtime": 1786312500.2606483,
+    "ast_hash": "baa34ada4587b09b0c4ccbbc9574e18e",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/1.0.0.md": {
@@ -832,6 +832,11 @@
   "docs/curseforge/versions/1.4.0.md": {
     "mtime": 1786301643.1087077,
     "ast_hash": "eae645e98fb2125889f7c7a5c09ec33f",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.5.0.md": {
+    "mtime": 1786313562.6848626,
+    "ast_hash": "57bd5e5ff2d7bb72c3bee6a10bb5a060",
     "semantic_hash": ""
   }
 }
