@@ -5,9 +5,9 @@
 
 ## Concepto
 
-Una línea de picos y palas "de obrero" (Workhand), en **3 materiales** (Stone, Iron, Diamond) y **4 grados** cada uno. La diferencia entre materiales es durabilidad/velocidad/encantabilidad (calcada de vanilla). La diferencia entre grados **no es de stats**: es la receta y el **patrón de minado en área (AoE)** que activa la herramienta.
+Una línea de picos, palas y hachas "de obrero" (Workhand), en **3 materiales** (Stone, Iron, Diamond) y **4 grados** cada uno. La diferencia entre materiales es durabilidad/velocidad/encantabilidad (calcada de vanilla). La diferencia entre grados **no es de stats**: es la receta y el **patrón de minado en área (AoE)** que activa la herramienta. Además, 4 picos mejorados (Improved) con vena minera y 2 hachas con tala de árboles.
 
-**Total: 3 materiales × 4 grados × 2 herramientas = 24 items.**
+**Total: 3 materiales × 4 grados × 2 herramientas base + 4 picos mejorados + 2 hachas = 30 items.**
 
 ## Materiales y tiers
 
@@ -192,6 +192,45 @@ Si se añade configuración (p. ej. activar/desactivar el AoE por grado, ajustar
 7. **Fase 7 — Assets**: pospuesta a cuando el diseñador entregue arte (encargo completo en `docs/ASSET_LIST_WORKHAND_TOOLS.md`). Mientras tanto los 80 items + `robust_stick` usan placeholders de texturas vanilla — no bloquea el resto de fases.
 8. **Fase 8 — Localización**: traducción a los idiomas objetivo.
 9. **Fase 9 — QA**: validar en juego stats, AoE (incluido el anclaje de pitch), encantamientos y reparación para cada material/grado.
+
+## Improved Pickaxes (Vein Mining)
+
+| Item ID | Grade | Material | Durability |
+|---|---|---|---|
+| `iron_workhand_advanced_improved_pickaxe` | Advanced (GRADE_2) | IMPROVED_IRON | 750 |
+| `iron_workhand_professional_improved_pickaxe` | Professional (GRADE_4) | IMPROVED_IRON | 750 |
+| `diamond_workhand_advanced_improved_pickaxe` | Advanced (GRADE_2) | IMPROVED_DIAMOND | 4683 |
+| `diamond_workhand_professional_improved_pickaxe` | Professional (GRADE_4) | IMPROVED_DIAMOND | 4683 |
+
+Improved pickaxes keep the base grade AoE pattern (3x3x3 for advanced, 5x5x5 for professional) AND add Ore Vein Mining:
+- Works always (sneak or not); sneak only disables AoE mining.
+- When an ore block is broken, a BFS flood-fill (6 directions, max 128 blocks) mines all connected blocks of the same ore type.
+- If AoE catches an ore, it also mines connected ores.
+- Supported ores: coal, copper, diamond, emerald, gold, iron, lapis, redstone, nether_quartz, nether_gold (plus deepslate variants).
+- Material: `IMPROVED_IRON` (BlockTags.INCORRECT_FOR_IRON_TOOL, durability 750, speed 6.0, attack 2.0, enchant 14, repair iron_ingot) and `IMPROVED_DIAMOND` (BlockTags.INCORRECT_FOR_DIAMOND_TOOL, durability 4683, speed 8.0, attack 3.0, enchant 10, repair diamond).
+
+### Recipes
+
+**Improved pickaxes**: Base pickaxe in center, surrounded by 8 ores:
+- Iron: `#minecraft:iron_ores` (iron_ore + deepslate_iron_ore)
+- Diamond: `#minecraft:diamond_ores` (diamond_ore + deepslate_diamond_ore)
+
+## Workhand Axes (Tree Felling)
+
+| Item ID | Material | Durability |
+|---|---|---|
+| `iron_workhand_axe` | IMPROVED_IRON | 750 |
+| `diamond_workhand_axe` | IMPROVED_DIAMOND | 4683 |
+
+Right-click toggles tree felling (data component `felling_enabled`, default false). When enabled, breaking a log block uses BFS flood-fill (6 directions, max 256 blocks) to fell the entire tree:
+- Only blocks in `BlockTags.LOGS` are considered, excluding stripped logs (path starts with "stripped").
+- Same log type required for connected blocks.
+- Durability is consumed per block broken.
+
+### Recipes
+
+- Iron axe: `BBI / IR  /  R ` where B=iron_block, I=iron_ingot, R=robust_stick
+- Diamond axe: same pattern with diamond_block/diamond
 
 ## Historial de decisiones
 

@@ -1,6 +1,6 @@
 # Flujo de trabajo — Workhand Tools (NeoForge)
 
-> **Versión del workflow**: 1.16.0 (codex-docs)
+> **Versión del workflow**: 1.17.0 (codex-docs)
 > Este archivo pertenece al proyecto **Workhand Tools**. Cambios aquí solo afectan a este proyecto.
 > **Trabaja directamente con este archivo**: es el workflow operativo del mod, autocontenido. No leas `codex-docs/WORKFLOW_AGENT.md` ni `WORKFLOW_GENERIC.md` de forma rutinaria.
 > On-demand (solo si la tarea lo necesita): `codex-docs/reference/CURSEFORGE.md` (formato HTML al publicar), `codex-docs/reference/GRAPHIFY.md` (backend LLM de Graphify), `codex-docs/reference/REPO_SETUP.md` (setup único de repo).
@@ -97,6 +97,11 @@ Leer siempre `GRAPH_REPORT.md`, nunca `graph.json`/`graph.html` (pesan >1MB). Si
 - `clean build` antes del JAR final · versionar antes de CurseForge · CHANGELOG al día
 - Graphify actualizado tras cada release · nomenclatura consistente · sin basura en repo (`nul`, `*_errors.txt`, `TEMPLATE_LICENSE.txt`) · `.gitignore` excluye `temp/` y `lib_ext/`
 - README en inglés siempre actualizado · sin residuos del template (paquetes, clases, toml, lang, assets)
+
+## Historial de versiones del workflow
+
+- v1.17.0 — Added 4 improved pickaxes (iron/diamond advanced/professional) with vein mining + 2 workhand axes (iron/diamond) with tree felling
+- v1.16.0 — Versión anterior
 
 ## Idioma
 

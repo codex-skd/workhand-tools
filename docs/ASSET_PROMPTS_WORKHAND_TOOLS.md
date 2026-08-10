@@ -93,6 +93,22 @@ Cuando se aborde el arte propio, la estrategia de generación queda documentada 
 - Diferenciación visual por grado sugerida: grado 1 sin detalles, grado 2 un remache, grado 3 dos remaches + contorno más grueso, grado 4 remaches + contorno + leve brillo en el filo del color del material.
 - Prompt base a reconstruir cuando llegue el momento: `16x16 pixel art texture, Minecraft item icon style, <tool shape>, <material description>, <grade detail>, flat colors, hard pixel edges, no anti-aliasing, no gradients, transparent background, diagonal tool head in the upper-right pointing down-left, wooden stick handle in the lower-left, matching the proportions of vanilla Minecraft pickaxe/shovel icons`.
 
+## Texturas de picos mejorados (Improved Pickaxes)
+
+4 texturas nuevas (16×16 px, PNG con fondo transparente). Misma base de pico workhand del grado correspondiente, pero con refuerzo visible en la cabeza (remaches a nivel de grado) y aspecto "mejorado" con cabeza más gruesa/enmarcada. Paleta de material idéntica a la del pico base del mismo material (Iron: plata clara, Diamond: cian brillante).
+
+- `iron_workhand_advanced_improved_pickaxe.png` — pico mejorado hierro avanzado
+- `iron_workhand_professional_improved_pickaxe.png` — pico mejorado hierro profesional
+- `diamond_workhand_advanced_improved_pickaxe.png` — pico mejorado diamante avanzado
+- `diamond_workhand_professional_improved_pickaxe.png` — pico mejorado diamante profesional
+
+## Texturas de hachas workhand (Workhand Axes)
+
+2 texturas nuevas (16×16 px, PNG con fondo transparente). Cabeza de hacha estándar (forma vanilla axe), mismo estilo de material (hierro: gris/plata, diamante: cian brillante), mismo mango de madera que el resto de herramientas workhand.
+
+- `iron_workhand_axe.png` — hacha workhand hierro
+- `diamond_workhand_axe.png` — hacha workhand diamante
+
 ## Checklist de assets pendientes
 
 - [x] `assets/workhand_tools/icon.png` (64×64, logo cuadrado) — generado (`ChatGPT Image 5 ago 2026, 13_33_26.png`), redimensionado a 64×64 y wireado en `neoforge.mods.toml`
