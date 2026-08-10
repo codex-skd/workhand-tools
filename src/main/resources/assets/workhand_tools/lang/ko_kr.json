@@ -8,8 +8,8 @@
   "tooltip.workhand_tools.area.5x5x5": "범위: 5x5x5",
   "tooltip.workhand_tools.area.3x3x1_flat": "범위: 3x3x1 (평면)",
   "tooltip.workhand_tools.area.5x5x1_flat": "범위: 5x5x1 (평면)",
-  "tooltip.workhand_tools.hold_shift": "§7Shift 키로 일반 채굴",
-  "tooltip.workhand_tools.right_click": "§7우클릭으로 모드 전환",
+  "tooltip.workhand_tools.hold_shift": "\u00a77Shift 키로 일반 채굴",
+  "tooltip.workhand_tools.right_click": "\u00a77우클릭으로 모드 전환",
   "item.workhand_tools.stone_workhand_pickaxe": "돌 워크핸드 곡괭이",
   "item.workhand_tools.stone_workhand_shovel": "돌 워크핸드 삽",
   "item.workhand_tools.stone_workhand_advanced_pickaxe": "고급 돌 워크핸드 곡괭이",
@@ -34,5 +34,16 @@
   "item.workhand_tools.diamond_workhand_expert_shovel": "전문가 다이아몬드 워크핸드 삽",
   "item.workhand_tools.diamond_workhand_professional_pickaxe": "프로 다이아몬드 워크핸드 곡괭이",
   "item.workhand_tools.diamond_workhand_professional_shovel": "프로 다이아몬드 워크핸드 삽",
-  "item.workhand_tools.robust_stick": "튼튼한 막대기"
+  "item.workhand_tools.robust_stick": "튼튼한 막대기",
+  "item.workhand_tools.iron_workhand_advanced_improved_pickaxe": "개량된 고급 철 워크핸드 곡괭이",
+  "item.workhand_tools.iron_workhand_professional_improved_pickaxe": "개량된 전문 철 워크핸드 곡괭이",
+  "item.workhand_tools.diamond_workhand_advanced_improved_pickaxe": "개량된 고급 다이아몬드 워크핸드 곡괭이",
+  "item.workhand_tools.diamond_workhand_professional_improved_pickaxe": "개량된 전문 다이아몬드 워크핸드 곡괭이",
+  "item.workhand_tools.iron_workhand_axe": "철 워크핸드 도끼",
+  "item.workhand_tools.diamond_workhand_axe": "다이아몬드 워크핸드 도끼",
+  "tooltip.workhand_tools.vein_mining": "\u00a77광맥 채굴 활성화",
+  "message.workhand_tools.felling.enabled": "벌목: 활성화",
+  "message.workhand_tools.felling.disabled": "벌목: 비활성화",
+  "tooltip.workhand_tools.felling.enabled": "벌목: 활성화",
+  "tooltip.workhand_tools.felling.disabled": "벌목: 비활성화"
 }
