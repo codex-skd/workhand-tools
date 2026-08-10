@@ -11,10 +11,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.FluidState;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
@@ -57,7 +54,13 @@ public class AoEMiningHandler {
                 continue;
             }
 
-            breakAreaBlock(level, pos, state, player, stack);
+            MiningHelper.breakBlock(level, pos, state, player, stack);
+
+            // Vein mining: if the AoE area breaks an ore block and we're holding a vein pickaxe,
+            // also break all connected ores of the same type.
+            if (MiningHelper.isOre(state)) {
+                MiningHelper.mineVein(level, pos, state, player, stack);
+            }
 
             stack.hurtAndBreak(1, player, EquipmentSlot.MAINHAND);
             if (stack.isEmpty() && !player.getAbilities().instabuild) {
@@ -123,23 +126,5 @@ public class AoEMiningHandler {
             base += "_flat";
         }
         return base;
-    }
-
-    private void breakAreaBlock(Level level, BlockPos pos, BlockState state, Player player, ItemStack stack) {
-        FluidState fluidState = level.getFluidState(pos);
-        BlockEntity blockEntity = state.hasBlockEntity() ? level.getBlockEntity(pos) : null;
-
-        state.getBlock().playerWillDestroy(level, pos, state, player);
-        level.levelEvent(2001, pos, Block.getId(state));
-
-        if (!player.getAbilities().instabuild) {
-            Block.dropResources(state, level, pos, blockEntity, player, stack);
-            int xp = state.getExpDrop(level, pos, blockEntity, player, stack);
-            if (xp > 0) {
-                player.giveExperiencePoints(xp);
-            }
-        }
-
-        level.setBlock(pos, fluidState.createLegacyBlock(), 3);
     }
 }

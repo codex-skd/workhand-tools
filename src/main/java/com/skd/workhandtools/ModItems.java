@@ -73,6 +73,24 @@ public final class ModItems {
             WorkhandTools.ITEMS.registerItem("diamond_workhand_professional_pickaxe",
                     WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.DIAMOND, 1.0F, -2.8F));
 
+    // Improved Pickaxes (vein mining). Same grade as their base counterpart (advanced = GRADE_2,
+    // professional = GRADE_4) but with the improved tool material for much higher durability.
+    public static final DeferredItem<WorkhandVeinPickaxeItem> IRON_WORKHAND_ADVANCED_IMPROVED_PICKAXE =
+            WorkhandTools.ITEMS.registerItem("iron_workhand_advanced_improved_pickaxe",
+                    WorkhandVeinPickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.IMPROVED_IRON, 1.0F, -2.8F));
+
+    public static final DeferredItem<WorkhandVeinPickaxeItem> IRON_WORKHAND_PROFESSIONAL_IMPROVED_PICKAXE =
+            WorkhandTools.ITEMS.registerItem("iron_workhand_professional_improved_pickaxe",
+                    WorkhandVeinPickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.IMPROVED_IRON, 1.0F, -2.8F));
+
+    public static final DeferredItem<WorkhandVeinPickaxeItem> DIAMOND_WORKHAND_ADVANCED_IMPROVED_PICKAXE =
+            WorkhandTools.ITEMS.registerItem("diamond_workhand_advanced_improved_pickaxe",
+                    WorkhandVeinPickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.IMPROVED_DIAMOND, 1.0F, -2.8F));
+
+    public static final DeferredItem<WorkhandVeinPickaxeItem> DIAMOND_WORKHAND_PROFESSIONAL_IMPROVED_PICKAXE =
+            WorkhandTools.ITEMS.registerItem("diamond_workhand_professional_improved_pickaxe",
+                    WorkhandVeinPickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.IMPROVED_DIAMOND, 1.0F, -2.8F));
+
     // Stone Shovels
     public static final DeferredHolder<Item, ? extends Item> STONE_WORKHAND_SHOVEL =
             WorkhandTools.ITEMS.registerItem("stone_workhand_shovel",
@@ -136,6 +154,15 @@ public final class ModItems {
                     props -> new ShovelItem(ToolMaterial.DIAMOND, 1.5F, -3.0F, props),
                     () -> new Item.Properties());
 
+    // Workhand Axes (tree felling). Right-click toggles felling; see TreeFellingHandler.
+    public static final DeferredItem<WorkhandAxeItem> IRON_WORKHAND_AXE =
+            WorkhandTools.ITEMS.registerItem("iron_workhand_axe",
+                    WorkhandAxeItem::new, () -> new Item.Properties().axe(ModToolMaterials.IMPROVED_IRON, 6.0F, -3.1F));
+
+    public static final DeferredItem<WorkhandAxeItem> DIAMOND_WORKHAND_AXE =
+            WorkhandTools.ITEMS.registerItem("diamond_workhand_axe",
+                    WorkhandAxeItem::new, () -> new Item.Properties().axe(ModToolMaterials.IMPROVED_DIAMOND, 5.0F, -3.0F));
+
     // Lists for creative tab and utility
     public static final List<DeferredHolder<Item, ? extends Item>> PICKAXES = List.of(
             STONE_WORKHAND_PICKAXE,
@@ -149,7 +176,11 @@ public final class ModItems {
             DIAMOND_WORKHAND_PICKAXE,
             DIAMOND_WORKHAND_ADVANCED_PICKAXE,
             DIAMOND_WORKHAND_EXPERT_PICKAXE,
-            DIAMOND_WORKHAND_PROFESSIONAL_PICKAXE
+            DIAMOND_WORKHAND_PROFESSIONAL_PICKAXE,
+            IRON_WORKHAND_ADVANCED_IMPROVED_PICKAXE,
+            IRON_WORKHAND_PROFESSIONAL_IMPROVED_PICKAXE,
+            DIAMOND_WORKHAND_ADVANCED_IMPROVED_PICKAXE,
+            DIAMOND_WORKHAND_PROFESSIONAL_IMPROVED_PICKAXE
     );
 
     public static final List<DeferredHolder<Item, ? extends Item>> SHOVELS = List.of(
@@ -165,6 +196,11 @@ public final class ModItems {
             DIAMOND_WORKHAND_ADVANCED_SHOVEL,
             DIAMOND_WORKHAND_EXPERT_SHOVEL,
             DIAMOND_WORKHAND_PROFESSIONAL_SHOVEL
+    );
+
+    public static final List<DeferredHolder<Item, ? extends Item>> AXES = List.of(
+            IRON_WORKHAND_AXE,
+            DIAMOND_WORKHAND_AXE
     );
 
     public static DeferredHolder<Item, ? extends Item> get(String id) {
@@ -194,6 +230,10 @@ public final class ModItems {
         BY_ID.put("diamond_workhand_advanced_pickaxe", DIAMOND_WORKHAND_ADVANCED_PICKAXE);
         BY_ID.put("diamond_workhand_expert_pickaxe", DIAMOND_WORKHAND_EXPERT_PICKAXE);
         BY_ID.put("diamond_workhand_professional_pickaxe", DIAMOND_WORKHAND_PROFESSIONAL_PICKAXE);
+        BY_ID.put("iron_workhand_advanced_improved_pickaxe", IRON_WORKHAND_ADVANCED_IMPROVED_PICKAXE);
+        BY_ID.put("iron_workhand_professional_improved_pickaxe", IRON_WORKHAND_PROFESSIONAL_IMPROVED_PICKAXE);
+        BY_ID.put("diamond_workhand_advanced_improved_pickaxe", DIAMOND_WORKHAND_ADVANCED_IMPROVED_PICKAXE);
+        BY_ID.put("diamond_workhand_professional_improved_pickaxe", DIAMOND_WORKHAND_PROFESSIONAL_IMPROVED_PICKAXE);
 
         BY_ID.put("stone_workhand_shovel", STONE_WORKHAND_SHOVEL);
         BY_ID.put("stone_workhand_advanced_shovel", STONE_WORKHAND_ADVANCED_SHOVEL);
@@ -207,6 +247,8 @@ public final class ModItems {
         BY_ID.put("diamond_workhand_advanced_shovel", DIAMOND_WORKHAND_ADVANCED_SHOVEL);
         BY_ID.put("diamond_workhand_expert_shovel", DIAMOND_WORKHAND_EXPERT_SHOVEL);
         BY_ID.put("diamond_workhand_professional_shovel", DIAMOND_WORKHAND_PROFESSIONAL_SHOVEL);
+        BY_ID.put("iron_workhand_axe", IRON_WORKHAND_AXE);
+        BY_ID.put("diamond_workhand_axe", DIAMOND_WORKHAND_AXE);
 
         ITEM_GRADES.put(STONE_WORKHAND_PICKAXE.get(), Grade.GRADE_1);
         ITEM_GRADES.put(STONE_WORKHAND_ADVANCED_PICKAXE.get(), Grade.GRADE_2);
@@ -220,6 +262,10 @@ public final class ModItems {
         ITEM_GRADES.put(DIAMOND_WORKHAND_ADVANCED_PICKAXE.get(), Grade.GRADE_2);
         ITEM_GRADES.put(DIAMOND_WORKHAND_EXPERT_PICKAXE.get(), Grade.GRADE_3);
         ITEM_GRADES.put(DIAMOND_WORKHAND_PROFESSIONAL_PICKAXE.get(), Grade.GRADE_4);
+        ITEM_GRADES.put(IRON_WORKHAND_ADVANCED_IMPROVED_PICKAXE.get(), Grade.GRADE_2);
+        ITEM_GRADES.put(IRON_WORKHAND_PROFESSIONAL_IMPROVED_PICKAXE.get(), Grade.GRADE_4);
+        ITEM_GRADES.put(DIAMOND_WORKHAND_ADVANCED_IMPROVED_PICKAXE.get(), Grade.GRADE_2);
+        ITEM_GRADES.put(DIAMOND_WORKHAND_PROFESSIONAL_IMPROVED_PICKAXE.get(), Grade.GRADE_4);
 
         ITEM_GRADES.put(STONE_WORKHAND_SHOVEL.get(), Grade.GRADE_1);
         ITEM_GRADES.put(STONE_WORKHAND_ADVANCED_SHOVEL.get(), Grade.GRADE_2);
