@@ -9,8 +9,10 @@
 | Categoría | Cantidad | Formato |
 |---|:---:|---|
 | ⛏️ Texturas de herramienta (pico + pala × 3 materiales × 4 grados) | 24 | PNG · 16×16 px exactos · fondo transparente |
+| ⛏️ Texturas de pico mejorado (improved pickaxe) | 4 | PNG · 16×16 px exactos · fondo transparente |
+| 🪓 Texturas de hacha workhand (workhand axe) | 2 | PNG · 16×16 px exactos · fondo transparente |
 | 🪵 Textura del nuevo item *Palo Robusto* | 1 | PNG · 16×16 px exactos · fondo transparente |
-| **Total** | **25** | |
+| **Total** | **31** | |
 
 El icono del mod y el banner promocional **ya están hechos** — no forman parte de lo que queda pendiente.
 
@@ -92,8 +94,16 @@ Orden: picos (1-12) primero, luego palas (13-24); dentro de cada tipo, por mater
 | 22 | `diamond_workhand_advanced_shovel.png` | Diamond Workhand Advanced Shovel | Diamante | Avanzado | Pala |
 | 23 | `diamond_workhand_expert_shovel.png` | Diamond Workhand Expert Shovel | Diamante | Experto | Pala |
 | 24 | `diamond_workhand_professional_shovel.png` | Diamond Workhand Professional Shovel | Diamante | Profesional | Pala |
+| **IMPROVED PICKAXES** | | | | | |
+| 25 | `iron_workhand_advanced_improved_pickaxe.png` | Iron Workhand Advanced Improved Pickaxe | Hierro | Avanzado | Pico mejorado |
+| 26 | `iron_workhand_professional_improved_pickaxe.png` | Iron Workhand Professional Improved Pickaxe | Hierro | Profesional | Pico mejorado |
+| 27 | `diamond_workhand_advanced_improved_pickaxe.png` | Diamond Workhand Advanced Improved Pickaxe | Diamante | Avanzado | Pico mejorado |
+| 28 | `diamond_workhand_professional_improved_pickaxe.png` | Diamond Workhand Professional Improved Pickaxe | Diamante | Profesional | Pico mejorado |
+| **WORKHAND AXES** | | | | | |
+| 29 | `iron_workhand_axe.png` | Iron Workhand Axe | Hierro | N/A | Hacha |
+| 30 | `diamond_workhand_axe.png` | Diamond Workhand Axe | Diamante | N/A | Hacha |
 | **ITEM NUEVO** | | | | | |
-| 25 | `robust_stick.png` | Robust Stick | N/A | N/A | Palo |
+| 31 | `robust_stick.png` | Robust Stick | N/A | N/A | Palo |
 
 <br>
 
@@ -127,6 +137,8 @@ Los nombres de archivo y los nombres que se ven en el juego están en inglés (c
 - [x] Icono del mod
 - [x] Banner promocional
 - [ ] 24 texturas de herramienta (PNGs placeholders creados — listos para arte final)
+- [ ] 4 texturas de pico mejorado (PNGs placeholders creados — listos para arte final)
+- [ ] 2 texturas de hacha workhand (PNGs placeholders creados — listos para arte final)
 - [ ] 1 textura de Palo Robusto (PNG placeholder creado — listo para arte final)
 
 **Nota**: Los archivos PNG placeholder (16×16 px) están creados en `src/main/resources/assets/workhand_tools/textures/item/`. El diseñador puede reemplazarlos directamente sin cambios de código.

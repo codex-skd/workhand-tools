@@ -8,8 +8,8 @@
   "tooltip.workhand_tools.area.5x5x5": "範囲：5x5x5",
   "tooltip.workhand_tools.area.3x3x1_flat": "範囲：3x3x1（平面）",
   "tooltip.workhand_tools.area.5x5x1_flat": "範囲：5x5x1（平面）",
-  "tooltip.workhand_tools.hold_shift": "§7Shiftで通常採掘",
-  "tooltip.workhand_tools.right_click": "§7右クリックでモード切替",
+  "tooltip.workhand_tools.hold_shift": "\u00a77Shiftで通常採掘",
+  "tooltip.workhand_tools.right_click": "\u00a77右クリックでモード切替",
   "item.workhand_tools.stone_workhand_pickaxe": "石のワークハンドツルハシ",
   "item.workhand_tools.stone_workhand_shovel": "石のワークハンドショベル",
   "item.workhand_tools.stone_workhand_advanced_pickaxe": "上級の石のワークハンドツルハシ",
@@ -34,5 +34,16 @@
   "item.workhand_tools.diamond_workhand_expert_shovel": "熟練のダイヤのワークハンドショベル",
   "item.workhand_tools.diamond_workhand_professional_pickaxe": "達人のダイヤのワークハンドツルハシ",
   "item.workhand_tools.diamond_workhand_professional_shovel": "達人のダイヤのワークハンドショベル",
-  "item.workhand_tools.robust_stick": "頑丈な棒"
+  "item.workhand_tools.robust_stick": "頑丈な棒",
+  "item.workhand_tools.iron_workhand_advanced_improved_pickaxe": "改良された上級の鉄のワークハンドツルハシ",
+  "item.workhand_tools.iron_workhand_professional_improved_pickaxe": "改良された達人の鉄のワークハンドツルハシ",
+  "item.workhand_tools.diamond_workhand_advanced_improved_pickaxe": "改良された上級のダイヤのワークハンドツルハシ",
+  "item.workhand_tools.diamond_workhand_professional_improved_pickaxe": "改良された達人のダイヤのワークハンドツルハシ",
+  "item.workhand_tools.iron_workhand_axe": "鉄のワークハンドオノ",
+  "item.workhand_tools.diamond_workhand_axe": "ダイヤのワークハンドオノ",
+  "tooltip.workhand_tools.vein_mining": "\u00a77鉱脈採掘が有効",
+  "message.workhand_tools.felling.enabled": "伐採：有効",
+  "message.workhand_tools.felling.disabled": "伐採：無効",
+  "tooltip.workhand_tools.felling.enabled": "伐採：有効",
+  "tooltip.workhand_tools.felling.disabled": "伐採：無効"
 }

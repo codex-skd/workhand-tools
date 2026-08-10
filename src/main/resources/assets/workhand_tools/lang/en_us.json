@@ -8,8 +8,8 @@
   "tooltip.workhand_tools.area.5x5x5": "Area: 5x5x5",
   "tooltip.workhand_tools.area.3x3x1_flat": "Area: 3x3x1 (Flat)",
   "tooltip.workhand_tools.area.5x5x1_flat": "Area: 5x5x1 (Flat)",
-  "tooltip.workhand_tools.hold_shift": "§7Hold Shift for normal mining",
-  "tooltip.workhand_tools.right_click": "§7Right-click to toggle mode",
+  "tooltip.workhand_tools.hold_shift": "\u00a77Hold Shift for normal mining",
+  "tooltip.workhand_tools.right_click": "\u00a77Right-click to toggle mode",
   "item.workhand_tools.stone_workhand_pickaxe": "Stone Workhand Pickaxe",
   "item.workhand_tools.stone_workhand_shovel": "Stone Workhand Shovel",
   "item.workhand_tools.stone_workhand_advanced_pickaxe": "Stone Workhand Advanced Pickaxe",
@@ -34,5 +34,16 @@
   "item.workhand_tools.diamond_workhand_expert_shovel": "Diamond Workhand Expert Shovel",
   "item.workhand_tools.diamond_workhand_professional_pickaxe": "Diamond Workhand Professional Pickaxe",
   "item.workhand_tools.diamond_workhand_professional_shovel": "Diamond Workhand Professional Shovel",
-  "item.workhand_tools.robust_stick": "Robust Stick"
+  "item.workhand_tools.robust_stick": "Robust Stick",
+  "item.workhand_tools.iron_workhand_advanced_improved_pickaxe": "Iron Workhand Advanced Improved Pickaxe",
+  "item.workhand_tools.iron_workhand_professional_improved_pickaxe": "Iron Workhand Professional Improved Pickaxe",
+  "item.workhand_tools.diamond_workhand_advanced_improved_pickaxe": "Diamond Workhand Advanced Improved Pickaxe",
+  "item.workhand_tools.diamond_workhand_professional_improved_pickaxe": "Diamond Workhand Professional Improved Pickaxe",
+  "item.workhand_tools.iron_workhand_axe": "Iron Workhand Axe",
+  "item.workhand_tools.diamond_workhand_axe": "Diamond Workhand Axe",
+  "tooltip.workhand_tools.vein_mining": "\u00a77Vein Mining active",
+  "message.workhand_tools.felling.enabled": "Tree Felling: Enabled",
+  "message.workhand_tools.felling.disabled": "Tree Felling: Disabled",
+  "tooltip.workhand_tools.felling.enabled": "Tree Felling: Enabled",
+  "tooltip.workhand_tools.felling.disabled": "Tree Felling: Disabled"
 }

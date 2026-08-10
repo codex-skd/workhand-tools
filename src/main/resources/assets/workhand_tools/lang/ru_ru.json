@@ -8,8 +8,8 @@
   "tooltip.workhand_tools.area.5x5x5": "Область: 5x5x5",
   "tooltip.workhand_tools.area.3x3x1_flat": "Область: 3x3x1 (Плоский)",
   "tooltip.workhand_tools.area.5x5x1_flat": "Область: 5x5x1 (Плоский)",
-  "tooltip.workhand_tools.hold_shift": "§7Удерживайте Shift для обычной добычи",
-  "tooltip.workhand_tools.right_click": "§7ПКМ для смены режима",
+  "tooltip.workhand_tools.hold_shift": "\u00a77Удерживайте Shift для обычной добычи",
+  "tooltip.workhand_tools.right_click": "\u00a77ПКМ для смены режима",
   "item.workhand_tools.stone_workhand_pickaxe": "Каменная рабочая кирка",
   "item.workhand_tools.stone_workhand_shovel": "Каменная рабочая лопата",
   "item.workhand_tools.stone_workhand_advanced_pickaxe": "Продвинутая каменная рабочая кирка",
@@ -34,5 +34,16 @@
   "item.workhand_tools.diamond_workhand_expert_shovel": "Экспертная алмазная рабочая лопата",
   "item.workhand_tools.diamond_workhand_professional_pickaxe": "Профессиональная алмазная рабочая кирка",
   "item.workhand_tools.diamond_workhand_professional_shovel": "Профессиональная алмазная рабочая лопата",
-  "item.workhand_tools.robust_stick": "Прочная палка"
+  "item.workhand_tools.robust_stick": "Прочная палка",
+  "item.workhand_tools.iron_workhand_advanced_improved_pickaxe": "Улучшенная продвинутая железная Workhand-кирка",
+  "item.workhand_tools.iron_workhand_professional_improved_pickaxe": "Улучшенная профессиональная железная Workhand-кирка",
+  "item.workhand_tools.diamond_workhand_advanced_improved_pickaxe": "Улучшенная продвинутая алмазная Workhand-кирка",
+  "item.workhand_tools.diamond_workhand_professional_improved_pickaxe": "Улучшенная профессиональная алмазная Workhand-кирка",
+  "item.workhand_tools.iron_workhand_axe": "Железный Workhand-топор",
+  "item.workhand_tools.diamond_workhand_axe": "Алмазный Workhand-топор",
+  "tooltip.workhand_tools.vein_mining": "\u00a77Добыча жилы активна",
+  "message.workhand_tools.felling.enabled": "Валка деревьев: Включена",
+  "message.workhand_tools.felling.disabled": "Валка деревьев: Отключена",
+  "tooltip.workhand_tools.felling.enabled": "Валка деревьев: Включена",
+  "tooltip.workhand_tools.felling.disabled": "Валка деревьев: Отключена"
 }

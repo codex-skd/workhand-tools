@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OOO",
+    "OPO",
+    "OOO"
+  ],
+  "key": {
+    "O": "#minecraft:iron_ores",
+    "P": "workhand_tools:iron_workhand_professional_pickaxe"
+  },
+  "result": {
+    "count": 1,
+    "id": "workhand_tools:iron_workhand_professional_improved_pickaxe"
+  }
+}

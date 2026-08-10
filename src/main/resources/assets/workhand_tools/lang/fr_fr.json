@@ -8,8 +8,8 @@
   "tooltip.workhand_tools.area.5x5x5": "Zone : 5x5x5",
   "tooltip.workhand_tools.area.3x3x1_flat": "Zone : 3x3x1 (Plat)",
   "tooltip.workhand_tools.area.5x5x1_flat": "Zone : 5x5x1 (Plat)",
-  "tooltip.workhand_tools.hold_shift": "§7Maintenir Shift pour minage normal",
-  "tooltip.workhand_tools.right_click": "§7Clic droit pour changer de mode",
+  "tooltip.workhand_tools.hold_shift": "\u00a77Maintenir Shift pour minage normal",
+  "tooltip.workhand_tools.right_click": "\u00a77Clic droit pour changer de mode",
   "item.workhand_tools.stone_workhand_pickaxe": "Pioche Workhand en Pierre",
   "item.workhand_tools.stone_workhand_shovel": "Pelle Workhand en Pierre",
   "item.workhand_tools.stone_workhand_advanced_pickaxe": "Pioche Workhand Avancée en Pierre",
@@ -34,5 +34,16 @@
   "item.workhand_tools.diamond_workhand_expert_shovel": "Pelle Workhand Experte en Diamant",
   "item.workhand_tools.diamond_workhand_professional_pickaxe": "Pioche Workhand Professionnelle en Diamant",
   "item.workhand_tools.diamond_workhand_professional_shovel": "Pelle Workhand Professionnelle en Diamant",
-  "item.workhand_tools.robust_stick": "Bâton Robuste"
+  "item.workhand_tools.robust_stick": "Bâton Robuste",
+  "item.workhand_tools.iron_workhand_advanced_improved_pickaxe": "Pioche Workhand avancée améliorée en Fer",
+  "item.workhand_tools.iron_workhand_professional_improved_pickaxe": "Pioche Workhand professionnelle améliorée en Fer",
+  "item.workhand_tools.diamond_workhand_advanced_improved_pickaxe": "Pioche Workhand avancée améliorée en Diamant",
+  "item.workhand_tools.diamond_workhand_professional_improved_pickaxe": "Pioche Workhand professionnelle améliorée en Diamant",
+  "item.workhand_tools.iron_workhand_axe": "Hache Workhand en Fer",
+  "item.workhand_tools.diamond_workhand_axe": "Hache Workhand en Diamant",
+  "tooltip.workhand_tools.vein_mining": "\u00a77Minage de filon actif",
+  "message.workhand_tools.felling.enabled": "Abattage : Activé",
+  "message.workhand_tools.felling.disabled": "Abattage : Désactivé",
+  "tooltip.workhand_tools.felling.enabled": "Abattage : Activé",
+  "tooltip.workhand_tools.felling.disabled": "Abattage : Désactivé"
 }

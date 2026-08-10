@@ -44,6 +44,10 @@ public class WorkhandTools {
                 for (DeferredHolder<Item, ? extends Item> holder : ModItems.SHOVELS) {
                     output.accept(holder.get());
                 }
+                for (DeferredHolder<Item, ? extends Item> holder : ModItems.AXES) {
+                    output.accept(holder.get());
+                }
+                output.accept(ModItems.ROBUST_STICK.get());
                 output.accept(ModItems.ROBUST_STICK.get());
             }).build());
 
@@ -67,6 +71,8 @@ public class WorkhandTools {
         // Register ourselves for server and other game events we are interested in.
         NeoForge.EVENT_BUS.register(this);
         NeoForge.EVENT_BUS.register(new AoEMiningHandler());
+        NeoForge.EVENT_BUS.register(new VeinMiningHandler());
+        NeoForge.EVENT_BUS.register(new TreeFellingHandler());
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
