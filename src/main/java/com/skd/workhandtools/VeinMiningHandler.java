@@ -37,9 +37,9 @@ public class VeinMiningHandler {
     public void onTooltip(ItemTooltipEvent event) {
         ItemStack stack = event.getItemStack();
         if (MiningHelper.isVeinPickaxe(stack)) {
+            // hold_shift is already added by AoEMiningHandler.onTooltip for any graded tool
+            // (vein pickaxes always have a grade) — don't duplicate it here.
             event.getToolTip().add(Component.translatable("tooltip.workhand_tools.vein_mining"));
-            event.getToolTip().add(Component.translatable(
-                    "tooltip.workhand_tools.hold_shift"));
         }
     }
 }

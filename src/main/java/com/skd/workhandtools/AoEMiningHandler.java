@@ -39,7 +39,7 @@ public class AoEMiningHandler {
                 ? stack.getOrDefault(ModDataComponents.AOE_MODE, AoEMode.CUBIC)
                 : AoEMode.CUBIC;
         boolean lookingUp = player.getXRot() < Config.PITCH_THRESHOLD_DEGREES.get();
-        Direction digDir = AoEPatterns.digDirection(player, event.getPos());
+        Direction digDir = AoEPatterns.digDirection(player, level, event.getPos());
         List<BlockPos> pattern = AoEPatterns.computePattern(event.getPos(), grade, mode, digDir, lookingUp);
 
         for (BlockPos pos : pattern) {
