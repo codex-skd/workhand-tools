@@ -53,7 +53,7 @@ public final class AreaHighlighter {
                 ? stack.getOrDefault(ModDataComponents.AOE_MODE, AoEMode.CUBIC)
                 : AoEMode.CUBIC;
         boolean lookingUp = player.getXRot() < Config.PITCH_THRESHOLD_DEGREES.get();
-        Direction digDir = AoEPatterns.digDirection(player, target);
+        Direction digDir = AoEPatterns.digDirection(player, player.level(), target);
         List<BlockPos> pattern = AoEPatterns.computePattern(target, grade, mode, digDir, lookingUp);
 
         if (pattern.isEmpty()) {

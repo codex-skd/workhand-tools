@@ -1,5 +1,24 @@
 # Changelog — Workhand Tools
 
+## [1.6.1] - 2026-08-10
+
+### Fix
+
+- **Cubic mode mining fixed**: Area mining in Cubic mode only ever broke a single `NxNx1` layer instead of the full `NxNxN` volume, and aiming slightly off-center from the block's face would flip the whole pattern onto the wrong axis. The digging direction is now derived from a real block raytrace along the player's view instead of an approximation based on the player's stance position, and side faces are inverted the same way top/bottom faces already were — so depth now extends into the wall regardless of small aiming deviations.
+- **Duplicate tooltip line removed**: Improved (vein-mining) pickaxes showed "Hold Shift for normal mining" twice, added independently by both the AoE and vein-mining tooltip handlers.
+- **Broken color codes in tooltips**: `hold_shift` and `right_click` tooltip lines were missing their color-format digit, causing the first letter of the following word to be consumed as a formatting code (e.g. red or strikethrough) instead of rendering as text. `vein_mining` had a double-escaped color code rendering as a literal string. Fixed across all 10 languages.
+
+### Update
+
+- **Final tool artwork applied**: Placeholder textures for all 24 tools, the 4 improved pickaxes and the 2 workhand axes replaced with the designer's final art.
+
+## [1.6.0] - 2026-08-10
+
+### Feature
+
+- **Workhand Axes**: Iron and diamond axes with toggleable tree felling (right-click to enable/disable; felling a log chops the whole connected tree).
+- **Vein-mining improved pickaxes**: Advanced and Professional improved pickaxes (iron/diamond) that, in addition to area mining, chain-break connected ore blocks of the same type.
+
 ## [1.5.0] - 2026-08-10
 
 ### Update
