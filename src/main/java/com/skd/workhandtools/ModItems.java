@@ -163,6 +163,12 @@ public final class ModItems {
             WorkhandTools.ITEMS.registerItem("diamond_workhand_axe",
                     WorkhandAxeItem::new, () -> new Item.Properties().axe(ModToolMaterials.IMPROVED_DIAMOND, 5.0F, -3.0F));
 
+    // Tape Measure. Standalone utility tool (no Grade, not in PICKAXES/SHOVELS/AXES). Right-click
+    // set/finish a measurement box, shift+right-click undo; see TapeMeasureItem/TapeMeasureHandler.
+    public static final DeferredItem<TapeMeasureItem> TAPE_MEASURE =
+            WorkhandTools.ITEMS.registerItem("tape_measure",
+                    TapeMeasureItem::new, Item.Properties::new);
+
     // Lists for creative tab and utility
     public static final List<DeferredHolder<Item, ? extends Item>> PICKAXES = List.of(
             STONE_WORKHAND_PICKAXE,
@@ -249,6 +255,7 @@ public final class ModItems {
         BY_ID.put("diamond_workhand_professional_shovel", DIAMOND_WORKHAND_PROFESSIONAL_SHOVEL);
         BY_ID.put("iron_workhand_axe", IRON_WORKHAND_AXE);
         BY_ID.put("diamond_workhand_axe", DIAMOND_WORKHAND_AXE);
+        BY_ID.put("tape_measure", TAPE_MEASURE);
 
         ITEM_GRADES.put(STONE_WORKHAND_PICKAXE.get(), Grade.GRADE_1);
         ITEM_GRADES.put(STONE_WORKHAND_ADVANCED_PICKAXE.get(), Grade.GRADE_2);

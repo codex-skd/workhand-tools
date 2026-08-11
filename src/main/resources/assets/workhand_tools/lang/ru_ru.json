@@ -45,5 +45,12 @@
   "message.workhand_tools.felling.enabled": "Валка деревьев: Включена",
   "message.workhand_tools.felling.disabled": "Валка деревьев: Отключена",
   "tooltip.workhand_tools.felling.enabled": "Валка деревьев: Включена",
-  "tooltip.workhand_tools.felling.disabled": "Валка деревьев: Отключена"
+  "tooltip.workhand_tools.felling.disabled": "Валка деревьев: Отключена",
+  "item.workhand_tools.tape_measure": "Рулетка",
+  "workhand_tools.configuration.client": "Клиент",
+  "workhand_tools.configuration.lineColor": "Цвет линии",
+  "workhand_tools.configuration.textColor": "Цвет текста",
+  "workhand_tools.configuration.textSize": "Размер текста",
+  "workhand_tools.configuration.lineWidth": "Толщина линии",
+  "workhand_tools.configuration.lineWidthMax": "Макс. толщина линии"
 }

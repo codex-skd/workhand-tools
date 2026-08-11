@@ -45,5 +45,12 @@
   "message.workhand_tools.felling.enabled": "伐採：有効",
   "message.workhand_tools.felling.disabled": "伐採：無効",
   "tooltip.workhand_tools.felling.enabled": "伐採：有効",
-  "tooltip.workhand_tools.felling.disabled": "伐採：無効"
+  "tooltip.workhand_tools.felling.disabled": "伐採：無効",
+  "item.workhand_tools.tape_measure": "メジャー",
+  "workhand_tools.configuration.client": "クライアント",
+  "workhand_tools.configuration.lineColor": "線の色",
+  "workhand_tools.configuration.textColor": "文字の色",
+  "workhand_tools.configuration.textSize": "文字サイズ",
+  "workhand_tools.configuration.lineWidth": "線の太さ",
+  "workhand_tools.configuration.lineWidthMax": "線の太さ（最大）"
 }

@@ -45,5 +45,12 @@
   "message.workhand_tools.felling.enabled": "Baumfällung: Aktiviert",
   "message.workhand_tools.felling.disabled": "Baumfällung: Deaktiviert",
   "tooltip.workhand_tools.felling.enabled": "Baumfällung: Aktiviert",
-  "tooltip.workhand_tools.felling.disabled": "Baumfällung: Deaktiviert"
+  "tooltip.workhand_tools.felling.disabled": "Baumfällung: Deaktiviert",
+  "item.workhand_tools.tape_measure": "Maßband",
+  "workhand_tools.configuration.client": "Client",
+  "workhand_tools.configuration.lineColor": "Linienfarbe",
+  "workhand_tools.configuration.textColor": "Textfarbe",
+  "workhand_tools.configuration.textSize": "Textgröße",
+  "workhand_tools.configuration.lineWidth": "Linienbreite",
+  "workhand_tools.configuration.lineWidthMax": "Max. Linienbreite"
 }

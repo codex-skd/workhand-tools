@@ -45,5 +45,12 @@
   "message.workhand_tools.felling.enabled": "Tree Felling: Enabled",
   "message.workhand_tools.felling.disabled": "Tree Felling: Disabled",
   "tooltip.workhand_tools.felling.enabled": "Tree Felling: Enabled",
-  "tooltip.workhand_tools.felling.disabled": "Tree Felling: Disabled"
+  "tooltip.workhand_tools.felling.disabled": "Tree Felling: Disabled",
+  "item.workhand_tools.tape_measure": "Tape Measure",
+  "workhand_tools.configuration.client": "Client",
+  "workhand_tools.configuration.lineColor": "Line Color",
+  "workhand_tools.configuration.textColor": "Text Color",
+  "workhand_tools.configuration.textSize": "Text Size",
+  "workhand_tools.configuration.lineWidth": "Line Width",
+  "workhand_tools.configuration.lineWidthMax": "Line Width Max"
 }
