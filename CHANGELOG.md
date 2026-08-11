@@ -1,5 +1,11 @@
 # Changelog — Workhand Tools
 
+## [1.8.0] - 2026-08-11
+
+### Feature
+
+- **Final tool artwork completed**: Placeholder textures for the remaining 24 tools (Stone/Iron/Diamond × Base/Advanced/Expert/Professional × Pickaxe/Shovel) replaced with the designer's final art. Combined with the improved pickaxes, workhand axes and Robust Stick finalized earlier, every item in the mod now displays final custom artwork — no vanilla or placeholder textures remain.
+
 ## [1.7.0] - 2026-08-11
 
 ### Feature

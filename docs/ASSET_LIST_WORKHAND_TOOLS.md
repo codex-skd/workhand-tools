@@ -136,9 +136,9 @@ Los nombres de archivo y los nombres que se ven en el juego están en inglés (c
 
 - [x] Icono del mod
 - [x] Banner promocional
-- [ ] 24 texturas de herramienta (PNGs placeholders creados — listos para arte final)
-- [ ] 4 texturas de pico mejorado (PNGs placeholders creados — listos para arte final)
-- [ ] 2 texturas de hacha workhand (PNGs placeholders creados — listos para arte final)
-- [ ] 1 textura de Palo Robusto (PNG placeholder creado — listo para arte final)
+- [x] 24 texturas de herramienta (arte final del diseñador aplicado)
+- [x] 4 texturas de pico mejorado (arte final del diseñador aplicado)
+- [x] 2 texturas de hacha workhand (arte final del diseñador aplicado)
+- [x] 1 textura de Palo Robusto (arte final del diseñador aplicado)
 
 **Nota**: Los archivos PNG placeholder (16×16 px) están creados en `src/main/resources/assets/workhand_tools/textures/item/`. El diseñador puede reemplazarlos directamente sin cambios de código.
