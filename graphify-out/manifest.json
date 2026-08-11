@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/ModItems.java": {
-    "mtime": 1786353118.1475284,
-    "ast_hash": "3e1693982f0708d7cd87956b85d286dd",
+    "mtime": 1786434035.0969892,
+    "ast_hash": "f710fe75287cad68bfc3f7868805c9b7",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/ModToolMaterials.java": {
@@ -50,18 +50,18 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandTools.java": {
-    "mtime": 1786353963.2437854,
-    "ast_hash": "68aef63f76b14a19199694783a1abf38",
+    "mtime": 1786434087.347376,
+    "ast_hash": "94d46cab76eb14b06f341da401be1098",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandToolsClient.java": {
-    "mtime": 1786149663.653406,
-    "ast_hash": "130f593a7d58ff8e8b6190ceecca770f",
+    "mtime": 1786434154.3676827,
+    "ast_hash": "437ca60ac0f04ec40a014aa82997f244",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/en_us.json": {
-    "mtime": 1786364117.8988287,
-    "ast_hash": "c4ae1550677f5dc0a8d97630bef4e608",
+    "mtime": 1786434663.743869,
+    "ast_hash": "31a72261084e7c6f9e2510cf1d9c9465",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/models/item/diamond_workhand_advanced_pickaxe.json": {
@@ -370,13 +370,13 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1786377672.8649535,
-    "ast_hash": "0aeed502113faf1670002085ad2c784e",
+    "mtime": 1786441536.2846253,
+    "ast_hash": "2901e7c1ade863ebf609cd8221ddf66b",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1786147686.1971393,
-    "ast_hash": "cfeba643680b589a33bb13caf219feb2",
+    "mtime": 1786437553.5991483,
+    "ast_hash": "323380f7c5cfe6bf01f66ac6c327d199",
     "semantic_hash": ""
   },
   "docs/ASSET_LIST_WORKHAND_TOOLS.md": {
@@ -740,48 +740,48 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/de_de.json": {
-    "mtime": 1786364117.8973138,
-    "ast_hash": "4753ac46e4de725335ea814d6707b5dd",
+    "mtime": 1786436305.2808387,
+    "ast_hash": "ff53c5fd47d69d12597e3abb8b52be5b",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/es_es.json": {
-    "mtime": 1786364117.8988287,
-    "ast_hash": "e36ac9036f1a87747ae1b87dd9a22316",
+    "mtime": 1786436085.035306,
+    "ast_hash": "2deac9ce83a078a2b83fb9067c178f87",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/fr_fr.json": {
-    "mtime": 1786364117.8988287,
-    "ast_hash": "1532f8dd92479ec63751bdc3837a79e8",
+    "mtime": 1786436309.3444314,
+    "ast_hash": "157f53ec974bf214868325650ced05a4",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/it_it.json": {
-    "mtime": 1786364117.9003513,
-    "ast_hash": "76fb505d0b8a34ef93975b1fdf74763d",
+    "mtime": 1786436312.1098156,
+    "ast_hash": "50e92320547eae335953cad8438dc822",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/ja_jp.json": {
-    "mtime": 1786364117.9033914,
-    "ast_hash": "28c668fa5a621a5d0a61e80b8efd5605",
+    "mtime": 1786436315.8115616,
+    "ast_hash": "ffb9646ab8bde837b1a014d8b709b3fe",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/ko_kr.json": {
-    "mtime": 1786364117.9033914,
-    "ast_hash": "a5a5807dce310a20bd25d2b13a1d2f9f",
+    "mtime": 1786436340.1353176,
+    "ast_hash": "69fb2151db78ae017e5db23acc5f2259",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/pt_br.json": {
-    "mtime": 1786364117.9049146,
-    "ast_hash": "003b22a5c1a66450d348e4000ad6bf5f",
+    "mtime": 1786436346.2164717,
+    "ast_hash": "c6582a23357dbc2249025a0096112783",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/ru_ru.json": {
-    "mtime": 1786364117.9049146,
-    "ast_hash": "31ac4c08085770fecdf7d6ac9550be1d",
+    "mtime": 1786436357.2786427,
+    "ast_hash": "922b7842712de5c27123f348a05d9b4a",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/zh_cn.json": {
-    "mtime": 1786364117.9049146,
-    "ast_hash": "f074afd6015eaba802360add5c940b96",
+    "mtime": 1786436369.420492,
+    "ast_hash": "67df786b48a7bf764156c7135321e527",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/1.1.0.md": {
@@ -1002,6 +1002,66 @@
   "src/main/resources/assets/workhand_tools/textures/item/iron_workhand_professional_improved_pickaxe.png": {
     "mtime": 1786374891.2597141,
     "ast_hash": "e9b7177c6ee36af685a1c521215b1683",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/BoxHandler.java": {
+    "mtime": 1786433476.1611674,
+    "ast_hash": "261e4639096f0f941fc54149caf14e98",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/LineColor.java": {
+    "mtime": 1786433481.799677,
+    "ast_hash": "732b5c875a8a527069ad1a44d4f1acb5",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/MeasurementBox.java": {
+    "mtime": 1786433622.3730297,
+    "ast_hash": "3a3ccd9fbf02fe272afd567f5f9f7e0f",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/TapeMeasureConfig.java": {
+    "mtime": 1786433685.48703,
+    "ast_hash": "e82b79bcfeea4ccfa5b3d242ad70593d",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/TapeMeasureHandler.java": {
+    "mtime": 1786433781.668779,
+    "ast_hash": "edc729c8d56e0ce2dfc58168d1e6ad65",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/TapeMeasureItem.java": {
+    "mtime": 1786440695.6635888,
+    "ast_hash": "da99388c868079999ad3ec82e1de81c5",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/TextColor.java": {
+    "mtime": 1786433496.5878766,
+    "ast_hash": "666b84e36a9061bfaf39b43c560a1ffd",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/items/tape_measure.json": {
+    "mtime": 1786434517.1201704,
+    "ast_hash": "2f89e2b15d71b391fef7753935475986",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/models/item/tape_measure.json": {
+    "mtime": 1786434517.2171776,
+    "ast_hash": "176029f1d1ce4608962b399fa0c2af82",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/workhand_tools/recipe/tape_measure.json": {
+    "mtime": 1786434517.2549026,
+    "ast_hash": "9323dffdf1031f2ba7aa2aa79e91a8c8",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.7.0.md": {
+    "mtime": 1786441547.1762435,
+    "ast_hash": "3c72bd36bc361310848e89f7edae20f6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/textures/item/tape_measure.png": {
+    "mtime": 1786434200.4347885,
+    "ast_hash": "a7a347995163796dd556de51be9f66a2",
     "semantic_hash": ""
   }
 }
