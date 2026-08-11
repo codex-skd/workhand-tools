@@ -45,5 +45,12 @@
   "message.workhand_tools.felling.enabled": "Abattage : Activé",
   "message.workhand_tools.felling.disabled": "Abattage : Désactivé",
   "tooltip.workhand_tools.felling.enabled": "Abattage : Activé",
-  "tooltip.workhand_tools.felling.disabled": "Abattage : Désactivé"
+  "tooltip.workhand_tools.felling.disabled": "Abattage : Désactivé",
+  "item.workhand_tools.tape_measure": "Mètre Ruban",
+  "workhand_tools.configuration.client": "Client",
+  "workhand_tools.configuration.lineColor": "Couleur de Ligne",
+  "workhand_tools.configuration.textColor": "Couleur de Texte",
+  "workhand_tools.configuration.textSize": "Taille de Texte",
+  "workhand_tools.configuration.lineWidth": "Épaisseur de Ligne",
+  "workhand_tools.configuration.lineWidthMax": "Épaisseur de Ligne Max"
 }

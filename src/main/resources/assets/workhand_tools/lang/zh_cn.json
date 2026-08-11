@@ -45,5 +45,12 @@
   "message.workhand_tools.felling.enabled": "砍树：已开启",
   "message.workhand_tools.felling.disabled": "砍树：已关闭",
   "tooltip.workhand_tools.felling.enabled": "砍树：已开启",
-  "tooltip.workhand_tools.felling.disabled": "砍树：已关闭"
+  "tooltip.workhand_tools.felling.disabled": "砍树：已关闭",
+  "item.workhand_tools.tape_measure": "卷尺",
+  "workhand_tools.configuration.client": "客户端",
+  "workhand_tools.configuration.lineColor": "线条颜色",
+  "workhand_tools.configuration.textColor": "文字颜色",
+  "workhand_tools.configuration.textSize": "文字大小",
+  "workhand_tools.configuration.lineWidth": "线条宽度",
+  "workhand_tools.configuration.lineWidthMax": "最大线条宽度"
 }

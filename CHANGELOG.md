@@ -1,5 +1,11 @@
 # Changelog — Workhand Tools
 
+## [1.7.0] - 2026-08-11
+
+### Feature
+
+- **Tape Measure**: new item to measure the area between two blocks. Right-click a block to set the start point, right-click again to set the end point and draw a wireframe box with X/Y/Z length labels; shift+right-click undoes the last box. The pending box's end point live-updates from the crosshair before it's confirmed. Line/text color and size are configurable in a new client config screen. Adapted from Mrbysco's "Measurements" mod (MIT License), see Credits in README.md.
+
 ## [1.6.1] - 2026-08-10
 
 ### Fix

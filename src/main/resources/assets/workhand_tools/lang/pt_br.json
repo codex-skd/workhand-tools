@@ -45,5 +45,12 @@
   "message.workhand_tools.felling.enabled": "Derrubada: Ativada",
   "message.workhand_tools.felling.disabled": "Derrubada: Desativada",
   "tooltip.workhand_tools.felling.enabled": "Derrubada: Ativada",
-  "tooltip.workhand_tools.felling.disabled": "Derrubada: Desativada"
+  "tooltip.workhand_tools.felling.disabled": "Derrubada: Desativada",
+  "item.workhand_tools.tape_measure": "Fita Métrica",
+  "workhand_tools.configuration.client": "Cliente",
+  "workhand_tools.configuration.lineColor": "Cor da Linha",
+  "workhand_tools.configuration.textColor": "Cor do Texto",
+  "workhand_tools.configuration.textSize": "Tamanho do Texto",
+  "workhand_tools.configuration.lineWidth": "Espessura da Linha",
+  "workhand_tools.configuration.lineWidthMax": "Espessura da Linha Máx."
 }

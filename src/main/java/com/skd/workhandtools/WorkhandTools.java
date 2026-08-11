@@ -49,6 +49,7 @@ public class WorkhandTools {
                 }
                 output.accept(ModItems.ROBUST_STICK.get());
                 output.accept(ModItems.ROBUST_STICK.get());
+                output.accept(ModItems.TAPE_MEASURE.get());
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.

@@ -45,5 +45,12 @@
   "message.workhand_tools.felling.enabled": "Tala de arboles: Activada",
   "message.workhand_tools.felling.disabled": "Tala de arboles: Desactivada",
   "tooltip.workhand_tools.felling.enabled": "Tala de arboles: Activada",
-  "tooltip.workhand_tools.felling.disabled": "Tala de arboles: Desactivada"
+  "tooltip.workhand_tools.felling.disabled": "Tala de arboles: Desactivada",
+  "item.workhand_tools.tape_measure": "Cinta Métrica",
+  "workhand_tools.configuration.client": "Cliente",
+  "workhand_tools.configuration.lineColor": "Color de Línea",
+  "workhand_tools.configuration.textColor": "Color de Texto",
+  "workhand_tools.configuration.textSize": "Tamaño de Texto",
+  "workhand_tools.configuration.lineWidth": "Grosor de Línea",
+  "workhand_tools.configuration.lineWidthMax": "Grosor de Línea Máx."
 }

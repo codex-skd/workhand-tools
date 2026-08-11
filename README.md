@@ -15,6 +15,7 @@ Each material tier (Stone, Iron, Diamond) offers 4 grades of tools — from basi
 - Full enchantment support (Efficiency, Fortune, Silk Touch, Unbreaking, Mending)
 - Vanilla-standard durability, speed, and combat stats per material
 - Custom crafting recipes with progression (Robust Stick component for Expert/Professional)
+- **Tape Measure** utility item: right-click to set a measurement box, right-click again to finish it; live-updating wireframe with per-axis length labels while the box is in progress. Shift+right-click undoes the last box.
 
 ## Controls
 
@@ -23,6 +24,8 @@ Each material tier (Stone, Iron, Diamond) offers 4 grades of tools — from basi
 | Area mine | Left-click (no sneaking) |
 | Single block | Shift + Left-click |
 | Toggle mode | Right-click (Grades 2 & 4) |
+| Set / finish measurement | Right-click block (Tape Measure) |
+| Undo last measurement | Shift + Right-click (Tape Measure) |
 
 ## Requirements
 
@@ -40,3 +43,8 @@ Each material tier (Stone, Iron, Diamond) offers 4 grades of tools — from basi
 ## License
 
 All Rights Reserved.
+
+## Credits
+
+- **Tape Measure** tool adapted from [Measurements](https://github.com/Mrbysco/Measurements) by Mrbysco (MIT License). The wireframe rendering and length-label placement were ported essentially as-is; the multi-loader plumbing was dropped to fit this single-loader NeoForge mod. The original `MeasurementBox` algorithm itself credits [MadeBaruna/BlockMeter](https://github.com/MadeBaruna/BlockMeter). The `tape_measure.png` item texture is reused from the same MIT-licensed source.
+

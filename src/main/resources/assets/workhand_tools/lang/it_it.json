@@ -45,5 +45,12 @@
   "message.workhand_tools.felling.enabled": "Abbattimento: Attivato",
   "message.workhand_tools.felling.disabled": "Abbattimento: Disattivato",
   "tooltip.workhand_tools.felling.enabled": "Abbattimento: Attivato",
-  "tooltip.workhand_tools.felling.disabled": "Abbattimento: Disattivato"
+  "tooltip.workhand_tools.felling.disabled": "Abbattimento: Disattivato",
+  "item.workhand_tools.tape_measure": "Metro a Nastro",
+  "workhand_tools.configuration.client": "Client",
+  "workhand_tools.configuration.lineColor": "Colore Linea",
+  "workhand_tools.configuration.textColor": "Colore Testo",
+  "workhand_tools.configuration.textSize": "Dimensione Testo",
+  "workhand_tools.configuration.lineWidth": "Spessore Linea",
+  "workhand_tools.configuration.lineWidthMax": "Spessore Linea Max"
 }
