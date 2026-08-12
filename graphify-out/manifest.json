@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandTools.java": {
-    "mtime": 1786434087.347376,
-    "ast_hash": "94d46cab76eb14b06f341da401be1098",
+    "mtime": 1786491845.5770917,
+    "ast_hash": "a42fc9613de97ea51a4787084d3a169e",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandToolsClient.java": {
@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1786471750.587534,
-    "ast_hash": "732605f4cef8ab2f7c87872bd472244d",
+    "mtime": 1786495117.3654182,
+    "ast_hash": "b377fdf879c642f57e46460b3d74efbe",
     "semantic_hash": ""
   },
   "README.md": {
@@ -1067,6 +1067,16 @@
   "docs/curseforge/versions/1.8.0.md": {
     "mtime": 1786471757.7062843,
     "ast_hash": "27cdb66c35089ab512d98030e101595c",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/LeafDecayHandler.java": {
+    "mtime": 1786491840.6117425,
+    "ast_hash": "15dc9c6133acbf130abe5e673c2deaeb",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.9.0.md": {
+    "mtime": 1786495124.035729,
+    "ast_hash": "a03796017eace3b921c5e275586f6ae7",
     "semantic_hash": ""
   }
 }

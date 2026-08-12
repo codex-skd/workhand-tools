@@ -1,16 +1,16 @@
-# Graph Report - 26.2  (2026-08-11)
+# Graph Report - 26.2  (2026-08-12)
 
 ## Corpus Check
-- 180 files · ~26,101 words
+- 182 files · ~26,537 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 408 nodes · 583 edges · 51 communities (50 shown, 1 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.8)
+- 423 nodes · 606 edges · 52 communities (51 shown, 1 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 9 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `143c69ec`
+- Built from commit: `b9287806`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -43,8 +43,8 @@
 1. `TextColor` - 21 edges
 2. `LineColor` - 20 edges
 3. `MeasurementBox` - 18 edges
-4. `Diseño técnico — Workhand Tools` - 17 edges
-5. `Changelog — Workhand Tools` - 16 edges
+4. `Changelog — Workhand Tools` - 17 edges
+5. `Diseño técnico — Workhand Tools` - 17 edges
 6. `ModItems` - 14 edges
 7. `Flujo de trabajo — Workhand Tools (NeoForge)` - 12 edges
 8. `MiningHelper` - 11 edges
@@ -66,7 +66,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (51 total, 1 thin omitted)
+## Communities (52 total, 1 thin omitted)
 
 ### Community 0 - "Block Break Handling"
 Cohesion: 0.11
@@ -97,8 +97,8 @@ Cohesion: 0.07
 Nodes (27): Anclaje vertical para patrones de 5 de alto (5×5×1 / 5×5×5), Clic izquierdo vs. clic derecho (grados 2 y 4) — confirmado, Concepto, Configuración y compatibilidad con Configured, Creative tab, Diseño técnico — Workhand Tools, Encantamientos, Grados y minado en área (AoE) (+19 more)
 
 ### Community 7 - "Client-Side Workhand Tools"
-Cohesion: 0.13
-Nodes (10): LoggingIn, LoggingOut, Post, BoxHandler, BlockPos, InteractionResult, Player, SubmitCustomGeometryEvent (+2 more)
+Cohesion: 0.10
+Nodes (14): EventBusSubscriber, LoggingIn, LoggingOut, BoxHandler, BlockPos, InteractionResult, Player, Post (+6 more)
 
 ### Community 8 - "Configuration Management"
 Cohesion: 0.50
@@ -126,7 +126,7 @@ Nodes (7): CurseForge — Variables del proyecto, Nota, Proyecto, Rama, Tag, Tok
 
 ### Community 17 - "Changelog — Workhand Tools"
 Cohesion: 0.05
-Nodes (36): [1.0.0] - 2026-08-07, [1.1.0] - 2026-08-08, [1.1.1] - 2026-08-08, [1.1.2] - 2026-08-08, [1.2.0] - 2026-08-08, [1.2.1] - 2026-08-08, [1.2.2] - 2026-08-08, [1.2.3] - 2026-08-08 (+28 more)
+Nodes (38): [1.0.0] - 2026-08-07, [1.1.0] - 2026-08-08, [1.1.1] - 2026-08-08, [1.1.2] - 2026-08-08, [1.2.0] - 2026-08-08, [1.2.1] - 2026-08-08, [1.2.2] - 2026-08-08, [1.2.3] - 2026-08-08 (+30 more)
 
 ### Community 18 - "Workhand Tools"
 Cohesion: 0.25
@@ -153,11 +153,11 @@ Cohesion: 0.09
 Nodes (22): Axis, getColor(), DyeColor, TextColor, BLACK, BLUE, BROWN, CYAN (+14 more)
 
 ### Community 49 - "WorkhandToolsClient.java"
-Cohesion: 0.53
-Nodes (4): EventBusSubscriber, Mod, ModContainer, WorkhandToolsClient
+Cohesion: 0.27
+Nodes (8): NeighborNotifyEvent, ServerLevel, BlockPos, Post, SubscribeEvent, LeafDecayHandler, LeafKey, Unload
 
 ## Knowledge Gaps
-- **129 isolated node(s):** `CUBIC`, `FLAT`, `GRADE_1`, `GRADE_2`, `GRADE_3` (+124 more)
+- **130 isolated node(s):** `CUBIC`, `FLAT`, `GRADE_1`, `GRADE_2`, `GRADE_3` (+125 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -165,11 +165,11 @@ Nodes (4): EventBusSubscriber, Mod, ModContainer, WorkhandToolsClient
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `TextColor` connect `TextColor` to `Grade`?**
-  _High betweenness centrality (0.122) - this node is a cross-community bridge._
+  _High betweenness centrality (0.120) - this node is a cross-community bridge._
 - **Why does `Client` connect `Grade` to `TextColor`?**
-  _High betweenness centrality (0.078) - this node is a cross-community bridge._
+  _High betweenness centrality (0.076) - this node is a cross-community bridge._
 - **What connects `CUBIC`, `FLAT`, `GRADE_1` to the rest of the system?**
-  _129 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _130 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Block Break Handling` be split into smaller, more focused modules?**
   _Cohesion score 0.10591133004926108 - nodes in this community are weakly interconnected._
 - **Should `AoE Mode` be split into smaller, more focused modules?**
