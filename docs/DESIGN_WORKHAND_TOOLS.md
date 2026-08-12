@@ -17,13 +17,13 @@ Orden de progresión (accesibilidad in-game, de más temprano a más tardío):
 
 | # | Material | Origen stats | Durabilidad (uses) | Velocidad (speed) | Encantabilidad | Bonus daño ataque | Item de reparación |
 |---|---|---|---|---|---|---|---|
-| 1 | Stone | Vanilla (`ToolMaterial.STONE`) | 131 | 4.0 | 5 | 1 | `#minecraft:stone_tool_materials` |
-| 2 | Iron | Vanilla (`ToolMaterial.IRON`) | 250 | 6.0 | 14 | 2 | `minecraft:iron_ingot` |
-| 3 | Diamond | Vanilla (`ToolMaterial.DIAMOND`) | 1561 | 8.0 | 10 | 3 | `minecraft:diamond` |
+| 1 | Stone | Custom (`ModToolMaterials.STONE_WORKHAND`) | 655 | 4.0 | 5 | 1 | `#minecraft:stone_tool_materials` |
+| 2 | Iron | Custom (`ModToolMaterials.IRON_WORKHAND`) | 1250 | 6.0 | 14 | 2 | `#minecraft:iron_tool_materials` |
+| 3 | Diamond | Custom (`ModToolMaterials.DIAMOND_WORKHAND`) | 7805 | 8.0 | 10 | 3 | `#minecraft:diamond_tool_materials` |
 
-## Nota de implementación clave (materiales vanilla)
+## Nota de implementación clave (materiales custom, 5x durabilidad vanilla)
 
-Los 3 materiales usan tier vanilla directo (`net.minecraft.world.item.ToolMaterial`): `ToolMaterial.STONE`, `ToolMaterial.IRON`, `ToolMaterial.DIAMOND`. No hay materiales personalizados registrados en `ModToolMaterials.java`.
+Los 3 materiales base **ya no usan el tier vanilla directo** — `ModToolMaterials.java` registra `STONE_WORKHAND`/`IRON_WORKHAND`/`DIAMOND_WORKHAND`, cada uno una copia exacta de `ToolMaterial.STONE`/`IRON`/`DIAMOND` (mismo speed, bonus de daño, encantabilidad y tag de reparación) salvo la durabilidad, multiplicada ×5 (el coste de fabricación no compensaba con la durabilidad vanilla — feedback de juego). Igual multiplicador aplicado a los materiales mejorados (`IMPROVED_IRON` 750→3750, `IMPROVED_DIAMOND` 4683→23415).
 
 ## Grados y minado en área (AoE)
 
@@ -197,17 +197,17 @@ Si se añade configuración (p. ej. activar/desactivar el AoE por grado, ajustar
 
 | Item ID | Grade | Material | Durability |
 |---|---|---|---|
-| `iron_workhand_advanced_improved_pickaxe` | Advanced (GRADE_2) | IMPROVED_IRON | 750 |
-| `iron_workhand_professional_improved_pickaxe` | Professional (GRADE_4) | IMPROVED_IRON | 750 |
-| `diamond_workhand_advanced_improved_pickaxe` | Advanced (GRADE_2) | IMPROVED_DIAMOND | 4683 |
-| `diamond_workhand_professional_improved_pickaxe` | Professional (GRADE_4) | IMPROVED_DIAMOND | 4683 |
+| `iron_workhand_advanced_improved_pickaxe` | Advanced (GRADE_2) | IMPROVED_IRON | 3750 |
+| `iron_workhand_professional_improved_pickaxe` | Professional (GRADE_4) | IMPROVED_IRON | 3750 |
+| `diamond_workhand_advanced_improved_pickaxe` | Advanced (GRADE_2) | IMPROVED_DIAMOND | 23415 |
+| `diamond_workhand_professional_improved_pickaxe` | Professional (GRADE_4) | IMPROVED_DIAMOND | 23415 |
 
 Improved pickaxes keep the base grade AoE pattern (3x3x3 for advanced, 5x5x5 for professional) AND add Ore Vein Mining:
 - Works always (sneak or not); sneak only disables AoE mining.
 - When an ore block is broken, a BFS flood-fill (6 directions, max 128 blocks) mines all connected blocks of the same ore type.
 - If AoE catches an ore, it also mines connected ores.
 - Supported ores: coal, copper, diamond, emerald, gold, iron, lapis, redstone, nether_quartz, nether_gold (plus deepslate variants).
-- Material: `IMPROVED_IRON` (BlockTags.INCORRECT_FOR_IRON_TOOL, durability 750, speed 6.0, attack 2.0, enchant 14, repair iron_ingot) and `IMPROVED_DIAMOND` (BlockTags.INCORRECT_FOR_DIAMOND_TOOL, durability 4683, speed 8.0, attack 3.0, enchant 10, repair diamond).
+- Material: `IMPROVED_IRON` (BlockTags.INCORRECT_FOR_IRON_TOOL, durability 3750, speed 6.0, attack 2.0, enchant 14, repair iron_ingot) and `IMPROVED_DIAMOND` (BlockTags.INCORRECT_FOR_DIAMOND_TOOL, durability 23415, speed 8.0, attack 3.0, enchant 10, repair diamond).
 
 ### Recipes
 
@@ -219,8 +219,8 @@ Improved pickaxes keep the base grade AoE pattern (3x3x3 for advanced, 5x5x5 for
 
 | Item ID | Material | Durability |
 |---|---|---|
-| `iron_workhand_axe` | IMPROVED_IRON | 750 |
-| `diamond_workhand_axe` | IMPROVED_DIAMOND | 4683 |
+| `iron_workhand_axe` | IMPROVED_IRON | 3750 |
+| `diamond_workhand_axe` | IMPROVED_DIAMOND | 23415 |
 
 Right-click toggles tree felling (data component `felling_enabled`, default false). When enabled, breaking a log block uses BFS flood-fill (6 directions, max 256 blocks) to fell the entire tree:
 - Only blocks in `BlockTags.LOGS` are considered, excluding stripped logs (path starts with "stripped").
@@ -236,6 +236,7 @@ Right-click toggles tree felling (data component `felling_enabled`, default fals
 
 - **v1**: 6 materiales vanilla, 1 grado, minado 1×1 estándar.
 - **v2**: +4 materiales (Copper, Deepslate, Blackstone, Obsidian) con stats propuestos (confirmados en v3) · +4 grados por material con patrones de minado en área (3×3×1 / 3×3×3 / 5×5×1 / 5×5×5), doble función clic izq./der. en grados 2 y 4, override total al agacharse, y anclaje vertical dependiente del pitch para los patrones de 5 de alto · total de items pasa de 12 a 80.
+- **v4**: durabilidad ×5 en todos los materiales de herramienta — feedback del usuario tras publicar: el coste de fabricación no compensaba con la durabilidad vanilla. `STONE_WORKHAND`/`IRON_WORKHAND`/`DIAMOND_WORKHAND` (`ModToolMaterials.java`) reemplazan el uso directo de `ToolMaterial.STONE`/`IRON`/`DIAMOND` en `ModItems.java`; `IMPROVED_IRON`/`IMPROVED_DIAMOND` también ×5. Solo cambia durabilidad, el resto de stats (velocidad, encantabilidad, bonus de daño, tag de reparación) se mantiene igual que el vanilla original.
 - **v3**: recetas de los 4 grados cerradas (pico y pala, forma distinta entre ambos) + nuevo item `robust_stick` (Robust Stick, 6 stick → 1) usado como ingrediente en grados 3-4 · tabla `m`/`a` por material confirmada · JEI: exposición automática vía recetas vanilla estándar, sin plugin propio · stats de los 4 materiales nuevos confirmados · assets pospuestos: los 80 items usan placeholders de texturas vanilla, encargo completo para diseñador documentado en `docs/ASSET_LIST_WORKHAND_TOOLS.md`.
 
 Cambios a este documento requieren confirmación del usuario antes de implementarse (no asumir variaciones de balance ni de mecánica sin pedirlo explícitamente).

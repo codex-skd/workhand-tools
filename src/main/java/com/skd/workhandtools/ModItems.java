@@ -8,7 +8,6 @@ import java.util.Map;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ShovelItem;
-import net.minecraft.world.item.ToolMaterial;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 
@@ -25,53 +24,53 @@ public final class ModItems {
     // Stone Pickaxes
     public static final DeferredItem<WorkhandPickaxeItem> STONE_WORKHAND_PICKAXE =
             WorkhandTools.ITEMS.registerItem("stone_workhand_pickaxe",
-                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.STONE, 1.0F, -2.8F));
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.STONE_WORKHAND, 1.0F, -2.8F));
 
     public static final DeferredItem<WorkhandPickaxeItem> STONE_WORKHAND_ADVANCED_PICKAXE =
             WorkhandTools.ITEMS.registerItem("stone_workhand_advanced_pickaxe",
-                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.STONE, 1.0F, -2.8F));
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.STONE_WORKHAND, 1.0F, -2.8F));
 
     public static final DeferredItem<WorkhandPickaxeItem> STONE_WORKHAND_EXPERT_PICKAXE =
             WorkhandTools.ITEMS.registerItem("stone_workhand_expert_pickaxe",
-                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.STONE, 1.0F, -2.8F));
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.STONE_WORKHAND, 1.0F, -2.8F));
 
     public static final DeferredItem<WorkhandPickaxeItem> STONE_WORKHAND_PROFESSIONAL_PICKAXE =
             WorkhandTools.ITEMS.registerItem("stone_workhand_professional_pickaxe",
-                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.STONE, 1.0F, -2.8F));
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.STONE_WORKHAND, 1.0F, -2.8F));
 
     // Iron Pickaxes
     public static final DeferredItem<WorkhandPickaxeItem> IRON_WORKHAND_PICKAXE =
             WorkhandTools.ITEMS.registerItem("iron_workhand_pickaxe",
-                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.IRON, 1.0F, -2.8F));
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.IRON_WORKHAND, 1.0F, -2.8F));
 
     public static final DeferredItem<WorkhandPickaxeItem> IRON_WORKHAND_ADVANCED_PICKAXE =
             WorkhandTools.ITEMS.registerItem("iron_workhand_advanced_pickaxe",
-                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.IRON, 1.0F, -2.8F));
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.IRON_WORKHAND, 1.0F, -2.8F));
 
     public static final DeferredItem<WorkhandPickaxeItem> IRON_WORKHAND_EXPERT_PICKAXE =
             WorkhandTools.ITEMS.registerItem("iron_workhand_expert_pickaxe",
-                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.IRON, 1.0F, -2.8F));
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.IRON_WORKHAND, 1.0F, -2.8F));
 
     public static final DeferredItem<WorkhandPickaxeItem> IRON_WORKHAND_PROFESSIONAL_PICKAXE =
             WorkhandTools.ITEMS.registerItem("iron_workhand_professional_pickaxe",
-                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.IRON, 1.0F, -2.8F));
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.IRON_WORKHAND, 1.0F, -2.8F));
 
     // Diamond Pickaxes
     public static final DeferredItem<WorkhandPickaxeItem> DIAMOND_WORKHAND_PICKAXE =
             WorkhandTools.ITEMS.registerItem("diamond_workhand_pickaxe",
-                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.DIAMOND, 1.0F, -2.8F));
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.DIAMOND_WORKHAND, 1.0F, -2.8F));
 
     public static final DeferredItem<WorkhandPickaxeItem> DIAMOND_WORKHAND_ADVANCED_PICKAXE =
             WorkhandTools.ITEMS.registerItem("diamond_workhand_advanced_pickaxe",
-                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.DIAMOND, 1.0F, -2.8F));
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.DIAMOND_WORKHAND, 1.0F, -2.8F));
 
     public static final DeferredItem<WorkhandPickaxeItem> DIAMOND_WORKHAND_EXPERT_PICKAXE =
             WorkhandTools.ITEMS.registerItem("diamond_workhand_expert_pickaxe",
-                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.DIAMOND, 1.0F, -2.8F));
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.DIAMOND_WORKHAND, 1.0F, -2.8F));
 
     public static final DeferredItem<WorkhandPickaxeItem> DIAMOND_WORKHAND_PROFESSIONAL_PICKAXE =
             WorkhandTools.ITEMS.registerItem("diamond_workhand_professional_pickaxe",
-                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ToolMaterial.DIAMOND, 1.0F, -2.8F));
+                    WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.DIAMOND_WORKHAND, 1.0F, -2.8F));
 
     // Improved Pickaxes (vein mining). Same grade as their base counterpart (advanced = GRADE_2,
     // professional = GRADE_4) but with the improved tool material for much higher durability.
@@ -94,64 +93,64 @@ public final class ModItems {
     // Stone Shovels
     public static final DeferredHolder<Item, ? extends Item> STONE_WORKHAND_SHOVEL =
             WorkhandTools.ITEMS.registerItem("stone_workhand_shovel",
-                    props -> new ShovelItem(ToolMaterial.STONE, 1.5F, -3.0F, props),
+                    props -> new ShovelItem(ModToolMaterials.STONE_WORKHAND, 1.5F, -3.0F, props),
                     () -> new Item.Properties());
 
     public static final DeferredHolder<Item, ? extends Item> STONE_WORKHAND_ADVANCED_SHOVEL =
             WorkhandTools.ITEMS.registerItem("stone_workhand_advanced_shovel",
-                    props -> new ShovelItem(ToolMaterial.STONE, 1.5F, -3.0F, props),
+                    props -> new ShovelItem(ModToolMaterials.STONE_WORKHAND, 1.5F, -3.0F, props),
                     () -> new Item.Properties());
 
     public static final DeferredHolder<Item, ? extends Item> STONE_WORKHAND_EXPERT_SHOVEL =
             WorkhandTools.ITEMS.registerItem("stone_workhand_expert_shovel",
-                    props -> new ShovelItem(ToolMaterial.STONE, 1.5F, -3.0F, props),
+                    props -> new ShovelItem(ModToolMaterials.STONE_WORKHAND, 1.5F, -3.0F, props),
                     () -> new Item.Properties());
 
     public static final DeferredHolder<Item, ? extends Item> STONE_WORKHAND_PROFESSIONAL_SHOVEL =
             WorkhandTools.ITEMS.registerItem("stone_workhand_professional_shovel",
-                    props -> new ShovelItem(ToolMaterial.STONE, 1.5F, -3.0F, props),
+                    props -> new ShovelItem(ModToolMaterials.STONE_WORKHAND, 1.5F, -3.0F, props),
                     () -> new Item.Properties());
 
     // Iron Shovels
     public static final DeferredHolder<Item, ? extends Item> IRON_WORKHAND_SHOVEL =
             WorkhandTools.ITEMS.registerItem("iron_workhand_shovel",
-                    props -> new ShovelItem(ToolMaterial.IRON, 1.5F, -3.0F, props),
+                    props -> new ShovelItem(ModToolMaterials.IRON_WORKHAND, 1.5F, -3.0F, props),
                     () -> new Item.Properties());
 
     public static final DeferredHolder<Item, ? extends Item> IRON_WORKHAND_ADVANCED_SHOVEL =
             WorkhandTools.ITEMS.registerItem("iron_workhand_advanced_shovel",
-                    props -> new ShovelItem(ToolMaterial.IRON, 1.5F, -3.0F, props),
+                    props -> new ShovelItem(ModToolMaterials.IRON_WORKHAND, 1.5F, -3.0F, props),
                     () -> new Item.Properties());
 
     public static final DeferredHolder<Item, ? extends Item> IRON_WORKHAND_EXPERT_SHOVEL =
             WorkhandTools.ITEMS.registerItem("iron_workhand_expert_shovel",
-                    props -> new ShovelItem(ToolMaterial.IRON, 1.5F, -3.0F, props),
+                    props -> new ShovelItem(ModToolMaterials.IRON_WORKHAND, 1.5F, -3.0F, props),
                     () -> new Item.Properties());
 
     public static final DeferredHolder<Item, ? extends Item> IRON_WORKHAND_PROFESSIONAL_SHOVEL =
             WorkhandTools.ITEMS.registerItem("iron_workhand_professional_shovel",
-                    props -> new ShovelItem(ToolMaterial.IRON, 1.5F, -3.0F, props),
+                    props -> new ShovelItem(ModToolMaterials.IRON_WORKHAND, 1.5F, -3.0F, props),
                     () -> new Item.Properties());
 
     // Diamond Shovels
     public static final DeferredHolder<Item, ? extends Item> DIAMOND_WORKHAND_SHOVEL =
             WorkhandTools.ITEMS.registerItem("diamond_workhand_shovel",
-                    props -> new ShovelItem(ToolMaterial.DIAMOND, 1.5F, -3.0F, props),
+                    props -> new ShovelItem(ModToolMaterials.DIAMOND_WORKHAND, 1.5F, -3.0F, props),
                     () -> new Item.Properties());
 
     public static final DeferredHolder<Item, ? extends Item> DIAMOND_WORKHAND_ADVANCED_SHOVEL =
             WorkhandTools.ITEMS.registerItem("diamond_workhand_advanced_shovel",
-                    props -> new ShovelItem(ToolMaterial.DIAMOND, 1.5F, -3.0F, props),
+                    props -> new ShovelItem(ModToolMaterials.DIAMOND_WORKHAND, 1.5F, -3.0F, props),
                     () -> new Item.Properties());
 
     public static final DeferredHolder<Item, ? extends Item> DIAMOND_WORKHAND_EXPERT_SHOVEL =
             WorkhandTools.ITEMS.registerItem("diamond_workhand_expert_shovel",
-                    props -> new ShovelItem(ToolMaterial.DIAMOND, 1.5F, -3.0F, props),
+                    props -> new ShovelItem(ModToolMaterials.DIAMOND_WORKHAND, 1.5F, -3.0F, props),
                     () -> new Item.Properties());
 
     public static final DeferredHolder<Item, ? extends Item> DIAMOND_WORKHAND_PROFESSIONAL_SHOVEL =
             WorkhandTools.ITEMS.registerItem("diamond_workhand_professional_shovel",
-                    props -> new ShovelItem(ToolMaterial.DIAMOND, 1.5F, -3.0F, props),
+                    props -> new ShovelItem(ModToolMaterials.DIAMOND_WORKHAND, 1.5F, -3.0F, props),
                     () -> new Item.Properties());
 
     // Workhand Axes (tree felling). Right-click toggles felling; see TreeFellingHandler.
