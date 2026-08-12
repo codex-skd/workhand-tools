@@ -142,3 +142,61 @@ Los nombres de archivo y los nombres que se ven en el juego están en inglés (c
 - [x] 1 textura de Palo Robusto (arte final del diseñador aplicado)
 
 **Nota**: Los archivos PNG placeholder (16×16 px) están creados en `src/main/resources/assets/workhand_tools/textures/item/`. El diseñador puede reemplazarlos directamente sin cambios de código.
+
+<br>
+
+## 📊 Catálogo completo — durabilidad y para qué vale cada herramienta
+
+Las 32 herramientas/items del mod (arte final ya aplicado a las 31 primeras — ver `## ✅ Estado actual` arriba; `tape_measure` usa una textura reutilizada, ver `docs/WORKFLOW_WORKHAND_TOOLS_26-2.md` créditos). Imágenes servidas desde `https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/<archivo>`.
+
+### ⛏️ Picos y palas base (24 — 3 materiales × 4 grados)
+
+| Imagen | Nombre | Material | Durabilidad | Para qué vale |
+|---|---|---|:---:|---|
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/stone_workhand_pickaxe.png" width="32"> | Stone Workhand Pickaxe | Piedra | 131 | Minado en área 3×3×1 (una capa) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/stone_workhand_advanced_pickaxe.png" width="32"> | Stone Workhand Advanced Pickaxe | Piedra | 131 | Minado en área 3×3×3 cúbico / 3×3×1 plano (clic derecho alterna modo) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/stone_workhand_expert_pickaxe.png" width="32"> | Stone Workhand Expert Pickaxe | Piedra | 131 | Minado en área 5×5×1 (una capa) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/stone_workhand_professional_pickaxe.png" width="32"> | Stone Workhand Professional Pickaxe | Piedra | 131 | Minado en área 5×5×5 cúbico / 5×5×1 plano (clic derecho alterna modo) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/iron_workhand_pickaxe.png" width="32"> | Iron Workhand Pickaxe | Hierro | 250 | Minado en área 3×3×1 (una capa) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/iron_workhand_advanced_pickaxe.png" width="32"> | Iron Workhand Advanced Pickaxe | Hierro | 250 | Minado en área 3×3×3 cúbico / 3×3×1 plano (clic derecho alterna modo) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/iron_workhand_expert_pickaxe.png" width="32"> | Iron Workhand Expert Pickaxe | Hierro | 250 | Minado en área 5×5×1 (una capa) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/iron_workhand_professional_pickaxe.png" width="32"> | Iron Workhand Professional Pickaxe | Hierro | 250 | Minado en área 5×5×5 cúbico / 5×5×1 plano (clic derecho alterna modo) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/diamond_workhand_pickaxe.png" width="32"> | Diamond Workhand Pickaxe | Diamante | 1561 | Minado en área 3×3×1 (una capa) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/diamond_workhand_advanced_pickaxe.png" width="32"> | Diamond Workhand Advanced Pickaxe | Diamante | 1561 | Minado en área 3×3×3 cúbico / 3×3×1 plano (clic derecho alterna modo) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/diamond_workhand_expert_pickaxe.png" width="32"> | Diamond Workhand Expert Pickaxe | Diamante | 1561 | Minado en área 5×5×1 (una capa) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/diamond_workhand_professional_pickaxe.png" width="32"> | Diamond Workhand Professional Pickaxe | Diamante | 1561 | Minado en área 5×5×5 cúbico / 5×5×1 plano (clic derecho alterna modo) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/stone_workhand_shovel.png" width="32"> | Stone Workhand Shovel | Piedra | 131 | Cavado en área 3×3×1 (una capa) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/stone_workhand_advanced_shovel.png" width="32"> | Stone Workhand Advanced Shovel | Piedra | 131 | Cavado en área 3×3×3 cúbico / 3×3×1 plano (clic derecho alterna modo) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/stone_workhand_expert_shovel.png" width="32"> | Stone Workhand Expert Shovel | Piedra | 131 | Cavado en área 5×5×1 (una capa) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/stone_workhand_professional_shovel.png" width="32"> | Stone Workhand Professional Shovel | Piedra | 131 | Cavado en área 5×5×5 cúbico / 5×5×1 plano (clic derecho alterna modo) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/iron_workhand_shovel.png" width="32"> | Iron Workhand Shovel | Hierro | 250 | Cavado en área 3×3×1 (una capa) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/iron_workhand_advanced_shovel.png" width="32"> | Iron Workhand Advanced Shovel | Hierro | 250 | Cavado en área 3×3×3 cúbico / 3×3×1 plano (clic derecho alterna modo) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/iron_workhand_expert_shovel.png" width="32"> | Iron Workhand Expert Shovel | Hierro | 250 | Cavado en área 5×5×1 (una capa) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/iron_workhand_professional_shovel.png" width="32"> | Iron Workhand Professional Shovel | Hierro | 250 | Cavado en área 5×5×5 cúbico / 5×5×1 plano (clic derecho alterna modo) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/diamond_workhand_shovel.png" width="32"> | Diamond Workhand Shovel | Diamante | 1561 | Cavado en área 3×3×1 (una capa) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/diamond_workhand_advanced_shovel.png" width="32"> | Diamond Workhand Advanced Shovel | Diamante | 1561 | Cavado en área 3×3×3 cúbico / 3×3×1 plano (clic derecho alterna modo) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/diamond_workhand_expert_shovel.png" width="32"> | Diamond Workhand Expert Shovel | Diamante | 1561 | Cavado en área 5×5×1 (una capa) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/diamond_workhand_professional_shovel.png" width="32"> | Diamond Workhand Professional Shovel | Diamante | 1561 | Cavado en área 5×5×5 cúbico / 5×5×1 plano (clic derecho alterna modo) |
+
+### ⛏️✨ Picos mejorados — vena minera (4)
+
+| Imagen | Nombre | Material | Durabilidad | Para qué vale |
+|---|---|---|:---:|---|
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/iron_workhand_advanced_improved_pickaxe.png" width="32"> | Iron Workhand Advanced Improved Pickaxe | Hierro mejorado | 750 | Minado 3×3×3/3×3×1 + vena minera: al romper un mineral, encadena y rompe los bloques conectados del mismo mineral (hasta 128) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/iron_workhand_professional_improved_pickaxe.png" width="32"> | Iron Workhand Professional Improved Pickaxe | Hierro mejorado | 750 | Minado 5×5×5/5×5×1 + vena minera |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/diamond_workhand_advanced_improved_pickaxe.png" width="32"> | Diamond Workhand Advanced Improved Pickaxe | Diamante mejorado | 4683 | Minado 3×3×3/3×3×1 + vena minera |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/diamond_workhand_professional_improved_pickaxe.png" width="32"> | Diamond Workhand Professional Improved Pickaxe | Diamante mejorado | 4683 | Minado 5×5×5/5×5×1 + vena minera |
+
+### 🪓 Hachas Workhand — tala de árboles (2)
+
+| Imagen | Nombre | Material | Durabilidad | Para qué vale |
+|---|---|---|:---:|---|
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/iron_workhand_axe.png" width="32"> | Iron Workhand Axe | Hierro mejorado | 750 | Tala de árboles activable con clic derecho: al romper un tronco, tala automáticamente todo el árbol conectado (hasta 256 bloques) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/diamond_workhand_axe.png" width="32"> | Diamond Workhand Axe | Diamante mejorado | 4683 | Tala de árboles activable con clic derecho |
+
+### 🪵📏 Items de utilidad (2)
+
+| Imagen | Nombre | Material | Durabilidad | Para qué vale |
+|---|---|---|:---:|---|
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/robust_stick.png" width="32"> | Robust Stick | — | Sin durabilidad (ingrediente) | Ingrediente de crafteo para las herramientas de grado Experto y Profesional (3-4) |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/tape_measure.png" width="32"> | Tape Measure | — | Sin durabilidad (irrompible) | Mide el área entre dos puntos: clic derecho fija el primer punto, clic derecho de nuevo fija el segundo y dibuja una caja con las medidas X/Y/Z. Shift+clic derecho deshace la última medición |
