@@ -74,6 +74,7 @@ public class WorkhandTools {
         NeoForge.EVENT_BUS.register(new AoEMiningHandler());
         NeoForge.EVENT_BUS.register(new VeinMiningHandler());
         NeoForge.EVENT_BUS.register(new TreeFellingHandler());
+        NeoForge.EVENT_BUS.register(new LeafDecayHandler());
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

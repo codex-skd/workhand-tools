@@ -1,5 +1,11 @@
 # Changelog — Workhand Tools
 
+## [1.9.0] - 2026-08-12
+
+### Feature
+
+- **Faster leaf decay**: leaves disconnected from wood now decay noticeably faster. When a block next to leaves is removed (by hand, an axe, an explosion, etc.), an early decay check is forced a few ticks later instead of waiting on vanilla's natural random-tick interval. Global effect, not tied to a specific tool.
+
 ## [1.8.0] - 2026-08-11
 
 ### Feature
