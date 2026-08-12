@@ -26,46 +26,46 @@ Each material tier (Stone, Iron, Diamond) offers 4 grades of tools — from basi
 
 | | Name | Material | Durability | Purpose |
 |---|---|---|:---:|---|
-| <img src="src/main/resources/assets/workhand_tools/textures/item/stone_workhand_pickaxe.png" width="32"> | Stone Workhand Pickaxe | Stone | 131 | Area mining 3x3x1 (single layer) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/stone_workhand_advanced_pickaxe.png" width="32"> | Stone Workhand Advanced Pickaxe | Stone | 131 | Area mining 3x3x3 cubic / 3x3x1 flat (right-click toggles mode) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/stone_workhand_expert_pickaxe.png" width="32"> | Stone Workhand Expert Pickaxe | Stone | 131 | Area mining 5x5x1 (single layer) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/stone_workhand_professional_pickaxe.png" width="32"> | Stone Workhand Professional Pickaxe | Stone | 131 | Area mining 5x5x5 cubic / 5x5x1 flat (right-click toggles mode) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_pickaxe.png" width="32"> | Iron Workhand Pickaxe | Iron | 250 | Area mining 3x3x1 (single layer) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_advanced_pickaxe.png" width="32"> | Iron Workhand Advanced Pickaxe | Iron | 250 | Area mining 3x3x3 cubic / 3x3x1 flat (right-click toggles mode) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_expert_pickaxe.png" width="32"> | Iron Workhand Expert Pickaxe | Iron | 250 | Area mining 5x5x1 (single layer) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_professional_pickaxe.png" width="32"> | Iron Workhand Professional Pickaxe | Iron | 250 | Area mining 5x5x5 cubic / 5x5x1 flat (right-click toggles mode) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_pickaxe.png" width="32"> | Diamond Workhand Pickaxe | Diamond | 1561 | Area mining 3x3x1 (single layer) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_advanced_pickaxe.png" width="32"> | Diamond Workhand Advanced Pickaxe | Diamond | 1561 | Area mining 3x3x3 cubic / 3x3x1 flat (right-click toggles mode) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_expert_pickaxe.png" width="32"> | Diamond Workhand Expert Pickaxe | Diamond | 1561 | Area mining 5x5x1 (single layer) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_professional_pickaxe.png" width="32"> | Diamond Workhand Professional Pickaxe | Diamond | 1561 | Area mining 5x5x5 cubic / 5x5x1 flat (right-click toggles mode) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/stone_workhand_shovel.png" width="32"> | Stone Workhand Shovel | Stone | 131 | Area digging 3x3x1 (single layer) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/stone_workhand_advanced_shovel.png" width="32"> | Stone Workhand Advanced Shovel | Stone | 131 | Area digging 3x3x3 cubic / 3x3x1 flat (right-click toggles mode) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/stone_workhand_expert_shovel.png" width="32"> | Stone Workhand Expert Shovel | Stone | 131 | Area digging 5x5x1 (single layer) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/stone_workhand_professional_shovel.png" width="32"> | Stone Workhand Professional Shovel | Stone | 131 | Area digging 5x5x5 cubic / 5x5x1 flat (right-click toggles mode) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_shovel.png" width="32"> | Iron Workhand Shovel | Iron | 250 | Area digging 3x3x1 (single layer) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_advanced_shovel.png" width="32"> | Iron Workhand Advanced Shovel | Iron | 250 | Area digging 3x3x3 cubic / 3x3x1 flat (right-click toggles mode) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_expert_shovel.png" width="32"> | Iron Workhand Expert Shovel | Iron | 250 | Area digging 5x5x1 (single layer) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_professional_shovel.png" width="32"> | Iron Workhand Professional Shovel | Iron | 250 | Area digging 5x5x5 cubic / 5x5x1 flat (right-click toggles mode) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_shovel.png" width="32"> | Diamond Workhand Shovel | Diamond | 1561 | Area digging 3x3x1 (single layer) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_advanced_shovel.png" width="32"> | Diamond Workhand Advanced Shovel | Diamond | 1561 | Area digging 3x3x3 cubic / 3x3x1 flat (right-click toggles mode) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_expert_shovel.png" width="32"> | Diamond Workhand Expert Shovel | Diamond | 1561 | Area digging 5x5x1 (single layer) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_professional_shovel.png" width="32"> | Diamond Workhand Professional Shovel | Diamond | 1561 | Area digging 5x5x5 cubic / 5x5x1 flat (right-click toggles mode) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/stone_workhand_pickaxe.png" width="32"> | Stone Workhand Pickaxe | Stone | 655 | Area mining 3x3x1 (single layer) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/stone_workhand_advanced_pickaxe.png" width="32"> | Stone Workhand Advanced Pickaxe | Stone | 655 | Area mining 3x3x3 cubic / 3x3x1 flat (right-click toggles mode) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/stone_workhand_expert_pickaxe.png" width="32"> | Stone Workhand Expert Pickaxe | Stone | 655 | Area mining 5x5x1 (single layer) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/stone_workhand_professional_pickaxe.png" width="32"> | Stone Workhand Professional Pickaxe | Stone | 655 | Area mining 5x5x5 cubic / 5x5x1 flat (right-click toggles mode) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_pickaxe.png" width="32"> | Iron Workhand Pickaxe | Iron | 1250 | Area mining 3x3x1 (single layer) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_advanced_pickaxe.png" width="32"> | Iron Workhand Advanced Pickaxe | Iron | 1250 | Area mining 3x3x3 cubic / 3x3x1 flat (right-click toggles mode) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_expert_pickaxe.png" width="32"> | Iron Workhand Expert Pickaxe | Iron | 1250 | Area mining 5x5x1 (single layer) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_professional_pickaxe.png" width="32"> | Iron Workhand Professional Pickaxe | Iron | 1250 | Area mining 5x5x5 cubic / 5x5x1 flat (right-click toggles mode) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_pickaxe.png" width="32"> | Diamond Workhand Pickaxe | Diamond | 7805 | Area mining 3x3x1 (single layer) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_advanced_pickaxe.png" width="32"> | Diamond Workhand Advanced Pickaxe | Diamond | 7805 | Area mining 3x3x3 cubic / 3x3x1 flat (right-click toggles mode) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_expert_pickaxe.png" width="32"> | Diamond Workhand Expert Pickaxe | Diamond | 7805 | Area mining 5x5x1 (single layer) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_professional_pickaxe.png" width="32"> | Diamond Workhand Professional Pickaxe | Diamond | 7805 | Area mining 5x5x5 cubic / 5x5x1 flat (right-click toggles mode) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/stone_workhand_shovel.png" width="32"> | Stone Workhand Shovel | Stone | 655 | Area digging 3x3x1 (single layer) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/stone_workhand_advanced_shovel.png" width="32"> | Stone Workhand Advanced Shovel | Stone | 655 | Area digging 3x3x3 cubic / 3x3x1 flat (right-click toggles mode) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/stone_workhand_expert_shovel.png" width="32"> | Stone Workhand Expert Shovel | Stone | 655 | Area digging 5x5x1 (single layer) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/stone_workhand_professional_shovel.png" width="32"> | Stone Workhand Professional Shovel | Stone | 655 | Area digging 5x5x5 cubic / 5x5x1 flat (right-click toggles mode) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_shovel.png" width="32"> | Iron Workhand Shovel | Iron | 1250 | Area digging 3x3x1 (single layer) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_advanced_shovel.png" width="32"> | Iron Workhand Advanced Shovel | Iron | 1250 | Area digging 3x3x3 cubic / 3x3x1 flat (right-click toggles mode) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_expert_shovel.png" width="32"> | Iron Workhand Expert Shovel | Iron | 1250 | Area digging 5x5x1 (single layer) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_professional_shovel.png" width="32"> | Iron Workhand Professional Shovel | Iron | 1250 | Area digging 5x5x5 cubic / 5x5x1 flat (right-click toggles mode) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_shovel.png" width="32"> | Diamond Workhand Shovel | Diamond | 7805 | Area digging 3x3x1 (single layer) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_advanced_shovel.png" width="32"> | Diamond Workhand Advanced Shovel | Diamond | 7805 | Area digging 3x3x3 cubic / 3x3x1 flat (right-click toggles mode) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_expert_shovel.png" width="32"> | Diamond Workhand Expert Shovel | Diamond | 7805 | Area digging 5x5x1 (single layer) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_professional_shovel.png" width="32"> | Diamond Workhand Professional Shovel | Diamond | 7805 | Area digging 5x5x5 cubic / 5x5x1 flat (right-click toggles mode) |
 
 ### Improved Pickaxes — vein mining (4)
 
 | | Name | Material | Durability | Purpose |
 |---|---|---|:---:|---|
-| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_advanced_improved_pickaxe.png" width="32"> | Iron Workhand Advanced Improved Pickaxe | Improved Iron | 750 | 3x3x3/3x3x1 area mining + vein mining: breaking an ore chain-breaks all connected blocks of the same ore (up to 128) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_professional_improved_pickaxe.png" width="32"> | Iron Workhand Professional Improved Pickaxe | Improved Iron | 750 | 5x5x5/5x5x1 area mining + vein mining |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_advanced_improved_pickaxe.png" width="32"> | Diamond Workhand Advanced Improved Pickaxe | Improved Diamond | 4683 | 3x3x3/3x3x1 area mining + vein mining |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_professional_improved_pickaxe.png" width="32"> | Diamond Workhand Professional Improved Pickaxe | Improved Diamond | 4683 | 5x5x5/5x5x1 area mining + vein mining |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_advanced_improved_pickaxe.png" width="32"> | Iron Workhand Advanced Improved Pickaxe | Improved Iron | 3750 | 3x3x3/3x3x1 area mining + vein mining: breaking an ore chain-breaks all connected blocks of the same ore (up to 128) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_professional_improved_pickaxe.png" width="32"> | Iron Workhand Professional Improved Pickaxe | Improved Iron | 3750 | 5x5x5/5x5x1 area mining + vein mining |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_advanced_improved_pickaxe.png" width="32"> | Diamond Workhand Advanced Improved Pickaxe | Improved Diamond | 23415 | 3x3x3/3x3x1 area mining + vein mining |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_professional_improved_pickaxe.png" width="32"> | Diamond Workhand Professional Improved Pickaxe | Improved Diamond | 23415 | 5x5x5/5x5x1 area mining + vein mining |
 
 ### Workhand Axes — tree felling (2)
 
 | | Name | Material | Durability | Purpose |
 |---|---|---|:---:|---|
-| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_axe.png" width="32"> | Iron Workhand Axe | Improved Iron | 750 | Toggleable tree felling (right-click): breaking a log fells the whole connected tree (up to 256 blocks) |
-| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_axe.png" width="32"> | Diamond Workhand Axe | Improved Diamond | 4683 | Toggleable tree felling (right-click) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_axe.png" width="32"> | Iron Workhand Axe | Improved Iron | 3750 | Toggleable tree felling (right-click): breaking a log fells the whole connected tree (up to 256 blocks) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_axe.png" width="32"> | Diamond Workhand Axe | Improved Diamond | 23415 | Toggleable tree felling (right-click) |
 
 ### Utility items (2)
 
