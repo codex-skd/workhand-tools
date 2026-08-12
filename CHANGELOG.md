@@ -1,5 +1,15 @@
 # Changelog — Workhand Tools
 
+## [1.10.0] - 2026-08-12
+
+### Balance
+
+- **Durability increased 5x across all tools**: crafting cost was steep enough that vanilla-tier durability made these tools feel disposable. Stone 131 → 655, Iron 250 → 1250, Diamond 1561 → 7805, Improved Iron (improved pickaxes + axes) 750 → 3750, Improved Diamond 4683 → 23415. All other stats (speed, attack bonus, enchantability, repair material) stay identical to vanilla.
+
+### Documentation
+
+- Full item catalog added to README.md, the CurseForge project description and `docs/ASSET_LIST_WORKHAND_TOOLS.md`: all 32 items listed with a photo, material, durability and a one-line purpose description.
+
 ## [1.9.0] - 2026-08-12
 
 ### Feature
