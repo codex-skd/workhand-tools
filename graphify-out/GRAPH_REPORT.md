@@ -1,16 +1,16 @@
 # Graph Report - 26.2  (2026-08-12)
 
 ## Corpus Check
-- 182 files · ~26,537 words
+- 183 files · ~29,187 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 423 nodes · 606 edges · 52 communities (51 shown, 1 thin omitted)
+- 437 nodes · 618 edges · 54 communities (52 shown, 2 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 9 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b9287806`
+- Built from commit: `8d7408f5`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -38,67 +38,64 @@
 - MeasurementBox
 - TextColor
 - WorkhandToolsClient.java
+- WorkhandToolsClient.java
 
 ## God Nodes (most connected - your core abstractions)
 1. `TextColor` - 21 edges
 2. `LineColor` - 20 edges
 3. `MeasurementBox` - 18 edges
-4. `Changelog — Workhand Tools` - 17 edges
+4. `Changelog — Workhand Tools` - 18 edges
 5. `Diseño técnico — Workhand Tools` - 17 edges
 6. `ModItems` - 14 edges
 7. `Flujo de trabajo — Workhand Tools (NeoForge)` - 12 edges
 8. `MiningHelper` - 11 edges
 9. `WorkhandTools` - 10 edges
-10. `AoEMode` - 9 edges
+10. `🎨 Workhand Tools — Texturas necesarias para completar el mod` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `depth()` --references--> `AoEMode`  [EXTRACTED]
   src/main/java/com/skd/workhandtools/Grade.java → src/main/java/com/skd/workhandtools/AoEMode.java
 - `BoxHandler` --references--> `MeasurementBox`  [EXTRACTED]
   src/main/java/com/skd/workhandtools/BoxHandler.java → src/main/java/com/skd/workhandtools/MeasurementBox.java
-- `ModItems` --references--> `TapeMeasureItem`  [EXTRACTED]
-  src/main/java/com/skd/workhandtools/ModItems.java → src/main/java/com/skd/workhandtools/TapeMeasureItem.java
-- `ModItems` --references--> `WorkhandAxeItem`  [EXTRACTED]
-  src/main/java/com/skd/workhandtools/ModItems.java → src/main/java/com/skd/workhandtools/WorkhandAxeItem.java
-- `ModItems` --references--> `WorkhandPickaxeItem`  [EXTRACTED]
-  src/main/java/com/skd/workhandtools/ModItems.java → src/main/java/com/skd/workhandtools/WorkhandPickaxeItem.java
+- `Client` --references--> `TextColor`  [EXTRACTED]
+  src/main/java/com/skd/workhandtools/TapeMeasureConfig.java → src/main/java/com/skd/workhandtools/TextColor.java
+- `ModDataComponents` --references--> `AoEMode`  [EXTRACTED]
+  src/main/java/com/skd/workhandtools/ModDataComponents.java → src/main/java/com/skd/workhandtools/AoEMode.java
+- `ModItems` --references--> `Grade`  [EXTRACTED]
+  src/main/java/com/skd/workhandtools/ModItems.java → src/main/java/com/skd/workhandtools/Grade.java
 
 ## Import Cycles
 - None detected.
 
-## Communities (52 total, 1 thin omitted)
-
-### Community 0 - "Block Break Handling"
-Cohesion: 0.11
-Nodes (17): DeferredItem, AoEMiningHandler, BreakBlockEvent, ItemTooltipEvent, RightClickItem, SubscribeEvent, Grade, GRADE_1 (+9 more)
+## Communities (54 total, 2 thin omitted)
 
 ### Community 1 - "Mod Initialization"
 Cohesion: 0.21
 Nodes (12): CreativeModeTab, FMLCommonSetupEvent, IEventBus, Items, Logger, ServerStartingEvent, DeferredHolder, DeferredRegister (+4 more)
 
 ### Community 2 - "Item Data Management"
-Cohesion: 0.16
-Nodes (9): Item, NotNull, InteractionResult, Override, TapeMeasureItem, WorkhandAxeItem, WorkhandPickaxeItem, WorkhandVeinPickaxeItem (+1 more)
+Cohesion: 0.09
+Nodes (19): DeferredItem, Item, NotNull, Grade, GRADE_1, GRADE_2, GRADE_3, GRADE_4 (+11 more)
 
 ### Community 3 - "Grade System"
-Cohesion: 0.34
-Nodes (6): Direction, AoEPatterns, BlockPos, Level, Player, Vec3
+Cohesion: 0.24
+Nodes (9): Direction, AoEPatterns, BlockPos, Level, Player, Vec3, AreaHighlighter, SubmitCustomGeometryEvent (+1 more)
 
 ### Community 4 - "AoE Mode"
 Cohesion: 0.13
 Nodes (12): DataComponentType, AoEMode, CUBIC, FLAT, fromName(), getSerializedName(), Override, depth() (+4 more)
 
 ### Community 5 - "Tool Materials"
-Cohesion: 0.14
-Nodes (16): BlockState, Identifier, BlockPos, ItemStack, Level, Player, MiningHelper, BreakBlockEvent (+8 more)
+Cohesion: 0.10
+Nodes (22): BlockState, Component, Identifier, AoEMiningHandler, BreakBlockEvent, ItemTooltipEvent, RightClickItem, SubscribeEvent (+14 more)
 
 ### Community 6 - "Data Components"
 Cohesion: 0.07
 Nodes (27): Anclaje vertical para patrones de 5 de alto (5×5×1 / 5×5×5), Clic izquierdo vs. clic derecho (grados 2 y 4) — confirmado, Concepto, Configuración y compatibilidad con Configured, Creative tab, Diseño técnico — Workhand Tools, Encantamientos, Grados y minado en área (AoE) (+19 more)
 
 ### Community 7 - "Client-Side Workhand Tools"
-Cohesion: 0.10
-Nodes (14): EventBusSubscriber, LoggingIn, LoggingOut, BoxHandler, BlockPos, InteractionResult, Player, Post (+6 more)
+Cohesion: 0.13
+Nodes (10): LoggingIn, LoggingOut, BoxHandler, BlockPos, InteractionResult, Player, Post, SubmitCustomGeometryEvent (+2 more)
 
 ### Community 8 - "Configuration Management"
 Cohesion: 0.50
@@ -113,8 +110,8 @@ Cohesion: 0.14
 Nodes (13): Buenas prácticas, Commits (Conventional Commits), Convenciones de nomenclatura, Específico del mod, Estructura del proyecto, Flujo de trabajo — Workhand Tools (NeoForge), Flujo por tarea, Historial de versiones del workflow (+5 more)
 
 ### Community 14 - "🎨 Workhand Tools — Texturas necesarias para completar el mod"
-Cohesion: 0.20
-Nodes (9): ⭐ Diferenciación visual por grado, 📐 Especificación técnica (las 25 texturas de 16×16), ✅ Estado actual, 🪵 Item nuevo: Palo Robusto, ⛏️ Listado completo — 24 texturas de herramienta + 1 robust_stick, 🎨 Paleta por material, 📋 Resumen, 🌐 Tabla de traducciones (castellano → inglés) (+1 more)
+Cohesion: 0.13
+Nodes (14): 📊 Catálogo completo — durabilidad y para qué vale cada herramienta, ⭐ Diferenciación visual por grado, 📐 Especificación técnica (las 25 texturas de 16×16), ✅ Estado actual, 🪓 Hachas Workhand — tala de árboles (2), 🪵 Item nuevo: Palo Robusto, 🪵📏 Items de utilidad (2), ⛏️ Listado completo — 24 texturas de herramienta + 1 robust_stick (+6 more)
 
 ### Community 15 - "Prompts de imagen — Workhand Tools"
 Cohesion: 0.18
@@ -126,11 +123,11 @@ Nodes (7): CurseForge — Variables del proyecto, Nota, Proyecto, Rama, Tag, Tok
 
 ### Community 17 - "Changelog — Workhand Tools"
 Cohesion: 0.05
-Nodes (38): [1.0.0] - 2026-08-07, [1.1.0] - 2026-08-08, [1.1.1] - 2026-08-08, [1.1.2] - 2026-08-08, [1.2.0] - 2026-08-08, [1.2.1] - 2026-08-08, [1.2.2] - 2026-08-08, [1.2.3] - 2026-08-08 (+30 more)
+Nodes (41): [1.0.0] - 2026-08-07, [1.10.0] - 2026-08-12, [1.1.0] - 2026-08-08, [1.1.1] - 2026-08-08, [1.1.2] - 2026-08-08, [1.2.0] - 2026-08-08, [1.2.1] - 2026-08-08, [1.2.2] - 2026-08-08 (+33 more)
 
 ### Community 18 - "Workhand Tools"
-Cohesion: 0.25
-Nodes (7): Controls, Credits, Features, Installation, License, Requirements, Workhand Tools
+Cohesion: 0.15
+Nodes (12): Controls, Credits, Features, Improved Pickaxes — vein mining (4), Installation, License, Pickaxes & Shovels (24 — 3 materials × 4 grades), Requirements (+4 more)
 
 ### Community 19 - "Workhand Tools 0.0.0-beta.5"
 Cohesion: 0.40
@@ -145,8 +142,8 @@ Cohesion: 0.08
 Nodes (27): EnumValue, IntValue, getColor(), DyeColor, LineColor, BLACK, BLUE, BROWN (+19 more)
 
 ### Community 46 - "MeasurementBox"
-Cohesion: 0.17
-Nodes (17): AABB, Camera, Component, Matrix4fc, PoseStack, ResourceKey, AreaHighlighter, SubmitCustomGeometryEvent (+9 more)
+Cohesion: 0.23
+Nodes (13): AABB, Camera, Matrix4fc, PoseStack, ResourceKey, BlockPos, DyeColor, Level (+5 more)
 
 ### Community 47 - "TextColor"
 Cohesion: 0.09
@@ -156,25 +153,29 @@ Nodes (22): Axis, getColor(), DyeColor, TextColor, BLACK, BLUE, BROWN, CYAN (+14
 Cohesion: 0.27
 Nodes (8): NeighborNotifyEvent, ServerLevel, BlockPos, Post, SubscribeEvent, LeafDecayHandler, LeafKey, Unload
 
+### Community 52 - "WorkhandToolsClient.java"
+Cohesion: 0.43
+Nodes (4): EventBusSubscriber, Mod, ModContainer, WorkhandToolsClient
+
 ## Knowledge Gaps
-- **130 isolated node(s):** `CUBIC`, `FLAT`, `GRADE_1`, `GRADE_2`, `GRADE_3` (+125 more)
+- **140 isolated node(s):** `CUBIC`, `FLAT`, `GRADE_1`, `GRADE_2`, `GRADE_3` (+135 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `TextColor` connect `TextColor` to `Grade`?**
-  _High betweenness centrality (0.120) - this node is a cross-community bridge._
+  _High betweenness centrality (0.111) - this node is a cross-community bridge._
 - **Why does `Client` connect `Grade` to `TextColor`?**
-  _High betweenness centrality (0.076) - this node is a cross-community bridge._
+  _High betweenness centrality (0.070) - this node is a cross-community bridge._
 - **What connects `CUBIC`, `FLAT`, `GRADE_1` to the rest of the system?**
-  _130 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Block Break Handling` be split into smaller, more focused modules?**
-  _Cohesion score 0.10591133004926108 - nodes in this community are weakly interconnected._
+  _140 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Item Data Management` be split into smaller, more focused modules?**
+  _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._
 - **Should `AoE Mode` be split into smaller, more focused modules?**
   _Cohesion score 0.13450292397660818 - nodes in this community are weakly interconnected._
 - **Should `Tool Materials` be split into smaller, more focused modules?**
-  _Cohesion score 0.14260249554367202 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.10465116279069768 - nodes in this community are weakly interconnected._
 - **Should `Data Components` be split into smaller, more focused modules?**
   _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._
