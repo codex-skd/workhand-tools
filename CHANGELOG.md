@@ -1,6 +1,12 @@
 # Changelog — Workhand Tools
 
 
+## [1.10.2] - 2026-08-13
+
+### Fix
+
+- **Server crash (`ConcurrentModificationException`) in leaf decay**: `LeafDecayHandler.onServerTick` iterated its scheduling map while ticking leaves; if a leaf decayed during that tick, the resulting `NeighborNotifyEvent` fired synchronously and re-entered `onNeighborNotify`, which mutated the same map mid-iteration. Ready entries are now removed from the map first, then ticked in a separate pass afterwards.
+
 ## [1.10.1] - 2026-08-12
 
 ### Change
