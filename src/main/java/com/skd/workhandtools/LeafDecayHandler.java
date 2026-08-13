@@ -1,7 +1,9 @@
 package com.skd.workhandtools;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 import net.minecraft.core.BlockPos;
@@ -50,6 +52,7 @@ public class LeafDecayHandler {
         if (scheduled.isEmpty()) {
             return;
         }
+        List<LeafKey> ready = new ArrayList<>();
         Iterator<Map.Entry<LeafKey, Integer>> iterator = scheduled.entrySet().iterator();
         while (iterator.hasNext()) {
             Map.Entry<LeafKey, Integer> entry = iterator.next();
@@ -59,8 +62,13 @@ public class LeafDecayHandler {
                 continue;
             }
             iterator.remove();
+            ready.add(entry.getKey());
+        }
 
-            LeafKey key = entry.getKey();
+        // state.tick/randomTick may decay the leaf and trigger a synchronous NeighborNotifyEvent,
+        // which re-enters onNeighborNotify and mutates `scheduled` — must run after we're done
+        // iterating/mutating the map above, not interleaved with it.
+        for (LeafKey key : ready) {
             ServerLevel level = key.level();
             BlockPos pos = key.pos();
             if (!level.isLoaded(pos)) {
