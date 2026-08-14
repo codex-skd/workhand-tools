@@ -6,7 +6,8 @@ import net.minecraft.util.StringRepresentable;
 
 public enum AoEMode implements StringRepresentable {
     CUBIC("cubic"),
-    FLAT("flat");
+    FLAT("flat"),
+    DISABLED("disabled");
 
     public static final Codec<AoEMode> CODEC = Codec.STRING.xmap(AoEMode::fromName, AoEMode::getSerializedName);
 

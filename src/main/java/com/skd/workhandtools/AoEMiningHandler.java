@@ -35,9 +35,10 @@ public class AoEMiningHandler {
             return;
         }
 
-        AoEMode mode = grade.hasMode()
-                ? stack.getOrDefault(ModDataComponents.AOE_MODE, AoEMode.CUBIC)
-                : AoEMode.CUBIC;
+        AoEMode mode = stack.getOrDefault(ModDataComponents.AOE_MODE, grade.hasMode() ? AoEMode.CUBIC : AoEMode.FLAT);
+        if (mode == AoEMode.DISABLED) {
+            return;
+        }
         boolean lookingUp = player.getXRot() < Config.PITCH_THRESHOLD_DEGREES.get();
         Direction digDir = AoEPatterns.digDirection(player, level, event.getPos());
         List<BlockPos> pattern = AoEPatterns.computePattern(event.getPos(), grade, mode, digDir, lookingUp);
@@ -77,18 +78,34 @@ public class AoEMiningHandler {
         }
         ItemStack stack = event.getItemStack();
         Grade grade = ModItems.gradeOf(stack);
-        if (grade == null || !grade.hasMode()) {
+        if (grade == null) {
             return;
         }
-        AoEMode next = stack.getOrDefault(ModDataComponents.AOE_MODE, AoEMode.CUBIC) == AoEMode.CUBIC
-                ? AoEMode.FLAT
-                : AoEMode.CUBIC;
+
+        AoEMode current = stack.getOrDefault(ModDataComponents.AOE_MODE, grade.hasMode() ? AoEMode.CUBIC : AoEMode.FLAT);
+        AoEMode next;
+        if (grade.hasMode()) {
+            if (current == AoEMode.DISABLED) {
+                next = AoEMode.FLAT;
+            } else if (current == AoEMode.FLAT) {
+                next = AoEMode.CUBIC;
+            } else { // current == CUBIC
+                next = AoEMode.DISABLED;
+            }
+        } else {
+            next = (current == AoEMode.DISABLED) ? AoEMode.FLAT : AoEMode.DISABLED;
+        }
         stack.set(ModDataComponents.AOE_MODE, next);
         if (player instanceof ServerPlayer serverPlayer) {
-            serverPlayer.sendSystemMessage(Component.translatable(
-                    next == AoEMode.CUBIC
-                            ? "message.workhand_tools.mode.cubic"
-                            : "message.workhand_tools.mode.flat"), true);
+            String messageKey;
+            if (next == AoEMode.CUBIC) {
+                messageKey = "message.workhand_tools.mode.cubic";
+            } else if (next == AoEMode.FLAT) {
+                messageKey = "message.workhand_tools.mode.flat";
+            } else {
+                messageKey = "message.workhand_tools.mode.disabled";
+            }
+            serverPlayer.sendSystemMessage(Component.translatable(messageKey), true);
         }
         event.setCanceled(true);
     }
@@ -101,16 +118,18 @@ public class AoEMiningHandler {
             return;
         }
 
-        AoEMode mode = grade.hasMode()
-                ? stack.getOrDefault(ModDataComponents.AOE_MODE, AoEMode.CUBIC)
-                : AoEMode.CUBIC;
-        event.getToolTip().add(Component.translatable(areaKey(grade, mode)).withStyle(ChatFormatting.GOLD));
-
-        if (grade.hasMode()) {
-            event.getToolTip().add(Component.translatable(
-                    mode == AoEMode.CUBIC
-                            ? "message.workhand_tools.mode.cubic"
-                            : "message.workhand_tools.mode.flat").withStyle(ChatFormatting.GRAY));
+        AoEMode mode = stack.getOrDefault(ModDataComponents.AOE_MODE, grade.hasMode() ? AoEMode.CUBIC : AoEMode.FLAT);
+        if (mode == AoEMode.DISABLED) {
+            event.getToolTip().add(Component.translatable("tooltip.workhand_tools.mode.disabled").withStyle(ChatFormatting.GRAY));
+            event.getToolTip().add(Component.translatable("tooltip.workhand_tools.right_click"));
+        } else {
+            event.getToolTip().add(Component.translatable(areaKey(grade, mode)).withStyle(ChatFormatting.GOLD));
+            if (grade.hasMode()) {
+                event.getToolTip().add(Component.translatable(
+                        mode == AoEMode.CUBIC
+                                ? "message.workhand_tools.mode.cubic"
+                                : "message.workhand_tools.mode.flat").withStyle(ChatFormatting.GRAY));
+            }
             event.getToolTip().add(Component.translatable("tooltip.workhand_tools.right_click"));
         }
 
