@@ -8,8 +8,8 @@
   "tooltip.workhand_tools.area.5x5x5": "Bereich: 5x5x5",
   "tooltip.workhand_tools.area.3x3x1_flat": "Bereich: 3x3x1 (Flach)",
   "tooltip.workhand_tools.area.5x5x1_flat": "Bereich: 5x5x1 (Flach)",
-  "tooltip.workhand_tools.hold_shift": "\u00a77Shift halten für normales Abbauen",
-  "tooltip.workhand_tools.right_click": "\u00a77Rechtsklick zum Moduswechsel",
+  "tooltip.workhand_tools.hold_shift": "§7Shift halten für normales Abbauen",
+  "tooltip.workhand_tools.right_click": "§7Rechtsklick zum Moduswechsel",
   "item.workhand_tools.stone_workhand_pickaxe": "Stein-Workhand-Spitzhacke",
   "item.workhand_tools.stone_workhand_shovel": "Stein-Workhand-Schaufel",
   "item.workhand_tools.stone_workhand_advanced_pickaxe": "Fortgeschrittene Stein-Workhand-Spitzhacke",
@@ -41,7 +41,7 @@
   "item.workhand_tools.diamond_workhand_professional_improved_pickaxe": "Verbesserte professionelle Diamant-Workhand-Spitzhacke",
   "item.workhand_tools.iron_workhand_axe": "Eisen-Workhand-Axt",
   "item.workhand_tools.diamond_workhand_axe": "Diamant-Workhand-Axt",
-  "tooltip.workhand_tools.vein_mining": "\u00a77Erzader-Abbau aktiv",
+  "tooltip.workhand_tools.vein_mining": "§7Erzader-Abbau aktiv",
   "message.workhand_tools.felling.enabled": "Baumfällung: Aktiviert",
   "message.workhand_tools.felling.disabled": "Baumfällung: Deaktiviert",
   "tooltip.workhand_tools.felling.enabled": "Baumfällung: Aktiviert",
@@ -52,5 +52,7 @@
   "workhand_tools.configuration.textColor": "Textfarbe",
   "workhand_tools.configuration.textSize": "Textgröße",
   "workhand_tools.configuration.lineWidth": "Linienbreite",
-  "workhand_tools.configuration.lineWidthMax": "Max. Linienbreite"
+  "workhand_tools.configuration.lineWidthMax": "Max. Linienbreite",
+  "message.workhand_tools.mode.disabled": "Modus: Deaktiviert",
+  "tooltip.workhand_tools.mode.disabled": "§7Flächenabbau deaktiviert"
 }

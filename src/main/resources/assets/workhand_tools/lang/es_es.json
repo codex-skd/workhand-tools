@@ -8,8 +8,8 @@
   "tooltip.workhand_tools.area.5x5x5": "Área: 5x5x5",
   "tooltip.workhand_tools.area.3x3x1_flat": "Área: 3x3x1 (Plano)",
   "tooltip.workhand_tools.area.5x5x1_flat": "Área: 5x5x1 (Plano)",
-  "tooltip.workhand_tools.hold_shift": "\u00a77Mantén Shift para picado normal",
-  "tooltip.workhand_tools.right_click": "\u00a77Click derecho para cambiar modo",
+  "tooltip.workhand_tools.hold_shift": "§7Mantén Shift para picado normal",
+  "tooltip.workhand_tools.right_click": "§7Click derecho para cambiar modo",
   "item.workhand_tools.stone_workhand_pickaxe": "Pico Workhand de Piedra",
   "item.workhand_tools.stone_workhand_shovel": "Pala Workhand de Piedra",
   "item.workhand_tools.stone_workhand_advanced_pickaxe": "Pico Workhand Avanzado de Piedra",
@@ -41,7 +41,7 @@
   "item.workhand_tools.diamond_workhand_professional_improved_pickaxe": "Pico Workhand Profesional Mejorado de Diamante",
   "item.workhand_tools.iron_workhand_axe": "Hacha Workhand de Hierro",
   "item.workhand_tools.diamond_workhand_axe": "Hacha Workhand de Diamante",
-  "tooltip.workhand_tools.vein_mining": "\u00a77Mineria de vetas activa",
+  "tooltip.workhand_tools.vein_mining": "§7Mineria de vetas activa",
   "message.workhand_tools.felling.enabled": "Tala de arboles: Activada",
   "message.workhand_tools.felling.disabled": "Tala de arboles: Desactivada",
   "tooltip.workhand_tools.felling.enabled": "Tala de arboles: Activada",
@@ -52,5 +52,7 @@
   "workhand_tools.configuration.textColor": "Color de Texto",
   "workhand_tools.configuration.textSize": "Tamaño de Texto",
   "workhand_tools.configuration.lineWidth": "Grosor de Línea",
-  "workhand_tools.configuration.lineWidthMax": "Grosor de Línea Máx."
+  "workhand_tools.configuration.lineWidthMax": "Grosor de Línea Máx.",
+  "message.workhand_tools.mode.disabled": "Modo: Desactivado",
+  "tooltip.workhand_tools.mode.disabled": "§7Minado en área desactivado"
 }

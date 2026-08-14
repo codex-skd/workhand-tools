@@ -8,8 +8,8 @@
   "tooltip.workhand_tools.area.5x5x5": "範囲：5x5x5",
   "tooltip.workhand_tools.area.3x3x1_flat": "範囲：3x3x1（平面）",
   "tooltip.workhand_tools.area.5x5x1_flat": "範囲：5x5x1（平面）",
-  "tooltip.workhand_tools.hold_shift": "\u00a77Shiftで通常採掘",
-  "tooltip.workhand_tools.right_click": "\u00a77右クリックでモード切替",
+  "tooltip.workhand_tools.hold_shift": "§7Shiftで通常採掘",
+  "tooltip.workhand_tools.right_click": "§7右クリックでモード切替",
   "item.workhand_tools.stone_workhand_pickaxe": "石のワークハンドツルハシ",
   "item.workhand_tools.stone_workhand_shovel": "石のワークハンドショベル",
   "item.workhand_tools.stone_workhand_advanced_pickaxe": "上級の石のワークハンドツルハシ",
@@ -41,7 +41,7 @@
   "item.workhand_tools.diamond_workhand_professional_improved_pickaxe": "改良された達人のダイヤのワークハンドツルハシ",
   "item.workhand_tools.iron_workhand_axe": "鉄のワークハンドオノ",
   "item.workhand_tools.diamond_workhand_axe": "ダイヤのワークハンドオノ",
-  "tooltip.workhand_tools.vein_mining": "\u00a77鉱脈採掘が有効",
+  "tooltip.workhand_tools.vein_mining": "§7鉱脈採掘が有効",
   "message.workhand_tools.felling.enabled": "伐採：有効",
   "message.workhand_tools.felling.disabled": "伐採：無効",
   "tooltip.workhand_tools.felling.enabled": "伐採：有効",
@@ -52,5 +52,7 @@
   "workhand_tools.configuration.textColor": "文字の色",
   "workhand_tools.configuration.textSize": "文字サイズ",
   "workhand_tools.configuration.lineWidth": "線の太さ",
-  "workhand_tools.configuration.lineWidthMax": "線の太さ（最大）"
+  "workhand_tools.configuration.lineWidthMax": "線の太さ（最大）",
+  "message.workhand_tools.mode.disabled": "モード：無効",
+  "tooltip.workhand_tools.mode.disabled": "§7範囲採掘は無効です"
 }

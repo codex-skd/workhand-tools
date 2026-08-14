@@ -8,8 +8,8 @@
   "tooltip.workhand_tools.area.5x5x5": "Area: 5x5x5",
   "tooltip.workhand_tools.area.3x3x1_flat": "Area: 3x3x1 (Piatta)",
   "tooltip.workhand_tools.area.5x5x1_flat": "Area: 5x5x1 (Piatta)",
-  "tooltip.workhand_tools.hold_shift": "\u00a77Tieni premuto Shift per scavo normale",
-  "tooltip.workhand_tools.right_click": "\u00a77Click destro per cambiare modalità",
+  "tooltip.workhand_tools.hold_shift": "§7Tieni premuto Shift per scavo normale",
+  "tooltip.workhand_tools.right_click": "§7Click destro per cambiare modalità",
   "item.workhand_tools.stone_workhand_pickaxe": "Piccone Workhand di Pietra",
   "item.workhand_tools.stone_workhand_shovel": "Pala Workhand di Pietra",
   "item.workhand_tools.stone_workhand_advanced_pickaxe": "Piccone Workhand Avanzato di Pietra",
@@ -41,7 +41,7 @@
   "item.workhand_tools.diamond_workhand_professional_improved_pickaxe": "Piccone Workhand Professionale Migliorato di Diamante",
   "item.workhand_tools.iron_workhand_axe": "Ascia Workhand di Ferro",
   "item.workhand_tools.diamond_workhand_axe": "Ascia Workhand di Diamante",
-  "tooltip.workhand_tools.vein_mining": "\u00a77Estrazione vena attiva",
+  "tooltip.workhand_tools.vein_mining": "§7Estrazione vena attiva",
   "message.workhand_tools.felling.enabled": "Abbattimento: Attivato",
   "message.workhand_tools.felling.disabled": "Abbattimento: Disattivato",
   "tooltip.workhand_tools.felling.enabled": "Abbattimento: Attivato",
@@ -52,5 +52,7 @@
   "workhand_tools.configuration.textColor": "Colore Testo",
   "workhand_tools.configuration.textSize": "Dimensione Testo",
   "workhand_tools.configuration.lineWidth": "Spessore Linea",
-  "workhand_tools.configuration.lineWidthMax": "Spessore Linea Max"
+  "workhand_tools.configuration.lineWidthMax": "Spessore Linea Max",
+  "message.workhand_tools.mode.disabled": "Modalità: Disattivata",
+  "tooltip.workhand_tools.mode.disabled": "§7Scavo ad area disattivato"
 }

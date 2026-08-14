@@ -8,8 +8,8 @@
   "tooltip.workhand_tools.area.5x5x5": "Zone : 5x5x5",
   "tooltip.workhand_tools.area.3x3x1_flat": "Zone : 3x3x1 (Plat)",
   "tooltip.workhand_tools.area.5x5x1_flat": "Zone : 5x5x1 (Plat)",
-  "tooltip.workhand_tools.hold_shift": "\u00a77Maintenir Shift pour minage normal",
-  "tooltip.workhand_tools.right_click": "\u00a77Clic droit pour changer de mode",
+  "tooltip.workhand_tools.hold_shift": "§7Maintenir Shift pour minage normal",
+  "tooltip.workhand_tools.right_click": "§7Clic droit pour changer de mode",
   "item.workhand_tools.stone_workhand_pickaxe": "Pioche Workhand en Pierre",
   "item.workhand_tools.stone_workhand_shovel": "Pelle Workhand en Pierre",
   "item.workhand_tools.stone_workhand_advanced_pickaxe": "Pioche Workhand Avancée en Pierre",
@@ -41,7 +41,7 @@
   "item.workhand_tools.diamond_workhand_professional_improved_pickaxe": "Pioche Workhand professionnelle améliorée en Diamant",
   "item.workhand_tools.iron_workhand_axe": "Hache Workhand en Fer",
   "item.workhand_tools.diamond_workhand_axe": "Hache Workhand en Diamant",
-  "tooltip.workhand_tools.vein_mining": "\u00a77Minage de filon actif",
+  "tooltip.workhand_tools.vein_mining": "§7Minage de filon actif",
   "message.workhand_tools.felling.enabled": "Abattage : Activé",
   "message.workhand_tools.felling.disabled": "Abattage : Désactivé",
   "tooltip.workhand_tools.felling.enabled": "Abattage : Activé",
@@ -52,5 +52,7 @@
   "workhand_tools.configuration.textColor": "Couleur de Texte",
   "workhand_tools.configuration.textSize": "Taille de Texte",
   "workhand_tools.configuration.lineWidth": "Épaisseur de Ligne",
-  "workhand_tools.configuration.lineWidthMax": "Épaisseur de Ligne Max"
+  "workhand_tools.configuration.lineWidthMax": "Épaisseur de Ligne Max",
+  "message.workhand_tools.mode.disabled": "Mode : Désactivé",
+  "tooltip.workhand_tools.mode.disabled": "§7Minage en zone désactivé"
 }

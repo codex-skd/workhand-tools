@@ -8,8 +8,8 @@
   "tooltip.workhand_tools.area.5x5x5": "范围：5x5x5",
   "tooltip.workhand_tools.area.3x3x1_flat": "范围：3x3x1（平面）",
   "tooltip.workhand_tools.area.5x5x1_flat": "范围：5x5x1（平面）",
-  "tooltip.workhand_tools.hold_shift": "\u00a77按住Shift进行普通挖掘",
-  "tooltip.workhand_tools.right_click": "\u00a77右键切换模式",
+  "tooltip.workhand_tools.hold_shift": "§7按住Shift进行普通挖掘",
+  "tooltip.workhand_tools.right_click": "§7右键切换模式",
   "item.workhand_tools.stone_workhand_pickaxe": "石制工作手镐",
   "item.workhand_tools.stone_workhand_shovel": "石制工作手铲",
   "item.workhand_tools.stone_workhand_advanced_pickaxe": "高级石制工作手镐",
@@ -41,7 +41,7 @@
   "item.workhand_tools.diamond_workhand_professional_improved_pickaxe": "改良专业钻石工作手镐",
   "item.workhand_tools.iron_workhand_axe": "铁制工作手斧",
   "item.workhand_tools.diamond_workhand_axe": "钻石工作手斧",
-  "tooltip.workhand_tools.vein_mining": "\u00a77矿脉采集已激活",
+  "tooltip.workhand_tools.vein_mining": "§7矿脉采集已激活",
   "message.workhand_tools.felling.enabled": "砍树：已开启",
   "message.workhand_tools.felling.disabled": "砍树：已关闭",
   "tooltip.workhand_tools.felling.enabled": "砍树：已开启",
@@ -52,5 +52,7 @@
   "workhand_tools.configuration.textColor": "文字颜色",
   "workhand_tools.configuration.textSize": "文字大小",
   "workhand_tools.configuration.lineWidth": "线条宽度",
-  "workhand_tools.configuration.lineWidthMax": "最大线条宽度"
+  "workhand_tools.configuration.lineWidthMax": "最大线条宽度",
+  "message.workhand_tools.mode.disabled": "模式：禁用",
+  "tooltip.workhand_tools.mode.disabled": "§7范围挖掘已禁用"
 }
