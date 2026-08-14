@@ -20,7 +20,7 @@ import net.minecraft.world.level.material.FluidState;
 
 public final class MiningHelper {
     private static final int MAX_VEIN_BLOCKS = 128;
-    private static final int MAX_TREE_BLOCKS = 256;
+    private static final int MAX_TREE_BLOCKS = 384;
 
     // Ore Vein Miner reference block ids (see lib_ext/Ore_Vein_Miner-main/data/svm/function/reset_config.mcfunction).
     private static final Set<Identifier> ORE_IDS = Set.of(
@@ -126,54 +126,110 @@ public final class MiningHelper {
         return broken > 0;
     }
 
-    // BFS flood-fill of connected logs (same block type, BlockTags.LOGS, excluding stripped).
-    // The center block (start) is skipped.
+    // Flood-fill of connected logs (same block type, exact match, excluding stripped) reachable
+    // through the 26-neighbor cube (including diagonals) around each block, crossing through leaf
+    // gaps to reach log blocks separated by diagonal branches or offset canopies. Each consecutive
+    // leaf block crossed without finding another log increments a streak counter (reset on log)
+    // capped by Config.MAX_LEAF_DISTANCE_FROM_LOG (-1 = unlimited). The center block (start) is
+    // skipped — it's handled by the caller. Leaves themselves are never broken here; they rely on
+    // LeafDecayHandler's accelerated decay once they lose their supporting logs.
     static boolean fellTree(Level level, BlockPos start, BlockState startState, Player player, ItemStack stack) {
         if (!isFellingEnabled(stack) || !isLog(startState)) {
             return false;
         }
         Block targetBlock = startState.getBlock();
         Set<BlockPos> visited = new HashSet<>();
-        ArrayDeque<BlockPos> queue = new ArrayDeque<>();
-        queue.add(start.immutable());
+        ArrayDeque<TreeSearchNode> queue = new ArrayDeque<>();
+        queue.add(new TreeSearchNode(start, 0));
         int broken = 0;
 
         while (!queue.isEmpty() && broken < MAX_TREE_BLOCKS) {
-            BlockPos pos = queue.poll();
+            TreeSearchNode node = queue.poll();
+            BlockPos pos = node.pos();
+            int leafStreak = node.leafStreak();
+
             if (!visited.add(pos)) {
-                continue;
-            }
-            if (pos.equals(start)) {
-                for (Direction dir : Direction.values()) {
-                    queue.add(pos.relative(dir));
-                }
                 continue;
             }
             if (!level.isLoaded(pos)) {
                 continue;
             }
             BlockState state = level.getBlockState(pos);
-            if (state.getBlock() != targetBlock || !isLog(state)) {
+
+            boolean isStart = pos.equals(start);
+            boolean isLogMatch = (state.getBlock() == targetBlock && isLog(state));
+            boolean isLeafMatch = isLeaf(state);
+
+            // For the start block, we know it's a log (from the guard) but we don't break it.
+            if (isStart) {
+                isLogMatch = true;
+                isLeafMatch = false;
+            }
+
+            if (isLogMatch) {
+                if (!isStart) {
+                    breakBlock(level, pos, state, player, stack);
+                    broken++;
+                    stack.hurtAndBreak(1, player, EquipmentSlot.MAINHAND);
+                    if (stack.isEmpty() && !player.getAbilities().instabuild) {
+                        break;
+                    }
+                }
+            } else if (!isLeafMatch) {
                 continue;
             }
-            breakBlock(level, pos, state, player, stack);
-            broken++;
-            stack.hurtAndBreak(1, player, EquipmentSlot.MAINHAND);
-            if (stack.isEmpty() && !player.getAbilities().instabuild) {
-                break;
-            }
-            for (Direction dir : Direction.values()) {
-                queue.add(pos.relative(dir));
+
+            // Enumerate all 26 neighbors (3x3x3 cube excluding center)
+            for (int dx = -1; dx <= 1; dx++) {
+                for (int dy = -1; dy <= 1; dy++) {
+                    for (int dz = -1; dz <= 1; dz++) {
+                        if (dx == 0 && dy == 0 && dz == 0) {
+                            continue; // skip self
+                        }
+                        BlockPos neighbor = pos.offset(dx, dy, dz);
+                        if (!level.isLoaded(neighbor)) {
+                            continue;
+                        }
+                        BlockState neighborState = level.getBlockState(neighbor);
+                        int newLeafStreak;
+                        if (neighborState.getBlock() == targetBlock && isLog(neighborState)) {
+                            newLeafStreak = 0;
+                        } else if (isLeaf(neighborState)) {
+                            newLeafStreak = leafStreak + 1;
+                            int maxLeafDistance = Config.MAX_LEAF_DISTANCE_FROM_LOG.get();
+                            if (maxLeafDistance >= 0 && newLeafStreak > maxLeafDistance) {
+                                continue; // exceed leaf streak limit
+                            }
+                        } else {
+                            continue; // not a log or leaf, skip
+                        }
+                        queue.add(new TreeSearchNode(neighbor, newLeafStreak));
+                    }
+                }
             }
         }
+
         return broken > 0;
     }
 
     private static boolean isLog(BlockState state) {
-        if (!state.typeHolder().is(BlockTags.LOGS)) {
+        Identifier id = BuiltInRegistries.BLOCK.getKey(state.getBlock());
+        if (id == null) {
             return false;
         }
-        Identifier id = BuiltInRegistries.BLOCK.getKey(state.getBlock());
-        return id != null && !id.getPath().startsWith("stripped");
+        String path = id.getPath();
+        if (path.startsWith("stripped")) {
+            return false;
+        }
+        if (state.typeHolder().is(BlockTags.LOGS)) {
+            return true;
+        }
+        return path.contains("_log") || path.contains("log_");
+    }
+
+    private static record TreeSearchNode(BlockPos pos, int leafStreak) {}
+
+    private static boolean isLeaf(BlockState state) {
+        return state.typeHolder().is(BlockTags.LEAVES);
     }
 }
