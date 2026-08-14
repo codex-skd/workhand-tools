@@ -1,6 +1,13 @@
 # Changelog — Workhand Tools
 
 
+## [1.12.0] - 2026-08-14
+
+### Feature
+
+- **Full tree felling, including loose branch logs**: The Workhand Axes' felling flood-fill now searches all 26 neighboring blocks (including diagonals) instead of just the 6 faces, and can cross through leaf blocks to reach log blocks separated by a gap — the loose branch logs embedded in the canopy that vanilla and modded trees commonly have, which the previous logs-only, face-adjacent search left standing. Leaves themselves are never broken directly; they rely on the existing accelerated decay once their supporting logs are gone. The maximum consecutive leaf blocks crossable in one unbroken chain is configurable (`maxLeafDistanceFromLog`, unlimited by default).
+- **Cross-mod log detection**: Felling and its log identification no longer depend solely on the vanilla `minecraft:logs` block tag. Any block whose registry id contains `_log` or `log_` (excluding stripped variants) is now also recognized as a log, so trees from mods that don't tag their logs correctly still fell as a whole.
+
 ## [1.11.0] - 2026-08-14
 
 ### Feature
