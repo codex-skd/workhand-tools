@@ -1,6 +1,12 @@
 # Changelog — Workhand Tools
 
 
+## [1.11.0] - 2026-08-14
+
+### Feature
+
+- **AoE mining can now be fully disabled per tool**: Right-click no longer just toggles between area shapes — every pickaxe grade now cycles through a "Disabled" state too. Grades 1 and 3 (previously a fixed flat area with no right-click action) now toggle **Disabled → Flat → Disabled**. Grades 2 and 4 (previously Cubic/Flat only, always on) now cycle **Disabled → Flat → Cubic → Disabled**. Existing pickaxes keep mining in area mode by default — nothing changes unless the player right-clicks. Tooltips updated to show the disabled state and the right-click hint on every grade.
+
 ## [1.10.2] - 2026-08-13
 
 ### Fix
