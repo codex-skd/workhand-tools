@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1786731836.7153225,
-    "ast_hash": "2cb4faabfab231d0e036f2cf354e2ed8",
+    "mtime": 1786747738.4060004,
+    "ast_hash": "9c6cf09b8fb7df444377c0cab702ef72",
     "semantic_hash": ""
   },
   "README.md": {
@@ -795,8 +795,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/AreaHighlighter.java": {
-    "mtime": 1786376294.200708,
-    "ast_hash": "0098864d350d135cd468da911e8e24bb",
+    "mtime": 1786746451.4556966,
+    "ast_hash": "1b87a8c64eb20868f7143beed2fa5bdd",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/1.1.2.md": {
@@ -1102,6 +1102,11 @@
   "docs/curseforge/versions/1.12.0.md": {
     "mtime": 1786731890.2924511,
     "ast_hash": "6b10f74cd55a542b120f16b3fb4e87c3",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.12.1.md": {
+    "mtime": 1786747744.34645,
+    "ast_hash": "1de8907dcd077784d8bb0a1032c86976",
     "semantic_hash": ""
   }
 }
