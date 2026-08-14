@@ -1,6 +1,12 @@
 # Changelog — Workhand Tools
 
 
+## [1.12.1] - 2026-08-14
+
+### Fix
+
+- **Area preview ignored the disabled AoE state**: `AreaHighlighter` (the client-side outline shown while aiming at a block) still used the pre-1.11.0 mode logic and always drew the flat/cubic area outline, even when the tool's AoE was set to Disabled. It now reads the same grade-aware default as the mining and tooltip logic and, when the mode is Disabled, highlights only the single targeted block instead of the full pattern.
+
 ## [1.12.0] - 2026-08-14
 
 ### Feature
