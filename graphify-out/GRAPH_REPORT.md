@@ -1,16 +1,16 @@
 # Graph Report - 26.2  (2026-08-14)
 
 ## Corpus Check
-- 186 files · ~30,387 words
+- 187 files · ~30,599 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 452 nodes · 634 edges · 75 communities (61 shown, 14 thin omitted)
+- 453 nodes · 634 edges · 76 communities (62 shown, 14 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 9 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `62880679`
+- Built from commit: `0df8a00c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -85,7 +85,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (75 total, 14 thin omitted)
+## Communities (76 total, 14 thin omitted)
 
 ### Community 1 - "Mod Initialization"
 Cohesion: 0.21
@@ -208,7 +208,7 @@ Nodes (3): [1.6.1] - 2026-08-10, Fix, Update
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `TextColor` connect `TextColor` to `Grade`?**
-  _High betweenness centrality (0.105) - this node is a cross-community bridge._
+  _High betweenness centrality (0.104) - this node is a cross-community bridge._
 - **Why does `Client` connect `Grade` to `TextColor`?**
   _High betweenness centrality (0.066) - this node is a cross-community bridge._
 - **What connects `CUBIC`, `FLAT`, `DISABLED` to the rest of the system?**
