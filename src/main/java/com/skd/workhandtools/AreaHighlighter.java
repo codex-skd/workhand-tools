@@ -49,12 +49,15 @@ public final class AreaHighlighter {
             return;
         }
 
-        AoEMode mode = grade.hasMode()
-                ? stack.getOrDefault(ModDataComponents.AOE_MODE, AoEMode.CUBIC)
-                : AoEMode.CUBIC;
-        boolean lookingUp = player.getXRot() < Config.PITCH_THRESHOLD_DEGREES.get();
-        Direction digDir = AoEPatterns.digDirection(player, player.level(), target);
-        List<BlockPos> pattern = AoEPatterns.computePattern(target, grade, mode, digDir, lookingUp);
+        AoEMode mode = stack.getOrDefault(ModDataComponents.AOE_MODE, grade.hasMode() ? AoEMode.CUBIC : AoEMode.FLAT);
+        List<BlockPos> pattern;
+        if (mode == AoEMode.DISABLED) {
+            pattern = List.of(target);
+        } else {
+            boolean lookingUp = player.getXRot() < Config.PITCH_THRESHOLD_DEGREES.get();
+            Direction digDir = AoEPatterns.digDirection(player, player.level(), target);
+            pattern = AoEPatterns.computePattern(target, grade, mode, digDir, lookingUp);
+        }
 
         if (pattern.isEmpty()) {
             return;
