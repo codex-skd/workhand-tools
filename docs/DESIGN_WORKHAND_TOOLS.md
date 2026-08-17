@@ -232,8 +232,75 @@ Right-click toggles tree felling (data component `felling_enabled`, default fals
 - Iron axe: `BBI / IR  /  R ` where B=iron_block, I=iron_ingot, R=robust_stick
 - Diamond axe: same pattern with diamond_block/diamond
 
+## Chunk Anchor + Anchor Tome (chunk loading)
+
+Conjunto de 2 items nuevos, sin relación con la línea de herramientas: aplican **chunk loading forzado** (mantiene el chunk cargado sin jugador cerca) al chunk donde está colocado el pedestal.
+
+### Items
+
+| Item | ID | Tipo |
+|---|---|---|
+| Chunk Anchor | `workhand_tools:chunk_anchor` | Bloque + block entity |
+| Anchor Tome | `workhand_tools:anchor_tome` | Item (libro) |
+
+### Assets reutilizados (con permiso) de Occultism
+
+El mod **Occultism** (klikli-dev, https://github.com/klikli-dev/occultism) ha dado permiso para reutilizar 2 assets suyos en este mod. Ya extraídos y adaptados al namespace `workhand_tools`:
+
+- **Chunk Anchor**: modelo + textura del bloque `occultism:otherstone_pedestal` → copiados como `assets/workhand_tools/models/block/chunk_anchor.json` (basado en `otherstone_pedestal.json`) y `assets/workhand_tools/textures/block/chunk_anchor.png` (basado en `pedestal_base.png`). Blockstate e item model del bloque creados en el mismo estilo (`assets/workhand_tools/blockstates/chunk_anchor.json`, `assets/workhand_tools/items/chunk_anchor.json`).
+- **Anchor Tome**: textura del item `occultism:book_of_binding_djinni` → copiada como `assets/workhand_tools/textures/item/anchor_tome.png`, con modelo de item estándar (`minecraft:item/generated` + `layer0`) en `assets/workhand_tools/models/item/anchor_tome.json` y `assets/workhand_tools/items/anchor_tome.json`.
+
+Esto **no son placeholders vanilla** como el resto del mod: son arte real cedido por Occultism. Pendiente: añadir la entrada correspondiente en `README.md` → `## Credits` (mismo formato que la entrada existente de Measurements/Tape Measure) al implementar.
+
+### Mecánica de colocación
+
+- El Chunk Anchor se coloca como cualquier bloque, en el suelo.
+- Clic derecho con el Anchor Tome en mano sobre el Chunk Anchor → inserta el tome en el slot interno del block entity; el item se consume del inventario del jugador y pasa a renderizarse sobre el pedestal.
+- Clic derecho vacío (o agachado) sobre un Chunk Anchor con tome puesto → lo extrae, vuelve al inventario del jugador.
+- Romper el Chunk Anchor con el tome puesto → dropea ambos items y libera el chunk forzado inmediatamente (no debe quedar un ticket huérfano).
+
+### Chunk loading
+
+- Alcance: **solo el chunk que contiene el Chunk Anchor**, sin radio ni chunks vecinos.
+- Implementación: ticket de forced chunk vanilla (mismo mecanismo que el comando `/forceload`, vía `ServerLevel#setChunkForced`/`ForcedChunksSavedData`), asociado a la `BlockPos` del pedestal — persiste a través de descarga/recarga de chunk y de reinicios del servidor.
+- Permanente mientras el tome esté puesto: sin coste, sin degradación, sin fuel. Se libera al extraer el tome o al romper el altar (incluyendo el caso de que el chunk se rompa/descargue por otros medios — hay que reconciliar el ticket al cargar el mundo, por si el bloque ya no existe).
+
+### Indicador visual del chunk (borde de esquinas)
+
+- Config nueva en `Config.java` (compatible con Configured): `CHUNK_ANCHOR_BORDER_MODE`, enum con 3 valores:
+  - `ALWAYS` (**por defecto**): se renderiza siempre que el jugador esté dentro del render distance del cliente.
+  - `SNEAK_LOOKING`: solo si el jugador está agachado y mirando hacia el Chunk Anchor, dentro de 20 bloques.
+  - `NEARBY`: solo si el jugador está a ≤20 bloques del Chunk Anchor (sin importar postura/mirada).
+- Render client-side (`RenderLevelStageEvent`), solo las 4 aristas verticales de las esquinas del chunk (16×16), color blanco — sin grid completo del chunk, solo esquinas.
+
+### Efectos visuales del Anchor Tome
+
+Mientras está puesto en el pedestal:
+
+- **Rotación continua**: el libro gira sobre sí mismo (eje Y) igual que el libro flotante sobre una mesa de encantamientos vanilla — mismo tipo de animación que `EnchantmentTableBlockEntity`/`BookModel` (ángulo de rotación basado en tiempo de juego, sin input del jugador). Requiere un `BlockEntityRenderer` custom (el item no puede rotar solo vía blockstate) posicionado sobre el pedestal.
+- **Partículas orbitando** alrededor del libro + **glow/luz sutil** (igual que se acordó antes para la bola, se mantiene con el libro).
+
+### Receta (confirmada)
+
+Tier alto — forzar carga de chunks es una mecánica potente, no debe ser accesible pronto:
+
+- **Chunk Anchor**: núcleo de bloque de diamante + marco de obsidiana + lingote de netherite (receta shaped, cara). Forma exacta pendiente de cerrar en implementación.
+- **Anchor Tome**: `minecraft:book` + amatista + diamante. Forma exacta pendiente de cerrar en implementación.
+
+### Fases de implementación
+
+1. Bloque `ChunkAnchorBlock` + `ChunkAnchorBlockEntity` (slot interno, inserción/extracción por clic derecho).
+2. Item `AnchorOrbItem`.
+3. Integración con forced chunk tickets (alta/baja + reconciliación al cargar el mundo).
+4. Render del borde de esquinas (client-side) + `Config.CHUNK_ANCHOR_BORDER_MODE`.
+5. Partículas/glow del orb puesto.
+6. Recetas + creative tab + localización (en, es-ES si aplica al resto del mod).
+7. QA: persistencia tras reinicio de servidor, extracción/rotura del altar, los 3 modos de borde.
+
 ## Historial de decisiones
 
+- **v6**: pivote del item colocado sobre el Chunk Anchor — de "Anchor Orb" (bola) a **Anchor Tome** (libro), con rotación continua estilo mesa de encantamientos añadida a los efectos visuales ya acordados (partículas + glow). Ambos items del conjunto dejan de usar placeholders vanilla: assets reales cedidos con permiso por **Occultism** (klikli-dev) — pedestal (`otherstone_pedestal`) para Chunk Anchor, libro (`book_of_binding_djinni`) para Anchor Tome, ya extraídos y adaptados al namespace `workhand_tools`. Receta del tome ajustada a `minecraft:book` + amatista + diamante (antes ojo de ender + amatista + diamante). Primer intento de implementación (delegado en Nvidia/nemotron sobre el diseño v5) falló con 57 errores de compilación por asumir una versión de Minecraft incorrecta — descartado, no llegó a commitearse.
+- **v5**: nuevo conjunto Chunk Anchor + Anchor Orb — chunk loading forzado del chunk del altar (sin radio), permanente mientras el orb esté puesto, indicador visual de esquinas de chunk configurable (Always/SneakLooking/Nearby, 20 bloques), partículas+glow en el orb, receta de tier alto (diamante+obsidiana+netherite / ojo de ender+amatista+diamante). No forma parte de la línea de herramientas Workhand.
 - **v1**: 6 materiales vanilla, 1 grado, minado 1×1 estándar.
 - **v2**: +4 materiales (Copper, Deepslate, Blackstone, Obsidian) con stats propuestos (confirmados en v3) · +4 grados por material con patrones de minado en área (3×3×1 / 3×3×3 / 5×5×1 / 5×5×5), doble función clic izq./der. en grados 2 y 4, override total al agacharse, y anclaje vertical dependiente del pitch para los patrones de 5 de alto · total de items pasa de 12 a 80.
 - **v4**: durabilidad ×5 en todos los materiales de herramienta — feedback del usuario tras publicar: el coste de fabricación no compensaba con la durabilidad vanilla. `STONE_WORKHAND`/`IRON_WORKHAND`/`DIAMOND_WORKHAND` (`ModToolMaterials.java`) reemplazan el uso directo de `ToolMaterial.STONE`/`IRON`/`DIAMOND` en `ModItems.java`; `IMPROVED_IRON`/`IMPROVED_DIAMOND` también ×5. Solo cambia durabilidad, el resto de stats (velocidad, encantabilidad, bonus de daño, tag de reparación) se mantiene igual que el vanilla original.

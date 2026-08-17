@@ -25,9 +25,22 @@ public class Config {
     public static final ModConfigSpec.IntValue MAX_LEAF_DISTANCE_FROM_LOG = BUILDER
             .comment("Maximum consecutive leaf blocks the tree felling algorithm may traverse to reach",
                     "log blocks separated by leaf gaps (e.g. diagonal branches, offset canopies).",
-                    "The counter resets to 0 each time a log block is found.",
-                    "-1 means unlimited (only the overall MAX_TREE_BLOCKS safety cap applies).")
-            .defineInRange("maxLeafDistanceFromLog", -1, -1, 1024);
+                    "The counter resets to 0 every time a log block is found again. -1 means unlimited (only MAX_TREE_BLOCKS still caps it).")
+            .defineInRange("maxLeafDistanceFromLog", -1, -1, 64);
 
-    static final ModConfigSpec SPEC = BUILDER.build();
+    // Chunk Anchor border rendering mode
+    public enum ChunkAnchorBorderMode {
+        ALWAYS,
+        SNEAK_LOOKING,
+        NEARBY
+    }
+
+    public static final ModConfigSpec.EnumValue<ChunkAnchorBorderMode> CHUNK_ANCHOR_BORDER_MODE = BUILDER
+            .comment("When to render the chunk border corners for active Chunk Anchors.",
+                    "ALWAYS = always render within render distance (default).",
+                    "SNEAK_LOOKING = only when sneaking and looking at the anchor within 20 blocks.",
+                    "NEARBY = only when within 20 blocks of the anchor (regardless of looking/sneaking).")
+            .defineEnum("chunkAnchorBorderMode", ChunkAnchorBorderMode.ALWAYS);
+
+    public static final ModConfigSpec SPEC = BUILDER.build();
 }
