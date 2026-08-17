@@ -103,6 +103,20 @@
 
 <br>
 
+<h2>&#128214; Chunk Anchor &amp; Anchor Tome &mdash; Forced Chunk Loading</h2>
+
+<p>A pedestal-and-tome pair, separate from the tool line, that keeps a chunk permanently loaded &mdash; no player needed nearby.</p>
+
+<table>
+<tr><th></th><th>Name</th><th>Type</th><th>Purpose</th></tr>
+<tr><td><img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/chunk_anchor.png" width="32"></td><td>Chunk Anchor</td><td>Block</td><td>Placed on the ground. Right-click with an Anchor Tome to insert it and force-load the chunk it stands in, the same mechanism behind vanilla's <code>/forceload</code>. Right-click empty-handed (or sneaking) to extract the tome and release the chunk. Breaking it with a tome inserted drops both items and releases the chunk immediately</td></tr>
+<tr><td><img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/anchor_tome.png" width="32"></td><td>Anchor Tome</td><td>Item</td><td>Inserted into a Chunk Anchor, keeps its chunk force-loaded permanently with no fuel or cost. Floats open above the pedestal, spinning and turning pages, with green particles orbiting around it</td></tr>
+</table>
+
+<p>The chunk being force-loaded is outlined at its four vertical corners while a tome is inserted &mdash; configurable to show always, only while sneaking and looking at the anchor, or only when nearby. The Chunk Anchor's block model/texture and the Anchor Tome's item texture are adapted, with permission, from klikli-dev's <a href="https://github.com/klikli-dev/occultism" target="_blank">Occultism</a> mod.</p>
+
+<br>
+
 <h2>&#128203; Requirements</h2>
 
 <table>
