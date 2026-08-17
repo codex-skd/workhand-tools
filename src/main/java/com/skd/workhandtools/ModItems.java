@@ -5,8 +5,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ShovelItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -20,8 +22,13 @@ public final class ModItems {
 
     public static final DeferredHolder<Item, ? extends Item> ROBUST_STICK =
             WorkhandTools.ITEMS.registerItem("robust_stick", Item::new, Item.Properties::new);
+    public static final DeferredItem<AnchorTomeItem> ANCHOR_TOME =
+            WorkhandTools.ITEMS.registerItem("anchor_tome", AnchorTomeItem::new, () -> new Item.Properties().stacksTo(1).rarity(Rarity.RARE));
 
-    // Stone Pickaxes
+    public static final DeferredItem<BlockItem> CHUNK_ANCHOR =
+            WorkhandTools.ITEMS.registerSimpleBlockItem("chunk_anchor", ModBlocks.CHUNK_ANCHOR);
+
+// Stone Pickaxes
     public static final DeferredItem<WorkhandPickaxeItem> STONE_WORKHAND_PICKAXE =
             WorkhandTools.ITEMS.registerItem("stone_workhand_pickaxe",
                     WorkhandPickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.STONE_WORKHAND, 1.0F, -2.8F));

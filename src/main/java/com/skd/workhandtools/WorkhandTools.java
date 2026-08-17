@@ -50,6 +50,8 @@ public class WorkhandTools {
                 output.accept(ModItems.ROBUST_STICK.get());
                 output.accept(ModItems.ROBUST_STICK.get());
                 output.accept(ModItems.TAPE_MEASURE.get());
+                output.accept(ModItems.CHUNK_ANCHOR.get());
+                output.accept(ModItems.ANCHOR_TOME.get());
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
@@ -68,6 +70,8 @@ public class WorkhandTools {
         ITEMS.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
         ModDataComponents.DATA_COMPONENT_TYPES.register(modEventBus);
+        ModBlocks.BLOCKS.register(modEventBus);
+        ModBlocks.BLOCK_ENTITIES.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         NeoForge.EVENT_BUS.register(this);

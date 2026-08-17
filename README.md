@@ -106,4 +106,5 @@ All Rights Reserved.
 ## Credits
 
 - **Tape Measure** tool adapted from [Measurements](https://github.com/Mrbysco/Measurements) by Mrbysco (MIT License). The wireframe rendering and length-label placement were ported essentially as-is; the multi-loader plumbing was dropped to fit this single-loader NeoForge mod. The original `MeasurementBox` algorithm itself credits [MadeBaruna/BlockMeter](https://github.com/MadeBaruna/BlockMeter). The `tape_measure.png` item texture is reused from the same MIT-licensed source.
+- **Chunk Anchor** block model/texture and **Anchor Tome** item texture reused, with permission, from [Occultism](https://github.com/klikli-dev/occultism) by klikli-dev — originally the `otherstone_pedestal` block and the `book_of_binding_djinni` item.
 
