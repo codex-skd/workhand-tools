@@ -1,6 +1,15 @@
 # Changelog — Workhand Tools
 
 
+## [1.13.0] - 2026-08-17
+
+### Feature
+
+- **Chunk Anchor + Anchor Tome — forced chunk loading**: new block/item pair, unrelated to the tool line. Place a Chunk Anchor pedestal on the ground and right-click it with an Anchor Tome to force-load its chunk permanently, no player needed nearby — the same mechanism behind vanilla's `/forceload`. Right-click empty-handed (or sneaking) to extract the tome and release the chunk; breaking the pedestal while a tome is inserted drops both items and releases the ticket immediately. The forced-chunk ticket is reconciled on world/chunk load, so it survives server restarts.
+- **Chunk border indicator**: while a tome is inserted, the 4 vertical corner edges of the loaded chunk are outlined in white. Visibility is configurable via `chunkAnchorBorderMode` in the common config: `ALWAYS` (default, visible within render distance), `SNEAK_LOOKING` (only while sneaking and looking at the anchor, within 20 blocks), or `NEARBY` (within 20 blocks regardless of stance).
+- **Anchor Tome visuals**: the inserted tome floats open above the pedestal, spinning continuously and turning its pages back and forth — the same animation technique as vanilla's Enchanting Table book — with green `enchant` particles orbiting around it.
+- **Assets reused from Occultism (with permission)**: the Chunk Anchor's block model/texture and the Anchor Tome's item texture are adapted, with permission, from klikli-dev's Occultism mod (`otherstone_pedestal` and `book_of_binding_djinni` respectively) — see `README.md` → Credits.
+
 ## [1.12.1] - 2026-08-14
 
 ### Fix
