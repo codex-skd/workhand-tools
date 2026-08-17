@@ -25,8 +25,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/Config.java": {
-    "mtime": 1786727902.4561956,
-    "ast_hash": "5a36d154ae4c477fdcf00c8fc45341a7",
+    "mtime": 1786972024.7737575,
+    "ast_hash": "f5f3c87421f01d05de9327cc9b2a0e5e",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/Grade.java": {
@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/ModItems.java": {
-    "mtime": 1786540064.0047674,
-    "ast_hash": "a0af7646350c82e23ecd4de7ff2b9fc2",
+    "mtime": 1786980610.9898047,
+    "ast_hash": "b87e1b2aaf65c7eb42f7826b8ec558f5",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/ModToolMaterials.java": {
@@ -50,18 +50,18 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandTools.java": {
-    "mtime": 1786491845.5770917,
-    "ast_hash": "a42fc9613de97ea51a4787084d3a169e",
+    "mtime": 1786971645.1780841,
+    "ast_hash": "73fbc851a0636eb98ea4c9be484561f0",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandToolsClient.java": {
-    "mtime": 1786434154.3676827,
-    "ast_hash": "437ca60ac0f04ec40a014aa82997f244",
+    "mtime": 1786980800.0609934,
+    "ast_hash": "3ef5c6fb037099cabcb2b92e71e0e35e",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/en_us.json": {
-    "mtime": 1786723812.0148406,
-    "ast_hash": "5a6dc1210bbab053f8745863506ad206",
+    "mtime": 1786971953.2451923,
+    "ast_hash": "6ab7bf17610ad9e7aa8a3b2d05ef151b",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/models/item/diamond_workhand_advanced_pickaxe.json": {
@@ -370,13 +370,13 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1786747738.4060004,
-    "ast_hash": "9c6cf09b8fb7df444377c0cab702ef72",
+    "mtime": 1786986303.042144,
+    "ast_hash": "9ee72c97032144c523a11363bfee5ede",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1786540188.0355341,
-    "ast_hash": "ae1fefea60887c3d1226074e5b66d1e1",
+    "mtime": 1786893769.6248825,
+    "ast_hash": "75e91661f2fb645d89645fb0e38316f1",
     "semantic_hash": ""
   },
   "docs/ASSET_LIST_WORKHAND_TOOLS.md": {
@@ -390,8 +390,8 @@
     "semantic_hash": ""
   },
   "docs/DESIGN_WORKHAND_TOOLS.md": {
-    "mtime": 1786540131.7470355,
-    "ast_hash": "ebafd6ba768b8a26fdfb51b2327867b6",
+    "mtime": 1786893615.2272222,
+    "ast_hash": "329b5f7ebe2974aa0acfa4d98ffb72e4",
     "semantic_hash": ""
   },
   "docs/WORKFLOW_WORKHAND_TOOLS_26-2.md": {
@@ -400,8 +400,8 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
-    "mtime": 1786567703.5179453,
-    "ast_hash": "8383e5b58df7cc944fc38cca374b4085",
+    "mtime": 1786986390.2975974,
+    "ast_hash": "5c6102bec4bf43854a8081d38cc37b33",
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
@@ -1107,6 +1107,96 @@
   "docs/curseforge/versions/1.12.1.md": {
     "mtime": 1786747744.34645,
     "ast_hash": "1de8907dcd077784d8bb0a1032c86976",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/AnchorTomeItem.java": {
+    "mtime": 1786980853.1847022,
+    "ast_hash": "c44771a5caabaafac05eeb6412c13f15",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/ChunkAnchorBlock.java": {
+    "mtime": 1786985754.2335312,
+    "ast_hash": "ba48b2fab3a59b9aeb777a6a305d351d",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/ChunkAnchorBlockEntity.java": {
+    "mtime": 1786985787.59145,
+    "ast_hash": "ee2a24a4deefee8a9f637290de5ebced",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/ChunkAnchorBorderRenderer.java": {
+    "mtime": 1786983752.76997,
+    "ast_hash": "4247f437b4019df52f956aad06b5e9aa",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/ChunkAnchorRenderState.java": {
+    "mtime": 1786985821.4876437,
+    "ast_hash": "2a096efc0df10c630c035067c0968ab7",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/ChunkAnchorRenderer.java": {
+    "mtime": 1786985817.0335073,
+    "ast_hash": "475da95260fa88c5443b63d32f5b9e48",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/ModBlocks.java": {
+    "mtime": 1786980587.8180473,
+    "ast_hash": "b58f9ce339418eb21253315dd4cb16ac",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/blockstates/chunk_anchor.json": {
+    "mtime": 1786980893.1979842,
+    "ast_hash": "32293066e40256b17ad57cadf8eea240",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/items/anchor_tome.json": {
+    "mtime": 1786893573.5657792,
+    "ast_hash": "9ea55f664b153ea09264338ddc6fecca",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/items/chunk_anchor.json": {
+    "mtime": 1786893169.4540546,
+    "ast_hash": "98e833ecacddfc8f2dabbd2eafabac2c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/models/block/chunk_anchor.json": {
+    "mtime": 1786893162.223898,
+    "ast_hash": "26778dd30ed4b1b357bd4d966447ec24",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/models/item/anchor_tome.json": {
+    "mtime": 1786893571.3137693,
+    "ast_hash": "5bac639e6f3a667c6301b4d2142b890d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/workhand_tools/loot_table/blocks/chunk_anchor.json": {
+    "mtime": 1786971690.3785985,
+    "ast_hash": "bc1c896817d6fa467f6e1420433ef5f7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/workhand_tools/recipe/anchor_tome.json": {
+    "mtime": 1786971835.0275521,
+    "ast_hash": "7c0391b0bb4f938abd87f4cdbe7a6704",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/workhand_tools/recipe/chunk_anchor.json": {
+    "mtime": 1786980905.9192266,
+    "ast_hash": "a338de0131869ac097066a9bebd4384d",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.13.0.md": {
+    "mtime": 1786986317.5510795,
+    "ast_hash": "474942e58ce6077780bcb3fcc9dce441",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/textures/block/chunk_anchor.png": {
+    "mtime": 1786893151.8097026,
+    "ast_hash": "555e5254c1442833190b1874b8b24c8c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/textures/item/anchor_tome.png": {
+    "mtime": 1786893565.6265135,
+    "ast_hash": "81da059a3bc92fd7cb35fee38ef7867d",
     "semantic_hash": ""
   }
 }
