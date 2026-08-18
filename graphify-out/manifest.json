@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1786986303.042144,
-    "ast_hash": "9ee72c97032144c523a11363bfee5ede",
+    "mtime": 1787091078.1596766,
+    "ast_hash": "6142fc3a12b373d8d1188af544afbaad",
     "semantic_hash": ""
   },
   "README.md": {
@@ -395,8 +395,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_WORKHAND_TOOLS_26-2.md": {
-    "mtime": 1786725182.012733,
-    "ast_hash": "c03cc37d897b2df5c8af215c09d76599",
+    "mtime": 1787069099.4136484,
+    "ast_hash": "57e73af5fb714310299aad5d0792aa4a",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -405,8 +405,8 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1786147805.1082878,
-    "ast_hash": "ee20e339ddb956e6fb30ff02114ec300",
+    "mtime": 1787068945.2255974,
+    "ast_hash": "b9df1996fdd8d13ebacf02466b89ab94",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.1.md": {
@@ -1197,6 +1197,21 @@
   "src/main/resources/assets/workhand_tools/textures/item/anchor_tome.png": {
     "mtime": 1786893565.6265135,
     "ast_hash": "81da059a3bc92fd7cb35fee38ef7867d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json": {
+    "mtime": 1787090267.6436305,
+    "ast_hash": "c08135c81e6adf200ec691ef30bfb2bb",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.13.1.md": {
+    "mtime": 1787069000.001854,
+    "ast_hash": "0602fa72e0641d2eea9e4f76c0e1be52",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.13.2.md": {
+    "mtime": 1787091088.576338,
+    "ast_hash": "0cb63ec2657285a4e554a0a1ba5cdaf1",
     "semantic_hash": ""
   }
 }
