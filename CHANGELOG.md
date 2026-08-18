@@ -1,6 +1,12 @@
 # Changelog — Workhand Tools
 
 
+## [1.13.2] - 2026-08-19
+
+### Fix
+
+- **Chunk Anchor was nearly unbreakable**: the block copied Obsidian's full `Properties` (`Block.Properties.ofFullCopy(Blocks.OBSIDIAN)`), which brought along its 50-second base destroy time, but never added the block to the `minecraft:mineable/pickaxe` tag — so no pickaxe, not even diamond or netherite, got its mining-speed bonus applied. In practice the block took the full uncut destroy time to break by hand. It now belongs to `mineable/pickaxe` while keeping Obsidian's original toughness, so any pickaxe mines it at the expected speed.
+
 ## [1.13.1] - 2026-08-18
 
 ### Change
