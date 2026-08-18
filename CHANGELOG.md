@@ -1,6 +1,15 @@
 # Changelog — Workhand Tools
 
 
+## [1.13.1] - 2026-08-18
+
+### Change
+
+- **Actualización de NeoForge**: actualizado de 26.2.0.37-beta a 26.2.0.45-beta.
+- **Nombre de JAR con versión del cargador**: el artefacto ahora se compila como `workhand_tools-26.2-neoforge-26.2.0.45-beta-1.13.1.jar`.
+- **Documentación del workflow**: actualizada `docs/WORKFLOW_WORKHAND_TOOLS_26-2.md` para reflejar la nueva rama de trabajo.
+
+
 ## [1.13.0] - 2026-08-17
 
 ### Feature
