@@ -1,6 +1,12 @@
 # Changelog — Workhand Tools
 
 
+## [1.15.0] - 2026-08-19
+
+### Feature
+
+- **Final artwork for Workhand Hoes**: the placeholder textures for `iron_workhand_hoe` and `diamond_workhand_hoe` (copies of the vanilla hoe textures, added in 1.14.1) have been replaced with the designer's final art. Every item in the mod now displays final custom artwork — no vanilla or placeholder textures remain.
+
 ## [1.14.2] - 2026-08-19
 
 ### Change
