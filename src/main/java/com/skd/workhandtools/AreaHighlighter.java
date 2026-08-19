@@ -11,6 +11,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
@@ -71,7 +72,8 @@ public final class AreaHighlighter {
         poseStack.translate(-camPos.x, -camPos.y, -camPos.z);
 
         for (BlockPos pos : pattern) {
-            if (player.level().getBlockState(pos).isAir()) {
+            BlockState state = player.level().getBlockState(pos);
+            if (state.isAir() || !stack.isCorrectToolForDrops(state)) {
                 continue;
             }
             VoxelShape shape = Shapes.create(new AABB(pos).inflate(0.002));

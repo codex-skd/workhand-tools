@@ -1,6 +1,12 @@
 # Changelog — Workhand Tools
 
 
+## [1.13.3] - 2026-08-19
+
+### Fix
+
+- **AoE outline could highlight blocks the tool couldn't actually break**: `AreaHighlighter` only checked `isCorrectToolForDrops` once, against the initially targeted block, then drew the outline for every non-air position in the AoE pattern. `AoEMiningHandler`, which performs the real breaking, checks `isCorrectToolForDrops` per block instead — so a block the tool can't mine could stay highlighted even though it would never actually break. The per-position loop now applies the same per-block check the mining handler uses, so the outline always matches the set of blocks that will actually be broken.
+
 ## [1.13.2] - 2026-08-19
 
 ### Fix
