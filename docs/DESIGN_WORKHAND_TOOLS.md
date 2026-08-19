@@ -232,6 +232,38 @@ Right-click toggles tree felling (data component `felling_enabled`, default fals
 - Iron axe: `BBI / IR  /  R ` where B=iron_block, I=iron_ingot, R=robust_stick
 - Diamond axe: same pattern with diamond_block/diamond
 
+## Workhand Hoes (Crop Harvesting)
+
+Réplica adaptada de la mecánica de clic-derecho-cosecha del mod de referencia [RightClickHarvest](https://github.com/JamCoreModding/right-click-harvest) (no es dependencia ni port, solo referencia de comportamiento), integrada con el sistema de grado/radio ya existente en Workhand Tools en vez del propio sistema de tiers de hoes del mod original.
+
+| Item ID | Material | Durability | Radio de cosecha |
+|---|---|---|---|
+| `iron_workhand_hoe` | IMPROVED_IRON | 3750 | 3×3 (lateralHalf=1, igual que Grade.GRADE_1) |
+| `diamond_workhand_hoe` | IMPROVED_DIAMOND | 23415 | 5×5 (lateralHalf=2, igual que Grade.GRADE_3) |
+
+Solo 2 items (iron/diamond), sin tier stone — mismo patrón que Workhand Axes.
+
+### Mecánica
+
+- Clic derecho sobre un bloque `CropBlock` (trigo, zanahoria, patata, remolacha y cualquier crop modded que extienda esa clase), `CocoaBlock` o `NetherWartBlock` que esté en **edad máxima** (maduro):
+  - Se sueltan los drops normales de romper el bloque (`Block.getDrops`, respeta fortune/encantamientos de la azada).
+  - El bloque **no se rompe**: su propiedad `AGE` se resetea a 0 in-place (`level.setBlockAndUpdate`), como si se replantara al instante — no requiere semillas en el inventario.
+  - Se aplica también a todos los bloques maduros del área (radio según la tabla de arriba, centrada en el bloque apuntado, mismo Y — sin componente vertical, a diferencia del AoE de picos/palas).
+  - Cada bloque cosechado consume 1 punto de durabilidad de la azada.
+- **Fuera de alcance deliberadamente** (a diferencia del mod de referencia): plantas que crecen apilándose en varios bloques (`SugarCaneBlock`, `CactusBlock`, `BambooBlock`) — la cosecha por clic derecho solo aplica a cultivos que crecen "sobre el mismo bloque" (edad in-place), no a columnas de altura variable. Config de hambre/XP, tags de blacklist y warning de "usa una azada" del mod original tampoco se portan — no aplican al diseño de Workhand Tools.
+- Si el bloque apuntado no está maduro, el clic derecho no hace nada especial (comportamiento vanilla del `HoeItem`, p. ej. convertir tierra en farmland si aplica).
+- **Sin sneak-override**: a diferencia del AoE de picos/palas, agacharse no limita la cosecha a 1 bloque — el radio se aplica siempre igual.
+- Requiere `NeoForge.EVENT_BUS.register(new CropHarvestHandler())` en `WorkhandTools.java`, análogo a `TreeFellingHandler`. El evento a escuchar es `PlayerInteractEvent.RightClickBlock` (no `RightClickItem`, ya que aquí sí importa el bloque apuntado).
+
+### Recetas
+
+- Iron hoe: mismo patrón que `iron_workhand_axe` (`BBI / IR  /  R `, B=iron_block, I=iron_ingot, R=robust_stick) pero con forma de azada en vez de hacha.
+- Diamond hoe: mismo patrón con diamond_block/diamond.
+
+### Naming e IDs
+
+`iron_workhand_hoe` / `diamond_workhand_hoe` → "Iron Workhand Hoe" / "Diamond Workhand Hoe", mismo estilo que el resto del mod.
+
 ## Chunk Anchor + Anchor Tome (chunk loading)
 
 Conjunto de 2 items nuevos, sin relación con la línea de herramientas: aplican **chunk loading forzado** (mantiene el chunk cargado sin jugador cerca) al chunk donde está colocado el pedestal.

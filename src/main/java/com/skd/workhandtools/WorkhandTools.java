@@ -41,12 +41,15 @@ public class WorkhandTools {
                 for (DeferredHolder<Item, ? extends Item> holder : ModItems.PICKAXES) {
                     output.accept(holder.get());
                 }
-                for (DeferredHolder<Item, ? extends Item> holder : ModItems.SHOVELS) {
-                    output.accept(holder.get());
-                }
-                for (DeferredHolder<Item, ? extends Item> holder : ModItems.AXES) {
-                    output.accept(holder.get());
-                }
+for (DeferredHolder<Item, ? extends Item> holder : ModItems.SHOVELS) {
+                     output.accept(holder.get());
+                 }
+                 for (DeferredHolder<Item, ? extends Item> holder : ModItems.HOES) {
+                     output.accept(holder.get());
+                 }
+                 for (DeferredHolder<Item, ? extends Item> holder : ModItems.AXES) {
+                     output.accept(holder.get());
+                 }
                 output.accept(ModItems.ROBUST_STICK.get());
                 output.accept(ModItems.ROBUST_STICK.get());
                 output.accept(ModItems.TAPE_MEASURE.get());
@@ -78,6 +81,7 @@ public class WorkhandTools {
         NeoForge.EVENT_BUS.register(new AoEMiningHandler());
         NeoForge.EVENT_BUS.register(new VeinMiningHandler());
         NeoForge.EVENT_BUS.register(new TreeFellingHandler());
+        NeoForge.EVENT_BUS.register(new CropHarvestHandler());
         NeoForge.EVENT_BUS.register(new LeafDecayHandler());
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us

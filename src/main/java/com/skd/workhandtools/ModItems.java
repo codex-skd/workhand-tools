@@ -169,6 +169,15 @@ public final class ModItems {
             WorkhandTools.ITEMS.registerItem("diamond_workhand_axe",
                     WorkhandAxeItem::new, () -> new Item.Properties().axe(ModToolMaterials.IMPROVED_DIAMOND, 5.0F, -3.0F));
 
+    // Workhand Hoes (crop harvesting). See CropHarvestHandler.
+    public static final DeferredItem<WorkhandHoeItem> IRON_WORKHAND_HOE =
+            WorkhandTools.ITEMS.registerItem("iron_workhand_hoe",
+                    WorkhandHoeItem::new, () -> new Item.Properties().hoe(ModToolMaterials.IMPROVED_IRON, 0.0F, -3.0F));
+
+    public static final DeferredItem<WorkhandHoeItem> DIAMOND_WORKHAND_HOE =
+            WorkhandTools.ITEMS.registerItem("diamond_workhand_hoe",
+                    WorkhandHoeItem::new, () -> new Item.Properties().hoe(ModToolMaterials.IMPROVED_DIAMOND, 0.0F, -3.0F));
+
     // Tape Measure. Standalone utility tool (no Grade, not in PICKAXES/SHOVELS/AXES). Right-click
     // set/finish a measurement box, shift+right-click undo; see TapeMeasureItem/TapeMeasureHandler.
     public static final DeferredItem<TapeMeasureItem> TAPE_MEASURE =
@@ -213,6 +222,11 @@ public final class ModItems {
     public static final List<DeferredHolder<Item, ? extends Item>> AXES = List.of(
             IRON_WORKHAND_AXE,
             DIAMOND_WORKHAND_AXE
+    );
+
+    public static final List<DeferredHolder<Item, ? extends Item>> HOES = List.of(
+            IRON_WORKHAND_HOE,
+            DIAMOND_WORKHAND_HOE
     );
 
     public static DeferredHolder<Item, ? extends Item> get(String id) {
@@ -262,6 +276,9 @@ public final class ModItems {
         BY_ID.put("iron_workhand_axe", IRON_WORKHAND_AXE);
         BY_ID.put("diamond_workhand_axe", DIAMOND_WORKHAND_AXE);
         BY_ID.put("tape_measure", TAPE_MEASURE);
+
+        BY_ID.put("iron_workhand_hoe", IRON_WORKHAND_HOE);
+        BY_ID.put("diamond_workhand_hoe", DIAMOND_WORKHAND_HOE);
 
         ITEM_GRADES.put(STONE_WORKHAND_PICKAXE.get(), Grade.GRADE_1);
         ITEM_GRADES.put(STONE_WORKHAND_ADVANCED_PICKAXE.get(), Grade.GRADE_2);
