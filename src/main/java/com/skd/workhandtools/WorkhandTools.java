@@ -85,7 +85,7 @@ for (DeferredHolder<Item, ? extends Item> holder : ModItems.SHOVELS) {
         NeoForge.EVENT_BUS.register(new LeafDecayHandler());
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
-        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC, MODID + "/" + MODID + "-common.toml");
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {

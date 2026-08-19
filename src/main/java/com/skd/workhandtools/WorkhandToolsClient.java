@@ -18,7 +18,7 @@ public class WorkhandToolsClient {
         AreaHighlighter.register();
         ChunkAnchorBorderRenderer.register();
         TapeMeasureHandler.register();
-        container.registerConfig(ModConfig.Type.CLIENT, TapeMeasureConfig.clientSpec);
+        container.registerConfig(ModConfig.Type.CLIENT, TapeMeasureConfig.clientSpec, WorkhandTools.MODID + "/" + WorkhandTools.MODID + "-client.toml");
         container.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
 
         modEventBus.addListener(WorkhandToolsClient::registerBlockEntityRenderers);
