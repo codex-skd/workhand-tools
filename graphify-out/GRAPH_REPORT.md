@@ -1,16 +1,16 @@
 # Graph Report - 26.2  (2026-08-19)
 
 ## Corpus Check
-- 219 files · ~37,861 words
+- 220 files · ~38,013 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 603 nodes · 885 edges · 92 communities (71 shown, 21 thin omitted)
+- 606 nodes · 887 edges · 94 communities (72 shown, 22 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 10 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `effcccb1`
+- Built from commit: `877483ad`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -65,9 +65,10 @@
 - [1.4.0] - 2026-08-09
 - [1.9.0] - 2026-08-12
 - [1.4.0] - 2026-08-09
+- [1.15.0] - 2026-08-19
 
 ## God Nodes (most connected - your core abstractions)
-1. `Changelog — Workhand Tools` - 30 edges
+1. `Changelog — Workhand Tools` - 31 edges
 2. `ChunkAnchorBlockEntity` - 23 edges
 3. `TextColor` - 21 edges
 4. `LineColor` - 20 edges
@@ -93,7 +94,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (92 total, 21 thin omitted)
+## Communities (94 total, 22 thin omitted)
 
 ### Community 1 - "Mod Initialization"
 Cohesion: 0.10
@@ -104,8 +105,8 @@ Cohesion: 0.09
 Nodes (17): BlockItem, DeferredItem, Item, NotNull, AnchorTomeItem, DeferredHolder, Item, ItemStack (+9 more)
 
 ### Community 3 - "Grade System"
-Cohesion: 0.34
-Nodes (6): Direction, AoEPatterns, BlockPos, Level, Player, Vec3
+Cohesion: 0.24
+Nodes (9): Direction, AoEPatterns, BlockPos, Level, Player, Vec3, AreaHighlighter, SubmitCustomGeometryEvent (+1 more)
 
 ### Community 4 - "AoE Mode"
 Cohesion: 0.08
@@ -120,8 +121,8 @@ Cohesion: 0.05
 Nodes (40): Anclaje vertical para patrones de 5 de alto (5×5×1 / 5×5×5), Assets reutilizados (con permiso) de Occultism, Chunk Anchor + Anchor Tome (chunk loading), Chunk loading, Clic izquierdo vs. clic derecho (grados 2 y 4) — confirmado, Concepto, Configuración y compatibilidad con Configured, Creative tab (+32 more)
 
 ### Community 7 - "Client-Side Workhand Tools"
-Cohesion: 0.08
-Nodes (27): AABB, Camera, Component, LoggingIn, LoggingOut, Matrix4fc, ResourceKey, AreaHighlighter (+19 more)
+Cohesion: 0.09
+Nodes (24): AABB, Camera, Component, LoggingIn, LoggingOut, Matrix4fc, ResourceKey, BoxHandler (+16 more)
 
 ### Community 8 - "Configuration Management"
 Cohesion: 0.22
@@ -149,7 +150,7 @@ Nodes (7): CurseForge — Variables del proyecto, Nota, Proyecto, Rama, Tag, Tok
 
 ### Community 17 - "Changelog — Workhand Tools"
 Cohesion: 0.18
-Nodes (10): [1.0.0] - 2026-08-07, [1.10.1] - 2026-08-12, [1.13.1] - 2026-08-18, [1.13.3] - 2026-08-19, [1.2.3] - 2026-08-08, Change, Change, Changelog — Workhand Tools (+2 more)
+Nodes (10): [1.0.0] - 2026-08-07, [1.10.1] - 2026-08-12, [1.1.1] - 2026-08-08, [1.2.1] - 2026-08-08, [1.5.0] - 2026-08-10, Change, Changelog — Workhand Tools, Fix (+2 more)
 
 ### Community 18 - "Workhand Tools"
 Cohesion: 0.14
@@ -212,21 +213,21 @@ Cohesion: 0.33
 Nodes (7): Blocks, DeferredBlock, Block, BlockEntityType, DeferredHolder, DeferredRegister, ModBlocks
 
 ## Knowledge Gaps
-- **168 isolated node(s):** `CUBIC`, `FLAT`, `DISABLED`, `ALWAYS`, `SNEAK_LOOKING` (+163 more)
+- **169 isolated node(s):** `CUBIC`, `FLAT`, `DISABLED`, `ALWAYS`, `SNEAK_LOOKING` (+164 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **21 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **22 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `TextColor` connect `TextColor` to `Grade`?**
-  _High betweenness centrality (0.087) - this node is a cross-community bridge._
+  _High betweenness centrality (0.086) - this node is a cross-community bridge._
 - **Why does `ChunkAnchorBlockEntity` connect `MeasurementBox` to `[1.2.0] - 2026-08-08`, `[1.2.1] - 2026-08-08`?**
-  _High betweenness centrality (0.066) - this node is a cross-community bridge._
+  _High betweenness centrality (0.065) - this node is a cross-community bridge._
 - **Why does `Client` connect `Grade` to `TextColor`?**
   _High betweenness centrality (0.054) - this node is a cross-community bridge._
 - **What connects `CUBIC`, `FLAT`, `DISABLED` to the rest of the system?**
-  _168 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _169 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Mod Initialization` be split into smaller, more focused modules?**
   _Cohesion score 0.09659090909090909 - nodes in this community are weakly interconnected._
 - **Should `Item Data Management` be split into smaller, more focused modules?**

@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787154181.5313644,
-    "ast_hash": "0f47194908668e0852d48f2b226d20ad",
+    "mtime": 1787166061.989702,
+    "ast_hash": "07e704fa633c4cf50a424db3e96b73ca",
     "semantic_hash": ""
   },
   "README.md": {
@@ -395,8 +395,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_WORKHAND_TOOLS_26-2.md": {
-    "mtime": 1787154692.5617259,
-    "ast_hash": "cf7f02017168cf8afb36fb24613b36bd",
+    "mtime": 1787166128.3375852,
+    "ast_hash": "64ffa72b679d8ab21e05b713b08c3209",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -1270,18 +1270,23 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_hoe.png": {
-    "mtime": 1787151726.4052653,
-    "ast_hash": "3cbb4b20a7d0b133b3265df6d9eac740",
+    "mtime": 1787165803.2507389,
+    "ast_hash": "0a831d0b763f5aa1646964c4959e257a",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/iron_workhand_hoe.png": {
-    "mtime": 1787151726.3361602,
-    "ast_hash": "7ca8a1e4c4b2d729405f44c31648b0af",
+    "mtime": 1787165806.8800623,
+    "ast_hash": "981fb503d54a4d8504f2c8e70e1e3a33",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/1.14.2.md": {
     "mtime": 1787154184.9467509,
     "ast_hash": "9b47124e5d5355700d41b035ebdc593a",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.15.0.md": {
+    "mtime": 1787166076.7019262,
+    "ast_hash": "6271e81f215ba90fae727a1eac1226cd",
     "semantic_hash": ""
   }
 }
