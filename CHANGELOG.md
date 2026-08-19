@@ -1,6 +1,12 @@
 # Changelog — Workhand Tools
 
 
+## [1.14.0] - 2026-08-19
+
+### Feature
+
+- **Workhand Hoes — crop right-click harvesting**: two new tools, `iron_workhand_hoe` and `diamond_workhand_hoe` (Improved Iron/Diamond materials, matching the Workhand Axes' durability). Right-click a mature crop, cocoa, or nether wart block to harvest and instantly replant it in place — no seeds required, drops respect Fortune and other mining enchantments. Harvests spread to every other mature crop on the same level in a square area centered on the targeted block: 3×3 for the iron hoe, 5×5 for the diamond hoe (plants that grow by stacking multiple blocks, like sugar cane or cactus, are out of scope). Each harvested block consumes 1 durability point.
+
 ## [1.13.3] - 2026-08-19
 
 ### Fix

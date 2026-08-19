@@ -1,6 +1,6 @@
 # Flujo de trabajo — Workhand Tools (NeoForge)
 
-> **Versión del workflow**: 1.17.0 (codex-docs)
+> **Versión del workflow**: 1.18.0 (codex-docs)
 > Este archivo pertenece al proyecto **Workhand Tools**. Cambios aquí solo afectan a este proyecto.
 > **Trabaja directamente con este archivo**: es el workflow operativo del mod, autocontenido. No leas `codex-docs/WORKFLOW_AGENT.md` ni `WORKFLOW_GENERIC.md` de forma rutinaria.
 > On-demand (solo si la tarea lo necesita): `codex-docs/reference/CURSEFORGE.md` (formato HTML al publicar), `codex-docs/reference/GRAPHIFY.md` (backend LLM de Graphify), `codex-docs/reference/REPO_SETUP.md` (setup único de repo).
@@ -15,8 +15,8 @@
 | Versiones de Minecraft | `26.2` |
 | Rama | `minecraft/26.2/neoforge-26.2.0.45-beta/production` |
 
-| Última versión publicada | `1.13.3` (CurseForge file ID 8683024) |
-| Estado | ✅ Release estable 1.13.3 |
+| Última versión publicada | `1.14.0` (pendiente de subida a CurseForge) |
+| Estado | ✅ Release estable 1.14.0 |
 
 ### Notas específicas de este mod
 
@@ -103,6 +103,7 @@ Leer siempre `GRAPH_REPORT.md`, nunca `graph.json`/`graph.html` (pesan >1MB). Si
 
 ## Historial de versiones del workflow
 
+- v1.18.0 — Added 2 workhand hoes (iron/diamond) with right-click crop harvesting (crops/cocoa/nether wart, area radius by material)
 - v1.17.0 — Added 4 improved pickaxes (iron/diamond advanced/professional) with vein mining + 2 workhand axes (iron/diamond) with tree felling
 - v1.16.0 — Versión anterior
 
