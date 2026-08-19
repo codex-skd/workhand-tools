@@ -1,6 +1,12 @@
 # Changelog — Workhand Tools
 
 
+## [1.14.2] - 2026-08-19
+
+### Change
+
+- **Config files now live under `config/workhand_tools/`**: both the common config (`workhand_tools-common.toml`) and the client config (`workhand_tools-client.toml`) are now registered with an explicit `workhand_tools/` subfolder, instead of sitting directly in `config/` alongside every other mod's files.
+
 ## [1.14.1] - 2026-08-19
 
 ### Fix
