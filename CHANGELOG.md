@@ -1,6 +1,13 @@
 # Changelog — Workhand Tools
 
 
+## [1.14.1] - 2026-08-19
+
+### Fix
+
+- **Workhand Hoes used the vanilla hoe texture directly instead of the mod's own placeholder file**: `iron_workhand_hoe.json`/`diamond_workhand_hoe.json` item models referenced `minecraft:item/iron_hoe`/`diamond_hoe` directly, breaking the convention every other tool in this mod follows (its own local placeholder PNG under `workhand_tools:item/`, ready to be swapped for final art without code changes). Added `iron_workhand_hoe.png`/`diamond_workhand_hoe.png` (copies of the vanilla textures) and pointed the models at them. No visual change in-game.
+- **README.md was missing the Workhand Hoes**: added the "Workhand Hoes — crop harvesting" section and a Features bullet, introduced in 1.14.0 but left out of the docs at the time.
+
 ## [1.14.0] - 2026-08-19
 
 ### Feature
