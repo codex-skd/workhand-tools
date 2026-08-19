@@ -15,12 +15,13 @@ Each material tier (Stone, Iron, Diamond) offers 4 grades of tools — from basi
 - Full enchantment support (Efficiency, Fortune, Silk Touch, Unbreaking, Mending)
 - Vanilla-standard durability, speed, and combat stats per material
 - Custom crafting recipes with progression (Robust Stick component for Expert/Professional)
+- **Workhand Hoes** (Iron/Diamond): right-click a mature crop, cocoa, or nether wart to harvest and instantly replant it, spreading to every other mature one in a 3x3 (Iron) or 5x5 (Diamond) area
 - **Tape Measure** utility item: right-click to set a measurement box, right-click again to finish it; live-updating wireframe with per-axis length labels while the box is in progress. Shift+right-click undoes the last box.
 
 ## Tools
 
 <details>
-<summary><strong>Full item list — durability and purpose (32 items)</strong></summary>
+<summary><strong>Full item list — durability and purpose (34 items)</strong></summary>
 
 ### Pickaxes & Shovels (24 — 3 materials × 4 grades)
 
@@ -66,6 +67,13 @@ Each material tier (Stone, Iron, Diamond) offers 4 grades of tools — from basi
 |---|---|---|:---:|---|
 | <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_axe.png" width="32"> | Iron Workhand Axe | Improved Iron | 3750 | Toggleable tree felling (right-click): breaking a log fells the whole connected tree (up to 256 blocks) |
 | <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_axe.png" width="32"> | Diamond Workhand Axe | Improved Diamond | 23415 | Toggleable tree felling (right-click) |
+
+### Workhand Hoes — crop harvesting (2)
+
+| | Name | Material | Durability | Purpose |
+|---|---|---|:---:|---|
+| <img src="src/main/resources/assets/workhand_tools/textures/item/iron_workhand_hoe.png" width="32"> | Iron Workhand Hoe | Improved Iron | 3750 | Right-click a mature crop/cocoa/nether wart to harvest and instantly replant it, plus every other mature one in a 3x3 area |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_hoe.png" width="32"> | Diamond Workhand Hoe | Improved Diamond | 23415 | Same as the Iron Workhand Hoe, but in a 5x5 area |
 
 ### Utility items (2)
 
