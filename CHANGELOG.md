@@ -1,6 +1,19 @@
 # Changelog — Workhand Tools
 
 
+## [1.16.0] - 2026-08-20
+
+### Fix
+
+- **Beetroot harvest could be duplicated with Workhand Hoes**: the crop age reset after harvesting hardcoded `CropBlock.AGE`, but `BeetrootBlock` uses its own age property (0-3 range) instead of `CropBlock`'s (0-7 range). Setting the wrong property threw at runtime *after* drops had already been granted, so the beetroot stayed mature and could be harvested again for free. The age property is now looked up dynamically from the block's own state definition, fixing wheat, carrots, potatoes, beetroot, nether wart, and cocoa alike.
+- **Right-click mode/effect toggles played no swing animation**: toggling the hoe's harvest effect, the axe's tree felling, or the pickaxe/shovel's AoE mode cancelled the interaction without triggering the arm swing, so the tool looked static. All three toggles now swing the tool.
+- **Tree felling ignored where in the trunk the log was broken**: any log break with felling enabled cascaded into the full tree, even at eye height mid-trunk. The cascade now only triggers when the broken log is resting on solid ground (the base of the trunk); breaking a log elsewhere in the trunk breaks only that single block.
+
+### Feature
+
+- **Area preview for Workhand Hoes**: aiming a hoe at a mature crop, cocoa, or nether wart now outlines the exact square area that will be harvested, matching the preview pickaxes/axes/shovels already had.
+- **Harvest enabled toggle for Workhand Hoes**: right-click with no target to enable/disable the hoe's harvest effect (enabled by default). When disabled, hoes behave like a vanilla hoe (e.g. tilling dirt).
+
 ## [1.15.0] - 2026-08-19
 
 ### Feature
