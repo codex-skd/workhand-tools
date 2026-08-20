@@ -19,18 +19,18 @@ public final class ModDataComponents {
                     .networkSynchronized(NeoForgeStreamCodecs.enumCodec(AoEMode.class))
                     .build());
 
-    // Toggle for tree felling on the workhand axes. Absent/false = felling disabled.
-    public static final DeferredHolder<DataComponentType<?>, DataComponentType<Boolean>> FELLING_ENABLED =
-            DATA_COMPONENT_TYPES.register("felling_enabled", () -> DataComponentType.<Boolean>builder()
-                    .persistent(Codec.BOOL)
-                    .networkSynchronized(ByteBufCodecs.BOOL)
+    // Mode for tree felling on the workhand axes: DISABLED, SIMPLE, or COMPOUND. Defaults to DISABLED.
+    public static final DeferredHolder<DataComponentType<?>, DataComponentType<FellingMode>> FELLING_MODE =
+            DATA_COMPONENT_TYPES.register("felling_mode", () -> DataComponentType.<FellingMode>builder()
+                    .persistent(FellingMode.CODEC)
+                    .networkSynchronized(NeoForgeStreamCodecs.enumCodec(FellingMode.class))
                     .build());
 
-    // Toggle for crop harvesting on the workhand hoes. Defaults to true (enabled) since it's the core behavior.
-    public static final DeferredHolder<DataComponentType<?>, DataComponentType<Boolean>> HARVEST_ENABLED =
-            DATA_COMPONENT_TYPES.register("harvest_enabled", () -> DataComponentType.<Boolean>builder()
-                    .persistent(Codec.BOOL)
-                    .networkSynchronized(ByteBufCodecs.BOOL)
+    // Mode for workhand hoes: TILL or HARVEST. Defaults to HARVEST for newly crafted hoes.
+    public static final DeferredHolder<DataComponentType<?>, DataComponentType<HoeMode>> HOE_MODE =
+            DATA_COMPONENT_TYPES.register("hoe_mode", () -> DataComponentType.<HoeMode>builder()
+                    .persistent(HoeMode.CODEC)
+                    .networkSynchronized(NeoForgeStreamCodecs.enumCodec(HoeMode.class))
                     .build());
 
     private ModDataComponents() {

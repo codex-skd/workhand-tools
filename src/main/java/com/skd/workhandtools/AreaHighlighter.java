@@ -44,9 +44,17 @@ public final class AreaHighlighter {
         Grade grade = ModItems.gradeOf(stack);
         boolean isHoe = stack.getItem() instanceof WorkhandHoeItem;
         
-        // For graded tools, we need a grade. For hoes, we need to be pointing at a mature harvestable block.
+        // For graded tools, we need a grade. For hoes, we need to be pointing at a mature harvestable block AND be in HARVEST mode.
         if (grade == null && !isHoe) {
             return;
+        }
+        
+        // For hoes, only show preview when in HARVEST mode
+        if (isHoe) {
+            HoeMode mode = stack.getOrDefault(ModDataComponents.HOE_MODE, HoeMode.HARVEST);
+            if (mode != HoeMode.HARVEST) {
+                return; // Don't show preview in TILL mode
+            }
         }
 
         HitResult hit = mc.hitResult;

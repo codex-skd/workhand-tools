@@ -25,7 +25,7 @@ public class TreeFellingHandler {
             return;
         }
         ItemStack stack = player.getMainHandItem();
-        if (!MiningHelper.isFellingEnabled(stack)) {
+        if (MiningHelper.fellingModeOf(stack) == FellingMode.DISABLED) {
             return;
         }
         BlockState state = event.getState();
@@ -42,13 +42,26 @@ public class TreeFellingHandler {
         if (!MiningHelper.isFellingAxe(stack)) {
             return;
         }
-        boolean current = Boolean.TRUE.equals(stack.get(ModDataComponents.FELLING_ENABLED));
-        boolean next = !current;
-        stack.set(ModDataComponents.FELLING_ENABLED, next);
+        FellingMode current = stack.getOrDefault(ModDataComponents.FELLING_MODE, FellingMode.DISABLED);
+        FellingMode next;
+        if (current == FellingMode.DISABLED) {
+            next = FellingMode.SIMPLE;
+        } else if (current == FellingMode.SIMPLE) {
+            next = FellingMode.COMPOUND;
+        } else { // current == COMPOUND
+            next = FellingMode.DISABLED;
+        }
+        stack.set(ModDataComponents.FELLING_MODE, next);
         if (player instanceof ServerPlayer serverPlayer) {
-            serverPlayer.sendSystemMessage(Component.translatable(
-                    next ? "message.workhand_tools.felling.enabled"
-                         : "message.workhand_tools.felling.disabled"), true);
+            String messageKey;
+            if (next == FellingMode.SIMPLE) {
+                messageKey = "message.workhand_tools.felling.simple";
+            } else if (next == FellingMode.COMPOUND) {
+                messageKey = "message.workhand_tools.felling.compound";
+            } else {
+                messageKey = "message.workhand_tools.felling.disabled";
+            }
+            serverPlayer.sendSystemMessage(Component.translatable(messageKey), true);
         }
         player.swing(event.getHand());
         event.setCanceled(true);
@@ -60,10 +73,16 @@ public class TreeFellingHandler {
         if (!MiningHelper.isFellingAxe(stack)) {
             return;
         }
-        boolean enabled = Boolean.TRUE.equals(stack.get(ModDataComponents.FELLING_ENABLED));
-        event.getToolTip().add(Component.translatable(
-                enabled ? "tooltip.workhand_tools.felling.enabled"
-                        : "tooltip.workhand_tools.felling.disabled").withStyle(ChatFormatting.GOLD));
+        FellingMode mode = stack.getOrDefault(ModDataComponents.FELLING_MODE, FellingMode.DISABLED);
+        String tooltipKey;
+        if (mode == FellingMode.SIMPLE) {
+            tooltipKey = "tooltip.workhand_tools.felling.simple";
+        } else if (mode == FellingMode.COMPOUND) {
+            tooltipKey = "tooltip.workhand_tools.felling.compound";
+        } else {
+            tooltipKey = "tooltip.workhand_tools.felling.disabled";
+        }
+        event.getToolTip().add(Component.translatable(tooltipKey).withStyle(ChatFormatting.GOLD));
         event.getToolTip().add(Component.translatable("tooltip.workhand_tools.right_click"));
     }
 }

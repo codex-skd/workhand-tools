@@ -1,0 +1,31 @@
+{
+  "name": "Workhand Axes",
+  "icon": "workhand_tools:diamond_workhand_axe",
+  "category": "workhand_tools:axes",
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Workhand Axes feature toggleable tree felling capabilities. Right-click cycles through different felling modes to control how trees are cut down."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Felling Modes",
+      "text": "$(bold)Disabled$(): Normal axe behavior\n$(bold)Simple$(): Fells only directly-connected logs (no leaf-gap crossing)\n$(bold)Compound$(): Fells connected logs and also crosses leaf gaps to reach offset/diagonal logs"
+    },
+    {
+      "type": "vellumli:text",
+      "title": "How Felling Works",
+      "text": "Tree felling only cascades from a log resting on solid ground. Breaking a log elsewhere in the trunk only breaks that one block.\nHowever, an orphaned/floating tree fragment with no grounded log nearby still fells normally."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Controls",
+      "text": "$(bold)Right-click$(): Cycle through felling modes (Disabled -> Simple -> Compound -> Disabled)\n$(bold)Left-click$(): Chop based on current felling mode"
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Materials & Durability",
+      "text": "Iron Workhand Axe: 3750 durability\nDiamond Workhand Axe: 23415 durability"
+    }
+  ]
+}

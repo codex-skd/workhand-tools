@@ -1,0 +1,26 @@
+{
+  "name": "Workhand Shovels",
+  "icon": "workhand_tools:diamond_workhand_professional_shovel",
+  "category": "workhand_tools:shovels",
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Workhand Shovels upgrade the standard shovel with area digging capabilities. Each material tier (Stone, Iron, Diamond) offers 4 grades of tools with increasing digging areas."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Grade Progression",
+      "text": "$(bold)Grade 1$(): 3x3x1 area (single layer)\n$(bold)Grade 2$(): 3x3x3 cubic OR 3x3x1 flat (right-click to toggle)\n$(bold)Grade 3$(): 5x5x1 area (single layer)\n$(bold)Grade 4$(): 5x5x5 cubic OR 5x5x1 flat (right-click to toggle)"
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Controls",
+      "text": "$(bold)Left-click$(): Area dig (when not sneaking)\n$(bold)Shift + Left-click$(): Single block digging\n$(bold)Right-click$(): Toggle between cubic and flat mode (Grades 2 & 4 only)"
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Materials",
+      "text": "All tools match the durability, mining speed, and enchantability of their vanilla counterparts:\nStone: 655 durability\nIron: 1250 durability\nDiamond: 7805 durability"
+    }
+  ]
+}

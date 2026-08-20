@@ -1,0 +1,5 @@
+{
+  "name": "Vein-Mining Pickaxes",
+  "description": "Improved Workhand Pickaxes feature vein mining capabilities in addition to area mining. When breaking an ore block, all connected blocks of the same ore type are mined up to a limit.",
+  "icon": "workhand_tools:diamond_workhand_professional_improved_pickaxe"
+}
