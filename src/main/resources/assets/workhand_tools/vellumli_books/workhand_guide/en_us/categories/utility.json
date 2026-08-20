@@ -1,0 +1,5 @@
+{
+  "name": "Utility Items",
+  "description": "Utility items include the Tape Measure for measuring distances, Chunk Anchor for setting world spawn, Anchor Tome for teleporting to anchored chunks, and Robust Stick as a crafting ingredient.",
+  "icon": "workhand_tools:tape_measure"
+}

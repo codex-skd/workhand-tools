@@ -1,0 +1,5 @@
+{
+  "name": "Workhand Axes",
+  "description": "Workhand Axes feature toggleable tree felling modes. Right-click cycles through Disabled, Simple (directly-connected logs only), and Compound (also crosses leaf gaps) felling modes.",
+  "icon": "workhand_tools:diamond_workhand_axe"
+}

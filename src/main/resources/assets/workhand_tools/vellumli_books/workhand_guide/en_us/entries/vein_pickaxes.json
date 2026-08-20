@@ -1,0 +1,31 @@
+{
+  "name": "Vein-Mining Pickaxes",
+  "icon": "workhand_tools:diamond_workhand_professional_improved_pickaxe",
+  "category": "workhand_tools:vein_pickaxes",
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Vein-Mining Pickaxes combine area mining with vein mining capabilities. These improved tools have much higher durability than their standard counterparts."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Vein Mining",
+      "text": "When breaking an ore block, all connected blocks of the same ore type are automatically mined in a chain reaction, up to a maximum of 128 blocks."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Grade Progression",
+      "text": "$(bold)Grade 2$(): Iron/Diamond Improved - 3x3x3 cubic OR 3x3x1 flat + vein mining\n$(bold)Grade 4$(): Iron/Diamond Improved - 5x5x5 cubic OR 5x5x1 flat + vein mining"
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Controls",
+      "text": "$(bold)Left-click$(): Area mine + vein mining (when not sneaking)\n$(bold)Shift + Left-click$(): Single block mining\n$(bold)Right-click$(): Toggle between cubic and flat mode"
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Materials & Durability",
+      "text": "Improved Iron: 3750 durability (3x standard)\nImproved Diamond: 23415 durability (3x standard)"
+    }
+  ]
+}
