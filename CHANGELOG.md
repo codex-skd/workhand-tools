@@ -1,6 +1,14 @@
 # Changelog — Workhand Tools
 
 
+## [1.16.1] - 2026-08-20
+
+### Change
+
+- **NeoForge update**: updated from 26.2.0.45-beta to 26.2.0.57.
+- **JAR name with loader version**: the artifact now builds as `workhand_tools-26.2-neoforge-26.2.0.57-1.16.1.jar`.
+- **Workflow documentation**: updated `docs/WORKFLOW_WORKHAND_TOOLS_26-2.md` to reflect the new working branch.
+
 ## [1.16.0] - 2026-08-20
 
 ### Fix

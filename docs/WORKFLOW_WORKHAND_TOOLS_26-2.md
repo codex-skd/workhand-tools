@@ -13,7 +13,7 @@
 | Clase principal | `WorkhandTools` |
 | Display name (Title Case) | `Workhand Tools` |
 | Versiones de Minecraft | `26.2` |
-| Rama | `minecraft/26.2/neoforge-26.2.0.45-beta/production` |
+| Rama | `minecraft/26.2/neoforge-26.2.0.57/production` |
 
 | Última versión publicada | `1.16.0` (CurseForge file ID 8690584) |
 | Estado | ✅ Release estable 1.16.0 |
@@ -22,7 +22,7 @@
 
 - **Mod original** (no es port/fork). Sin dependencias de licencia de terceros.
 - **package**: `com.skd.workhandtools`
-- **Minecraft / NeoForge**: `26.2` / `26.2.0.32-beta` (heredado del esqueleto, no actualizar sin pedirlo explícitamente)
+- **Minecraft / NeoForge**: `26.2` / `26.2.0.57` (no actualizar sin pedirlo explícitamente)
 - **Diseño técnico completo** (materiales, tiers, durabilidad/eficiencia/encantabilidad, recetas, tags): `docs/DESIGN_WORKHAND_TOOLS.md`
 - **Prompts de imagen** (logo + texturas de herramientas): `docs/ASSET_PROMPTS_WORKHAND_TOOLS.md`
 - **Assets**: todo `assets/workhand_tools/` es propio (placeholder al principio, arte final después)
@@ -66,7 +66,7 @@ Cada subida a CurseForge crea tag: beta `<mc>-neoforge-beta.X` · release `<mc>-
 **1. Desarrollo**
 
 ```bash
-git checkout minecraft/26.2/neoforge-26.2.0.45-beta/production
+git checkout minecraft/26.2/neoforge-26.2.0.57/production
 ./gradlew.bat build
 git add -A
 git commit -m "feat: <descripción>
