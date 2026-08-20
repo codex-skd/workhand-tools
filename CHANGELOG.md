@@ -1,6 +1,14 @@
 # Changelog — Workhand Tools
 
 
+## [1.17.0] - 2026-08-20
+
+### Feature
+
+- **Workhand Hoes: Till/Harvest mode**: replaced the harvest enable/disable toggle with a Till/Harvest mode cycle (right-click, regardless of whether a block is targeted). Left-click now performs the action: Till mode tills a single tillable block (never an area, no matter the tier); Harvest mode harvests and replants a square area of mature crops/cocoa/nether wart (radius 1 for the iron hoe, radius 2 for the diamond hoe), with an area preview shown while aiming in Harvest mode. Left-clicking anything else falls through to normal breaking.
+- **Workhand Axes: Simple/Compound felling modes**: replaced the boolean felling toggle with a 3-state cycle (Disabled → Simple → Compound → Disabled, right-click). Simple fells only directly-connected logs (no crossing leaf gaps); Compound keeps the previous behavior of crossing leaf gaps to reach offset or diagonal logs. The existing "must be resting on solid ground" requirement for felling to cascade now has an orphan-tree fallback: if no grounded log is found within 4 hops of log-to-log connectivity, the fragment is treated as floating (e.g. after the tree's base was destroyed) and felled anyway.
+- **In-game guide book**: added a craftable guide book (book + iron ingot + diamond) via Vellumli, an in-house documentation-book mod. Documents every tool category — Pickaxes, Shovels, Vein-Mining Pickaxes, Axes, Hoes, and Utility items — with controls and mechanics. English only for now; Vellumli is an optional dependency, the recipe is unavailable if it isn't installed.
+
 ## [1.16.1] - 2026-08-20
 
 ### Change
