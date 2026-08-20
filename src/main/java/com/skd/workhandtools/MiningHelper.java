@@ -137,6 +137,14 @@ public final class MiningHelper {
         if (!isFellingEnabled(stack) || !isLog(startState)) {
             return false;
         }
+        BlockPos below = start.below();
+        if (!level.isLoaded(below)) {
+            return false;
+        }
+        BlockState belowState = level.getBlockState(below);
+        if (belowState.isAir() || (isLog(belowState) && belowState.getBlock() == startState.getBlock())) {
+            return false;
+        }
         Block targetBlock = startState.getBlock();
         Set<BlockPos> visited = new HashSet<>();
         ArrayDeque<TreeSearchNode> queue = new ArrayDeque<>();

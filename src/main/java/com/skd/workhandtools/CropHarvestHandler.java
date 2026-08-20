@@ -2,6 +2,7 @@ package com.skd.workhandtools;
 
 import java.util.List;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -15,6 +16,9 @@ import net.minecraft.world.level.block.CocoaBlock;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.NetherWartBlock;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.properties.Property;
+import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 
@@ -26,11 +30,17 @@ public class CropHarvestHandler {
         if (player == null || player.level().isClientSide()) {
             return;
         }
-        Level level = player.level();
         ItemStack stack = player.getItemInHand(event.getHand());
         if (!(stack.getItem() instanceof WorkhandHoeItem)) {
             return;
         }
+
+        // If harvest effect is disabled, let vanilla hoe behavior proceed
+        if (!stack.getOrDefault(ModDataComponents.HARVEST_ENABLED, true)) {
+            return;
+        }
+
+        Level level = player.level();
 
         BlockPos pos = event.getPos();
         BlockState state = level.getBlockState(pos);
@@ -81,11 +91,13 @@ public class CropHarvestHandler {
                         }
                         targetState.spawnAfterBreak(serverLevel, targetPos, stack, true);
                     }
-                    
+
                     // Reset the block's age property to 0
                     if (targetState.getBlock() instanceof CropBlock) {
-                        // For CropBlock, try to access AGE directly if it's public static final
-                        level.setBlockAndUpdate(targetPos, targetState.setValue(CropBlock.AGE, 0));
+                        Property<?> ageProperty = targetState.getBlock().getStateDefinition().getProperty("age");
+                        if (ageProperty instanceof IntegerProperty) {
+                            level.setBlockAndUpdate(targetPos, targetState.setValue((IntegerProperty) ageProperty, 0));
+                        }
                     } else if (targetState.getBlock() instanceof CocoaBlock) {
                         level.setBlockAndUpdate(targetPos, targetState.setValue(CocoaBlock.AGE, 0));
                     } else if (targetState.getBlock() instanceof NetherWartBlock) {
@@ -102,8 +114,45 @@ public class CropHarvestHandler {
                 }
             }
         }
-        
+
         // Cancel the event so nothing else happens
         event.setCanceled(true);
+    }
+
+    @SubscribeEvent
+    public void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
+        Player player = event.getEntity();
+        if (player == null || player.level().isClientSide()) {
+            return;
+        }
+        ItemStack stack = event.getItemStack();
+        if (!(stack.getItem() instanceof WorkhandHoeItem)) {
+            return;
+        }
+
+        boolean current = stack.getOrDefault(ModDataComponents.HARVEST_ENABLED, true);
+        boolean next = !current;
+        stack.set(ModDataComponents.HARVEST_ENABLED, next);
+        if (player instanceof ServerPlayer serverPlayer) {
+            serverPlayer.sendSystemMessage(Component.translatable(
+                    next ? "message.workhand_tools.harvest.enabled"
+                         : "message.workhand_tools.harvest.disabled"), true);
+        }
+        player.swing(event.getHand());
+        event.setCanceled(true);
+    }
+
+    @SubscribeEvent
+    public void onTooltip(ItemTooltipEvent event) {
+        ItemStack stack = event.getItemStack();
+        if (!(stack.getItem() instanceof WorkhandHoeItem)) {
+            return;
+        }
+        boolean enabled = stack.getOrDefault(ModDataComponents.HARVEST_ENABLED, true);
+        event.getToolTip().add(Component.translatable(
+                enabled ? "tooltip.workhand_tools.harvest.enabled"
+                        : "tooltip.workhand_tools.harvest.disabled").withStyle(ChatFormatting.GOLD));
+        event.getToolTip().add(Component.translatable("tooltip.workhand_tools.right_click"));
+        event.getToolTip().add(Component.translatable("tooltip.workhand_tools.hold_shift"));
     }
 }
