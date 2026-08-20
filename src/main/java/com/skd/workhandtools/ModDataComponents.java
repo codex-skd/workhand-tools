@@ -26,6 +26,13 @@ public final class ModDataComponents {
                     .networkSynchronized(ByteBufCodecs.BOOL)
                     .build());
 
+    // Toggle for crop harvesting on the workhand hoes. Defaults to true (enabled) since it's the core behavior.
+    public static final DeferredHolder<DataComponentType<?>, DataComponentType<Boolean>> HARVEST_ENABLED =
+            DATA_COMPONENT_TYPES.register("harvest_enabled", () -> DataComponentType.<Boolean>builder()
+                    .persistent(Codec.BOOL)
+                    .networkSynchronized(ByteBufCodecs.BOOL)
+                    .build());
+
     private ModDataComponents() {
     }
 }

@@ -107,6 +107,7 @@ public class AoEMiningHandler {
             }
             serverPlayer.sendSystemMessage(Component.translatable(messageKey), true);
         }
+        player.swing(event.getHand());
         event.setCanceled(true);
     }
 

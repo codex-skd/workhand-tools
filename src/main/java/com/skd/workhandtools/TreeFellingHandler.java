@@ -50,6 +50,7 @@ public class TreeFellingHandler {
                     next ? "message.workhand_tools.felling.enabled"
                          : "message.workhand_tools.felling.disabled"), true);
         }
+        player.swing(event.getHand());
         event.setCanceled(true);
     }
 
