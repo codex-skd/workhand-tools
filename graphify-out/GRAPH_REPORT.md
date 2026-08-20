@@ -1,16 +1,16 @@
-# Graph Report - 26.2  (2026-08-19)
+# Graph Report - 26.2  (2026-08-20)
 
 ## Corpus Check
-- 220 files · ~38,013 words
+- 221 files · ~39,153 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 606 nodes · 887 edges · 94 communities (72 shown, 22 thin omitted)
+- 614 nodes · 897 edges · 96 communities (75 shown, 21 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 10 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `877483ad`
+- Built from commit: `05e6e798`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -66,9 +66,10 @@
 - [1.9.0] - 2026-08-12
 - [1.4.0] - 2026-08-09
 - [1.15.0] - 2026-08-19
+- [1.5.0] - 2026-08-10
 
 ## God Nodes (most connected - your core abstractions)
-1. `Changelog — Workhand Tools` - 31 edges
+1. `Changelog — Workhand Tools` - 32 edges
 2. `ChunkAnchorBlockEntity` - 23 edges
 3. `TextColor` - 21 edges
 4. `LineColor` - 20 edges
@@ -94,26 +95,26 @@
 ## Import Cycles
 - None detected.
 
-## Communities (94 total, 22 thin omitted)
+## Communities (96 total, 21 thin omitted)
 
 ### Community 1 - "Mod Initialization"
-Cohesion: 0.10
-Nodes (23): CreativeModeTab, FMLCommonSetupEvent, Items, Logger, NeighborNotifyEvent, RightClickBlock, ServerLevel, ServerStartingEvent (+15 more)
+Cohesion: 0.15
+Nodes (13): NeighborNotifyEvent, RightClickBlock, ServerLevel, CropHarvestHandler, ItemTooltipEvent, RightClickItem, SubscribeEvent, BlockPos (+5 more)
 
 ### Community 2 - "Item Data Management"
 Cohesion: 0.09
 Nodes (17): BlockItem, DeferredItem, Item, NotNull, AnchorTomeItem, DeferredHolder, Item, ItemStack (+9 more)
 
 ### Community 3 - "Grade System"
-Cohesion: 0.24
-Nodes (9): Direction, AoEPatterns, BlockPos, Level, Player, Vec3, AreaHighlighter, SubmitCustomGeometryEvent (+1 more)
+Cohesion: 0.12
+Nodes (19): Direction, AoEMiningHandler, BreakBlockEvent, ItemTooltipEvent, RightClickItem, SubscribeEvent, AoEPatterns, BlockPos (+11 more)
 
 ### Community 4 - "AoE Mode"
-Cohesion: 0.08
-Nodes (23): DataComponentType, AoEMiningHandler, BreakBlockEvent, ItemTooltipEvent, RightClickItem, SubscribeEvent, AoEMode, CUBIC (+15 more)
+Cohesion: 0.13
+Nodes (13): DataComponentType, AoEMode, CUBIC, DISABLED, FLAT, fromName(), getSerializedName(), Override (+5 more)
 
 ### Community 5 - "Tool Materials"
-Cohesion: 0.13
+Cohesion: 0.14
 Nodes (17): Identifier, BlockPos, BlockState, ItemStack, Level, Player, MiningHelper, TreeSearchNode (+9 more)
 
 ### Community 6 - "Data Components"
@@ -149,8 +150,8 @@ Cohesion: 0.25
 Nodes (7): CurseForge — Variables del proyecto, Nota, Proyecto, Rama, Tag, Tokens, Variables para script (lectura automática)
 
 ### Community 17 - "Changelog — Workhand Tools"
-Cohesion: 0.18
-Nodes (10): [1.0.0] - 2026-08-07, [1.10.1] - 2026-08-12, [1.1.1] - 2026-08-08, [1.2.1] - 2026-08-08, [1.5.0] - 2026-08-10, Change, Changelog — Workhand Tools, Fix (+2 more)
+Cohesion: 0.15
+Nodes (12): [1.0.0] - 2026-08-07, [1.11.0] - 2026-08-14, [1.14.1] - 2026-08-19, [1.2.1] - 2026-08-08, [1.2.2] - 2026-08-08, [1.6.0] - 2026-08-10, Changelog — Workhand Tools, Feature (+4 more)
 
 ### Community 18 - "Workhand Tools"
 Cohesion: 0.14
@@ -204,6 +205,10 @@ Nodes (3): [1.3.0] - 2026-08-08, Included Features, Release
 Cohesion: 0.67
 Nodes (3): [1.6.1] - 2026-08-10, Fix, Update
 
+### Community 64 - "[1.11.0] - 2026-08-14"
+Cohesion: 0.21
+Nodes (12): CreativeModeTab, FMLCommonSetupEvent, Items, Logger, ServerStartingEvent, DeferredHolder, DeferredRegister, IEventBus (+4 more)
+
 ### Community 67 - "[1.2.0] - 2026-08-08"
 Cohesion: 0.19
 Nodes (13): BlockEntityRenderer, BlockEntityRenderState, BookModel, CameraRenderState, Context, @Nullable CrumblingOverlay, SpriteGetter, ChunkAnchorRenderer (+5 more)
@@ -212,25 +217,29 @@ Nodes (13): BlockEntityRenderer, BlockEntityRenderState, BookModel, CameraRender
 Cohesion: 0.33
 Nodes (7): Blocks, DeferredBlock, Block, BlockEntityType, DeferredHolder, DeferredRegister, ModBlocks
 
+### Community 69 - "[1.2.2] - 2026-08-08"
+Cohesion: 0.67
+Nodes (3): [1.16.0] - 2026-08-20, Feature, Fix
+
 ## Knowledge Gaps
-- **169 isolated node(s):** `CUBIC`, `FLAT`, `DISABLED`, `ALWAYS`, `SNEAK_LOOKING` (+164 more)
+- **171 isolated node(s):** `CUBIC`, `FLAT`, `DISABLED`, `ALWAYS`, `SNEAK_LOOKING` (+166 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **22 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **21 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `TextColor` connect `TextColor` to `Grade`?**
-  _High betweenness centrality (0.086) - this node is a cross-community bridge._
+  _High betweenness centrality (0.085) - this node is a cross-community bridge._
 - **Why does `ChunkAnchorBlockEntity` connect `MeasurementBox` to `[1.2.0] - 2026-08-08`, `[1.2.1] - 2026-08-08`?**
   _High betweenness centrality (0.065) - this node is a cross-community bridge._
 - **Why does `Client` connect `Grade` to `TextColor`?**
-  _High betweenness centrality (0.054) - this node is a cross-community bridge._
+  _High betweenness centrality (0.053) - this node is a cross-community bridge._
 - **What connects `CUBIC`, `FLAT`, `DISABLED` to the rest of the system?**
-  _169 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _171 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Mod Initialization` be split into smaller, more focused modules?**
-  _Cohesion score 0.09659090909090909 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.14761904761904762 - nodes in this community are weakly interconnected._
 - **Should `Item Data Management` be split into smaller, more focused modules?**
   _Cohesion score 0.09243697478991597 - nodes in this community are weakly interconnected._
-- **Should `AoE Mode` be split into smaller, more focused modules?**
-  _Cohesion score 0.0773109243697479 - nodes in this community are weakly interconnected._
+- **Should `Grade System` be split into smaller, more focused modules?**
+  _Cohesion score 0.11746031746031746 - nodes in this community are weakly interconnected._
