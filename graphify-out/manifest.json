@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787223241.5998826,
-    "ast_hash": "1f95641459270af0e409bcc93fd148aa",
+    "mtime": 1787223523.135954,
+    "ast_hash": "07480cc1804c99434a9a2fce3c3a06b6",
     "semantic_hash": ""
   },
   "README.md": {
@@ -395,8 +395,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_WORKHAND_TOOLS_26-2.md": {
-    "mtime": 1787223300.3314521,
-    "ast_hash": "c62d4735eb0943c25d9de6b981b6f8bb",
+    "mtime": 1787223616.0530348,
+    "ast_hash": "ea76afafd21ae9ce8580e3c0e64ba918",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -405,8 +405,8 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1787068945.2255974,
-    "ast_hash": "b9df1996fdd8d13ebacf02466b89ab94",
+    "mtime": 1787223517.9086318,
+    "ast_hash": "20279656cd4065f9cbb6d034ac3f493f",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.1.md": {
@@ -1292,6 +1292,11 @@
   "docs/curseforge/versions/1.16.0.md": {
     "mtime": 1787223247.8654275,
     "ast_hash": "0c15132518a869d3ee6591191be55847",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.16.1.md": {
+    "mtime": 1787223525.926691,
+    "ast_hash": "27a4ee41bdb02abbe9a48ae3037346eb",
     "semantic_hash": ""
   }
 }

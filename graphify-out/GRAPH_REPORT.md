@@ -1,16 +1,16 @@
 # Graph Report - 26.2  (2026-08-20)
 
 ## Corpus Check
-- 221 files · ~39,153 words
+- 222 files · ~39,201 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 614 nodes · 897 edges · 96 communities (75 shown, 21 thin omitted)
+- 617 nodes · 899 edges · 98 communities (76 shown, 22 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 10 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `05e6e798`
+- Built from commit: `c20243fa`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -67,9 +67,10 @@
 - [1.4.0] - 2026-08-09
 - [1.15.0] - 2026-08-19
 - [1.5.0] - 2026-08-10
+- [1.2.2] - 2026-08-08
 
 ## God Nodes (most connected - your core abstractions)
-1. `Changelog — Workhand Tools` - 32 edges
+1. `Changelog — Workhand Tools` - 33 edges
 2. `ChunkAnchorBlockEntity` - 23 edges
 3. `TextColor` - 21 edges
 4. `LineColor` - 20 edges
@@ -95,7 +96,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (96 total, 21 thin omitted)
+## Communities (98 total, 22 thin omitted)
 
 ### Community 1 - "Mod Initialization"
 Cohesion: 0.15
@@ -151,7 +152,7 @@ Nodes (7): CurseForge — Variables del proyecto, Nota, Proyecto, Rama, Tag, Tok
 
 ### Community 17 - "Changelog — Workhand Tools"
 Cohesion: 0.15
-Nodes (12): [1.0.0] - 2026-08-07, [1.11.0] - 2026-08-14, [1.14.1] - 2026-08-19, [1.2.1] - 2026-08-08, [1.2.2] - 2026-08-08, [1.6.0] - 2026-08-10, Changelog — Workhand Tools, Feature (+4 more)
+Nodes (12): [1.0.0] - 2026-08-07, [1.10.1] - 2026-08-12, [1.13.0] - 2026-08-17, [1.14.2] - 2026-08-19, [1.6.0] - 2026-08-10, [1.9.0] - 2026-08-12, Change, Change (+4 more)
 
 ### Community 18 - "Workhand Tools"
 Cohesion: 0.14
@@ -222,21 +223,21 @@ Cohesion: 0.67
 Nodes (3): [1.16.0] - 2026-08-20, Feature, Fix
 
 ## Knowledge Gaps
-- **171 isolated node(s):** `CUBIC`, `FLAT`, `DISABLED`, `ALWAYS`, `SNEAK_LOOKING` (+166 more)
+- **172 isolated node(s):** `CUBIC`, `FLAT`, `DISABLED`, `ALWAYS`, `SNEAK_LOOKING` (+167 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **21 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **22 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `TextColor` connect `TextColor` to `Grade`?**
-  _High betweenness centrality (0.085) - this node is a cross-community bridge._
+  _High betweenness centrality (0.084) - this node is a cross-community bridge._
 - **Why does `ChunkAnchorBlockEntity` connect `MeasurementBox` to `[1.2.0] - 2026-08-08`, `[1.2.1] - 2026-08-08`?**
-  _High betweenness centrality (0.065) - this node is a cross-community bridge._
+  _High betweenness centrality (0.064) - this node is a cross-community bridge._
 - **Why does `Client` connect `Grade` to `TextColor`?**
   _High betweenness centrality (0.053) - this node is a cross-community bridge._
 - **What connects `CUBIC`, `FLAT`, `DISABLED` to the rest of the system?**
-  _171 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _172 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Mod Initialization` be split into smaller, more focused modules?**
   _Cohesion score 0.14761904761904762 - nodes in this community are weakly interconnected._
 - **Should `Item Data Management` be split into smaller, more focused modules?**
