@@ -1,6 +1,21 @@
 # Changelog — Workhand Tools
 
 
+## [1.18.0] - 2026-08-21
+
+### Feature
+
+- **Guide book given on first join**: every player now receives the Workhand Tools guide book automatically the first time they log in (tracked per-player, survives death/respawn). If lost afterward, it has to be crafted again (book + iron ingot + diamond) — it's a one-time gift, not a repeatable freebie.
+
+### Fix
+
+- **Guide book missing from the creative tab / JEI**: `book.json`'s `creative_tab` field was a bare `workhand_tab` string, which Vellumli parses as a namespaced Identifier and silently resolved to `minecraft:workhand_tab` (a tab that doesn't exist) — the book never made it into our own creative tab. Fixed to `workhand_tools:workhand_tab`.
+- **Book name/subtitle were too long for the tooltip**: shortened `book.name` and `book.subtitle` to 2 words max across all 10 languages; the longer wording lives in `book.landing` instead.
+
+### Change
+
+- Updated the bundled Vellumli dependency to 1.2.0 — adds JEI search support for the guide book and drops Vellumli's bundled demo book.
+
 ## [1.17.0] - 2026-08-20
 
 ### Feature
