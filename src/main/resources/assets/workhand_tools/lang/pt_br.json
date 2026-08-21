@@ -1,5 +1,8 @@
 {
   "itemGroup.workhand_tools": "Ferramentas Workhand",
+  "book.workhand_tools.name": "Guia Workhand",
+  "book.workhand_tools.landing": "Bem-vindo ao Guia de Ferramentas Workhand!",
+  "book.workhand_tools.subtitle": "Referência Completa",
   "message.workhand_tools.mode.cubic": "Modo: Cúbico",
   "message.workhand_tools.mode.flat": "Modo: Plano",
   "tooltip.workhand_tools.area.3x3x1": "Área: 3x3x1",

@@ -1,5 +1,8 @@
 {
   "itemGroup.workhand_tools": "ワークハンドツール",
+  "book.workhand_tools.name": "ワークハンドガイド",
+  "book.workhand_tools.landing": "ワークハンドツールガイドへようこそ！",
+  "book.workhand_tools.subtitle": "道具リファレンス",
   "message.workhand_tools.mode.cubic": "モード：立方体",
   "message.workhand_tools.mode.flat": "モード：平面",
   "tooltip.workhand_tools.area.3x3x1": "範囲：3x3x1",

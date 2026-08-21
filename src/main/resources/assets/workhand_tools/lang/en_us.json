@@ -1,8 +1,8 @@
 {
   "itemGroup.workhand_tools": "Workhand Tools",
-  "book.workhand_tools.name": "Workhand Tools Guide",
+  "book.workhand_tools.name": "Workhand Guide",
   "book.workhand_tools.landing": "Welcome to the Workhand Tools Guide!",
-  "book.workhand_tools.subtitle": "A comprehensive guide to all tools added by Workhand Tools",
+  "book.workhand_tools.subtitle": "Tool Reference",
   "message.workhand_tools.mode.cubic": "Mode: Cubic",
   "message.workhand_tools.mode.flat": "Mode: Flat",
   "message.workhand_tools.mode.disabled": "Mode: Disabled",

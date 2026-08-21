@@ -55,6 +55,10 @@ for (DeferredHolder<Item, ? extends Item> holder : ModItems.SHOVELS) {
                 output.accept(ModItems.TAPE_MEASURE.get());
                 output.accept(ModItems.CHUNK_ANCHOR.get());
                 output.accept(ModItems.ANCHOR_TOME.get());
+                // The guide book itself is NOT added here: Vellumli's own BuildCreativeModeTabContentsEvent
+                // listener already adds every book that declares a matching "creative_tab" in its book.json
+                // (see data/workhand_tools/vellumli_books/workhand_guide/book.json) — adding it here too
+                // would duplicate the entry.
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
@@ -83,6 +87,7 @@ for (DeferredHolder<Item, ? extends Item> holder : ModItems.SHOVELS) {
         NeoForge.EVENT_BUS.register(new TreeFellingHandler());
         NeoForge.EVENT_BUS.register(new CropHarvestHandler());
         NeoForge.EVENT_BUS.register(new LeafDecayHandler());
+        NeoForge.EVENT_BUS.register(new GuideBookGrantHandler());
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC, MODID + "/" + MODID + "-common.toml");
