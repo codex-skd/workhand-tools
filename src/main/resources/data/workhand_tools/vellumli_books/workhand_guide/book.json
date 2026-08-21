@@ -3,7 +3,7 @@
   "landing_text": "book.workhand_tools.landing",
   "subtitle": "book.workhand_tools.subtitle",
   "show_progress": false,
-  "creative_tab": "workhand_tab",
+  "creative_tab": "workhand_tools:workhand_tab",
   "use_blocky_font": true,
   "use_resource_pack": true,
   "macros": { }

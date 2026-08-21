@@ -1,5 +1,8 @@
 {
   "itemGroup.workhand_tools": "워크핸드 도구",
+  "book.workhand_tools.name": "워크핸드 가이드",
+  "book.workhand_tools.landing": "워크핸드 도구 가이드에 오신 것을 환영합니다!",
+  "book.workhand_tools.subtitle": "도구 참고서",
   "message.workhand_tools.mode.cubic": "모드: 입방형",
   "message.workhand_tools.mode.flat": "모드: 평면형",
   "tooltip.workhand_tools.area.3x3x1": "범위: 3x3x1",

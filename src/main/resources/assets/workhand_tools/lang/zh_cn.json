@@ -1,5 +1,8 @@
 {
   "itemGroup.workhand_tools": "工作手工具",
+  "book.workhand_tools.name": "工作手指南",
+  "book.workhand_tools.landing": "欢迎阅读工作手工具指南！",
+  "book.workhand_tools.subtitle": "工具参考",
   "message.workhand_tools.mode.cubic": "模式：立方",
   "message.workhand_tools.mode.flat": "模式：平面",
   "tooltip.workhand_tools.area.3x3x1": "范围：3x3x1",

@@ -1,5 +1,8 @@
 {
   "itemGroup.workhand_tools": "Рабочие инструменты",
+  "book.workhand_tools.name": "Гид Инструментов",
+  "book.workhand_tools.landing": "Добро пожаловать в путеводитель Рабочих инструментов!",
+  "book.workhand_tools.subtitle": "Полный Справочник",
   "message.workhand_tools.mode.cubic": "Режим: Кубический",
   "message.workhand_tools.mode.flat": "Режим: Плоский",
   "tooltip.workhand_tools.area.3x3x1": "Область: 3x3x1",
