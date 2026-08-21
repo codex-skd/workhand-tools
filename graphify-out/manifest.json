@@ -1,7 +1,7 @@
 {
   "build.gradle": {
-    "mtime": 1787255242.9223528,
-    "ast_hash": "3ad228c9509ec2320d6af3d620863699",
+    "mtime": 1787335666.8352654,
+    "ast_hash": "e1cf1b6ac5cccc5fee2ca6bb28bbc780",
     "semantic_hash": ""
   },
   "gradlew": {
@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandTools.java": {
-    "mtime": 1787153847.3304615,
-    "ast_hash": "7eb6c13ed847281994d213d599b8eb50",
+    "mtime": 1787327120.6352084,
+    "ast_hash": "edace2e364c96865e492a6c1a54a5244",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandToolsClient.java": {
@@ -60,8 +60,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/en_us.json": {
-    "mtime": 1787255408.57867,
-    "ast_hash": "054f5f9910740b36078b458c31fc57e4",
+    "mtime": 1787335578.8820102,
+    "ast_hash": "c500151ef17f532f07536020a536ae70",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/models/item/diamond_workhand_advanced_pickaxe.json": {
@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787258681.9098153,
-    "ast_hash": "46009ec195a3bd3e5f20359c78a6436d",
+    "mtime": 1787335723.6043997,
+    "ast_hash": "e6b66c893a9d177ae0d2d3ac278d3603",
     "semantic_hash": ""
   },
   "README.md": {
@@ -395,8 +395,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_WORKHAND_TOOLS_26-2.md": {
-    "mtime": 1787258775.3243246,
-    "ast_hash": "c536bf1e8c71b7e950095fc3d53b5b76",
+    "mtime": 1787335771.5925958,
+    "ast_hash": "781983e3babbee70a2b16757c7c313a4",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -740,48 +740,48 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/de_de.json": {
-    "mtime": 1787254102.428267,
-    "ast_hash": "19ea31e5c84166082109d70974bdec11",
+    "mtime": 1787335583.1306126,
+    "ast_hash": "78f8c035779250a934d1496dd7d5d872",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/es_es.json": {
-    "mtime": 1787254148.1613495,
-    "ast_hash": "63b92cdcf5217476bbb88e089b4f7f6f",
+    "mtime": 1787335588.1173408,
+    "ast_hash": "ed6a139f41ab92804b1d2b5c27e95941",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/fr_fr.json": {
-    "mtime": 1787254173.5133636,
-    "ast_hash": "9a4039065d85e7e98ddee08c8531a7d2",
+    "mtime": 1787335592.2642245,
+    "ast_hash": "210d81253d73df9b1b3f02e29bcfb836",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/it_it.json": {
-    "mtime": 1787254291.3386223,
-    "ast_hash": "8b40769cc3292f6cb8f8497c7f3e46ae",
+    "mtime": 1787335596.402116,
+    "ast_hash": "af80acc18045449cc5661f071775c2b9",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/ja_jp.json": {
-    "mtime": 1787254417.2544093,
-    "ast_hash": "47074514a4340aa14e682f0d1f99bcc5",
+    "mtime": 1787335600.721218,
+    "ast_hash": "681a97b33c5db6e95776b0cdd0191c25",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/ko_kr.json": {
-    "mtime": 1787254541.0467498,
-    "ast_hash": "242afe190ae36483b692ba5a6b876b82",
+    "mtime": 1787335604.9876473,
+    "ast_hash": "6b24d0bfb4f2a29f4726a0202275f38c",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/pt_br.json": {
-    "mtime": 1787254564.907946,
-    "ast_hash": "35ebed1b60bafe11d5bbb35577cb952b",
+    "mtime": 1787335610.1121714,
+    "ast_hash": "9cd48a579db5bf1799bbc862c4bc46f5",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/ru_ru.json": {
-    "mtime": 1787254598.660419,
-    "ast_hash": "ded4dd8809582b63fa4077cd78c2c9b6",
+    "mtime": 1787335614.9558089,
+    "ast_hash": "2ed1b4331cf40614b8314100a0f78394",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/zh_cn.json": {
-    "mtime": 1787254638.481479,
-    "ast_hash": "ebbe5508031f8e39c767fe43d1543490",
+    "mtime": 1787335619.7409632,
+    "ast_hash": "9892fecdc82b349ccc86217c6a9bf329",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/1.1.0.md": {
@@ -1375,13 +1375,28 @@
     "semantic_hash": ""
   },
   "src/main/resources/data/workhand_tools/vellumli_books/workhand_guide/book.json": {
-    "mtime": 1787255262.4086072,
-    "ast_hash": "11ad86dc35e6e25ce4a0266856a574c9",
+    "mtime": 1787327104.8141086,
+    "ast_hash": "33b6d39e5d2c3ce1bf2c14f38e687e5e",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/1.17.0.md": {
     "mtime": 1787258697.0425868,
     "ast_hash": "c7ac93ec88c44daf8a1ff94e43c836c7",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/GuideBookGrantHandler.java": {
+    "mtime": 1787322471.8818643,
+    "ast_hash": "c2ce78b951db33d1ad2c6ba683ee38c6",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/VellumliCompat.java": {
+    "mtime": 1787327130.7263632,
+    "ast_hash": "1657f70c0c5e85553002ed1e2a2f3c38",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.18.0.md": {
+    "mtime": 1787335729.5140815,
+    "ast_hash": "931b9840850c6f4188b03773e1d9eba5",
     "semantic_hash": ""
   }
 }
