@@ -1,0 +1,31 @@
+{
+  "name": "Picos de Minería de Veta",
+  "icon": "workhand_tools:diamond_workhand_professional_improved_pickaxe",
+  "category": "workhand_tools:vein_pickaxes",
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Los Picos de Minería de Veta combinan la minería en área con la minería de veta. Estas herramientas mejoradas tienen una durabilidad mucho mayor que sus equivalentes estándar."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Minería de Veta",
+      "text": "Al romper un bloque de mineral, todos los bloques conectados del mismo tipo de mineral se minan automáticamente en cadena, hasta un máximo de 128 bloques."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Progresión de Grados",
+      "text": "$(bold)Grado 2$(): Hierro/Diamante Mejorado - 3x3x3 cúbico O 3x3x1 plano + minería de veta\n$(bold)Grado 4$(): Hierro/Diamante Mejorado - 5x5x5 cúbico O 5x5x1 plano + minería de veta"
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Controles",
+      "text": "$(bold)Clic izquierdo$(): Minado en área + minería de veta (sin agacharse)\n$(bold)Shift + Clic izquierdo$(): Minado de un solo bloque\n$(bold)Clic derecho$(): Alterna entre modo cúbico y plano"
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Materiales y Durabilidad",
+      "text": "Hierro Mejorado: 3750 de durabilidad (3x el estándar)\nDiamante Mejorado: 23415 de durabilidad (3x el estándar)"
+    }
+  ]
+}

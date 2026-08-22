@@ -1,0 +1,5 @@
+{
+  "name": "Azadas Workhand",
+  "description": "Las Azadas Workhand tienen modos conmutables de Arar/Recoger. El clic izquierdo en modo Arar labra un bloque, mientras que en modo Recoger cosecha y replanta cultivos maduros en un área con previsualización.",
+  "icon": "workhand_tools:diamond_workhand_hoe"
+}

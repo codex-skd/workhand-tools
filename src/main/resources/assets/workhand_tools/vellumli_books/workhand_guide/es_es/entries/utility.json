@@ -1,0 +1,26 @@
+{
+  "name": "Objetos de Utilidad",
+  "icon": "workhand_tools:tape_measure",
+  "category": "workhand_tools:utility",
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Los objetos de utilidad aportan funciones adicionales más allá del conjunto de herramientas principal."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Cinta Métrica",
+      "text": "Clic derecho para fijar el punto de inicio de una medición.\nClic derecho de nuevo para fijar el punto final y dibujar una caja de medición con etiquetas de longitud X/Y/Z.\nShift+clic derecho para deshacer el último punto de medición.\n\nLa cinta métrica es indestructible y no tiene durabilidad."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Ancla de Chunk y Tomo de Anclaje",
+      "text": "Coloca un bloque Ancla de Chunk y después haz clic derecho sobre él con un Tomo de Anclaje para insertar el tomo en su ranura del pedestal. Mientras el tomo esté insertado, el chunk que contiene el ancla se mantiene forzosamente cargado (activo aunque no haya jugadores cerca), de forma permanente y sin coste.$(br2)Haz clic derecho en el ancla con la mano vacía (o agachado) para extraer el tomo de vuelta a tu inventario y liberar el chunk forzado. Romper el ancla con un tomo insertado suelta ambos objetos y libera el chunk inmediatamente.$(br2)Solo se fuerza la carga del chunk que contiene el ancla, sin radio ni chunks vecinos."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Palo Robusto",
+      "text": "Un ingrediente de crafteo usado en herramientas de grado Experto y Profesional (niveles 3-4).\n\nNo tiene durabilidad, ya que solo se usa como componente de crafteo."
+    }
+  ]
+}

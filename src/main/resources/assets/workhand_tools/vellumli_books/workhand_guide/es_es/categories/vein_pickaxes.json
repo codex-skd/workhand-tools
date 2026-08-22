@@ -1,0 +1,5 @@
+{
+  "name": "Picos de Minería de Veta",
+  "description": "Los Picos Workhand Mejorados tienen capacidad de minería de veta además de minería en área. Al romper un bloque de mineral, se minan todos los bloques conectados del mismo tipo hasta un límite.",
+  "icon": "workhand_tools:diamond_workhand_professional_improved_pickaxe"
+}
