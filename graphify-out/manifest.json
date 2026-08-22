@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787335723.6043997,
-    "ast_hash": "e6b66c893a9d177ae0d2d3ac278d3603",
+    "mtime": 1787360142.7987194,
+    "ast_hash": "1a9d6ac6ddf6afb5897c2e3fff02ea29",
     "semantic_hash": ""
   },
   "README.md": {
@@ -395,8 +395,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_WORKHAND_TOOLS_26-2.md": {
-    "mtime": 1787335771.5925958,
-    "ast_hash": "781983e3babbee70a2b16757c7c313a4",
+    "mtime": 1787360203.054284,
+    "ast_hash": "5637f479375507f20252affce8cfdf7f",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -1330,8 +1330,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/vellumli_books/workhand_guide/en_us/categories/utility.json": {
-    "mtime": 1787255287.6770177,
-    "ast_hash": "95def6da99a7ffac1cd8e97af20b93cd",
+    "mtime": 1787339870.9316733,
+    "ast_hash": "dc2372fd723f6badb67947c1f144d52d",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/vellumli_books/workhand_guide/en_us/categories/vein_pickaxes.json": {
@@ -1397,6 +1397,71 @@
   "docs/curseforge/versions/1.18.0.md": {
     "mtime": 1787335729.5140815,
     "ast_hash": "931b9840850c6f4188b03773e1d9eba5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/vellumli_books/workhand_guide/es_es/categories/axes.json": {
+    "mtime": 1787339845.89177,
+    "ast_hash": "2b4fbbd17b85bde541d841e01302a767",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/vellumli_books/workhand_guide/es_es/categories/hoes.json": {
+    "mtime": 1787339850.0960555,
+    "ast_hash": "a3d156e5f0b92a57d037a52876f4c375",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/vellumli_books/workhand_guide/es_es/categories/pickaxes.json": {
+    "mtime": 1787339853.7494614,
+    "ast_hash": "b59756c9a49552af3f15038166e2d31e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/vellumli_books/workhand_guide/es_es/categories/shovels.json": {
+    "mtime": 1787339857.4192767,
+    "ast_hash": "2b8e038bed837f2aac5c29fc3dac5228",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/vellumli_books/workhand_guide/es_es/categories/utility.json": {
+    "mtime": 1787339874.6293945,
+    "ast_hash": "3a1d5af3ee95477544a39365ddd2583f",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/vellumli_books/workhand_guide/es_es/categories/vein_pickaxes.json": {
+    "mtime": 1787339881.989459,
+    "ast_hash": "4bf3eb88f44aa68e29cba49e9df4b56c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/vellumli_books/workhand_guide/es_es/entries/axes.json": {
+    "mtime": 1787339890.0036347,
+    "ast_hash": "694f142f3d0259c512d90891501a57b6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/vellumli_books/workhand_guide/es_es/entries/hoes.json": {
+    "mtime": 1787339898.0251884,
+    "ast_hash": "e1635b9b8bcec99d0f1ec3b0e75158dc",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/vellumli_books/workhand_guide/es_es/entries/pickaxes.json": {
+    "mtime": 1787339904.9635866,
+    "ast_hash": "3613f725d9192000e4481d76d2022ed1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/vellumli_books/workhand_guide/es_es/entries/shovels.json": {
+    "mtime": 1787339913.129802,
+    "ast_hash": "3648dff71df2f8a384e924e16285720e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/vellumli_books/workhand_guide/es_es/entries/utility.json": {
+    "mtime": 1787339921.3651469,
+    "ast_hash": "d6ccc02d57b16ddbb8c60e99e94cbc04",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/vellumli_books/workhand_guide/es_es/entries/vein_pickaxes.json": {
+    "mtime": 1787339928.959673,
+    "ast_hash": "9931dc747680cd8ab495b99243026ac1",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.19.0.md": {
+    "mtime": 1787360152.8943896,
+    "ast_hash": "db0e00f8ec375d07bace28a0f24fbb78",
     "semantic_hash": ""
   }
 }
