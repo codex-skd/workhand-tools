@@ -1,0 +1,31 @@
+{
+  "name": "Azadas Workhand",
+  "icon": "workhand_tools:diamond_workhand_hoe",
+  "category": "workhand_tools:hoes",
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Las Azadas Workhand tienen modos conmutables de Arar/Recoger para una agricultura eficiente."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Modo Arar",
+      "text": "El clic izquierdo ara un único bloque labrable (nunca un área). Útil para preparar hileras individuales de tierra de cultivo."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Modo Recoger",
+      "text": "El clic izquierdo cosecha y replanta cultivos maduros en un área:\n- Azada Workhand de Hierro: área 3x3 (radio 1)\n- Azada Workhand de Diamante: área 5x5 (radio 2)\n\nSe muestra una previsualización del área al apuntar en modo Recoger, indicando exactamente qué bloques se verán afectados."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Controles",
+      "text": "$(bold)Clic derecho$(): Alterna entre modo Arar y Recoger (funciona tanto si apuntas a un bloque como si no)\n$(bold)Clic izquierdo$(): Actúa según el modo activo (ara un bloque labrable, o cosecha un cultivo/cacao/verruga del Nether maduro). Cualquier otro clic izquierdo rompe el bloque con normalidad, como cualquier herramienta."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Materiales y Durabilidad",
+      "text": "Azada Workhand de Hierro: 3750 de durabilidad\nAzada Workhand de Diamante: 23415 de durabilidad\n\nAmbas igualan la durabilidad, velocidad de minado y encantabilidad de sus equivalentes vanilla."
+    }
+  ]
+}
