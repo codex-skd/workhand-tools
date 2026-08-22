@@ -1,6 +1,16 @@
 # Changelog — Workhand Tools
 
 
+## [1.19.0] - 2026-08-21
+
+### Feature
+
+- **Spanish translation for the guide book**: all 12 category/entry files of the in-game guide book are now available in Spanish (es_es), alongside the existing English content.
+
+### Fix
+
+- **Utility Items category description was inaccurate**: it claimed the Chunk Anchor sets the world spawn point and the Anchor Tome teleports to it — neither is real. The actual behavior is force-loading the chunk the anchor sits in; there's no teleport.
+
 ## [1.18.0] - 2026-08-21
 
 ### Feature
