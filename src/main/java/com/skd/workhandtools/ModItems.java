@@ -178,6 +178,15 @@ public final class ModItems {
             WorkhandTools.ITEMS.registerItem("diamond_workhand_hoe",
                     WorkhandHoeItem::new, () -> new Item.Properties().hoe(ModToolMaterials.IMPROVED_DIAMOND, 0.0F, -3.0F));
 
+    // Kennestroyer Ultimate Tools
+    public static final DeferredItem<KennestroyerPickaxeItem> KENNESTROYER_PICKAXE =
+            WorkhandTools.ITEMS.registerItem("kennestroyer_pickaxe",
+                    KennestroyerPickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.KENNESTROYER, 1.0F, -2.8F));
+
+    public static final DeferredItem<KennestroyerShovelItem> KENNESTROYER_SHOVEL =
+            WorkhandTools.ITEMS.registerItem("kennestroyer_shovel",
+                    KennestroyerShovelItem::new, () -> new Item.Properties());
+
     // Tape Measure. Standalone utility tool (no Grade, not in PICKAXES/SHOVELS/AXES). Right-click
     // set/finish a measurement box, shift+right-click undo; see TapeMeasureItem/TapeMeasureHandler.
     public static final DeferredItem<TapeMeasureItem> TAPE_MEASURE =
@@ -201,7 +210,8 @@ public final class ModItems {
             IRON_WORKHAND_ADVANCED_IMPROVED_PICKAXE,
             IRON_WORKHAND_PROFESSIONAL_IMPROVED_PICKAXE,
             DIAMOND_WORKHAND_ADVANCED_IMPROVED_PICKAXE,
-            DIAMOND_WORKHAND_PROFESSIONAL_IMPROVED_PICKAXE
+            DIAMOND_WORKHAND_PROFESSIONAL_IMPROVED_PICKAXE,
+            KENNESTROYER_PICKAXE
     );
 
     public static final List<DeferredHolder<Item, ? extends Item>> SHOVELS = List.of(
@@ -216,7 +226,8 @@ public final class ModItems {
             DIAMOND_WORKHAND_SHOVEL,
             DIAMOND_WORKHAND_ADVANCED_SHOVEL,
             DIAMOND_WORKHAND_EXPERT_SHOVEL,
-            DIAMOND_WORKHAND_PROFESSIONAL_SHOVEL
+            DIAMOND_WORKHAND_PROFESSIONAL_SHOVEL,
+            KENNESTROYER_SHOVEL
     );
 
     public static final List<DeferredHolder<Item, ? extends Item>> AXES = List.of(
@@ -279,6 +290,8 @@ public final class ModItems {
 
         BY_ID.put("iron_workhand_hoe", IRON_WORKHAND_HOE);
         BY_ID.put("diamond_workhand_hoe", DIAMOND_WORKHAND_HOE);
+        BY_ID.put("kennestroyer_pickaxe", KENNESTROYER_PICKAXE);
+        BY_ID.put("kennestroyer_shovel", KENNESTROYER_SHOVEL);
 
         ITEM_GRADES.put(STONE_WORKHAND_PICKAXE.get(), Grade.GRADE_1);
         ITEM_GRADES.put(STONE_WORKHAND_ADVANCED_PICKAXE.get(), Grade.GRADE_2);
@@ -296,6 +309,8 @@ public final class ModItems {
         ITEM_GRADES.put(IRON_WORKHAND_PROFESSIONAL_IMPROVED_PICKAXE.get(), Grade.GRADE_4);
         ITEM_GRADES.put(DIAMOND_WORKHAND_ADVANCED_IMPROVED_PICKAXE.get(), Grade.GRADE_2);
         ITEM_GRADES.put(DIAMOND_WORKHAND_PROFESSIONAL_IMPROVED_PICKAXE.get(), Grade.GRADE_4);
+        ITEM_GRADES.put(KENNESTROYER_PICKAXE.get(), Grade.KENNESTROYER);
+        ITEM_GRADES.put(KENNESTROYER_SHOVEL.get(), Grade.KENNESTROYER);
 
         ITEM_GRADES.put(STONE_WORKHAND_SHOVEL.get(), Grade.GRADE_1);
         ITEM_GRADES.put(STONE_WORKHAND_ADVANCED_SHOVEL.get(), Grade.GRADE_2);

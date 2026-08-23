@@ -1,6 +1,6 @@
 {
   "name": "Workhand Shovels",
-  "icon": "workhand_tools:diamond_workhand_professional_shovel",
+  "icon": "workhand_tools:kennestroyer_shovel",
   "category": "workhand_tools:shovels",
   "pages": [
     {
@@ -81,6 +81,37 @@
       "type": "vellumli:crafting",
       "recipe": "workhand_tools:diamond_workhand_expert_shovel",
       "title": "Diamond Workhand Expert Shovel (Grade 2)"
+    }
+  ]
+}
+{
+  "name": "Kennestroyer Shovel",
+  "icon": "workhand_tools:kennestroyer_shovel",
+  "category": "workhand_tools:shovels",
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "The Kennestroyer Shovel is the ultimate digging tool, crafted from Netherite, Diamond Blocks, Obsidian, and the finest Diamond Workhand Shovels. It combines all digging modes into a single tool."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Mode Progression (Right-click to cycle)",
+      "text": "$(bold)Disabled$(): No area digging\n$(bold)Range 3 Flat$(): 3x3x1 area (single layer)\n$(bold)Range 3 Cubic$(): 3x3x3 cubic area\n$(bold)Range 5 Flat$(): 5x5x1 area (single layer)\n$(bold)Range 5 Cubic$(): 5x5x5 cubic area"
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Controls",
+      "text": "$(bold)Left-click$(): Area dig (when not sneaking)\n$(bold)Shift + Left-click$(): Single block digging\n$(bold)Right-click$(): Cycle through 5 modes"
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Stats",
+      "text": "Durability: 50,000\nMining Speed: 12.0\nAttack Damage: +4\nEnchantability: 15\nRepair: Netherite Ingots"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:kennestroyer_shovel",
+      "title": "Kennestroyer Shovel"
     }
   ]
 }

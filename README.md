@@ -16,12 +16,15 @@ Each material tier (Stone, Iron, Diamond) offers 4 grades of tools — from basi
 - Vanilla-standard durability, speed, and combat stats per material
 - Custom crafting recipes with progression (Robust Stick component for Expert/Professional)
 - **Workhand Hoes** (Iron/Diamond): right-click a mature crop, cocoa, or nether wart to harvest and instantly replant it, spreading to every other mature one in a 3x3 (Iron) or 5x5 (Diamond) area
+- **Workhand Axes** (Iron/Diamond): right-click toggles tree felling with Simple/Compound modes
+- **Improved Pickaxes** (Iron/Diamond): vein mining up to 128 connected ores
+- **Kennestroyer Tools** (Pickaxe & Shovel): ultimate tools with 5 modes (Disabled, Range 3 Flat/Cubic, Range 5 Flat/Cubic) — Pickaxe includes vein mining
 - **Tape Measure** utility item: right-click to set a measurement box, right-click again to finish it; live-updating wireframe with per-axis length labels while the box is in progress. Shift+right-click undoes the last box.
 
 ## Tools
 
 <details>
-<summary><strong>Full item list — durability and purpose (34 items)</strong></summary>
+<summary><strong>Full item list — durability and purpose (36 items)</strong></summary>
 
 ### Pickaxes & Shovels (24 — 3 materials × 4 grades)
 
@@ -51,6 +54,13 @@ Each material tier (Stone, Iron, Diamond) offers 4 grades of tools — from basi
 | <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_advanced_shovel.png" width="32"> | Diamond Workhand Advanced Shovel | Diamond | 7805 | Area digging 3x3x3 cubic / 3x3x1 flat (right-click toggles mode) |
 | <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_expert_shovel.png" width="32"> | Diamond Workhand Expert Shovel | Diamond | 7805 | Area digging 5x5x1 (single layer) |
 | <img src="src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_professional_shovel.png" width="32"> | Diamond Workhand Professional Shovel | Diamond | 7805 | Area digging 5x5x5 cubic / 5x5x1 flat (right-click toggles mode) |
+
+### Kennestroyer Ultimate Tools (2)
+
+| | Name | Material | Durability | Purpose |
+|---|---|---|:---:|---|
+| <img src="src/main/resources/assets/workhand_tools/textures/item/kennestroyer_pickaxe.png" width="32"> | Kennestroyer Pickaxe | Kennestroyer | 50,000 | **5 modes**: Disabled / 3x3x1 / 3x3x3 / 5x5x1 / 5x5x5 + Vein Mining (right-click cycles modes) |
+| <img src="src/main/resources/assets/workhand_tools/textures/item/kennestroyer_shovel.png" width="32"> | Kennestroyer Shovel | Kennestroyer | 50,000 | **5 modes**: Disabled / 3x3x1 / 3x3x3 / 5x5x1 / 5x5x5 (right-click cycles modes) |
 
 ### Improved Pickaxes — vein mining (4)
 
@@ -88,9 +98,10 @@ Each material tier (Stone, Iron, Diamond) offers 4 grades of tools — from basi
 
 | Action | Key |
 |--------|-----|
-| Area mine | Left-click (no sneaking) |
+| Area mine / dig | Left-click (no sneaking) |
 | Single block | Shift + Left-click |
-| Toggle mode | Right-click (Grades 2 & 4) |
+| Toggle mode (Grades 2 & 4) | Right-click |
+| Cycle 5 modes (Kennestroyer) | Right-click |
 | Set / finish measurement | Right-click block (Tape Measure) |
 | Undo last measurement | Shift + Right-click (Tape Measure) |
 
@@ -100,6 +111,7 @@ Each material tier (Stone, Iron, Diamond) offers 4 grades of tools — from basi
 |---|---|
 | Minecraft | 26.2 |
 | NeoForge | 26.2.0.37-beta+ |
+| Vellumli | 1.2.0+ (required for guide book) |
 | Java | 25+ |
 
 ## Installation

@@ -84,7 +84,17 @@ public class AoEMiningHandler {
 
         AoEMode current = stack.getOrDefault(ModDataComponents.AOE_MODE, grade.hasMode() ? AoEMode.CUBIC : AoEMode.FLAT);
         AoEMode next;
-        if (grade.hasMode()) {
+        if (grade == Grade.KENNESTROYER) {
+            // 5 modes: DISABLED -> FLAT_3 -> CUBIC_3 -> FLAT_5 -> CUBIC_5 -> DISABLED
+            switch (current) {
+                case DISABLED -> next = AoEMode.FLAT_3;
+                case FLAT_3 -> next = AoEMode.CUBIC_3;
+                case CUBIC_3 -> next = AoEMode.FLAT_5;
+                case FLAT_5 -> next = AoEMode.CUBIC_5;
+                case CUBIC_5 -> next = AoEMode.DISABLED;
+                default -> next = AoEMode.CUBIC_5;
+            }
+        } else if (grade.hasMode()) {
             if (current == AoEMode.DISABLED) {
                 next = AoEMode.FLAT;
             } else if (current == AoEMode.FLAT) {
@@ -98,9 +108,9 @@ public class AoEMiningHandler {
         stack.set(ModDataComponents.AOE_MODE, next);
         if (player instanceof ServerPlayer serverPlayer) {
             String messageKey;
-            if (next == AoEMode.CUBIC) {
+            if (next == AoEMode.CUBIC || next == AoEMode.CUBIC_3 || next == AoEMode.CUBIC_5) {
                 messageKey = "message.workhand_tools.mode.cubic";
-            } else if (next == AoEMode.FLAT) {
+            } else if (next == AoEMode.FLAT || next == AoEMode.FLAT_3 || next == AoEMode.FLAT_5) {
                 messageKey = "message.workhand_tools.mode.flat";
             } else {
                 messageKey = "message.workhand_tools.mode.disabled";
@@ -126,10 +136,15 @@ public class AoEMiningHandler {
         } else {
             event.getToolTip().add(Component.translatable(areaKey(grade, mode)).withStyle(ChatFormatting.GOLD));
             if (grade.hasMode()) {
-                event.getToolTip().add(Component.translatable(
-                        mode == AoEMode.CUBIC
-                                ? "message.workhand_tools.mode.cubic"
-                                : "message.workhand_tools.mode.flat").withStyle(ChatFormatting.GRAY));
+                String modeMessage;
+                if (mode == AoEMode.CUBIC || mode == AoEMode.CUBIC_3 || mode == AoEMode.CUBIC_5) {
+                    modeMessage = "message.workhand_tools.mode.cubic";
+                } else if (mode == AoEMode.FLAT || mode == AoEMode.FLAT_3 || mode == AoEMode.FLAT_5) {
+                    modeMessage = "message.workhand_tools.mode.flat";
+                } else {
+                    modeMessage = "message.workhand_tools.mode.disabled";
+                }
+                event.getToolTip().add(Component.translatable(modeMessage).withStyle(ChatFormatting.GRAY));
             }
             event.getToolTip().add(Component.translatable("tooltip.workhand_tools.right_click"));
         }
@@ -138,11 +153,11 @@ public class AoEMiningHandler {
     }
 
     private static String areaKey(Grade grade, AoEMode mode) {
-        int w = grade.lateralHalf() * 2 + 1;
-        int h = grade.height();
+        int w = grade.lateralHalfForMode(mode) * 2 + 1;
+        int h = grade.heightForMode(mode);
         int d = grade.depth(mode);
         String base = "tooltip.workhand_tools.area." + w + "x" + h + "x" + d;
-        if (grade.hasMode() && mode == AoEMode.FLAT) {
+        if (grade.hasMode() && (mode == AoEMode.FLAT || mode == AoEMode.FLAT_3 || mode == AoEMode.FLAT_5)) {
             base += "_flat";
         }
         return base;

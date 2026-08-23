@@ -27,4 +27,8 @@ public final class ModToolMaterials {
 
     public static final ToolMaterial IMPROVED_DIAMOND = new ToolMaterial(
             BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 23415, 8.0F, 3.0F, 10, ItemTags.DIAMOND_TOOL_MATERIALS);
+
+    // Kennestroyer ultimate tools - highest tier
+    public static final ToolMaterial KENNESTROYER = new ToolMaterial(
+            BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 50000, 12.0F, 4.0F, 15, ItemTags.NETHERITE_TOOL_MATERIALS);
 }

@@ -21,13 +21,14 @@ public final class AoEPatterns {
     public static List<BlockPos> computePattern(BlockPos center, Grade grade, AoEMode mode,
             Direction digDir, boolean lookingUp) {
         List<BlockPos> positions = new ArrayList<>();
-        int half = grade.lateralHalf();
+        int half = grade.lateralHalfForMode(mode);
         int depth = grade.depth(mode);
+        int height = grade.heightForMode(mode);
 
         if (digDir.getAxis() == Direction.Axis.Y) {
             computeVerticalPattern(positions, center, digDir, half, depth);
         } else {
-            computeHorizontalPattern(positions, center, digDir, half, depth, grade.height(), lookingUp);
+            computeHorizontalPattern(positions, center, digDir, half, depth, height, lookingUp);
         }
         return positions;
     }

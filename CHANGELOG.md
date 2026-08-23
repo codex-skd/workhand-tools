@@ -1,6 +1,30 @@
 # Changelog — Workhand Tools
 
 
+## [1.21.0] - 2026-08-23
+
+### Feature
+
+- **Kennestroyer Ultimate Tools**: added Kennestroyer Pickaxe and Kennestroyer Shovel — the ultimate tools with 5 mining/digging modes cycled via right-click:
+  - Disabled: No area mining
+  - Range 3 Flat: 3x3x1 (single layer)
+  - Range 3 Cubic: 3x3x3
+  - Range 5 Flat: 5x5x1 (single layer)
+  - Range 5 Cubic: 5x5x5
+- **Kennestroyer Pickaxe includes Vein Mining**: breaks up to 128 connected ores of the same type automatically
+- **New tool material**: KENNESTROYER (50,000 durability, 12.0 speed, +4 attack, 15 enchantability, repaired with Netherite Ingots)
+- **Crafting recipes**: both tools crafted from Netherite Ingots, Diamond Blocks, Obsidian, and the top-tier Diamond Workhand tools (Advanced/Professional Improved Pickaxe for pickaxe, Advanced/Professional Shovel for shovel)
+
+### Content
+
+- **Guide Book**: added Kennestroyer Pickaxe and Shovel entries with full mode descriptions, controls, stats, and crafting recipes in both English and Spanish
+
+### Technical
+
+- Extended `AoEMode` enum with `FLAT_3`, `CUBIC_3`, `FLAT_5`, `CUBIC_5` modes
+- Extended `Grade` enum with `KENNESTROYER` grade supporting all 5 modes with dynamic lateral/height/depth calculation
+- Updated `AoEMiningHandler` and `AoEPatterns` to handle 5-mode cycling and pattern computation for Kennestroyer grade
+
 ## [1.20.0] - 2026-08-23
 
 ### Feature
