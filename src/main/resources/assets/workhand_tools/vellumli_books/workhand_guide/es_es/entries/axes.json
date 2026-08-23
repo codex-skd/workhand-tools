@@ -26,6 +26,16 @@
       "type": "vellumli:text",
       "title": "Materiales y Durabilidad",
       "text": "Hacha Workhand de Hierro: 3750 de durabilidad\nHacha Workhand de Diamante: 23415 de durabilidad"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:iron_workhand_axe",
+      "title": "Hacha Workhand de Hierro"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:diamond_workhand_axe",
+      "title": "Hacha Workhand de Diamante"
     }
   ]
 }

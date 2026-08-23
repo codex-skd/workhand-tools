@@ -1,6 +1,31 @@
 # Changelog — Workhand Tools
 
 
+## [1.20.0] - 2026-08-23
+
+### Feature
+
+- **Vellumli is now a required dependency**: the mod will fail to load with a clear error message if Vellumli is not installed. This ensures the in-game guide book is always available.
+- **Complete recipe integration in the guide book**: every tool and utility item now has its crafting recipe displayed directly in the Vellumli guide book using the native `vellumli:crafting` page type. No need for JEI to see recipes.
+
+### Content
+
+- **Pickaxes**: 18 recipes (Stone/Iron/Diamond × all grades 1-4 + improved variants)
+- **Shovels**: 12 recipes (Stone/Iron/Diamond × all grades 1-4)
+- **Axes**: 2 recipes (Iron, Diamond)
+- **Hoes**: 2 recipes (Iron, Diamond)
+- **Vein-Mining Pickaxes**: 4 recipes (Improved Iron/Diamond Professional + Advanced)
+- **Utility Items**: 5 recipes (Tape Measure, Robust Stick, Chunk Anchor, Anchor Tome, Guide Book)
+
+### Change
+
+- Vellumli dependency changed from optional to required in `neoforge.mods.toml`
+- Startup validation added: mod throws `IllegalStateException` if Vellumli is missing
+
+### Translation
+
+- All new recipe pages added in both English (en_us) and Spanish (es_es)
+
 ## [1.19.0] - 2026-08-21
 
 ### Feature
