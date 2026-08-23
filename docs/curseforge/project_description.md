@@ -1,11 +1,10 @@
 <h1 align="center">&#9968; Workhand Tools</h1>
 
-<p align="center"><strong>A NeoForge tools mod for Minecraft 26.2. Upgraded pickaxes and shovels across 3 materials and 4 grades, unlocking 3&times;3 to 5&times;5 area mining. Durability, speed, and enchants always match vanilla.</strong></p>
+<p align="center"><strong>A NeoForge tools mod for Minecraft 26.2. Upgraded pickaxes, shovels, axes, and hoes across 3 materials and 4 grades, unlocking 3&times;3 to 5&times;5 area mining. Kennestroyer ultimate tools with 5 modes. Durability, speed, and enchants always match vanilla.</strong></p>
 
 <br>
 
 ---
-
 <br>
 
 <h2>&#10024; Overview</h2>
@@ -13,11 +12,13 @@
 <table>
 <tr>
 <td width="65%">
-<p>Workhand Tools adds a full line of upgraded pickaxes and shovels — 12 of each across Stone, Iron, and Diamond materials — with 4 progressive grades per material. Each grade unlocks larger mining areas, from basic 3&times;3 flat excavation to professional 5&times;5&times;5 cubic mining.</p>
+<p>Workhand Tools adds a full line of upgraded tools — 12 pickaxes and 12 shovels across Stone, Iron, and Diamond materials — with 4 progressive grades per material. Each grade unlocks larger mining areas, from basic 3&times;3 flat excavation to professional 5&times;5&times;5 cubic mining.</p>
 
 <p>All tools match their vanilla equivalents in durability, mining speed, enchantability, and combat stats. Advanced and Professional grades feature a <strong>Cubic / Flat mode toggle</strong> (right-click), and a <strong>real-time area preview highlight</strong> shows exactly which blocks will be affected. Hold <strong>Shift</strong> at any time for vanilla single-block behavior.</p>
 
 <p><strong>10 languages</strong> supported: English, Spanish, Portuguese, French, German, Russian, Chinese, Japanese, Italian, and Korean.</p>
+
+<p><strong>In-game Guide Book</strong> (via Vellumli): craftable (book + iron ingot + diamond) or auto-given on first join. Documents every tool with controls, mechanics, and crafting recipes.</p>
 </td>
 <td width="35%" align="center">
 <a href="https://codex.skdragons.com/" target="_blank"><img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/logo_codex_stalking_dragons.png" alt="Codex Stalking Dragons" width="160"></a>
@@ -47,9 +48,9 @@
 
 <br>
 
-<h2>&#128203; Full Item Catalog — Durability &amp; Purpose</h2>
+<h2>&#128203; Full Item Catalog — Durability & Purpose</h2>
 
-<h3>Pickaxes &amp; Shovels (24)</h3>
+<h3>Pickaxes & Shovels (24)</h3>
 <table>
 <tr><th></th><th>Name</th><th>Material</th><th>Durability</th><th>Purpose</th></tr>
 <tr><td><img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/stone_workhand_pickaxe.png" width="32"></td><td>Stone Workhand Pickaxe</td><td>Stone</td><td>655</td><td>Area mining 3&times;3&times;1 (single layer)</td></tr>
@@ -78,6 +79,13 @@
 <tr><td><img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/diamond_workhand_professional_shovel.png" width="32"></td><td>Diamond Workhand Professional Shovel</td><td>Diamond</td><td>7805</td><td>Area digging 5&times;5&times;5 cubic / 5&times;5&times;1 flat (right-click toggles mode)</td></tr>
 </table>
 
+<h3>Kennestroyer Ultimate Tools (2)</h3>
+<table>
+<tr><th></th><th>Name</th><th>Material</th><th>Durability</th><th>Purpose</th></tr>
+<tr><td><img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/kennestroyer_pickaxe.png" width="32"></td><td>Kennestroyer Pickaxe</td><td>Kennestroyer</td><td>50,000</td><td><strong>5 modes (right-click cycles):</strong> Disabled / 3&times;3&times;1 / 3&times;3&times;3 / 5&times;5&times;1 / 5&times;5&times;5 + <strong>Vein Mining</strong> (auto-mines up to 128 connected ores)</td></tr>
+<tr><td><img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/kennestroyer_shovel.png" width="32"></td><td>Kennestroyer Shovel</td><td>Kennestroyer</td><td>50,000</td><td><strong>5 modes (right-click cycles):</strong> Disabled / 3&times;3&times;1 / 3&times;3&times;3 / 5&times;5&times;1 / 5&times;5&times;5</td></tr>
+</table>
+
 <h3>Improved Pickaxes &mdash; Vein Mining (4)</h3>
 <table>
 <tr><th></th><th>Name</th><th>Material</th><th>Durability</th><th>Purpose</th></tr>
@@ -90,8 +98,15 @@
 <h3>Workhand Axes &mdash; Tree Felling (2)</h3>
 <table>
 <tr><th></th><th>Name</th><th>Material</th><th>Durability</th><th>Purpose</th></tr>
-<tr><td><img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/iron_workhand_axe.png" width="32"></td><td>Iron Workhand Axe</td><td>Improved Iron</td><td>3750</td><td>Toggleable tree felling (right-click): breaking a log fells the whole connected tree (up to 256 blocks)</td></tr>
-<tr><td><img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/diamond_workhand_axe.png" width="32"></td><td>Diamond Workhand Axe</td><td>Improved Diamond</td><td>23415</td><td>Toggleable tree felling (right-click)</td></tr>
+<tr><td><img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/iron_workhand_axe.png" width="32"></td><td>Iron Workhand Axe</td><td>Improved Iron</td><td>3750</td><td>Toggleable tree felling (right-click cycles Disabled / Simple / Compound): breaking a log fells the whole connected tree (up to 256 blocks)</td></tr>
+<tr><td><img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/diamond_workhand_axe.png" width="32"></td><td>Diamond Workhand Axe</td><td>Improved Diamond</td><td>23415</td><td>Toggleable tree felling (right-click cycles Disabled / Simple / Compound)</td></tr>
+</table>
+
+<h3>Workhand Hoes &mdash; Crop Harvesting (2)</h3>
+<table>
+<tr><th></th><th>Name</th><th>Material</th><th>Durability</th><th>Purpose</th></tr>
+<tr><td><img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/iron_workhand_hoe.png" width="32"></td><td>Iron Workhand Hoe</td><td>Improved Iron</td><td>3750</td><td>Right-click toggles Till / Harvest mode. Till: single block. Harvest: 3&times;3 area harvest & replant of mature crops/cocoa/nether wart</td></tr>
+<tr><td><img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/diamond_workhand_hoe.png" width="32"></td><td>Diamond Workhand Hoe</td><td>Improved Diamond</td><td>23415</td><td>Right-click toggles Till / Harvest mode. Till: single block. Harvest: 5&times;5 area harvest & replant of mature crops/cocoa/nether wart</td></tr>
 </table>
 
 <h3>Utility Items (2)</h3>
@@ -103,7 +118,7 @@
 
 <br>
 
-<h2>&#128214; Chunk Anchor &amp; Anchor Tome &mdash; Forced Chunk Loading</h2>
+<h2>&#128214; Chunk Anchor & Anchor Tome &mdash; Forced Chunk Loading</h2>
 
 <p>A pedestal-and-tome pair, separate from the tool line, that keeps a chunk permanently loaded &mdash; no player needed nearby.</p>
 
@@ -122,6 +137,7 @@
 <table>
 <tr><td><strong>Minecraft</strong></td><td>26.2</td></tr>
 <tr><td><strong>NeoForge</strong></td><td>26.2.0.37-beta+</td></tr>
+<tr><td><strong>Vellumli</strong></td><td>1.2.0+ (required for guide book)</td></tr>
 <tr><td><strong>Java</strong></td><td>25+</td></tr>
 </table>
 
