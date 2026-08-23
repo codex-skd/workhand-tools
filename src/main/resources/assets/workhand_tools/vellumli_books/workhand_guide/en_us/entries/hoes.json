@@ -26,6 +26,16 @@
       "type": "vellumli:text",
       "title": "Materials & Durability",
       "text": "Iron Workhand Hoe: 3750 durability\nDiamond Workhand Hoe: 23415 durability\n\nBoth match the durability, mining speed, and enchantability of their vanilla counterparts."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:iron_workhand_hoe",
+      "title": "Iron Workhand Hoe"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:diamond_workhand_hoe",
+      "title": "Diamond Workhand Hoe"
     }
   ]
 }

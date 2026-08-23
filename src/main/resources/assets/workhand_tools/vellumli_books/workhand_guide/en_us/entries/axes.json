@@ -26,6 +26,16 @@
       "type": "vellumli:text",
       "title": "Materials & Durability",
       "text": "Iron Workhand Axe: 3750 durability\nDiamond Workhand Axe: 23415 durability"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:iron_workhand_axe",
+      "title": "Iron Workhand Axe"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:diamond_workhand_axe",
+      "title": "Diamond Workhand Axe"
     }
   ]
 }

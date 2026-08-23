@@ -26,6 +26,26 @@
       "type": "vellumli:text",
       "title": "Materiales y Durabilidad",
       "text": "Hierro Mejorado: 3750 de durabilidad (3x el estándar)\nDiamante Mejorado: 23415 de durabilidad (3x el estándar)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:iron_workhand_professional_improved_pickaxe",
+      "title": "Pico Workhand Profesional Mejorado de Hierro (Grado 2)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:iron_workhand_advanced_improved_pickaxe",
+      "title": "Pico Workhand Avanzado Mejorado de Hierro (Grado 4)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:diamond_workhand_professional_improved_pickaxe",
+      "title": "Pico Workhand Profesional Mejorado de Diamante (Grado 2)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:diamond_workhand_advanced_improved_pickaxe",
+      "title": "Pico Workhand Avanzado Mejorado de Diamante (Grado 4)"
     }
   ]
 }

@@ -11,9 +11,11 @@ import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -96,6 +98,14 @@ for (DeferredHolder<Item, ? extends Item> holder : ModItems.SHOVELS) {
     private void commonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(ModItems::buildLookups);
         LOGGER.info("Workhand Tools common setup complete");
+    }
+
+    @SubscribeEvent
+    public void onLoadComplete(FMLLoadCompleteEvent event) {
+        if (!ModList.get().isLoaded("vellumli")) {
+            LOGGER.error("Vellumli is required but not installed! Workhand Tools will not function correctly without the guide book.");
+            throw new IllegalStateException("Vellumli is required but not installed. Please install Vellumli to use Workhand Tools.");
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

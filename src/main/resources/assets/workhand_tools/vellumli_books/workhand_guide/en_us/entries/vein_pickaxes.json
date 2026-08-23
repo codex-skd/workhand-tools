@@ -26,6 +26,26 @@
       "type": "vellumli:text",
       "title": "Materials & Durability",
       "text": "Improved Iron: 3750 durability (3x standard)\nImproved Diamond: 23415 durability (3x standard)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:iron_workhand_professional_improved_pickaxe",
+      "title": "Iron Workhand Professional Improved Pickaxe (Grade 2)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:iron_workhand_advanced_improved_pickaxe",
+      "title": "Iron Workhand Advanced Improved Pickaxe (Grade 4)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:diamond_workhand_professional_improved_pickaxe",
+      "title": "Diamond Workhand Professional Improved Pickaxe (Grade 2)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:diamond_workhand_advanced_improved_pickaxe",
+      "title": "Diamond Workhand Advanced Improved Pickaxe (Grade 4)"
     }
   ]
 }

@@ -26,6 +26,16 @@
       "type": "vellumli:text",
       "title": "Materiales y Durabilidad",
       "text": "Azada Workhand de Hierro: 3750 de durabilidad\nAzada Workhand de Diamante: 23415 de durabilidad\n\nAmbas igualan la durabilidad, velocidad de minado y encantabilidad de sus equivalentes vanilla."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:iron_workhand_hoe",
+      "title": "Azada Workhand de Hierro"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:diamond_workhand_hoe",
+      "title": "Azada Workhand de Diamante"
     }
   ]
 }

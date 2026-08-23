@@ -21,6 +21,31 @@
       "type": "vellumli:text",
       "title": "Palo Robusto",
       "text": "Un ingrediente de crafteo usado en herramientas de grado Experto y Profesional (niveles 3-4).\n\nNo tiene durabilidad, ya que solo se usa como componente de crafteo."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:tape_measure",
+      "title": "Cinta Métrica"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:robust_stick",
+      "title": "Palo Robusto"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:chunk_anchor",
+      "title": "Ancla de Chunk"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:anchor_tome",
+      "title": "Tomo de Anclaje"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:book",
+      "title": "Libro Guía Workhand"
     }
   ]
 }

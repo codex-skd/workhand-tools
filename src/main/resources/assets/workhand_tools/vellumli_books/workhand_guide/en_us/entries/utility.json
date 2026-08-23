@@ -21,6 +21,31 @@
       "type": "vellumli:text",
       "title": "Robust Stick",
       "text": "A crafting ingredient used in Expert and Professional grade tools (tiers 3-4).\n\nHas no durability as it's only used as a crafting component."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:tape_measure",
+      "title": "Tape Measure"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:robust_stick",
+      "title": "Robust Stick"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:chunk_anchor",
+      "title": "Chunk Anchor"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:anchor_tome",
+      "title": "Anchor Tome"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:book",
+      "title": "Workhand Guide Book"
     }
   ]
 }
