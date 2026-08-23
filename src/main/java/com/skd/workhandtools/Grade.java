@@ -4,7 +4,8 @@ public enum Grade {
     GRADE_1(1, 3, 1, false),
     GRADE_2(1, 3, 3, true),
     GRADE_3(2, 5, 1, false),
-    GRADE_4(2, 5, 5, true);
+    GRADE_4(2, 5, 5, true),
+    KENNESTROYER(2, 5, 5, true);
 
     private final int lateralHalf;
     private final int height;
@@ -31,6 +32,25 @@ public enum Grade {
     }
 
     public int depth(AoEMode mode) {
-        return mode == AoEMode.CUBIC ? depthCubic : 1;
+        return switch (mode) {
+            case CUBIC, CUBIC_3, CUBIC_5 -> depthCubic;
+            default -> 1;
+        };
+    }
+
+    public int lateralHalfForMode(AoEMode mode) {
+        return switch (mode) {
+            case FLAT_3, CUBIC_3 -> 1;
+            case FLAT_5, CUBIC_5 -> 2;
+            default -> lateralHalf;
+        };
+    }
+
+    public int heightForMode(AoEMode mode) {
+        return switch (mode) {
+            case FLAT_3, CUBIC_3 -> 3;
+            case FLAT_5, CUBIC_5 -> 5;
+            default -> height;
+        };
     }
 }

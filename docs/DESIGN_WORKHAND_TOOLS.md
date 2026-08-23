@@ -7,7 +7,7 @@
 
 Una línea de picos, palas y hachas "de obrero" (Workhand), en **3 materiales** (Stone, Iron, Diamond) y **4 grados** cada uno. La diferencia entre materiales es durabilidad/velocidad/encantabilidad (calcada de vanilla). La diferencia entre grados **no es de stats**: es la receta y el **patrón de minado en área (AoE)** que activa la herramienta. Además, 4 picos mejorados (Improved) con vena minera y 2 hachas con tala de árboles.
 
-**Total: 3 materiales × 4 grados × 2 herramientas base + 4 picos mejorados + 2 hachas = 30 items.**
+**Total: 3 materiales × 4 grados × 2 herramientas base + 4 picos mejorados + 2 hachas + 2 azadas + 2 Kennestroyer = 36 items.**
 
 ## Materiales y tiers
 
@@ -263,6 +263,47 @@ Solo 2 items (iron/diamond), sin tier stone — mismo patrón que Workhand Axes.
 ### Naming e IDs
 
 `iron_workhand_hoe` / `diamond_workhand_hoe` → "Iron Workhand Hoe" / "Diamond Workhand Hoe", mismo estilo que el resto del mod.
+
+## Kennestroyer Ultimate Tools
+
+| Item ID | Material | Durability |
+|---|---|---|
+| `kennestroyer_pickaxe` | KENNESTROYER | 50,000 |
+| `kennestroyer_shovel` | KENNESTROYER | 50,000 |
+
+**Pickaxe modes (right-click cycles):**
+- Disabled: No area mining
+- Range 3 Flat: 3x3x1 (single layer)
+- Range 3 Cubic: 3x3x3
+- Range 5 Flat: 5x5x1 (single layer)
+- Range 5 Cubic: 5x5x5
+
+**Shovel modes (right-click cycles):**
+- Disabled: No area digging
+- Range 3 Flat: 3x3x1 (single layer)
+- Range 3 Cubic: 3x3x3
+- Range 5 Flat: 5x5x1 (single layer)
+- Range 5 Cubic: 5x5x5
+
+**Pickaxe also includes Vein Mining:** when breaking an ore, all connected blocks of the same ore type are automatically mined (max 128 blocks), works regardless of sneak state.
+
+**Material:** `KENNESTROYER` (BlockTags.INCORRECT_FOR_NETHERITE_TOOL, durability 50000, speed 12.0, attack 4.0, enchant 15, repair netherite_ingot)
+
+### Recipes
+
+**Kennestroyer Pickaxe:**
+```
+Netherite Ingot    Diamond Workhand Advanced Improved Pickaxe    Netherite Ingot
+Obsidian           Diamond Block                                 Obsidian
+Netherite Ingot    Diamond Workhand Professional Improved Pickaxe Netherite Ingot
+```
+
+**Kennestroyer Shovel:**
+```
+Netherite Ingot    Diamond Workhand Advanced Shovel    Netherite Ingot
+Obsidian           Diamond Block                       Obsidian
+Netherite Ingot    Diamond Workhand Professional Shovel Netherite Ingot
+```
 
 ## Chunk Anchor + Anchor Tome (chunk loading)
 

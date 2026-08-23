@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "n d n",
+    "o B o",
+    "n D n"
+  ],
+  "key": {
+    "n": "minecraft:netherite_ingot",
+    "d": "workhand_tools:diamond_workhand_advanced_shovel",
+    "o": "minecraft:obsidian",
+    "B": "minecraft:diamond_block",
+    "D": "workhand_tools:diamond_workhand_professional_shovel"
+  },
+  "result": {
+    "count": 1,
+    "id": "workhand_tools:kennestroyer_shovel"
+  }
+}
