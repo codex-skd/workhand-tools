@@ -29,23 +29,23 @@
     },
     {
       "type": "vellumli:crafting",
-      "recipe": "workhand_tools:iron_workhand_professional_improved_pickaxe",
-      "title": "Iron Workhand Professional Improved Pickaxe (Grade 2)"
-    },
-    {
-      "type": "vellumli:crafting",
       "recipe": "workhand_tools:iron_workhand_advanced_improved_pickaxe",
-      "title": "Iron Workhand Advanced Improved Pickaxe (Grade 4)"
+      "title": "Iron Workhand Advanced Improved Pickaxe (Grade 2)"
     },
     {
       "type": "vellumli:crafting",
-      "recipe": "workhand_tools:diamond_workhand_professional_improved_pickaxe",
-      "title": "Diamond Workhand Professional Improved Pickaxe (Grade 2)"
+      "recipe": "workhand_tools:iron_workhand_professional_improved_pickaxe",
+      "title": "Iron Workhand Professional Improved Pickaxe (Grade 4)"
     },
     {
       "type": "vellumli:crafting",
       "recipe": "workhand_tools:diamond_workhand_advanced_improved_pickaxe",
-      "title": "Diamond Workhand Advanced Improved Pickaxe (Grade 4)"
+      "title": "Diamond Workhand Advanced Improved Pickaxe (Grade 2)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:diamond_workhand_professional_improved_pickaxe",
+      "title": "Diamond Workhand Professional Improved Pickaxe (Grade 4)"
     }
   ]
 }

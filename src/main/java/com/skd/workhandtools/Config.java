@@ -26,7 +26,7 @@ public class Config {
             .comment("Maximum consecutive leaf blocks the tree felling algorithm may traverse to reach",
                     "log blocks separated by leaf gaps (e.g. diagonal branches, offset canopies).",
                     "The counter resets to 0 every time a log block is found again. -1 means unlimited (only MAX_TREE_BLOCKS still caps it).")
-            .defineInRange("maxLeafDistanceFromLog", -1, -1, 64);
+            .defineInRange("maxLeafDistanceFromLog", 2, -1, 64);
 
     // Chunk Anchor border rendering mode
     public enum ChunkAnchorBorderMode {

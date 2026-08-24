@@ -30,17 +30,17 @@
     {
       "type": "vellumli:crafting",
       "recipe": "workhand_tools:stone_workhand_advanced_pickaxe",
-      "title": "Stone Workhand Advanced Pickaxe (Grade 3)"
+      "title": "Stone Workhand Advanced Pickaxe (Grade 2)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:stone_workhand_expert_pickaxe",
+      "title": "Stone Workhand Expert Pickaxe (Grade 3)"
     },
     {
       "type": "vellumli:crafting",
       "recipe": "workhand_tools:stone_workhand_professional_pickaxe",
       "title": "Stone Workhand Professional Pickaxe (Grade 4)"
-    },
-    {
-      "type": "vellumli:crafting",
-      "recipe": "workhand_tools:stone_workhand_expert_pickaxe",
-      "title": "Stone Workhand Expert Pickaxe (Grade 2)"
     },
     {
       "type": "vellumli:crafting",
@@ -50,7 +50,12 @@
     {
       "type": "vellumli:crafting",
       "recipe": "workhand_tools:iron_workhand_advanced_pickaxe",
-      "title": "Iron Workhand Advanced Pickaxe (Grade 3)"
+      "title": "Iron Workhand Advanced Pickaxe (Grade 2)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:iron_workhand_expert_pickaxe",
+      "title": "Iron Workhand Expert Pickaxe (Grade 3)"
     },
     {
       "type": "vellumli:crafting",
@@ -59,18 +64,13 @@
     },
     {
       "type": "vellumli:crafting",
-      "recipe": "workhand_tools:iron_workhand_expert_pickaxe",
-      "title": "Iron Workhand Expert Pickaxe (Grade 2)"
+      "recipe": "workhand_tools:iron_workhand_advanced_improved_pickaxe",
+      "title": "Iron Workhand Advanced Improved Pickaxe (Grade 2+)"
     },
     {
       "type": "vellumli:crafting",
       "recipe": "workhand_tools:iron_workhand_professional_improved_pickaxe",
       "title": "Iron Workhand Professional Improved Pickaxe (Grade 4+)"
-    },
-    {
-      "type": "vellumli:crafting",
-      "recipe": "workhand_tools:iron_workhand_advanced_improved_pickaxe",
-      "title": "Iron Workhand Advanced Improved Pickaxe (Grade 3+)"
     },
     {
       "type": "vellumli:crafting",
@@ -80,7 +80,12 @@
     {
       "type": "vellumli:crafting",
       "recipe": "workhand_tools:diamond_workhand_advanced_pickaxe",
-      "title": "Diamond Workhand Advanced Pickaxe (Grade 3)"
+      "title": "Diamond Workhand Advanced Pickaxe (Grade 2)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:diamond_workhand_expert_pickaxe",
+      "title": "Diamond Workhand Expert Pickaxe (Grade 3)"
     },
     {
       "type": "vellumli:crafting",
@@ -89,54 +94,13 @@
     },
     {
       "type": "vellumli:crafting",
-      "recipe": "workhand_tools:diamond_workhand_expert_pickaxe",
-      "title": "Diamond Workhand Expert Pickaxe (Grade 2)"
+      "recipe": "workhand_tools:diamond_workhand_advanced_improved_pickaxe",
+      "title": "Diamond Workhand Advanced Improved Pickaxe (Grade 2+)"
     },
     {
       "type": "vellumli:crafting",
       "recipe": "workhand_tools:diamond_workhand_professional_improved_pickaxe",
       "title": "Diamond Workhand Professional Improved Pickaxe (Grade 4+)"
-    },
-    {
-      "type": "vellumli:crafting",
-      "recipe": "workhand_tools:diamond_workhand_advanced_improved_pickaxe",
-      "title": "Diamond Workhand Advanced Improved Pickaxe (Grade 3+)"
-    }
-  ]
-}
-{
-  "name": "Kennestroyer Pickaxe",
-  "icon": "workhand_tools:kennestroyer_pickaxe",
-  "category": "workhand_tools:pickaxes",
-  "pages": [
-    {
-      "type": "vellumli:text",
-      "text": "The Kennestroyer Pickaxe is the ultimate mining tool, crafted from Netherite, Diamond Blocks, Obsidian, and the finest Diamond Workhand Improved Pickaxes. It combines all mining modes into a single tool with Vein Mining built-in."
-    },
-    {
-      "type": "vellumli:text",
-      "title": "Mode Progression (Right-click to cycle)",
-      "text": "$(bold)Disabled$(): No area mining\n$(bold)Range 3 Flat$(): 3x3x1 area (single layer)\n$(bold)Range 3 Cubic$(): 3x3x3 cubic area\n$(bold)Range 5 Flat$(): 5x5x1 area (single layer)\n$(bold)Range 5 Cubic$(): 5x5x5 cubic area"
-    },
-    {
-      "type": "vellumli:text",
-      "title": "Vein Mining",
-      "text": "When breaking an ore block, all connected blocks of the same ore type are automatically mined in a chain reaction, up to a maximum of 128 blocks. Works regardless of sneak state."
-    },
-    {
-      "type": "vellumli:text",
-      "title": "Controls",
-      "text": "$(bold)Left-click$(): Area mine + vein mining (when not sneaking)\n$(bold)Shift + Left-click$(): Single block mining\n$(bold)Right-click$(): Cycle through 5 modes"
-    },
-    {
-      "type": "vellumli:text",
-      "title": "Stats",
-      "text": "Durability: 50,000\nMining Speed: 12.0\nAttack Damage: +4\nEnchantability: 15\nRepair: Netherite Ingots"
-    },
-    {
-      "type": "vellumli:crafting",
-      "recipe": "workhand_tools:kennestroyer_pickaxe",
-      "title": "Kennestroyer Pickaxe"
     }
   ]
 }
