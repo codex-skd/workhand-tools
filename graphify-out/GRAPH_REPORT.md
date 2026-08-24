@@ -1,13 +1,18 @@
-# Graph Report - 26.2  (2026-08-23)
+# Graph Report - 26.2  (2026-08-24)
 
 ## Corpus Check
-- 261 files · ~47,368 words
+- 266 files · ~48,302 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 698 nodes · 1014 edges · 107 communities (86 shown, 21 thin omitted)
+- 701 nodes · 1016 edges · 109 communities (87 shown, 22 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 11 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `2e785839`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - Block Break Handling
@@ -67,9 +72,10 @@
 - [1.6.0] - 2026-08-10
 - [1.2.2] - 2026-08-08
 - [1.4.0] - 2026-08-09
+- [1.8.0] - 2026-08-11
 
 ## God Nodes (most connected - your core abstractions)
-1. `Changelog — Workhand Tools` - 38 edges
+1. `Changelog — Workhand Tools` - 39 edges
 2. `ChunkAnchorBlockEntity` - 23 edges
 3. `TextColor` - 21 edges
 4. `LineColor` - 20 edges
@@ -95,15 +101,15 @@
 ## Import Cycles
 - None detected.
 
-## Communities (107 total, 21 thin omitted)
+## Communities (109 total, 22 thin omitted)
 
 ### Community 1 - "Mod Initialization"
 Cohesion: 0.67
 Nodes (3): [1.1.2] - 2026-08-08, Fix, Technical
 
 ### Community 2 - "Item Data Management"
-Cohesion: 0.06
-Nodes (31): BlockItem, DeferredItem, Item, NotNull, ShovelItem, AnchorTomeItem, AoEMiningHandler, BreakBlockEvent (+23 more)
+Cohesion: 0.08
+Nodes (21): BlockItem, DeferredItem, Item, ShovelItem, AnchorTomeItem, Grade, GRADE_1, GRADE_2 (+13 more)
 
 ### Community 3 - "Grade System"
 Cohesion: 0.24
@@ -114,16 +120,16 @@ Cohesion: 0.06
 Nodes (32): DataComponentType, AoEMode, CUBIC, CUBIC_3, CUBIC_5, DISABLED, FLAT, FLAT_3 (+24 more)
 
 ### Community 5 - "Tool Materials"
-Cohesion: 0.13
-Nodes (19): Identifier, Block, BlockPos, BlockState, ItemStack, Level, Player, LogSearchNode (+11 more)
+Cohesion: 0.10
+Nodes (25): Component, Identifier, AoEMiningHandler, BreakBlockEvent, ItemTooltipEvent, RightClickItem, SubscribeEvent, Block (+17 more)
 
 ### Community 6 - "Data Components"
 Cohesion: 0.05
 Nodes (42): Anclaje vertical para patrones de 5 de alto (5×5×1 / 5×5×5), Assets reutilizados (con permiso) de Occultism, Chunk Anchor + Anchor Tome (chunk loading), Chunk loading, Clic izquierdo vs. clic derecho (grados 2 y 4) — confirmado, Concepto, Configuración y compatibilidad con Configured, Creative tab (+34 more)
 
 ### Community 7 - "Client-Side Workhand Tools"
-Cohesion: 0.09
-Nodes (24): AABB, Camera, Component, LoggingIn, LoggingOut, Matrix4fc, ResourceKey, BoxHandler (+16 more)
+Cohesion: 0.08
+Nodes (28): AABB, Camera, LoggingIn, LoggingOut, Matrix4fc, NotNull, ResourceKey, BoxHandler (+20 more)
 
 ### Community 8 - "Configuration Management"
 Cohesion: 0.22
@@ -151,7 +157,7 @@ Nodes (7): CurseForge — Variables del proyecto, Nota, Proyecto, Rama, Tag, Tok
 
 ### Community 17 - "Changelog — Workhand Tools"
 Cohesion: 0.12
-Nodes (16): [1.0.0] - 2026-08-07, [1.10.1] - 2026-08-12, [1.13.0] - 2026-08-17, [1.14.0] - 2026-08-19, [1.14.2] - 2026-08-19, [1.16.1] - 2026-08-20, [1.4.0] - 2026-08-09, [1.8.0] - 2026-08-11 (+8 more)
+Nodes (16): [1.0.0] - 2026-08-07, [1.11.0] - 2026-08-14, [1.12.1] - 2026-08-14, [1.13.1] - 2026-08-18, [1.14.2] - 2026-08-19, [1.2.0] - 2026-08-08, [1.2.2] - 2026-08-08, [1.6.0] - 2026-08-10 (+8 more)
 
 ### Community 18 - "Workhand Tools"
 Cohesion: 0.13
@@ -242,24 +248,24 @@ Cohesion: 0.50
 Nodes (4): [1.18.0] - 2026-08-21, Change, Feature, Fix
 
 ## Knowledge Gaps
-- **197 isolated node(s):** `CUBIC`, `FLAT`, `DISABLED`, `FLAT_3`, `CUBIC_3` (+192 more)
+- **198 isolated node(s):** `CUBIC`, `FLAT`, `DISABLED`, `FLAT_3`, `CUBIC_3` (+193 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **21 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **22 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `TextColor` connect `TextColor` to `Grade`?**
-  _High betweenness centrality (0.077) - this node is a cross-community bridge._
+  _High betweenness centrality (0.076) - this node is a cross-community bridge._
 - **Why does `ChunkAnchorBlockEntity` connect `MeasurementBox` to `[1.7.0] - 2026-08-11`, `[1.2.0] - 2026-08-08`?**
-  _High betweenness centrality (0.053) - this node is a cross-community bridge._
-- **Why does `AoEMode` connect `AoE Mode` to `Item Data Management`, `Grade System`?**
+  _High betweenness centrality (0.052) - this node is a cross-community bridge._
+- **Why does `AoEMode` connect `AoE Mode` to `Grade System`, `Tool Materials`?**
   _High betweenness centrality (0.048) - this node is a cross-community bridge._
 - **What connects `CUBIC`, `FLAT`, `DISABLED` to the rest of the system?**
-  _197 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _198 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Item Data Management` be split into smaller, more focused modules?**
-  _Cohesion score 0.055051421657592255 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07682926829268293 - nodes in this community are weakly interconnected._
 - **Should `AoE Mode` be split into smaller, more focused modules?**
   _Cohesion score 0.06463414634146342 - nodes in this community are weakly interconnected._
 - **Should `Tool Materials` be split into smaller, more focused modules?**
-  _Cohesion score 0.1282051282051282 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09608843537414966 - nodes in this community are weakly interconnected._
