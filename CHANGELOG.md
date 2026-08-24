@@ -1,6 +1,15 @@
 # Changelog — Workhand Tools
 
 
+## [1.21.1] - 2026-08-24
+
+### Fix
+
+- **Compound tree felling was clearing adjacent trees**: the axe's Compound felling mode used a flood-fill that could cross leaf gaps with no limit (`maxLeafDistanceFromLog` defaulted to `-1`, unlimited), letting it jump from one tree's canopy into a neighboring tree of the same wood type and fell it too. Default is now `2` consecutive leaf blocks — enough to cross a diagonal branch or offset canopy within the same tree, not enough to reach a separately planted tree nearby.
+- **Chunk Anchor border was visible from unlimited distance**: in the default `ALWAYS` border mode, the corner-outline renderer used an unbounded max distance instead of the client's actual render distance, so the 384-block-tall corner lines stayed visible far beyond where anything else would render. Now capped to the player's effective render distance (respects server-side render distance caps too).
+- **Guide book had corrupted/invalid content**: `entries/pickaxes.json` and `entries/shovels.json` (both en_us and es_es) each contained two JSON objects concatenated without a separator (the category's main entry directly followed by the Kennestroyer entry, no comma/brackets) — invalid JSON that could not be parsed. Split into separate valid files (`kennestroyer_pickaxe.json`, `kennestroyer_shovel.json`).
+- **Guide book recipe grade labels were swapped**: crafting pages for Advanced (Grade 2) and Expert (Grade 3) pickaxes/shovels had their grade numbers exchanged (e.g. "Advanced Pickaxe (Grade 3)" instead of Grade 2); Vein-Mining Pickaxe pages had Advanced/Professional swapped entirely (Grade 2 shown as 4 and vice versa). Corrected across en_us and es_es.
+
 ## [1.21.0] - 2026-08-23
 
 ### Feature

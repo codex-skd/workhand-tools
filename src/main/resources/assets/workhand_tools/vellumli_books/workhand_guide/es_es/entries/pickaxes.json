@@ -30,17 +30,17 @@
     {
       "type": "vellumli:crafting",
       "recipe": "workhand_tools:stone_workhand_advanced_pickaxe",
-      "title": "Pico Workhand Avanzado de Piedra (Grado 3)"
+      "title": "Pico Workhand Avanzado de Piedra (Grado 2)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:stone_workhand_expert_pickaxe",
+      "title": "Pico Workhand Experto de Piedra (Grado 3)"
     },
     {
       "type": "vellumli:crafting",
       "recipe": "workhand_tools:stone_workhand_professional_pickaxe",
       "title": "Pico Workhand Profesional de Piedra (Grado 4)"
-    },
-    {
-      "type": "vellumli:crafting",
-      "recipe": "workhand_tools:stone_workhand_expert_pickaxe",
-      "title": "Pico Workhand Experto de Piedra (Grado 2)"
     },
     {
       "type": "vellumli:crafting",
@@ -50,7 +50,12 @@
     {
       "type": "vellumli:crafting",
       "recipe": "workhand_tools:iron_workhand_advanced_pickaxe",
-      "title": "Pico Workhand Avanzado de Hierro (Grado 3)"
+      "title": "Pico Workhand Avanzado de Hierro (Grado 2)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:iron_workhand_expert_pickaxe",
+      "title": "Pico Workhand Experto de Hierro (Grado 3)"
     },
     {
       "type": "vellumli:crafting",
@@ -59,18 +64,13 @@
     },
     {
       "type": "vellumli:crafting",
-      "recipe": "workhand_tools:iron_workhand_expert_pickaxe",
-      "title": "Pico Workhand Experto de Hierro (Grado 2)"
+      "recipe": "workhand_tools:iron_workhand_advanced_improved_pickaxe",
+      "title": "Pico Workhand Avanzado Mejorado de Hierro (Grado 2+)"
     },
     {
       "type": "vellumli:crafting",
       "recipe": "workhand_tools:iron_workhand_professional_improved_pickaxe",
       "title": "Pico Workhand Profesional Mejorado de Hierro (Grado 4+)"
-    },
-    {
-      "type": "vellumli:crafting",
-      "recipe": "workhand_tools:iron_workhand_advanced_improved_pickaxe",
-      "title": "Pico Workhand Avanzado Mejorado de Hierro (Grado 3+)"
     },
     {
       "type": "vellumli:crafting",
@@ -80,7 +80,12 @@
     {
       "type": "vellumli:crafting",
       "recipe": "workhand_tools:diamond_workhand_advanced_pickaxe",
-      "title": "Pico Workhand Avanzado de Diamante (Grado 3)"
+      "title": "Pico Workhand Avanzado de Diamante (Grado 2)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:diamond_workhand_expert_pickaxe",
+      "title": "Pico Workhand Experto de Diamante (Grado 3)"
     },
     {
       "type": "vellumli:crafting",
@@ -89,54 +94,13 @@
     },
     {
       "type": "vellumli:crafting",
-      "recipe": "workhand_tools:diamond_workhand_expert_pickaxe",
-      "title": "Pico Workhand Experto de Diamante (Grado 2)"
+      "recipe": "workhand_tools:diamond_workhand_advanced_improved_pickaxe",
+      "title": "Pico Workhand Avanzado Mejorado de Diamante (Grado 2+)"
     },
     {
       "type": "vellumli:crafting",
       "recipe": "workhand_tools:diamond_workhand_professional_improved_pickaxe",
       "title": "Pico Workhand Profesional Mejorado de Diamante (Grado 4+)"
-    },
-    {
-      "type": "vellumli:crafting",
-      "recipe": "workhand_tools:diamond_workhand_advanced_improved_pickaxe",
-      "title": "Pico Workhand Avanzado Mejorado de Diamante (Grado 3+)"
-    }
-  ]
-}
-{
-  "name": "Pico Kennestroyer",
-  "icon": "workhand_tools:kennestroyer_pickaxe",
-  "category": "workhand_tools:pickaxes",
-  "pages": [
-    {
-      "type": "vellumli:text",
-      "text": "El Pico Kennestroyer es la herramienta de minería definitiva, fabricada con Netherita, Bloques de Diamante, Obsidiana y los mejores Picos Workhand Mejorados de Diamante. Combina todos los modos de minería en una sola herramienta con Minería de Veta integrada."
-    },
-    {
-      "type": "vellumli:text",
-      "title": "Progresión de Modos (Clic derecho para ciclar)",
-      "text": "$(bold)Desactivado$(): Sin minado en área\n$(bold)Rango 3 Plano$(): área 3x3x1 (una sola capa)\n$(bold)Rango 3 Cúbico$(): área 3x3x3 cúbica\n$(bold)Rango 5 Plano$(): área 5x5x1 (una sola capa)\n$(bold)Rango 5 Cúbico$(): área 5x5x5 cúbica"
-    },
-    {
-      "type": "vellumli:text",
-      "title": "Minería de Veta",
-      "text": "Al romper un bloque de mineral, todos los bloques conectados del mismo tipo se minan automáticamente en cadena, hasta un máximo de 128 bloques. Funciona independientemente de si estás agachado."
-    },
-    {
-      "type": "vellumli:text",
-      "title": "Controles",
-      "text": "$(bold)Clic izquierdo$(): Minado en área + minería de veta (sin agacharse)\n$(bold)Shift + Clic izquierdo$(): Minado de un solo bloque\n$(bold)Clic derecho$(): Cicla entre los 5 modos"
-    },
-    {
-      "type": "vellumli:text",
-      "title": "Estadísticas",
-      "text": "Durabilidad: 50,000\nVelocidad de minado: 12.0\nDaño de ataque: +4\nEncantabilidad: 15\nReparación: Lingotes de Netherita"
-    },
-    {
-      "type": "vellumli:crafting",
-      "recipe": "workhand_tools:kennestroyer_pickaxe",
-      "title": "Pico Kennestroyer"
     }
   ]
 }

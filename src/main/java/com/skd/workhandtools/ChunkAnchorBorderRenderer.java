@@ -49,7 +49,16 @@ public final class ChunkAnchorBorderRenderer {
 
         Config.ChunkAnchorBorderMode mode = Config.CHUNK_ANCHOR_BORDER_MODE.get();
         BlockPos playerPos = player.blockPosition();
-        double maxDistSq = mode == Config.ChunkAnchorBorderMode.ALWAYS ? Double.MAX_VALUE : 400.0; // 20^2
+        double maxDistSq;
+        if (mode == Config.ChunkAnchorBorderMode.ALWAYS) {
+            // "within render distance" per the config comment, not literally unlimited - the corner
+            // lines are 384 blocks tall (minY..maxY), so without this cap they stay visible far past
+            // where terrain/fog would normally hide anything else at that position.
+            double renderDistanceBlocks = mc.options.getEffectiveRenderDistance() * 16.0;
+            maxDistSq = renderDistanceBlocks * renderDistanceBlocks;
+        } else {
+            maxDistSq = 400.0; // 20^2
+        }
 
         for (ChunkAnchorBlockEntity anchor : CLIENT_ANCHORS) {
             // Same reasoning as ChunkAnchorRenderer: read HAS_TOME off the synced BlockState, not
