@@ -15,8 +15,8 @@
     "semantic_hash": "58a5df05c6546d7d2671a516793e02e7"
   },
   "src/main/java/com/skd/workhandtools/AoEMiningHandler.java": {
-    "mtime": 1787499787.096305,
-    "ast_hash": "1503f00c003107d820940bd71f426b43",
+    "mtime": 1787649242.2099907,
+    "ast_hash": "40d72fd71352f99e0299dfa21858125d",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/AoEMode.java": {
@@ -40,13 +40,13 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/ModItems.java": {
-    "mtime": 1787499737.3961768,
-    "ast_hash": "834afc709108cf6e7223f61f46db7cc1",
+    "mtime": 1787647179.5295,
+    "ast_hash": "2529092b0835c40f6dddce23f93a2d66",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/ModToolMaterials.java": {
-    "mtime": 1787499559.802026,
-    "ast_hash": "7861fb7cc73112c461d1351c84543408",
+    "mtime": 1787647101.293477,
+    "ast_hash": "e2aa36c602fd5edc94690d1abb6a7a88",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandTools.java": {
@@ -60,8 +60,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/en_us.json": {
-    "mtime": 1787499950.168278,
-    "ast_hash": "691f177a9ed530146e10d48681d3e8a0",
+    "mtime": 1787649207.4408479,
+    "ast_hash": "446de754f8f0a6c75f6522ef5aee44dd",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/models/item/diamond_workhand_advanced_pickaxe.json": {
@@ -190,28 +190,28 @@
     "semantic_hash": ""
   },
   "src/main/resources/data/minecraft/tags/item/enchantable/durability.json": {
-    "mtime": 1786354084.331364,
-    "ast_hash": "3cdaa81509995087e7f600748f54e0c0",
+    "mtime": 1787647193.3568218,
+    "ast_hash": "fa7957299fd3a2d2a9f14f7e169615fc",
     "semantic_hash": ""
   },
   "src/main/resources/data/minecraft/tags/item/enchantable/mining.json": {
-    "mtime": 1786354090.6549041,
-    "ast_hash": "3cdaa81509995087e7f600748f54e0c0",
+    "mtime": 1787647201.4157865,
+    "ast_hash": "fa7957299fd3a2d2a9f14f7e169615fc",
     "semantic_hash": ""
   },
   "src/main/resources/data/minecraft/tags/item/enchantable/mining_loot.json": {
-    "mtime": 1786354096.9701774,
-    "ast_hash": "3cdaa81509995087e7f600748f54e0c0",
+    "mtime": 1787647203.0278766,
+    "ast_hash": "fa7957299fd3a2d2a9f14f7e169615fc",
     "semantic_hash": ""
   },
   "src/main/resources/data/minecraft/tags/item/enchantable/vanishing.json": {
-    "mtime": 1786354103.4471602,
-    "ast_hash": "3cdaa81509995087e7f600748f54e0c0",
+    "mtime": 1787647204.8630373,
+    "ast_hash": "fa7957299fd3a2d2a9f14f7e169615fc",
     "semantic_hash": ""
   },
   "src/main/resources/data/minecraft/tags/item/pickaxes.json": {
-    "mtime": 1786354069.648383,
-    "ast_hash": "86a4f032c3c5af11478ba2c09212a175",
+    "mtime": 1787647190.7122645,
+    "ast_hash": "700719aef77d87198acf34e44aa97acb",
     "semantic_hash": ""
   },
   "src/main/resources/data/minecraft/tags/item/shovels.json": {
@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787646386.3044214,
-    "ast_hash": "2b544326cad75a99c39639bf95a5895e",
+    "mtime": 1787649276.0962143,
+    "ast_hash": "b66e628d6594fbdab23bf57cc472a7d3",
     "semantic_hash": ""
   },
   "README.md": {
@@ -395,8 +395,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_WORKHAND_TOOLS_26-2.md": {
-    "mtime": 1787646446.4707942,
-    "ast_hash": "3404dd9181b295a78b421ab040ad5886",
+    "mtime": 1787649320.8214781,
+    "ast_hash": "8d13325143e77bfab206a5ece5a9ddce",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -745,8 +745,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/es_es.json": {
-    "mtime": 1787499981.7707717,
-    "ast_hash": "b8beabf0e7593fe222443191d7ec6715",
+    "mtime": 1787649211.442591,
+    "ast_hash": "501b92e4893dc982882b3ab77c95ef1a",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/fr_fr.json": {
@@ -1537,6 +1537,36 @@
   "src/main/resources/assets/workhand_tools/textures/item/reinforced_deepslate_pickaxe.png": {
     "mtime": 1787643086.0318556,
     "ast_hash": "ede61a880d35590be0adcd8a4b3d97a2",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/ReinforcedDeepslatePickaxeItem.java": {
+    "mtime": 1787647122.1820836,
+    "ast_hash": "38adea382d647b7de206094978527c01",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/vellumli_books/workhand_guide/en_us/entries/reinforced_deepslate_pickaxe.json": {
+    "mtime": 1787647234.1762514,
+    "ast_hash": "db0f48a77a639dcca7258c74eda816e7",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/vellumli_books/workhand_guide/es_es/entries/reinforced_deepslate_pickaxe.json": {
+    "mtime": 1787647239.3718135,
+    "ast_hash": "6e69e896aa56b88c63375a733edf557c",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/minecraft/loot_table/blocks/reinforced_deepslate.json": {
+    "mtime": 1787647449.846459,
+    "ast_hash": "a06d54b8391cf87673fd310ed8924658",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/workhand_tools/recipe/reinforced_deepslate_pickaxe.json": {
+    "mtime": 1787647214.1007514,
+    "ast_hash": "8c567ac103d8d2c62ff946ee206d6d24",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.22.0.md": {
+    "mtime": 1787649282.1083376,
+    "ast_hash": "d8cad064df7d551cbdb9a7b91e0965b0",
     "semantic_hash": ""
   }
 }

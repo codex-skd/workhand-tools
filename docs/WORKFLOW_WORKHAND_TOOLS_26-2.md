@@ -15,8 +15,8 @@
 | Versiones de Minecraft | `26.2` |
 | Rama | `minecraft/26.2/neoforge-26.2.0.57/production` |
 
-| Última versión publicada | `1.21.2` (CurseForge file ID 8729766) |
-| Estado | ✅ Release estable 1.21.2 (1.21.1 tenía un crash crítico de arranque, corregido) |
+| Última versión publicada | `1.22.0` (CurseForge file ID 8730032) |
+| Estado | ✅ Release estable 1.22.0 — añade Reinforced Deepslate Pickaxe + fix del ciclo de modos del Kennestroyer |
 
 ### Notas específicas de este mod
 
