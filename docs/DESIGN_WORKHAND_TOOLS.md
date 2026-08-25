@@ -381,14 +381,14 @@ En vanilla, `reinforced_deepslate` tiene hardness 55 (la más alta del juego), e
 ### Comportamiento del pico
 
 - **Contra `minecraft:reinforced_deepslate`**: velocidad de minado altísima — override Java de `getDestroySpeed`/lógica de mina equivalente, calibrada para que el tiempo de rotura sea comparable al de un pico de diamante contra piedra normal (referencia: diamante especifica speed 8.0, piedra hardness 1.5 → ~0.28s con herramienta correcta; a hardness 55 hace falta una velocidad efectiva ~293 para igualar ese tiempo). Eficiencia se suma encima de forma normal (bonus aditivo de la lógica vanilla de minado), Fortuna/Toque de Seda no tienen efecto práctico porque el drop ya es 1:1 fijo vía loot table.
-- **Contra cualquier otro bloque**: se comporta como si no tuviera la herramienta correcta — velocidad base, sin bonus de drop. No es un pico de netherite de propósito general.
+- **Contra cualquier otro bloque**: velocidad de minado 0 — el progreso de rotura nunca avanza, por lo que en survival es literalmente imposible romper ningún otro bloque con este pico (en creativo rompe instantáneo igualmente, como cualquier item). No es un pico de netherite de propósito general.
 - **Sin minado en área ni vena minera**: siempre rompe de 1 en 1, sea cual sea el grado del jugador o el modo — no participa del sistema `Grade`/`AoEMiningHandler`.
 - **Encantamientos**: tags completos `#minecraft:pickaxes` + las 4 tags `enchantable/*` (durability, mining, mining_loot, vanishing), igual que el resto del mod — sin restricción especial.
 - **Material**: propio, durabilidad 50.000 (mismo orden de magnitud que Kennestroyer, dado el coste de crafteo).
 
 ### Obtención del bloque — loot table custom
 
-`reinforced_deepslate` sigue sin dropear nada por defecto. Se añade una loot table custom (`data/minecraft/loot_tables/blocks/reinforced_deepslate.json`, override del namespace vanilla) que hace dropear el bloque **únicamente** cuando se rompe con `workhand_tools:diamond_workhand_professional_improved_pickaxe` (match_tool condicionado a ese item exacto) — no con diamante/netherite en general. Esto evita la circularidad de necesitar el pico nuevo (que aún no existe) para conseguir su propio ingrediente: el pico usado para obtener el bloque ya existe de antes en el mod.
+`reinforced_deepslate` sigue sin dropear nada por defecto. Se añade una loot table custom (`data/minecraft/loot_tables/blocks/reinforced_deepslate.json`, override del namespace vanilla) que hace dropear el bloque cuando se rompe con `workhand_tools:diamond_workhand_professional_improved_pickaxe` **o** con `workhand_tools:reinforced_deepslate_pickaxe` (match_tool condicionado a esos 2 items exactos) — no con diamante/netherite en general. El primero resuelve la circularidad de necesitar el pico nuevo (que aún no existe la primera vez) para conseguir su propio ingrediente; el segundo permite seguir obteniendo el bloque una vez ya se tiene el Reinforced Deepslate Pickaxe (su propósito es precisamente ese bloque, tendría poco sentido que no diera el drop él mismo).
 
 ### Receta (confirmada)
 

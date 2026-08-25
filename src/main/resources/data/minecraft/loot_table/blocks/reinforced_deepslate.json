@@ -13,7 +13,7 @@
         {
           "condition": "minecraft:match_tool",
           "predicate": {
-            "items": ["workhand_tools:diamond_workhand_professional_improved_pickaxe"]
+            "items": ["workhand_tools:diamond_workhand_professional_improved_pickaxe", "workhand_tools:reinforced_deepslate_pickaxe"]
           }
         }
       ]

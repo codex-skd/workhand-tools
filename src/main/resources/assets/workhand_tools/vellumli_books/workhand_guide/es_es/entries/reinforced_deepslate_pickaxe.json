@@ -10,17 +10,17 @@
     {
       "type": "vellumli:text",
       "title": "Cómo Funciona",
-      "text": "Este pico ha sido diseñado para romper bloques de Pizarra Profunda Reforzada a la misma velocidad que un Pico de Diamante rompe piedra regular. Contra cualquier otro bloque, se comporta como una mano desnuda — minado extremadamente lento sin bonificación de herramienta correcta."
+      "text": "Este pico ha sido diseñado para romper bloques de Pizarra Profunda Reforzada a la misma velocidad que un Pico de Diamante rompe piedra regular. Contra cualquier otro bloque, no puede minar en absoluto en Supervivencia — el progreso de rotura nunca avanza, sin importar cuánto tiempo lo mantengas."
     },
     {
       "type": "vellumli:text",
       "title": "Requisito de Fabricación",
-      "text": "Para fabricar este pico, primero necesitas obtener un bloque de Pizarra Profunda Reforzada. En Minecraft vanilla, estos bloques no sueltan nada al ser rotos. Este mod añade una sobreescritura especial: romper un bloque de Pizarra Profunda Reforzada con un Pico Workhand Profesional Mejorado de Diamante soltará el bloque mismo."
+      "text": "Para fabricar este pico, primero necesitas obtener un bloque de Pizarra Profunda Reforzada. En Minecraft vanilla, estos bloques no sueltan nada al ser rotos. Este mod añade una sobreescritura especial: romper un bloque de Pizarra Profunda Reforzada con un Pico Workhand Profesional Mejorado de Diamante — o con este mismo pico una vez ya tengas uno — soltará el bloque."
     },
     {
       "type": "vellumli:text",
       "title": "Estadísticas",
-      "text": "Durabilidad: 50,000\nVelocidad de minado (Pizarra Profunda Reforzada): ~293\nVelocidad de minado (otros bloques): 1.0\nDaño de ataque: +4\nEncantabilidad: 15\nReparación: Lingotes de Netherita"
+      "text": "Durabilidad: 50,000\nVelocidad de minado (Pizarra Profunda Reforzada): ~293\nVelocidad de minado (otros bloques): 0 (no puede minar)\nDaño de ataque: +4\nEncantabilidad: 15\nReparación: Lingotes de Netherita"
     },
     {
       "type": "vellumli:crafting",
