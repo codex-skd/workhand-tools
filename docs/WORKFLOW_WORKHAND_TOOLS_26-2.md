@@ -15,8 +15,8 @@
 | Versiones de Minecraft | `26.2` |
 | Rama | `minecraft/26.2/neoforge-26.2.0.57/production` |
 
-| Última versión publicada | `1.22.1` (CurseForge file ID 8730058) |
-| Estado | ✅ Release estable 1.22.1 — fix de recetas Kennestroyer inutilizables (1.22.0 tenía las 2 recetas rotas, corregido) |
+| Última versión publicada | `1.22.2` (CurseForge file ID 8730247) |
+| Estado | ✅ Release estable 1.22.2 — fix de texturas del Kennestroyer ausentes (Pico y Pala mostraban el cuadriculado "missing texture") |
 
 ### Notas específicas de este mod
 

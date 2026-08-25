@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787649713.2631438,
-    "ast_hash": "9c5a47ba1e0f14af0913a2b18b3dad85",
+    "mtime": 1787652531.0990903,
+    "ast_hash": "ce687038057bd537f387263edd634deb",
     "semantic_hash": ""
   },
   "README.md": {
@@ -380,8 +380,8 @@
     "semantic_hash": ""
   },
   "docs/ASSET_LIST_WORKHAND_TOOLS.md": {
-    "mtime": 1787643118.00886,
-    "ast_hash": "2af0576fba2a729ba4e2ca9c31af717a",
+    "mtime": 1787652502.5212831,
+    "ast_hash": "03a5b3000a847c2c10771bea7df399f0",
     "semantic_hash": ""
   },
   "docs/ASSET_PROMPTS_WORKHAND_TOOLS.md": {
@@ -395,8 +395,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_WORKHAND_TOOLS_26-2.md": {
-    "mtime": 1787649752.725513,
-    "ast_hash": "1454dd0bcd964cbe7a85654379816b8f",
+    "mtime": 1787652577.2851477,
+    "ast_hash": "e82e5b2e3c706f1d444a613a68748aaa",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -1572,6 +1572,41 @@
   "docs/curseforge/versions/1.22.1.md": {
     "mtime": 1787649717.344583,
     "ast_hash": "cbfd990ea2b6e12865a300e51598692d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/items/kennestroyer_pickaxe.json": {
+    "mtime": 1787652449.2297003,
+    "ast_hash": "aaa42ff19cfea4147633d4afde39b0a5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/items/kennestroyer_shovel.json": {
+    "mtime": 1787652451.7589796,
+    "ast_hash": "5a8051c7144770b293df9a313ba87672",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/models/item/kennestroyer_pickaxe.json": {
+    "mtime": 1787652438.605839,
+    "ast_hash": "c48889da01e39ef78703e592501f95f5",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/models/item/kennestroyer_shovel.json": {
+    "mtime": 1787652440.9738362,
+    "ast_hash": "33301472e445a763d59d978ae85664de",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.22.2.md": {
+    "mtime": 1787652535.1776662,
+    "ast_hash": "45579e60df76d0484fad42a49a115560",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/textures/item/kennestroyer_pickaxe.png": {
+    "mtime": 1787652435.8314967,
+    "ast_hash": "b1537fa76fa78e7876ba717b63c747c0",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/textures/item/kennestroyer_shovel.png": {
+    "mtime": 1787652435.899179,
+    "ast_hash": "c0124d11545b43d41dd3527a577368b5",
     "semantic_hash": ""
   }
 }
