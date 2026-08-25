@@ -1,6 +1,17 @@
 # Changelog — Workhand Tools
 
 
+## [1.22.0] - 2026-08-25
+
+### Feature
+
+- **Reinforced Deepslate Pickaxe**: a standalone pickaxe that mines Reinforced Deepslate at very high speed (equivalent to how fast a Diamond Pickaxe breaks stone) but is otherwise a non-functional pickaxe that cannot efficiently mine any other block. Crafted from Netherite Ingots, a Diamond Workhand Professional Improved Pickaxe, and a Reinforced Deepslate block.
+- **Reinforced Deepslate loot table override**: Reinforced Deepslate now drops itself when broken with a Diamond Workhand Professional Improved Pickaxe specifically (not any other tool), enabling the crafting loop for the new pickaxe.
+
+### Fix
+
+- **Kennestroyer pickaxe/shovel mode cycle looked incomplete**: a freshly crafted Kennestroyer defaulted to a leftover two-state `CUBIC` value instead of `DISABLED`, so the first right-click silently landed back on the 5x5x5 mode instead of starting the cycle, and the action-bar/tooltip message only ever said generic "Mode: Cubic"/"Mode: Flat" without indicating size — making the 5 real modes (Disabled, 3x3x1, 3x3x3, 5x5x1, 5x5x5) look like fewer than 5. Default is now `DISABLED`, and mode feedback shows the exact area (e.g. "Mode: 3x3x1") for each of the 5 states.
+
 ## [1.21.2] - 2026-08-25
 
 ### Fix

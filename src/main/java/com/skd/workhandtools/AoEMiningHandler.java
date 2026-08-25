@@ -35,7 +35,7 @@ public class AoEMiningHandler {
             return;
         }
 
-        AoEMode mode = stack.getOrDefault(ModDataComponents.AOE_MODE, grade.hasMode() ? AoEMode.CUBIC : AoEMode.FLAT);
+        AoEMode mode = stack.getOrDefault(ModDataComponents.AOE_MODE, defaultModeFor(grade));
         if (mode == AoEMode.DISABLED) {
             return;
         }
@@ -82,7 +82,7 @@ public class AoEMiningHandler {
             return;
         }
 
-        AoEMode current = stack.getOrDefault(ModDataComponents.AOE_MODE, grade.hasMode() ? AoEMode.CUBIC : AoEMode.FLAT);
+        AoEMode current = stack.getOrDefault(ModDataComponents.AOE_MODE, defaultModeFor(grade));
         AoEMode next;
         if (grade == Grade.KENNESTROYER) {
             // 5 modes: DISABLED -> FLAT_3 -> CUBIC_3 -> FLAT_5 -> CUBIC_5 -> DISABLED
@@ -92,7 +92,7 @@ public class AoEMiningHandler {
                 case CUBIC_3 -> next = AoEMode.FLAT_5;
                 case FLAT_5 -> next = AoEMode.CUBIC_5;
                 case CUBIC_5 -> next = AoEMode.DISABLED;
-                default -> next = AoEMode.CUBIC_5;
+                default -> next = AoEMode.DISABLED;
             }
         } else if (grade.hasMode()) {
             if (current == AoEMode.DISABLED) {
@@ -107,15 +107,7 @@ public class AoEMiningHandler {
         }
         stack.set(ModDataComponents.AOE_MODE, next);
         if (player instanceof ServerPlayer serverPlayer) {
-            String messageKey;
-            if (next == AoEMode.CUBIC || next == AoEMode.CUBIC_3 || next == AoEMode.CUBIC_5) {
-                messageKey = "message.workhand_tools.mode.cubic";
-            } else if (next == AoEMode.FLAT || next == AoEMode.FLAT_3 || next == AoEMode.FLAT_5) {
-                messageKey = "message.workhand_tools.mode.flat";
-            } else {
-                messageKey = "message.workhand_tools.mode.disabled";
-            }
-            serverPlayer.sendSystemMessage(Component.translatable(messageKey), true);
+            serverPlayer.sendSystemMessage(Component.translatable(modeMessageKey(next)), true);
         }
         player.swing(event.getHand());
         event.setCanceled(true);
@@ -129,27 +121,41 @@ public class AoEMiningHandler {
             return;
         }
 
-        AoEMode mode = stack.getOrDefault(ModDataComponents.AOE_MODE, grade.hasMode() ? AoEMode.CUBIC : AoEMode.FLAT);
+        AoEMode mode = stack.getOrDefault(ModDataComponents.AOE_MODE, defaultModeFor(grade));
         if (mode == AoEMode.DISABLED) {
             event.getToolTip().add(Component.translatable("tooltip.workhand_tools.mode.disabled").withStyle(ChatFormatting.GRAY));
             event.getToolTip().add(Component.translatable("tooltip.workhand_tools.right_click"));
         } else {
             event.getToolTip().add(Component.translatable(areaKey(grade, mode)).withStyle(ChatFormatting.GOLD));
             if (grade.hasMode()) {
-                String modeMessage;
-                if (mode == AoEMode.CUBIC || mode == AoEMode.CUBIC_3 || mode == AoEMode.CUBIC_5) {
-                    modeMessage = "message.workhand_tools.mode.cubic";
-                } else if (mode == AoEMode.FLAT || mode == AoEMode.FLAT_3 || mode == AoEMode.FLAT_5) {
-                    modeMessage = "message.workhand_tools.mode.flat";
-                } else {
-                    modeMessage = "message.workhand_tools.mode.disabled";
-                }
-                event.getToolTip().add(Component.translatable(modeMessage).withStyle(ChatFormatting.GRAY));
+                event.getToolTip().add(Component.translatable(modeMessageKey(mode)).withStyle(ChatFormatting.GRAY));
             }
             event.getToolTip().add(Component.translatable("tooltip.workhand_tools.right_click"));
         }
 
         event.getToolTip().add(Component.translatable("tooltip.workhand_tools.hold_shift"));
+    }
+
+    // Kennestroyer's default (freshly crafted, no data component set yet) must be DISABLED so the
+    // right-click cycle starts at the beginning (DISABLED -> FLAT_3 -> ... -> CUBIC_5). Grade 2/4
+    // tools keep their existing default of CUBIC (only two real states, Cubic/Flat).
+    private static AoEMode defaultModeFor(Grade grade) {
+        if (grade == Grade.KENNESTROYER) {
+            return AoEMode.DISABLED;
+        }
+        return grade.hasMode() ? AoEMode.CUBIC : AoEMode.FLAT;
+    }
+
+    private static String modeMessageKey(AoEMode mode) {
+        return switch (mode) {
+            case CUBIC -> "message.workhand_tools.mode.cubic";
+            case FLAT -> "message.workhand_tools.mode.flat";
+            case FLAT_3 -> "message.workhand_tools.mode.flat_3";
+            case CUBIC_3 -> "message.workhand_tools.mode.cubic_3";
+            case FLAT_5 -> "message.workhand_tools.mode.flat_5";
+            case CUBIC_5 -> "message.workhand_tools.mode.cubic_5";
+            case DISABLED -> "message.workhand_tools.mode.disabled";
+        };
     }
 
     private static String areaKey(Grade grade, AoEMode mode) {
