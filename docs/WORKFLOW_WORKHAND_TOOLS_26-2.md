@@ -15,8 +15,8 @@
 | Versiones de Minecraft | `26.2` |
 | Rama | `minecraft/26.2/neoforge-26.2.0.57/production` |
 
-| Última versión publicada | `1.22.2` (CurseForge file ID 8730247) |
-| Estado | ✅ Release estable 1.22.2 — fix de texturas del Kennestroyer ausentes (Pico y Pala mostraban el cuadriculado "missing texture") |
+| Última versión publicada | `1.22.3` (CurseForge file ID 8732543) |
+| Estado | ✅ Release estable 1.22.3 — fix de receta del Reinforced Deepslate Pickaxe (usaba lingotes de netherita en vez de bloques) |
 
 ### Notas específicas de este mod
 

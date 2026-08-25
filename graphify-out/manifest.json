@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787652531.0990903,
-    "ast_hash": "ce687038057bd537f387263edd634deb",
+    "mtime": 1787675231.8321939,
+    "ast_hash": "f29bb82afd496917e126aa79e0e23400",
     "semantic_hash": ""
   },
   "README.md": {
@@ -390,13 +390,13 @@
     "semantic_hash": ""
   },
   "docs/DESIGN_WORKHAND_TOOLS.md": {
-    "mtime": 1787644909.1333852,
-    "ast_hash": "6a7701f52edb9310e3dee9aaef43ef03",
+    "mtime": 1787675174.6846628,
+    "ast_hash": "a08ce0bc3f7f063e495ae580cd0fca32",
     "semantic_hash": ""
   },
   "docs/WORKFLOW_WORKHAND_TOOLS_26-2.md": {
-    "mtime": 1787652577.2851477,
-    "ast_hash": "e82e5b2e3c706f1d444a613a68748aaa",
+    "mtime": 1787675284.074901,
+    "ast_hash": "950d83efe3addd7236da033f6f781991",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -1560,8 +1560,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/data/workhand_tools/recipe/reinforced_deepslate_pickaxe.json": {
-    "mtime": 1787647214.1007514,
-    "ast_hash": "8c567ac103d8d2c62ff946ee206d6d24",
+    "mtime": 1787675121.7236443,
+    "ast_hash": "5f81576d476c4929d224fbc1a55dd3ed",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/1.22.0.md": {
@@ -1607,6 +1607,11 @@
   "src/main/resources/assets/workhand_tools/textures/item/kennestroyer_shovel.png": {
     "mtime": 1787652435.899179,
     "ast_hash": "c0124d11545b43d41dd3527a577368b5",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.22.3.md": {
+    "mtime": 1787675237.4097412,
+    "ast_hash": "cad6b040b7b71fa9178dc07965214c48",
     "semantic_hash": ""
   }
 }
