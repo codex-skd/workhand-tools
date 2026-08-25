@@ -1,6 +1,12 @@
 # Changelog — Workhand Tools
 
 
+## [1.21.2] - 2026-08-25
+
+### Fix
+
+- **Critical: the mod crashed on startup ("Bootstrap" error) for every player**, failing with `IllegalArgumentException: Method ... onLoadComplete ... has @SubscribeEvent annotation, but takes an argument that is not valid for this bus`. `onLoadComplete` listens for `FMLLoadCompleteEvent`, a mod-lifecycle event that is only valid on the mod event bus, but it was annotated `@SubscribeEvent` and swept up by `NeoForge.EVENT_BUS.register(this)` alongside `onServerStarting`, which only accepts game events. Fixed by registering `onLoadComplete` explicitly on the mod event bus (`modEventBus.addListener(...)`) instead of via the `@SubscribeEvent` scan on `NeoForge.EVENT_BUS`.
+
 ## [1.21.1] - 2026-08-24
 
 ### Fix
