@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787649276.0962143,
-    "ast_hash": "b66e628d6594fbdab23bf57cc472a7d3",
+    "mtime": 1787649713.2631438,
+    "ast_hash": "9c5a47ba1e0f14af0913a2b18b3dad85",
     "semantic_hash": ""
   },
   "README.md": {
@@ -395,8 +395,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_WORKHAND_TOOLS_26-2.md": {
-    "mtime": 1787649320.8214781,
-    "ast_hash": "8d13325143e77bfab206a5ece5a9ddce",
+    "mtime": 1787649752.725513,
+    "ast_hash": "1454dd0bcd964cbe7a85654379816b8f",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -1495,13 +1495,13 @@
     "semantic_hash": ""
   },
   "src/main/resources/data/workhand_tools/recipe/kennestroyer_pickaxe.json": {
-    "mtime": 1787499798.1564326,
-    "ast_hash": "ce04a8a1115826c487e8bdfb1587a6da",
+    "mtime": 1787649671.0165994,
+    "ast_hash": "0cb6de7d9e9570af260e89ddeb6ae7bd",
     "semantic_hash": ""
   },
   "src/main/resources/data/workhand_tools/recipe/kennestroyer_shovel.json": {
-    "mtime": 1787499802.7163746,
-    "ast_hash": "4c21e87558acc7e0eccfccdba581d55f",
+    "mtime": 1787649673.7418904,
+    "ast_hash": "4030415f270f0567d47655d098cff124",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/1.20.0.md": {
@@ -1567,6 +1567,11 @@
   "docs/curseforge/versions/1.22.0.md": {
     "mtime": 1787649282.1083376,
     "ast_hash": "d8cad064df7d551cbdb9a7b91e0965b0",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.22.1.md": {
+    "mtime": 1787649717.344583,
+    "ast_hash": "cbfd990ea2b6e12865a300e51598692d",
     "semantic_hash": ""
   }
 }
