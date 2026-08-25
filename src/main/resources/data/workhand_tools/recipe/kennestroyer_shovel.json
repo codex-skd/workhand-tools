@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "n d n",
-    "o B o",
-    "n D n"
+    "ndn",
+    "oBo",
+    "nDn"
   ],
   "key": {
     "n": "minecraft:netherite_ingot",
