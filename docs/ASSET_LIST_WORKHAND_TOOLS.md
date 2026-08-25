@@ -145,6 +145,8 @@ Los nombres de archivo y los nombres que se ven en el juego están en inglés (c
 
 **Item añadido tras el encargo original (fuera de los 31 anteriores)**: `reinforced_deepslate_pickaxe.png` — arte final ya aplicado (32×32 px, mismo tamaño real que el resto de picos/palas), textura recibida directamente del usuario. Item aún pendiente de implementación en código (ver `docs/DESIGN_WORKHAND_TOOLS.md`).
 
+**Gap detectado y corregido (2026-08-25)**: `kennestroyer_pickaxe.png` / `kennestroyer_shovel.png` — estos 2 items se implementaron en el commit `3a757a0` (Fase de Kennestroyer) sin textura, modelo de item ni definición de item (hueco que pasó desapercibido hasta que el usuario los probó en juego y aparecían con la textura "ausente" de Minecraft). Arte final recibido directamente del usuario y aplicado (32×32 px). No estaban listados en este documento — añadidos ahora a la tabla de catálogo de más abajo.
+
 <br>
 
 ## 📊 Catálogo completo — durabilidad y para qué vale cada herramienta
@@ -195,6 +197,13 @@ Las 32 herramientas/items del mod (arte final ya aplicado a las 31 primeras — 
 |---|---|---|:---:|---|
 | <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/iron_workhand_axe.png" width="32"> | Iron Workhand Axe | Hierro mejorado | 3750 | Tala de árboles activable con clic derecho: al romper un tronco, tala automáticamente todo el árbol conectado (hasta 256 bloques) |
 | <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/diamond_workhand_axe.png" width="32"> | Diamond Workhand Axe | Diamante mejorado | 23415 | Tala de árboles activable con clic derecho |
+
+### 💀⚡ Kennestroyer — herramientas definitivas (2)
+
+| Imagen | Nombre | Material | Durabilidad | Para qué vale |
+|---|---|---|:---:|---|
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/kennestroyer_pickaxe.png" width="32"> | Kennestroyer Pickaxe | Kennestroyer | 50.000 | 5 modos (Desactivado/3×3×1/3×3×3/5×5×1/5×5×5, clic derecho alterna) + vena minera integrada |
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/kennestroyer_shovel.png" width="32"> | Kennestroyer Shovel | Kennestroyer | 50.000 | 5 modos (Desactivado/3×3×1/3×3×3/5×5×1/5×5×5, clic derecho alterna) |
 
 ### 🪨⚡ Pico especial — Pizarra Profunda Reforzada (1)
 
