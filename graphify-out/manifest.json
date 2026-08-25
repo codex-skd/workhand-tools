@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandTools.java": {
-    "mtime": 1787492009.3189719,
-    "ast_hash": "657d8ec36aa7970737422ef6229b2505",
+    "mtime": 1787646304.3561504,
+    "ast_hash": "fcefd33e201ea5442b771ae9104715ca",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandToolsClient.java": {
@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787582250.1642048,
-    "ast_hash": "f5aee154d7ce2b5929eda526f3cdeecb",
+    "mtime": 1787646386.3044214,
+    "ast_hash": "2b544326cad75a99c39639bf95a5895e",
     "semantic_hash": ""
   },
   "README.md": {
@@ -380,8 +380,8 @@
     "semantic_hash": ""
   },
   "docs/ASSET_LIST_WORKHAND_TOOLS.md": {
-    "mtime": 1786540163.451075,
-    "ast_hash": "0606aa568ed8deed36e0818bdc3a9068",
+    "mtime": 1787643118.00886,
+    "ast_hash": "2af0576fba2a729ba4e2ca9c31af717a",
     "semantic_hash": ""
   },
   "docs/ASSET_PROMPTS_WORKHAND_TOOLS.md": {
@@ -390,13 +390,13 @@
     "semantic_hash": ""
   },
   "docs/DESIGN_WORKHAND_TOOLS.md": {
-    "mtime": 1787500825.129215,
-    "ast_hash": "d2e31cbb7f181221729fc8053d36ec78",
+    "mtime": 1787644909.1333852,
+    "ast_hash": "6a7701f52edb9310e3dee9aaef43ef03",
     "semantic_hash": ""
   },
   "docs/WORKFLOW_WORKHAND_TOOLS_26-2.md": {
-    "mtime": 1787582387.1671064,
-    "ast_hash": "a3e91cb7a9b22ab40053f8c75f875035",
+    "mtime": 1787646446.4707942,
+    "ast_hash": "3404dd9181b295a78b421ab040ad5886",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -1517,6 +1517,26 @@
   "docs/curseforge/versions/1.21.1.md": {
     "mtime": 1787582267.3881063,
     "ast_hash": "3521b263c9d9df978d224f710bed275d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/items/reinforced_deepslate_pickaxe.json": {
+    "mtime": 1787643101.1060727,
+    "ast_hash": "2ccbff86d63fa847d470211bcc561939",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/models/item/reinforced_deepslate_pickaxe.json": {
+    "mtime": 1787643098.9189732,
+    "ast_hash": "dffb97b54cf0f2d177dfa288b93dd326",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.21.2.md": {
+    "mtime": 1787646390.7801793,
+    "ast_hash": "56faf066f2881080bf24bd2f1c4110be",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/textures/item/reinforced_deepslate_pickaxe.png": {
+    "mtime": 1787643086.0318556,
+    "ast_hash": "ede61a880d35590be0adcd8a4b3d97a2",
     "semantic_hash": ""
   }
 }
