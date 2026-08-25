@@ -1,6 +1,13 @@
 # Changelog — Workhand Tools
 
 
+## [1.22.4] - 2026-08-25
+
+### Fix
+
+- **Reinforced Deepslate Pickaxe could still mine other blocks (slowly, with no drop)**: mining speed against non-target blocks was 1.0 (default speed), which meant Survival players could technically still break stone and other blocks with it, very slowly and without receiving the material. Now returns 0 speed against every block except Reinforced Deepslate, so mining progress never advances — the pickaxe is truly unable to break anything else in Survival.
+- **Reinforced Deepslate Pickaxe didn't drop the block when mining Reinforced Deepslate with itself**: the loot table override only recognized the Diamond Workhand Professional Improved Pickaxe (needed to break the circularity of crafting the very first one), so using the finished Reinforced Deepslate Pickaxe on its own target block dropped nothing. It's now also a valid tool in the loot table condition.
+
 ## [1.22.3] - 2026-08-25
 
 ### Fix

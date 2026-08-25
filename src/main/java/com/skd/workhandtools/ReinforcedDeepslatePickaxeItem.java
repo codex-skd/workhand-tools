@@ -20,7 +20,9 @@ public class ReinforcedDeepslatePickaxeItem extends Item {
         if (state.is(Blocks.REINFORCED_DEEPSLATE)) {
             return REINFORCED_DEEPSLATE_SPEED;
         }
-        return 1.0F;
+        // 0 speed means mining progress never advances, making every other block unbreakable
+        // with this pickaxe in Survival (Creative always breaks instantly regardless of speed).
+        return 0.0F;
     }
 
     @Override
