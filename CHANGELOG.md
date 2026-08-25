@@ -1,6 +1,12 @@
 # Changelog — Workhand Tools
 
 
+## [1.22.1] - 2026-08-25
+
+### Fix
+
+- **Kennestroyer recipes failed to load**: `kennestroyer_pickaxe.json` and `kennestroyer_shovel.json` used shaped-recipe patterns with spaces between key letters (e.g. `"n d n"`) for readability, but in Minecraft's shaped recipe format every character — including spaces — counts as one grid cell, so a 5-character row like `"n d n"` was parsed as 5 columns against a 3-wide crafting grid. Both recipes failed to load (`Invalid pattern: too many columns, 3 is maximum`), making the Kennestroyer Pickaxe and Shovel uncraftable. Fixed by removing the spaces (`"ndn"`, `"oBo"`, `"nDn"`) — the intended 3x3 layout is unchanged.
+
 ## [1.22.0] - 2026-08-25
 
 ### Feature
