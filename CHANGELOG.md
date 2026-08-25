@@ -1,6 +1,12 @@
 # Changelog — Workhand Tools
 
 
+## [1.22.2] - 2026-08-25
+
+### Fix
+
+- **Kennestroyer Pickaxe and Shovel had no item texture**: both items were added in a previous release without a texture, item model, or item definition file, so they rendered with Minecraft's "missing texture" checkerboard in the inventory and in the in-game guide book. Final art received and applied.
+
 ## [1.22.1] - 2026-08-25
 
 ### Fix
