@@ -51,6 +51,7 @@
   "item.workhand_tools.diamond_workhand_hoe": "Azada Workhand de Diamante",
   "item.workhand_tools.kennestroyer_pickaxe": "Pico Kennestroyer",
   "item.workhand_tools.kennestroyer_shovel": "Pala Kennestroyer",
+  "item.workhand_tools.reinforced_deepslate_pickaxe": "Pico de Pizarra Profunda Reforzada",
   "tooltip.workhand_tools.vein_mining": "§7Mineria de vetas activa",
   "message.workhand_tools.felling.disabled": "Tala de arboles: Desactivada",
   "message.workhand_tools.felling.simple": "Tala de arboles: Simple",

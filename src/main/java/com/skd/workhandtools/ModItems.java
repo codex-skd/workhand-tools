@@ -187,6 +187,11 @@ public final class ModItems {
             WorkhandTools.ITEMS.registerItem("kennestroyer_shovel",
                     KennestroyerShovelItem::new, () -> new Item.Properties());
 
+    // Reinforced Deepslate Pickaxe - single-purpose pickaxe
+    public static final DeferredItem<ReinforcedDeepslatePickaxeItem> REINFORCED_DEEPSLATE_PICKAXE =
+            WorkhandTools.ITEMS.registerItem("reinforced_deepslate_pickaxe",
+                    ReinforcedDeepslatePickaxeItem::new, () -> new Item.Properties().pickaxe(ModToolMaterials.REINFORCED_DEEPSLATE, 1.0F, -2.8F));
+
     // Tape Measure. Standalone utility tool (no Grade, not in PICKAXES/SHOVELS/AXES). Right-click
     // set/finish a measurement box, shift+right-click undo; see TapeMeasureItem/TapeMeasureHandler.
     public static final DeferredItem<TapeMeasureItem> TAPE_MEASURE =
@@ -211,7 +216,8 @@ public final class ModItems {
             IRON_WORKHAND_PROFESSIONAL_IMPROVED_PICKAXE,
             DIAMOND_WORKHAND_ADVANCED_IMPROVED_PICKAXE,
             DIAMOND_WORKHAND_PROFESSIONAL_IMPROVED_PICKAXE,
-            KENNESTROYER_PICKAXE
+            KENNESTROYER_PICKAXE,
+            REINFORCED_DEEPSLATE_PICKAXE
     );
 
     public static final List<DeferredHolder<Item, ? extends Item>> SHOVELS = List.of(
@@ -292,6 +298,7 @@ public final class ModItems {
         BY_ID.put("diamond_workhand_hoe", DIAMOND_WORKHAND_HOE);
         BY_ID.put("kennestroyer_pickaxe", KENNESTROYER_PICKAXE);
         BY_ID.put("kennestroyer_shovel", KENNESTROYER_SHOVEL);
+        BY_ID.put("reinforced_deepslate_pickaxe", REINFORCED_DEEPSLATE_PICKAXE);
 
         ITEM_GRADES.put(STONE_WORKHAND_PICKAXE.get(), Grade.GRADE_1);
         ITEM_GRADES.put(STONE_WORKHAND_ADVANCED_PICKAXE.get(), Grade.GRADE_2);

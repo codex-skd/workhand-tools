@@ -52,6 +52,7 @@
   "item.workhand_tools.diamond_workhand_hoe": "Diamond Workhand Hoe",
   "item.workhand_tools.kennestroyer_pickaxe": "Kennestroyer Pickaxe",
   "item.workhand_tools.kennestroyer_shovel": "Kennestroyer Shovel",
+  "item.workhand_tools.reinforced_deepslate_pickaxe": "Reinforced Deepslate Pickaxe",
   "tooltip.workhand_tools.vein_mining": "§7Vein Mining active",
   "message.workhand_tools.felling.disabled": "Tree Felling: Disabled",
   "message.workhand_tools.felling.simple": "Tree Felling: Simple",

@@ -1,6 +1,13 @@
 # Changelog — Workhand Tools
 
 
+## [1.22.0] - 2026-08-25
+
+### Feature
+
+- **Reinforced Deepslate Pickaxe**: a standalone pickaxe that mines Reinforced Deepslate at very high speed (equivalent to how fast a Diamond Pickaxe breaks stone) but is otherwise a non-functional pickaxe that cannot efficiently mine any other block. Crafted from Netherite Ingots, a Diamond Workhand Professional Improved Pickaxe, and a Reinforced Deepslate block.
+- **Reinforced Deepslate loot table override**: Reinforced Deepslate now drops itself when broken with a Diamond Workhand Professional Improved Pickaxe specifically (not any other tool), enabling the crafting loop for the new pickaxe.
+
 ## [1.21.2] - 2026-08-25
 
 ### Fix

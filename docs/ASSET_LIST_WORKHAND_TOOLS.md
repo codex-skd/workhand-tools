@@ -143,6 +143,8 @@ Los nombres de archivo y los nombres que se ven en el juego están en inglés (c
 
 **Nota**: Los archivos PNG placeholder (16×16 px) están creados en `src/main/resources/assets/workhand_tools/textures/item/`. El diseñador puede reemplazarlos directamente sin cambios de código.
 
+**Item añadido tras el encargo original (fuera de los 31 anteriores)**: `reinforced_deepslate_pickaxe.png` — arte final ya aplicado (32×32 px, mismo tamaño real que el resto de picos/palas), textura recibida directamente del usuario. Item aún pendiente de implementación en código (ver `docs/DESIGN_WORKHAND_TOOLS.md`).
+
 <br>
 
 ## 📊 Catálogo completo — durabilidad y para qué vale cada herramienta
@@ -193,6 +195,12 @@ Las 32 herramientas/items del mod (arte final ya aplicado a las 31 primeras — 
 |---|---|---|:---:|---|
 | <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/iron_workhand_axe.png" width="32"> | Iron Workhand Axe | Hierro mejorado | 3750 | Tala de árboles activable con clic derecho: al romper un tronco, tala automáticamente todo el árbol conectado (hasta 256 bloques) |
 | <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/diamond_workhand_axe.png" width="32"> | Diamond Workhand Axe | Diamante mejorado | 23415 | Tala de árboles activable con clic derecho |
+
+### 🪨⚡ Pico especial — Pizarra Profunda Reforzada (1)
+
+| Imagen | Nombre | Material | Durabilidad | Para qué vale |
+|---|---|---|:---:|---|
+| <img src="https://node-files.skdragons.com/uploads/MINECRAFT/Codex/Mods/Workhand%20Tools/Items/reinforced_deepslate_pickaxe.png" width="32"> | Reinforced Deepslate Pickaxe | Especial | 50.000 | Único propósito: minar Pizarra Profunda Reforzada a velocidad altísima (equivalente a diamante vs. piedra normal). Inútil contra cualquier otro bloque. Sin minado en área, siempre 1×1. Acepta Eficiencia y el resto de encantamientos de pico. |
 
 ### 🪵📏 Items de utilidad (2)
 

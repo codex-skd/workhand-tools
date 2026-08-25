@@ -31,4 +31,8 @@ public final class ModToolMaterials {
     // Kennestroyer ultimate tools - highest tier
     public static final ToolMaterial KENNESTROYER = new ToolMaterial(
             BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 50000, 12.0F, 4.0F, 15, ItemTags.NETHERITE_TOOL_MATERIALS);
+
+    // Reinforced Deepslate Pickaxe - single-purpose tool material
+    public static final ToolMaterial REINFORCED_DEEPSLATE = new ToolMaterial(
+            BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 50000, 12.0F, 4.0F, 15, ItemTags.NETHERITE_TOOL_MATERIALS);
 }

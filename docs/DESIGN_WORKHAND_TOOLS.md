@@ -370,8 +370,51 @@ Tier alto — forzar carga de chunks es una mecánica potente, no debe ser acces
 6. Recetas + creative tab + localización (en, es-ES si aplica al resto del mod).
 7. QA: persistencia tras reinicio de servidor, extracción/rotura del altar, los 3 modos de borde.
 
+## Reinforced Deepslate Pickaxe (herramienta especial de propósito único)
+
+Pico independiente, fuera del sistema de Grade/AoE (igual que Kennestroyer o Tape Measure). Su único propósito es minar `minecraft:reinforced_deepslate` (Pizarra Profunda Reforzada) de forma viable en survival.
+
+### Contexto — por qué hace falta código custom
+
+En vanilla, `reinforced_deepslate` tiene hardness 55 (la más alta del juego), es inmune a explosiones y **no dropea nada al romperse con ningún pico, ni con Toque de Seda** — no tiene "herramienta correcta" asociada, se mina a la misma velocidad (muy lenta) sea cual sea la herramienta. Es efectivamente irrompible/inobtenible en survival por diseño. Esta feature reintroduce una vía de obtención controlada sin tocar el bloque vanilla para el resto del juego salvo por la condición exacta de abajo.
+
+### Comportamiento del pico
+
+- **Contra `minecraft:reinforced_deepslate`**: velocidad de minado altísima — override Java de `getDestroySpeed`/lógica de mina equivalente, calibrada para que el tiempo de rotura sea comparable al de un pico de diamante contra piedra normal (referencia: diamante especifica speed 8.0, piedra hardness 1.5 → ~0.28s con herramienta correcta; a hardness 55 hace falta una velocidad efectiva ~293 para igualar ese tiempo). Eficiencia se suma encima de forma normal (bonus aditivo de la lógica vanilla de minado), Fortuna/Toque de Seda no tienen efecto práctico porque el drop ya es 1:1 fijo vía loot table.
+- **Contra cualquier otro bloque**: se comporta como si no tuviera la herramienta correcta — velocidad base, sin bonus de drop. No es un pico de netherite de propósito general.
+- **Sin minado en área ni vena minera**: siempre rompe de 1 en 1, sea cual sea el grado del jugador o el modo — no participa del sistema `Grade`/`AoEMiningHandler`.
+- **Encantamientos**: tags completos `#minecraft:pickaxes` + las 4 tags `enchantable/*` (durability, mining, mining_loot, vanishing), igual que el resto del mod — sin restricción especial.
+- **Material**: propio, durabilidad 50.000 (mismo orden de magnitud que Kennestroyer, dado el coste de crafteo).
+
+### Obtención del bloque — loot table custom
+
+`reinforced_deepslate` sigue sin dropear nada por defecto. Se añade una loot table custom (`data/minecraft/loot_tables/blocks/reinforced_deepslate.json`, override del namespace vanilla) que hace dropear el bloque **únicamente** cuando se rompe con `workhand_tools:diamond_workhand_professional_improved_pickaxe` (match_tool condicionado a ese item exacto) — no con diamante/netherite en general. Esto evita la circularidad de necesitar el pico nuevo (que aún no existe) para conseguir su propio ingrediente: el pico usado para obtener el bloque ya existe de antes en el mod.
+
+### Receta (confirmada)
+
+Shaped, mesa de crafteo:
+
+```
+N D N
+N R N
+N N N
+```
+
+- `D` = `workhand_tools:diamond_workhand_professional_improved_pickaxe` (centro-arriba)
+- `R` = `minecraft:reinforced_deepslate` (centro)
+- `N` = `minecraft:netherite_ingot` (resto, 7 unidades)
+
+### Naming e IDs
+
+`reinforced_deepslate_pickaxe` → "Reinforced Deepslate Pickaxe". Item independiente, no sigue la convención `<material>_workhand[_<grado>]_<tool>` del resto del mod (como Kennestroyer/Tape Measure).
+
+### Assets
+
+Textura final ya recibida y aplicada (`reinforced_deepslate_pickaxe.png`, 32×32, mismo tamaño que el resto de picos/palas) — no usa placeholder vanilla. Ver `docs/ASSET_LIST_WORKHAND_TOOLS.md` → sección "Pico especial — Pizarra Profunda Reforzada".
+
 ## Historial de decisiones
 
+- **v7**: nuevo pico independiente `reinforced_deepslate_pickaxe`, propósito único (minar `minecraft:reinforced_deepslate`, inobtenible en vanilla por loot table vacía). Velocidad altísima solo contra ese bloque (override Java), inútil contra el resto, sin AoE/vena, encantamientos completos de pico. Loot table custom sobre el bloque vanilla condicionada a romperlo con `diamond_workhand_professional_improved_pickaxe` (evita circularidad de receta). Receta: ese pico + `reinforced_deepslate` + 7×`netherite_ingot`. Textura final ya recibida del usuario.
 - **v6**: pivote del item colocado sobre el Chunk Anchor — de "Anchor Orb" (bola) a **Anchor Tome** (libro), con rotación continua estilo mesa de encantamientos añadida a los efectos visuales ya acordados (partículas + glow). Ambos items del conjunto dejan de usar placeholders vanilla: assets reales cedidos con permiso por **Occultism** (klikli-dev) — pedestal (`otherstone_pedestal`) para Chunk Anchor, libro (`book_of_binding_djinni`) para Anchor Tome, ya extraídos y adaptados al namespace `workhand_tools`. Receta del tome ajustada a `minecraft:book` + amatista + diamante (antes ojo de ender + amatista + diamante). Primer intento de implementación (delegado en Nvidia/nemotron sobre el diseño v5) falló con 57 errores de compilación por asumir una versión de Minecraft incorrecta — descartado, no llegó a commitearse.
 - **v5**: nuevo conjunto Chunk Anchor + Anchor Orb — chunk loading forzado del chunk del altar (sin radio), permanente mientras el orb esté puesto, indicador visual de esquinas de chunk configurable (Always/SneakLooking/Nearby, 20 bloques), partículas+glow en el orb, receta de tier alto (diamante+obsidiana+netherite / ojo de ender+amatista+diamante). No forma parte de la línea de herramientas Workhand.
 - **v1**: 6 materiales vanilla, 1 grado, minado 1×1 estándar.
