@@ -15,8 +15,8 @@
 | Versiones de Minecraft | `26.2` |
 | Rama | `minecraft/26.2/neoforge-26.2.0.57/production` |
 
-| Última versión publicada | `1.22.3` (CurseForge file ID 8732543) |
-| Estado | ✅ Release estable 1.22.3 — fix de receta del Reinforced Deepslate Pickaxe (usaba lingotes de netherita en vez de bloques) |
+| Última versión publicada | `1.22.4` (CurseForge file ID 8732808) |
+| Estado | ✅ Release estable 1.22.4 — Reinforced Deepslate Pickaxe: 0 velocidad contra otros bloques (antes minaba lento sin drop) + dropea el bloque también consigo mismo |
 
 ### Notas específicas de este mod
 
