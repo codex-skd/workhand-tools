@@ -74,6 +74,12 @@ for (DeferredHolder<Item, ? extends Item> holder : ModItems.SHOVELS) {
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+        // FMLLoadCompleteEvent is a mod-lifecycle event: it must be registered on the mod event bus,
+        // not NeoForge.EVENT_BUS (see onLoadComplete below - it lost its @SubscribeEvent annotation
+        // for this reason, since NeoForge.EVENT_BUS.register(this) below scans for @SubscribeEvent
+        // methods and would otherwise try to register it there too, which crashes mod loading with
+        // "argument that is not valid for this bus").
+        modEventBus.addListener(this::onLoadComplete);
 
         // Register the Deferred Registers to the mod event bus
         ITEMS.register(modEventBus);
@@ -100,7 +106,6 @@ for (DeferredHolder<Item, ? extends Item> holder : ModItems.SHOVELS) {
         LOGGER.info("Workhand Tools common setup complete");
     }
 
-    @SubscribeEvent
     public void onLoadComplete(FMLLoadCompleteEvent event) {
         if (!ModList.get().isLoaded("vellumli")) {
             LOGGER.error("Vellumli is required but not installed! Workhand Tools will not function correctly without the guide book.");
