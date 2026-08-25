@@ -1,6 +1,12 @@
 # Changelog — Workhand Tools
 
 
+## [1.22.3] - 2026-08-25
+
+### Fix
+
+- **Reinforced Deepslate Pickaxe recipe used the wrong Netherite item**: the recipe was implemented with 7 Netherite Ingots instead of 7 Netherite Blocks as originally intended. Fixed — the recipe now requires Netherite Blocks.
+
 ## [1.22.2] - 2026-08-25
 
 ### Fix

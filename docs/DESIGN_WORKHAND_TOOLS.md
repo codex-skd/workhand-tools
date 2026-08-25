@@ -402,7 +402,7 @@ N N N
 
 - `D` = `workhand_tools:diamond_workhand_professional_improved_pickaxe` (centro-arriba)
 - `R` = `minecraft:reinforced_deepslate` (centro)
-- `N` = `minecraft:netherite_ingot` (resto, 7 unidades)
+- `N` = `minecraft:netherite_block` (resto, 7 unidades)
 
 ### Naming e IDs
 
