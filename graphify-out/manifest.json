@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/ModItems.java": {
-    "mtime": 1787647179.5295,
-    "ast_hash": "2529092b0835c40f6dddce23f93a2d66",
+    "mtime": 1787845991.7406783,
+    "ast_hash": "e3eded063659f1123d3174af42b2262e",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/ModToolMaterials.java": {
@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787676829.8106108,
-    "ast_hash": "3aaa6c23a6c12d0096b15e92e951b804",
+    "mtime": 1787850991.4416177,
+    "ast_hash": "3a72137bca2538ae6099f676466b2c0d",
     "semantic_hash": ""
   },
   "README.md": {
@@ -395,8 +395,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_WORKHAND_TOOLS_26-2.md": {
-    "mtime": 1787676898.9093704,
-    "ast_hash": "58ed08228bb120f838a5d63274eb6ca5",
+    "mtime": 1787851182.1532505,
+    "ast_hash": "b5b8f958bad1e3c1104b631d19bf5779",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -445,7 +445,7 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandPickaxeItem.java": {
-    "mtime": 1786127314.0397644,
+    "mtime": 1787844994.2792823,
     "ast_hash": "e18886e02a82470832cd52f9364fe712",
     "semantic_hash": ""
   },
@@ -855,13 +855,13 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandAxeItem.java": {
-    "mtime": 1786352899.5174017,
-    "ast_hash": "86c0089ea631cd5aa1d584c31cf4335a",
+    "mtime": 1787845945.0547862,
+    "ast_hash": "316419b10a3934842c1944297e789386",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandVeinPickaxeItem.java": {
-    "mtime": 1786352898.6170342,
-    "ast_hash": "3c5a813feb1ccca8f41a80cf87ae64b0",
+    "mtime": 1787845017.3239546,
+    "ast_hash": "e639e7a442a5db7148b152a6023f32f0",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/items/diamond_workhand_advanced_improved_pickaxe.json": {
@@ -1225,8 +1225,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandHoeItem.java": {
-    "mtime": 1787150149.664107,
-    "ast_hash": "c7598f78b092e1a31754bda7a6d336f1",
+    "mtime": 1787845955.93707,
+    "ast_hash": "9e1526c39f2dc33020eb2c8d51a1e3ab",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/items/diamond_workhand_hoe.json": {
@@ -1465,8 +1465,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/KennestroyerPickaxeItem.java": {
-    "mtime": 1787499624.7063427,
-    "ast_hash": "dad2acd415f2361c561dc71d0b8fac69",
+    "mtime": 1787845089.0305412,
+    "ast_hash": "79fd0027db45c3de97c07a1ab5763d19",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/KennestroyerShovelItem.java": {
@@ -1540,8 +1540,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/ReinforcedDeepslatePickaxeItem.java": {
-    "mtime": 1787676707.2602723,
-    "ast_hash": "a16f2d513c1fd1a0208953d712428f70",
+    "mtime": 1787845153.7042515,
+    "ast_hash": "1a873a05c0af8ad0a94dd773aea1d3fd",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/vellumli_books/workhand_guide/en_us/entries/reinforced_deepslate_pickaxe.json": {
@@ -1617,6 +1617,11 @@
   "docs/curseforge/versions/1.22.4.md": {
     "mtime": 1787676835.556127,
     "ast_hash": "586d4ec7c23cf3cfedfb0ed2db841406",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.23.0.md": {
+    "mtime": 1787851163.2411053,
+    "ast_hash": "8b1fcc75f0d6abe0b272abee0e33842f",
     "semantic_hash": ""
   }
 }
