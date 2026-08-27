@@ -1,6 +1,12 @@
 # Changelog — Workhand Tools
 
 
+## [1.23.0] - 2026-08-27
+
+### Feature
+
+- **All tools now accept enchantments like vanilla tools**: Workhand pickaxes, axes, hoes, shovels, and special tools (Kennestroyer, Reinforced Deepslate Pickaxe) properly support standard enchantments (Efficiency, Fortune, Unbreaking, Mending, etc.) via the component-based Tool system in Minecraft 1.21+. Pickaxes use `Item.Properties().pickaxe()` to configure the Tool component; axes/hoes/shovels extend their respective vanilla tool classes (AxeItem, HoeItem, ShovelItem).
+
 ## [1.22.4] - 2026-08-25
 
 ### Fix
