@@ -1,6 +1,12 @@
 # Changelog — Workhand Tools
 
 
+## [1.23.2] - 2026-08-29
+
+### Fix
+
+- **Workhand Hoes could not be enchanted**: the two hoes (iron/diamond) were the last tools still missing from the enchantment item tags. Added `iron_workhand_hoe` and `diamond_workhand_hoe` to the four `#minecraft:enchantable/*` tags (`mining`, `mining_loot`, `durability`, `vanishing`) and to a new `#minecraft:hoes` tag. Every tool in the mod — pickaxes, shovels, axes, hoes, vein pickaxes, Kennestroyer Pickaxe/Shovel and the Reinforced Deepslate Pickaxe — now accepts standard enchantments like its vanilla counterpart.
+
 ## [1.23.1] - 2026-08-28
 
 ### Fix
