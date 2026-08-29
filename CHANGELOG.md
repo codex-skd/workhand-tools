@@ -1,6 +1,12 @@
 # Changelog — Workhand Tools
 
 
+## [1.23.1] - 2026-08-28
+
+### Fix
+
+- **Kennestroyer Pickaxe and Shovel still could not be enchanted**: release 1.23.0 claimed these two tools accepted enchantments like the rest of the mod, but their IDs were never added to the required item tags. Even though the `KENNESTROYER` material defines `enchantmentValue` 15 (so the `minecraft:enchantable` component was present), the enchanting table offered nothing because no vanilla enchantment recognized them as a valid target. Fixed by adding `kennestroyer_pickaxe` and `kennestroyer_shovel` to `#minecraft:pickaxes` / `#minecraft:shovels` and to the four `#minecraft:enchantable/*` tags (`mining`, `mining_loot`, `durability`, `vanishing`), matching every other tool. They now accept Efficiency, Fortune, Silk Touch, Unbreaking, Mending, Curse of Vanishing, etc.
+
 ## [1.23.0] - 2026-08-27
 
 ### Feature
