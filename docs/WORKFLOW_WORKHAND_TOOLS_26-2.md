@@ -15,8 +15,8 @@
 | Versiones de Minecraft | `26.2` |
 | Rama | `minecraft/26.2/neoforge-26.2.0.57/production` |
 
-| Última versión publicada | `1.23.0` (CurseForge file ID TBD) |
-| Estado | ✅ Release estable 1.23.0 — All tools now accept enchantments like vanilla tools |
+| Última versión publicada | `1.23.1` (CurseForge file ID 8762629) |
+| Estado | ✅ Release estable 1.23.1 — Kennestroyer Pickaxe/Shovel now actually enchantable (missing tag entries) |
 
 ### Notas específicas de este mod
 
@@ -103,6 +103,7 @@ Leer siempre `GRAPH_REPORT.md`, nunca `graph.json`/`graph.html` (pesan >1MB). Si
 
 ## Historial de versiones del workflow
 
+- v1.23.1 — Fixed Kennestroyer Pickaxe/Shovel not being enchantable (IDs were missing from the pickaxes/shovels + enchantable/* item tags)
 - v1.18.0 — Added 2 workhand hoes (iron/diamond) with right-click crop harvesting (crops/cocoa/nether wart, area radius by material)
 - v1.17.0 — Added 4 improved pickaxes (iron/diamond advanced/professional) with vein mining + 2 workhand axes (iron/diamond) with tree felling
 - v1.16.0 — Versión anterior

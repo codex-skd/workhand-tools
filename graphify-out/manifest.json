@@ -190,33 +190,33 @@
     "semantic_hash": ""
   },
   "src/main/resources/data/minecraft/tags/item/enchantable/durability.json": {
-    "mtime": 1787647193.3568218,
-    "ast_hash": "fa7957299fd3a2d2a9f14f7e169615fc",
+    "mtime": 1787937430.9155197,
+    "ast_hash": "a58878c6e4a9ea59e376c2f840eea03d",
     "semantic_hash": ""
   },
   "src/main/resources/data/minecraft/tags/item/enchantable/mining.json": {
-    "mtime": 1787647201.4157865,
-    "ast_hash": "fa7957299fd3a2d2a9f14f7e169615fc",
+    "mtime": 1787937424.2137482,
+    "ast_hash": "a58878c6e4a9ea59e376c2f840eea03d",
     "semantic_hash": ""
   },
   "src/main/resources/data/minecraft/tags/item/enchantable/mining_loot.json": {
-    "mtime": 1787647203.0278766,
-    "ast_hash": "fa7957299fd3a2d2a9f14f7e169615fc",
+    "mtime": 1787937427.491922,
+    "ast_hash": "a58878c6e4a9ea59e376c2f840eea03d",
     "semantic_hash": ""
   },
   "src/main/resources/data/minecraft/tags/item/enchantable/vanishing.json": {
-    "mtime": 1787647204.8630373,
-    "ast_hash": "fa7957299fd3a2d2a9f14f7e169615fc",
+    "mtime": 1787937434.069524,
+    "ast_hash": "a58878c6e4a9ea59e376c2f840eea03d",
     "semantic_hash": ""
   },
   "src/main/resources/data/minecraft/tags/item/pickaxes.json": {
-    "mtime": 1787647190.7122645,
-    "ast_hash": "700719aef77d87198acf34e44aa97acb",
+    "mtime": 1787937417.0838225,
+    "ast_hash": "1bf37b482b972dc2125aaff7a5d13e57",
     "semantic_hash": ""
   },
   "src/main/resources/data/minecraft/tags/item/shovels.json": {
-    "mtime": 1786103577.6623156,
-    "ast_hash": "252129081c7183f69edd3c3741ef5739",
+    "mtime": 1787937420.283665,
+    "ast_hash": "fcd83d3a7eb105559dc43053eb3a7090",
     "semantic_hash": ""
   },
   "src/main/resources/data/workhand_tools/recipe/diamond_workhand_advanced_pickaxe.json": {
@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1787850991.4416177,
-    "ast_hash": "3a72137bca2538ae6099f676466b2c0d",
+    "mtime": 1788021106.5027373,
+    "ast_hash": "c369ccca548023c89169f86b2f97ece0",
     "semantic_hash": ""
   },
   "README.md": {
@@ -395,8 +395,8 @@
     "semantic_hash": ""
   },
   "docs/WORKFLOW_WORKHAND_TOOLS_26-2.md": {
-    "mtime": 1787851182.1532505,
-    "ast_hash": "b5b8f958bad1e3c1104b631d19bf5779",
+    "mtime": 1788021210.1164937,
+    "ast_hash": "2ce560b6197b84921298e3dba9d47351",
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
@@ -1622,6 +1622,11 @@
   "docs/curseforge/versions/1.23.0.md": {
     "mtime": 1787851163.2411053,
     "ast_hash": "8b1fcc75f0d6abe0b272abee0e33842f",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.23.1.md": {
+    "mtime": 1788021111.3376026,
+    "ast_hash": "dc437c204ebda46907e729d796ca7f20",
     "semantic_hash": ""
   }
 }
