@@ -2,6 +2,17 @@
 
 Branch `minecraft/1.21.1/neoforge-21.1.249/production`. History independent of the 26.2 branch.
 
+## [0.0.0-beta.2] - 2026-09-02
+
+### Fixed
+
+- **Client mod-loading crash** (`WorkhandToolsClient has no @SubscribeEvent methods, but register
+  was called anyway`). The client entry class carried `@EventBusSubscriber` but has no static
+  `@SubscribeEvent` methods — its only listener is registered manually via `modEventBus.addListener`
+  in the constructor. NeoForge's `AutomaticEventSubscriber` then called `bus.register(class)` and
+  aborted mod loading. Removed the annotation (same fix already applied to the main `WorkhandTools`
+  class). Dedicated-server loading was unaffected, so this only surfaced on a real client.
+
 ## [0.0.0-beta.1] - 2026-09-02
 
 ### Added

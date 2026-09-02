@@ -3,16 +3,17 @@ package com.skd.workhandtools;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
-import net.neoforged.bus.api.SubscribeEvent;
 
+// No @EventBusSubscriber here: this class has no static @SubscribeEvent methods (its only
+// listener, registerBlockEntityRenderers, is wired manually via modEventBus.addListener below).
+// With the annotation, AutomaticEventSubscriber calls bus.register(WorkhandToolsClient.class),
+// which crashes mod loading with "has no @SubscribeEvent methods, but register was called anyway".
 @Mod(value = WorkhandTools.MODID, dist = Dist.CLIENT)
-@EventBusSubscriber(modid = WorkhandTools.MODID, value = Dist.CLIENT)
 public class WorkhandToolsClient {
     public WorkhandToolsClient(IEventBus modEventBus, ModContainer container) {
         AreaHighlighter.register();
