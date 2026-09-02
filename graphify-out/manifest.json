@@ -55,8 +55,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandToolsClient.java": {
-    "mtime": 1788343427.542575,
-    "ast_hash": "292c6a6cf4c6ba5bbc20bb71ab38b755",
+    "mtime": 1788347663.5241501,
+    "ast_hash": "6eefcc20fcb527700f59868bc711c29b",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/en_us.json": {
@@ -360,13 +360,13 @@
     "semantic_hash": "08f225d06e8bf240b42698232f6f79ef"
   },
   "CHANGELOG.md": {
-    "mtime": 1788343426.6265354,
-    "ast_hash": "4a793c5a47692408afc46c43c568c9a7",
+    "mtime": 1788348596.9731002,
+    "ast_hash": "2ea059655923617c7ee4998c58a5d48a",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1788343426.585562,
-    "ast_hash": "60e9a771c659d7068d6b786417bb68f3",
+    "mtime": 1788346008.4006457,
+    "ast_hash": "2e570fd41e3e9f64f6b98e44d7abf863",
     "semantic_hash": ""
   },
   "docs/ASSET_LIST_WORKHAND_TOOLS.md": {
@@ -390,48 +390,28 @@
     "semantic_hash": ""
   },
   "docs/curseforge/project_description.md": {
-    "mtime": 1788343990.0021977,
-    "ast_hash": "d1e6f356905415522aaa0fe573f92c0f",
+    "mtime": 1788346343.0780168,
+    "ast_hash": "e5bdf6c46b844af6ddec91cf145e1e8a",
     "semantic_hash": ""
   },
   "docs/curseforge/project_vars.md": {
-    "mtime": 1788343427.8885052,
-    "ast_hash": "20279656cd4065f9cbb6d034ac3f493f",
+    "mtime": 1788346176.2135544,
+    "ast_hash": "c59f4ac22ce6eef30d912b0c8ff807de",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.1.md": {
-    "mtime": 1788343427.7753663,
-    "ast_hash": "8647bf95365475616279053e02807058",
+    "mtime": 1788346222.6527615,
+    "ast_hash": "47b61a96a2136dc9c8e5a44fc66bb099",
     "semantic_hash": ""
   },
   "docs/curseforge/versions/0.0.0-beta.2.md": {
-    "mtime": 1788343427.720586,
-    "ast_hash": "49fff8c2ad3de31a056cf07c549ff7dc",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.3.md": {
-    "mtime": 1788343427.7432275,
-    "ast_hash": "83285f62fc326fd955384ad18d0d2ccd",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.4.md": {
-    "mtime": 1788343427.7150514,
-    "ast_hash": "557cd9b06924cbe3c67a99291ccce410",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.5.md": {
-    "mtime": 1788343427.7185514,
-    "ast_hash": "04cf16a8d0d1577824bf2f51d1bcdb72",
+    "mtime": 1788348605.86326,
+    "ast_hash": "cbdb0834a49da17755fbfb45d0092418",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/icon.png": {
     "mtime": 1788343427.3866503,
     "ast_hash": "02572eefd0c9b4b353fd12f739dc58a1",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.6.md": {
-    "mtime": 1788343427.791023,
-    "ast_hash": "0f69d5a0762d766b517b60b555f3a1da",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandPickaxeItem.java": {
@@ -564,36 +544,6 @@
     "ast_hash": "562fbe78e92d22d2ddc0c7812482720c",
     "semantic_hash": ""
   },
-  "docs/curseforge/versions/0.0.0-beta.10.md": {
-    "mtime": 1788343427.752294,
-    "ast_hash": "4dbe9586969d62df06c688da4eac9f35",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.11.md": {
-    "mtime": 1788343427.7698622,
-    "ast_hash": "574fe0ed714ff19ff903539a32b48827",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.12.md": {
-    "mtime": 1788343427.7477517,
-    "ast_hash": "f65ce97eeedc408ff45e272d9c413ef4",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.7.md": {
-    "mtime": 1788343427.7778559,
-    "ast_hash": "5455d4e06ed23dcd1a95ca6765e0b703",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.8.md": {
-    "mtime": 1788343427.7265878,
-    "ast_hash": "6fbfcb96014e0b4e2865367cbff1aa6e",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/0.0.0-beta.9.md": {
-    "mtime": 1788343427.7376919,
-    "ast_hash": "1194c576cd7beb55c1b46752966c3ac6",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_advanced_pickaxe.png": {
     "mtime": 1788343426.7065146,
     "ast_hash": "e0969f3c51e09f262367caa21297eb49",
@@ -719,11 +669,6 @@
     "ast_hash": "baa34ada4587b09b0c4ccbbc9574e18e",
     "semantic_hash": ""
   },
-  "docs/curseforge/versions/1.0.0.md": {
-    "mtime": 1788343427.73972,
-    "ast_hash": "12ae043612adaac99e739cc10983f7af",
-    "semantic_hash": ""
-  },
   "src/main/java/com/skd/workhandtools/AoEPatterns.java": {
     "mtime": 1788345309.957207,
     "ast_hash": "c1e02c7392df6f206afffc8a6760fd47",
@@ -774,59 +719,9 @@
     "ast_hash": "9892fecdc82b349ccc86217c6a9bf329",
     "semantic_hash": ""
   },
-  "docs/curseforge/versions/1.1.0.md": {
-    "mtime": 1788343427.8266635,
-    "ast_hash": "abe4ed1f3260961dd4042a08f0e38f49",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.1.1.md": {
-    "mtime": 1788343427.884006,
-    "ast_hash": "949c607511c74801c8da2fc955cf4485",
-    "semantic_hash": ""
-  },
   "src/main/java/com/skd/workhandtools/AreaHighlighter.java": {
     "mtime": 1788345237.1890893,
     "ast_hash": "d0f5282042df6c7298580858f23a1ed1",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.1.2.md": {
-    "mtime": 1788343427.8327045,
-    "ast_hash": "6df13808af00f28cdef2d07df3a8046a",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.2.0.md": {
-    "mtime": 1788343427.834705,
-    "ast_hash": "a36d98860fe930e49cb24d91beaf9449",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.2.1.md": {
-    "mtime": 1788343427.7417278,
-    "ast_hash": "02e5dc733a717ea6c134179a78767065",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.2.2.md": {
-    "mtime": 1788343427.7331605,
-    "ast_hash": "f8c0bb55279f4479ebe27b30d78c2354",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.2.3.md": {
-    "mtime": 1788343427.753312,
-    "ast_hash": "6316c42cb266c49d7e8bf5c8a379f73e",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.3.0.md": {
-    "mtime": 1788343427.7462277,
-    "ast_hash": "2b3f7757b71975fe8bbc7aedbb33e1e6",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.4.0.md": {
-    "mtime": 1788343427.8718936,
-    "ast_hash": "17244ddbb4434d3072507964275a0972",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.5.0.md": {
-    "mtime": 1788343427.7285876,
-    "ast_hash": "6c516e9ec56e713f6d01eaf8a31ea6c6",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/MiningHelper.java": {
@@ -959,11 +854,6 @@
     "ast_hash": "ad8d3d5238d03f78010fffce4b3259f1",
     "semantic_hash": ""
   },
-  "docs/curseforge/versions/1.6.1.md": {
-    "mtime": 1788343427.7447283,
-    "ast_hash": "6e37e47a24757331204d2d42a8da4fe8",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_advanced_improved_pickaxe.png": {
     "mtime": 1788343426.685611,
     "ast_hash": "5c3d24c61b44c13f2c7542189a5a801a",
@@ -1044,59 +934,14 @@
     "ast_hash": "5b434b8717d28bd15bd17f5e193e1f24",
     "semantic_hash": ""
   },
-  "docs/curseforge/versions/1.7.0.md": {
-    "mtime": 1788343427.8805032,
-    "ast_hash": "574e75e251c7b5ce3368938a9f3895c5",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/workhand_tools/textures/item/tape_measure.png": {
     "mtime": 1788343426.722537,
     "ast_hash": "a7a347995163796dd556de51be9f66a2",
     "semantic_hash": ""
   },
-  "docs/curseforge/versions/1.8.0.md": {
-    "mtime": 1788343427.8815062,
-    "ast_hash": "37eb0c168f16e371aef6d72f21fbfed4",
-    "semantic_hash": ""
-  },
   "src/main/java/com/skd/workhandtools/LeafDecayHandler.java": {
     "mtime": 1788345247.3371096,
     "ast_hash": "ad4e0a8976585dd7c1fdf7be85076f67",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.9.0.md": {
-    "mtime": 1788343427.7080853,
-    "ast_hash": "4bd432e76c4ecedff473035b2f9bfcc5",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.10.0.md": {
-    "mtime": 1788343427.874455,
-    "ast_hash": "2ab8bf5de9416ef69ed88db66056428c",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.10.1.md": {
-    "mtime": 1788343427.708585,
-    "ast_hash": "c376893d8e42318943cc39192a7e0aca",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.10.2.md": {
-    "mtime": 1788343427.7568114,
-    "ast_hash": "cd0a8209120c8b6a8f6050e6e78238a4",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.11.0.md": {
-    "mtime": 1788343427.8769724,
-    "ast_hash": "340026a914128d6535a41aefb4f71422",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.12.0.md": {
-    "mtime": 1788343427.7548118,
-    "ast_hash": "6b10f74cd55a542b120f16b3fb4e87c3",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.12.1.md": {
-    "mtime": 1788343427.7135508,
-    "ast_hash": "1de8907dcd077784d8bb0a1032c86976",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/AnchorTomeItem.java": {
@@ -1169,11 +1014,6 @@
     "ast_hash": "3a98c53b40518f6ad19123002fd135ef",
     "semantic_hash": ""
   },
-  "docs/curseforge/versions/1.13.0.md": {
-    "mtime": 1788343427.7613516,
-    "ast_hash": "474942e58ce6077780bcb3fcc9dce441",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/workhand_tools/textures/block/chunk_anchor.png": {
     "mtime": 1788343427.097042,
     "ast_hash": "555e5254c1442833190b1874b8b24c8c",
@@ -1187,21 +1027,6 @@
   "src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json": {
     "mtime": 1788343427.528381,
     "ast_hash": "c08135c81e6adf200ec691ef30bfb2bb",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.13.1.md": {
-    "mtime": 1788343427.7738662,
-    "ast_hash": "0602fa72e0641d2eea9e4f76c0e1be52",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.13.2.md": {
-    "mtime": 1788343427.7843912,
-    "ast_hash": "0cb63ec2657285a4e554a0a1ba5cdaf1",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.13.3.md": {
-    "mtime": 1788343427.83673,
-    "ast_hash": "2c899fc3bfe51a59d414022609b75d25",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/CropHarvestHandler.java": {
@@ -1244,16 +1069,6 @@
     "ast_hash": "17fb73f157c9437c9f3429f6ebc1eacf",
     "semantic_hash": ""
   },
-  "docs/curseforge/versions/1.14.0.md": {
-    "mtime": 1788343427.812095,
-    "ast_hash": "0acf3da9a806db6147398952ccdf7b97",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.14.1.md": {
-    "mtime": 1788343427.8170955,
-    "ast_hash": "e381c21fd67de7b4ad5cbc0dea930c11",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/workhand_tools/textures/item/diamond_workhand_hoe.png": {
     "mtime": 1788343426.8193583,
     "ast_hash": "0a831d0b763f5aa1646964c4959e257a",
@@ -1262,26 +1077,6 @@
   "src/main/resources/assets/workhand_tools/textures/item/iron_workhand_hoe.png": {
     "mtime": 1788343426.8083472,
     "ast_hash": "981fb503d54a4d8504f2c8e70e1e3a33",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.14.2.md": {
-    "mtime": 1788343427.8784728,
-    "ast_hash": "9b47124e5d5355700d41b035ebdc593a",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.15.0.md": {
-    "mtime": 1788343427.83773,
-    "ast_hash": "6271e81f215ba90fae727a1eac1226cd",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.16.0.md": {
-    "mtime": 1788343427.7868912,
-    "ast_hash": "0c15132518a869d3ee6591191be55847",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.16.1.md": {
-    "mtime": 1788343427.7925227,
-    "ast_hash": "27a4ee41bdb02abbe9a48ae3037346eb",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/FellingMode.java": {
@@ -1364,11 +1159,6 @@
     "ast_hash": "33b6d39e5d2c3ce1bf2c14f38e687e5e",
     "semantic_hash": ""
   },
-  "docs/curseforge/versions/1.17.0.md": {
-    "mtime": 1788343427.7095904,
-    "ast_hash": "c7ac93ec88c44daf8a1ff94e43c836c7",
-    "semantic_hash": ""
-  },
   "src/main/java/com/skd/workhandtools/GuideBookGrantHandler.java": {
     "mtime": 1788344457.1139588,
     "ast_hash": "01d062edbef4f4d2e9eb6f7b63b31ff2",
@@ -1377,11 +1167,6 @@
   "src/main/java/com/skd/workhandtools/VellumliCompat.java": {
     "mtime": 1788345155.1585848,
     "ast_hash": "bfd7428863adc57b4b6347e96d75ff26",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.18.0.md": {
-    "mtime": 1788343427.7106214,
-    "ast_hash": "931b9840850c6f4188b03773e1d9eba5",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/vellumli_books/workhand_guide/es_es/categories/axes.json": {
@@ -1444,11 +1229,6 @@
     "ast_hash": "f933fc0d2596c3a3782aa8e19de5bc0e",
     "semantic_hash": ""
   },
-  "docs/curseforge/versions/1.19.0.md": {
-    "mtime": 1788343427.7768557,
-    "ast_hash": "db0e00f8ec375d07bace28a0f24fbb78",
-    "semantic_hash": ""
-  },
   "src/main/java/com/skd/workhandtools/KennestroyerPickaxeItem.java": {
     "mtime": 1788344211.8061023,
     "ast_hash": "0606704ab34d5e5892852fc5e9f76eab",
@@ -1489,21 +1269,6 @@
     "ast_hash": "b0c88a26c28d2e58cb40307159156322",
     "semantic_hash": ""
   },
-  "docs/curseforge/versions/1.20.0.md": {
-    "mtime": 1788343427.7955225,
-    "ast_hash": "b1febc0f79d04f6330eb4718023a4012",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.21.0.md": {
-    "mtime": 1788343427.7883914,
-    "ast_hash": "9a7149e235d0d3763ab37860876e8f53",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.21.1.md": {
-    "mtime": 1788343427.7813911,
-    "ast_hash": "3521b263c9d9df978d224f710bed275d",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/workhand_tools/items/reinforced_deepslate_pickaxe.json": {
     "mtime": 1788343427.1341543,
     "ast_hash": "2ccbff86d63fa847d470211bcc561939",
@@ -1512,11 +1277,6 @@
   "src/main/resources/assets/workhand_tools/models/item/reinforced_deepslate_pickaxe.json": {
     "mtime": 1788343427.3585005,
     "ast_hash": "dffb97b54cf0f2d177dfa288b93dd326",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.21.2.md": {
-    "mtime": 1788343427.722088,
-    "ast_hash": "56faf066f2881080bf24bd2f1c4110be",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/textures/item/reinforced_deepslate_pickaxe.png": {
@@ -1549,16 +1309,6 @@
     "ast_hash": "2793ee9e7a696dc45a66bf39e92c3f4f",
     "semantic_hash": ""
   },
-  "docs/curseforge/versions/1.22.0.md": {
-    "mtime": 1788343427.798023,
-    "ast_hash": "d8cad064df7d551cbdb9a7b91e0965b0",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.22.1.md": {
-    "mtime": 1788343427.7240877,
-    "ast_hash": "cbfd990ea2b6e12865a300e51598692d",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/workhand_tools/items/kennestroyer_pickaxe.json": {
     "mtime": 1788343427.2045343,
     "ast_hash": "aaa42ff19cfea4147633d4afde39b0a5",
@@ -1579,11 +1329,6 @@
     "ast_hash": "33301472e445a763d59d978ae85664de",
     "semantic_hash": ""
   },
-  "docs/curseforge/versions/1.22.2.md": {
-    "mtime": 1788343427.8185956,
-    "ast_hash": "45579e60df76d0484fad42a49a115560",
-    "semantic_hash": ""
-  },
   "src/main/resources/assets/workhand_tools/textures/item/kennestroyer_pickaxe.png": {
     "mtime": 1788343427.0443738,
     "ast_hash": "b1537fa76fa78e7876ba717b63c747c0",
@@ -1594,34 +1339,19 @@
     "ast_hash": "c0124d11545b43d41dd3527a577368b5",
     "semantic_hash": ""
   },
-  "docs/curseforge/versions/1.22.3.md": {
-    "mtime": 1788343427.758312,
-    "ast_hash": "cad6b040b7b71fa9178dc07965214c48",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.22.4.md": {
-    "mtime": 1788343427.8703895,
-    "ast_hash": "586d4ec7c23cf3cfedfb0ed2db841406",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.23.0.md": {
-    "mtime": 1788343427.7985227,
-    "ast_hash": "8b1fcc75f0d6abe0b272abee0e33842f",
-    "semantic_hash": ""
-  },
-  "docs/curseforge/versions/1.23.1.md": {
-    "mtime": 1788343427.8850052,
-    "ast_hash": "dc437c204ebda46907e729d796ca7f20",
-    "semantic_hash": ""
-  },
   "src/main/resources/data/minecraft/tags/item/hoes.json": {
     "mtime": 1788343427.522185,
     "ast_hash": "01b90fdb2eeaab2fe478d07ef251aed3",
     "semantic_hash": ""
   },
-  "docs/curseforge/versions/1.23.2.md": {
-    "mtime": 1788343427.722588,
-    "ast_hash": "28a66c4cc2b9645e74c588d79f227b43",
+  ".claude/CLAUDE.md": {
+    "mtime": 1788346147.9749448,
+    "ast_hash": "3dbefc460aaae322d143c35385c39e3e",
+    "semantic_hash": ""
+  },
+  ".gitlab-ci.yml": {
+    "mtime": 1788346154.0852032,
+    "ast_hash": "3da894acdba9cf476218248f7905f57e",
     "semantic_hash": ""
   }
 }
