@@ -1,0 +1,5 @@
+{
+  "name": "Workhand Shovels",
+  "description": "Workhand Shovels feature area digging capabilities with progressive grades. Each grade increases the digging area and adds new features like cubic/flat mode toggling.",
+  "icon": "workhand_tools:diamond_workhand_professional_shovel"
+}

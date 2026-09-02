@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    " pa",
+    " p "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stone"
+    },
+    "p": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "workhand_tools:stone_workhand_advanced_pickaxe"
+  }
+}

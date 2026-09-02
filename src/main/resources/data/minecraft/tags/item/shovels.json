@@ -1,0 +1,17 @@
+{
+  "values": [
+    "workhand_tools:stone_workhand_shovel",
+    "workhand_tools:stone_workhand_advanced_shovel",
+    "workhand_tools:stone_workhand_expert_shovel",
+    "workhand_tools:stone_workhand_professional_shovel",
+    "workhand_tools:iron_workhand_shovel",
+    "workhand_tools:iron_workhand_advanced_shovel",
+    "workhand_tools:iron_workhand_expert_shovel",
+    "workhand_tools:iron_workhand_professional_shovel",
+    "workhand_tools:diamond_workhand_shovel",
+    "workhand_tools:diamond_workhand_advanced_shovel",
+    "workhand_tools:diamond_workhand_expert_shovel",
+    "workhand_tools:diamond_workhand_professional_shovel",
+    "workhand_tools:kennestroyer_shovel"
+  ]
+}

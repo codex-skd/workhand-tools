@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    " pm",
+    " p "
+  ],
+  "key": {
+    "m": {
+      "item": "minecraft:diamond"
+    },
+    "p": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "workhand_tools:diamond_workhand_pickaxe"
+  }
+}

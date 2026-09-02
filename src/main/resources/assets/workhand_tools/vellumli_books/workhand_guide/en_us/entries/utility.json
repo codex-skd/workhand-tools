@@ -1,0 +1,51 @@
+{
+  "name": "Utility Items",
+  "icon": "workhand_tools:tape_measure",
+  "category": "workhand_tools:utility",
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Utility items provide additional functionality beyond the core tool set."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Tape Measure",
+      "text": "Right-click to set the start point of a measurement.\nRight-click again to set the end point and draw a measurement box with X/Y/Z length labels.\nShift+right-click to undo the last measurement point.\n\nThe tape measure is unbreakable and has no durability."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Chunk Anchor & Anchor Tome",
+      "text": "Place a Chunk Anchor block, then right-click it with an Anchor Tome to insert the tome into its pedestal slot. While the tome is inserted, the chunk containing the anchor is force-loaded (kept active even with no players nearby), permanently and at no cost.$(br2)Right-click the anchor empty-handed (or while sneaking) to extract the tome back into your inventory and release the forced chunk. Breaking the anchor while a tome is inserted drops both items and releases the chunk immediately.$(br2)Only the single chunk containing the anchor is force-loaded, not a radius or neighboring chunks."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Robust Stick",
+      "text": "A crafting ingredient used in Expert and Professional grade tools (tiers 3-4).\n\nHas no durability as it's only used as a crafting component."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:tape_measure",
+      "title": "Tape Measure"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:robust_stick",
+      "title": "Robust Stick"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:chunk_anchor",
+      "title": "Chunk Anchor"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:anchor_tome",
+      "title": "Anchor Tome"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:book",
+      "title": "Workhand Guide Book"
+    }
+  ]
+}

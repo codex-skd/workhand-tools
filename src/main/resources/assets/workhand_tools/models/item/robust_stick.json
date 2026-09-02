@@ -1,0 +1,6 @@
+{
+    "textures": {
+        "layer0": "workhand_tools:item/robust_stick"
+    },
+    "parent": "minecraft:item/handheld"
+}

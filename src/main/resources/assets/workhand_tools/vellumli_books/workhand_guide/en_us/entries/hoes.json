@@ -1,0 +1,41 @@
+{
+  "name": "Workhand Hoes",
+  "icon": "workhand_tools:diamond_workhand_hoe",
+  "category": "workhand_tools:hoes",
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Workhand Hoes feature toggleable Till/Harvest modes for efficient farming."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Till Mode",
+      "text": "Left-click tills one tillable block (never an area). Useful for preparing single rows of farmland."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Harvest Mode",
+      "text": "Left-click harvests and replants mature crops in an area:\n- Iron Workhand Hoe: 3x3 area (radius 1)\n- Diamond Workhand Hoe: 5x5 area (radius 2)\n\nAn area preview is shown while aiming in Harvest mode, indicating exactly which blocks will be affected."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Controls",
+      "text": "$(bold)Right-click$(): Toggle between Till and Harvest mode (works whether or not you're aiming at a block)\n$(bold)Left-click$(): Act based on current mode (till a tillable block, or harvest a mature crop/cocoa/nether wart). Left-clicking anything else breaks it normally, like any tool."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Materials & Durability",
+      "text": "Iron Workhand Hoe: 3750 durability\nDiamond Workhand Hoe: 23415 durability\n\nBoth match the durability, mining speed, and enchantability of their vanilla counterparts."
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:iron_workhand_hoe",
+      "title": "Iron Workhand Hoe"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:diamond_workhand_hoe",
+      "title": "Diamond Workhand Hoe"
+    }
+  ]
+}

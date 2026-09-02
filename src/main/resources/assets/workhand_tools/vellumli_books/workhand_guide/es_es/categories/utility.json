@@ -1,0 +1,5 @@
+{
+  "name": "Objetos de Utilidad",
+  "description": "Los objetos de utilidad incluyen la Cinta Métrica para medir distancias, el Ancla de Chunk + Tomo de Anclaje para forzar la carga de un chunk, y el Palo Robusto como ingrediente de crafteo.",
+  "icon": "workhand_tools:tape_measure"
+}

@@ -1,0 +1,86 @@
+{
+  "name": "Palas Workhand",
+  "icon": "workhand_tools:kennestroyer_shovel",
+  "category": "workhand_tools:shovels",
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Las Palas Workhand mejoran la pala estándar con capacidad de excavación en área. Cada nivel de material (Piedra, Hierro, Diamante) ofrece 4 grados de herramientas con áreas de excavación crecientes."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Progresión de Grados",
+      "text": "$(bold)Grado 1$(): área 3x3x1 (una sola capa)\n$(bold)Grado 2$(): 3x3x3 cúbico O 3x3x1 plano (clic derecho para alternar)\n$(bold)Grado 3$(): área 5x5x1 (una sola capa)\n$(bold)Grado 4$(): 5x5x5 cúbico O 5x5x1 plano (clic derecho para alternar)"
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Controles",
+      "text": "$(bold)Clic izquierdo$(): Excavación en área (sin agacharse)\n$(bold)Shift + Clic izquierdo$(): Excavación de un solo bloque\n$(bold)Clic derecho$(): Alterna entre modo cúbico y plano (solo Grados 2 y 4)"
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Materiales",
+      "text": "Todas las herramientas igualan la durabilidad, velocidad de minado y encantabilidad de sus equivalentes vanilla:\nPiedra: 655 de durabilidad\nHierro: 1250 de durabilidad\nDiamante: 7805 de durabilidad"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:stone_workhand_shovel",
+      "title": "Pala Workhand de Piedra (Grado 1)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:stone_workhand_advanced_shovel",
+      "title": "Pala Workhand Avanzada de Piedra (Grado 2)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:stone_workhand_expert_shovel",
+      "title": "Pala Workhand Experta de Piedra (Grado 3)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:stone_workhand_professional_shovel",
+      "title": "Pala Workhand Profesional de Piedra (Grado 4)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:iron_workhand_shovel",
+      "title": "Pala Workhand de Hierro (Grado 1)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:iron_workhand_advanced_shovel",
+      "title": "Pala Workhand Avanzada de Hierro (Grado 2)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:iron_workhand_expert_shovel",
+      "title": "Pala Workhand Experta de Hierro (Grado 3)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:iron_workhand_professional_shovel",
+      "title": "Pala Workhand Profesional de Hierro (Grado 4)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:diamond_workhand_shovel",
+      "title": "Pala Workhand de Diamante (Grado 1)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:diamond_workhand_advanced_shovel",
+      "title": "Pala Workhand Avanzada de Diamante (Grado 2)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:diamond_workhand_expert_shovel",
+      "title": "Pala Workhand Experta de Diamante (Grado 3)"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:diamond_workhand_professional_shovel",
+      "title": "Pala Workhand Profesional de Diamante (Grado 4)"
+    }
+  ]
+}
