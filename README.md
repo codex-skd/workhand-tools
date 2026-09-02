@@ -121,7 +121,13 @@ Each material tier (Stone, Iron, Diamond) offers 4 grades of tools — from basi
 
 ## License
 
-All Rights Reserved.
+**All Rights Reserved** — original mod by Stalking Dragons. Some parts come from other
+projects and keep their own terms; see the [`LICENSE`](LICENSE) file:
+
+- The **Tape Measure** tool and its texture are adapted from [Measurements](https://github.com/Mrbysco/Measurements)
+  by Mrbysco (MIT).
+- The **Chunk Anchor** model/texture and the **Anchor Tome** texture are adapted, with
+  permission, from [Occultism](https://github.com/klikli-dev/occultism) by klikli-dev.
 
 ## Credits
 
