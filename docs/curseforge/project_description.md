@@ -4,7 +4,7 @@
 
 <p align="center">
 <img src="https://img.shields.io/badge/loader-NeoForge-orange?style=plastic&logo=curseforge" alt="NeoForge">
-<img src="https://img.shields.io/badge/minecraft-1.21.1-blue?style=plastic" alt="Minecraft 1.21.1">
+<img src="https://img.shields.io/badge/minecraft-26.2%20%7C%201.21.1-blue?style=plastic" alt="Minecraft 26.2 and 1.21.1">
 <img src="https://img.shields.io/badge/side-client%20%2B%20server-brightgreen?style=plastic" alt="Client and Server">
 <img src="https://img.shields.io/badge/license-ARR%20%2B%203rd--party-lightgrey?style=plastic" alt="All Rights Reserved with third-party components">
 </p>
