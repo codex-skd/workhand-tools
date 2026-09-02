@@ -2,6 +2,19 @@
 
 Branch `minecraft/1.21.1/neoforge-21.1.249/production`. History independent of the 26.2 branch.
 
+## [0.0.0-beta.3] - 2026-09-02
+
+### Fixed
+
+- **Chunk Anchor rendered as the missing-texture placeholder** (black/magenta) in the inventory,
+  hand and on the ground. `chunk_anchor` was the only registered item without an
+  `assets/workhand_tools/models/item/chunk_anchor.json`. On 1.21.1 the inventory model of a
+  `BlockItem` is resolved from `models/item/<name>.json`; the `assets/workhand_tools/items/`
+  folder (the 1.21.4+ *item model definition* format, carried over from the 26.2 source) is inert
+  on this version. Added the missing model, parented to `workhand_tools:block/chunk_anchor` so the
+  item reuses the block's Blockbench model and `gui` display transform, matching how every other
+  block item works in vanilla.
+
 ## [0.0.0-beta.2] - 2026-09-02
 
 ### Fixed
