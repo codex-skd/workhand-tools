@@ -1,16 +1,16 @@
 # Graph Report - 1.21.1  (2026-09-02)
 
 ## Corpus Check
-- 230 files · ~39,618 words
+- 232 files · ~39,885 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 588 nodes · 910 edges · 68 communities (36 shown, 32 thin omitted)
+- 591 nodes · 912 edges · 68 communities (36 shown, 32 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 11 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d553f20d`
+- Built from commit: `a100b8f5`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -29,7 +29,6 @@
 - Project Settings
 - Flujo de trabajo — Workhand Tools (NeoForge)
 - 🎨 Workhand Tools — Texturas necesarias para completar el mod
-- Prompts de imagen — Workhand Tools
 - CurseForge — Variables del proyecto
 - Changelog — Workhand Tools
 - Workhand Tools
@@ -109,36 +108,36 @@
 ## Communities (68 total, 32 thin omitted)
 
 ### Community 0 - "Block Break Handling"
-Cohesion: 0.10
-Nodes (18): LineColor, BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE (+10 more)
+Cohesion: 0.09
+Nodes (20): LineColor, BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE (+12 more)
 
 ### Community 1 - "Mod Initialization"
-Cohesion: 0.22
-Nodes (9): Direction, AoEPatterns, BlockPos, Level, Player, Vec3, AreaHighlighter, RenderLevelStageEvent (+1 more)
+Cohesion: 0.34
+Nodes (6): Direction, AoEPatterns, BlockPos, Level, Player, Vec3
 
 ### Community 2 - "Item Data Management"
 Cohesion: 0.07
 Nodes (27): AxeItem, BlockItem, DeferredItem, HoeItem, PickaxeItem, ShovelItem, Tier, KennestroyerPickaxeItem (+19 more)
 
 ### Community 3 - "Grade System"
-Cohesion: 0.11
-Nodes (12): Component, Grade, GRADE_1, GRADE_2, GRADE_3, GRADE_4, KENNESTROYER, AoEMiningHandler (+4 more)
+Cohesion: 0.22
+Nodes (6): PlayerLoggedInEvent, ResourceLocation, GuideBookGrantHandler, SubscribeEvent, ItemStack, VellumliCompat
 
 ### Community 4 - "AoE Mode"
-Cohesion: 0.09
-Nodes (21): DataComponentType, AoEMode, CUBIC, CUBIC_3, CUBIC_5, DISABLED, FLAT, FLAT_3 (+13 more)
+Cohesion: 0.05
+Nodes (31): DataComponentType, AoEMode, CUBIC, CUBIC_3, CUBIC_5, DISABLED, FLAT, FLAT_3 (+23 more)
 
 ### Community 5 - "Tool Materials"
-Cohesion: 0.13
-Nodes (19): ResourceLocation, Block, BlockPos, BlockState, ItemStack, Level, Player, LogSearchNode (+11 more)
+Cohesion: 0.17
+Nodes (14): BreakEvent, Block, BlockPos, BlockState, ItemStack, Level, Player, LogSearchNode (+6 more)
 
 ### Community 6 - "Data Components"
 Cohesion: 0.12
 Nodes (16): 📊 Catálogo completo — durabilidad y para qué vale cada herramienta, ⭐ Diferenciación visual por grado, 📐 Especificación técnica (las 25 texturas de 16×16), ✅ Estado actual, 🪓 Hachas Workhand — tala de árboles (2), 🪵 Item nuevo: Palo Robusto, 🪵📏 Items de utilidad (2), 💀⚡ Kennestroyer — herramientas definitivas (2) (+8 more)
 
 ### Community 7 - "Client-Side Workhand Tools"
-Cohesion: 0.11
-Nodes (20): AABB, Camera, BoxHandler, LoggingIn, LoggingOut, Matrix4f, ResourceKey, BlockPos (+12 more)
+Cohesion: 0.09
+Nodes (25): AABB, Camera, Component, BoxHandler, LoggingIn, LoggingOut, Matrix4f, MultiBufferSource (+17 more)
 
 ### Community 8 - "Configuration Management"
 Cohesion: 0.13
@@ -160,10 +159,6 @@ Nodes (10): Checklist de assets pendientes, Fase futura — arte custom (pospues
 Cohesion: 0.22
 Nodes (9): Assets reutilizados (con permiso) de Occultism, Chunk Anchor + Anchor Tome (chunk loading), Chunk loading, Efectos visuales del Anchor Tome, Fases de implementación, Indicador visual del chunk (borde de esquinas), Items, Mecánica de colocación (+1 more)
 
-### Community 15 - "Prompts de imagen — Workhand Tools"
-Cohesion: 0.22
-Nodes (9): Axis, BlockEntityRenderer, BookModel, Context, getColor(), MultiBufferSource, ChunkAnchorRenderer, Override (+1 more)
-
 ### Community 16 - "CurseForge — Variables del proyecto"
 Cohesion: 0.29
 Nodes (7): Assets, Comportamiento del pico, Contexto — por qué hace falta código custom, Naming e IDs, Obtención del bloque — loot table custom, Receta (confirmada), Reinforced Deepslate Pickaxe (herramienta especial de propósito único)
@@ -181,8 +176,8 @@ Cohesion: 0.40
 Nodes (5): ChunkAnchorBorderMode, ALWAYS, NEARBY, SNEAK_LOOKING, Config
 
 ### Community 20 - "CLAUDE.md — workhand_tools (26.2)"
-Cohesion: 0.25
-Nodes (7): [0.0.0-beta.1] - 2026-09-02, [0.0.0-beta.2] - 2026-09-02, Added, Fixed, Not ported, Technical, Workhand Tools (1.21.1) — Changelog
+Cohesion: 0.20
+Nodes (9): [0.0.0-beta.1] - 2026-09-02, [0.0.0-beta.2] - 2026-09-02, [0.0.0-beta.3] - 2026-09-02, Added, Fixed, Fixed, Not ported, Technical (+1 more)
 
 ### Community 22 - "0.0.0-beta.1.md"
 Cohesion: 0.50
@@ -205,8 +200,8 @@ Cohesion: 0.17
 Nodes (10): BlockEntity, CompoundTag, Provider, RandomSource, ChunkAnchorBlockEntity, BlockPos, BlockState, ItemStack (+2 more)
 
 ### Community 49 - "WorkhandToolsClient.java"
-Cohesion: 0.12
-Nodes (13): NeighborNotifyEvent, PlayerLoggedInEvent, ServerLevel, GuideBookGrantHandler, SubscribeEvent, BlockPos, Post, SubscribeEvent (+5 more)
+Cohesion: 0.14
+Nodes (13): NeighborNotifyEvent, ServerLevel, BlockPos, Post, SubscribeEvent, LeafDecayHandler, LeafKey, BreakEvent (+5 more)
 
 ### Community 52 - "WorkhandToolsClient.java"
 Cohesion: 0.16
@@ -221,8 +216,8 @@ Cohesion: 0.13
 Nodes (12): CreativeModeTab, FMLCommonSetupEvent, FMLLoadCompleteEvent, AnchorTomeItem, TapeMeasureItem, WorkhandTools, Item, Items (+4 more)
 
 ### Community 67 - "[1.2.0] - 2026-08-08"
-Cohesion: 0.09
-Nodes (21): Client, TapeMeasureConfig, TextColor, BLACK, BLUE, BROWN, CYAN, GRAY (+13 more)
+Cohesion: 0.07
+Nodes (27): Axis, BlockEntityRenderer, BookModel, Context, getColor(), TextColor, BLACK, BLUE (+19 more)
 
 ### Community 68 - "[1.2.1] - 2026-08-08"
 Cohesion: 0.18
@@ -233,24 +228,24 @@ Cohesion: 0.21
 Nodes (10): Blocks, DeferredBlock, Ingredient, Block, BlockEntityType, DeferredHolder, DeferredRegister, ModBlocks (+2 more)
 
 ## Knowledge Gaps
-- **154 isolated node(s):** `CUBIC`, `FLAT`, `DISABLED`, `FLAT_3`, `CUBIC_3` (+149 more)
+- **155 isolated node(s):** `CUBIC`, `FLAT`, `DISABLED`, `FLAT_3`, `CUBIC_3` (+150 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **32 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `ModItems` connect `Item Data Management` to `[1.11.0] - 2026-08-14`, `Grade System`?**
-  _High betweenness centrality (0.107) - this node is a cross-community bridge._
-- **Why does `TextColor` connect `[1.2.0] - 2026-08-08` to `Prompts de imagen — Workhand Tools`?**
+- **Why does `ModItems` connect `Item Data Management` to `[1.11.0] - 2026-08-14`, `AoE Mode`?**
+  _High betweenness centrality (0.106) - this node is a cross-community bridge._
+- **Why does `TextColor` connect `[1.2.0] - 2026-08-08` to `Block Break Handling`?**
   _High betweenness centrality (0.094) - this node is a cross-community bridge._
-- **Why does `Grade` connect `Grade System` to `Mod Initialization`, `Item Data Management`?**
+- **Why does `Grade` connect `AoE Mode` to `Mod Initialization`, `Item Data Management`?**
   _High betweenness centrality (0.070) - this node is a cross-community bridge._
 - **What connects `CUBIC`, `FLAT`, `DISABLED` to the rest of the system?**
-  _154 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _155 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Block Break Handling` be split into smaller, more focused modules?**
-  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._
 - **Should `Item Data Management` be split into smaller, more focused modules?**
   _Cohesion score 0.06914893617021277 - nodes in this community are weakly interconnected._
-- **Should `Grade System` be split into smaller, more focused modules?**
-  _Cohesion score 0.11396011396011396 - nodes in this community are weakly interconnected._
+- **Should `AoE Mode` be split into smaller, more focused modules?**
+  _Cohesion score 0.05224963715529753 - nodes in this community are weakly interconnected._

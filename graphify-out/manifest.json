@@ -360,8 +360,8 @@
     "semantic_hash": "08f225d06e8bf240b42698232f6f79ef"
   },
   "CHANGELOG.md": {
-    "mtime": 1788348596.9731002,
-    "ast_hash": "2ea059655923617c7ee4998c58a5d48a",
+    "mtime": 1788374503.740202,
+    "ast_hash": "474c1162b991a6850f16bed6cf71bb31",
     "semantic_hash": ""
   },
   "README.md": {
@@ -1352,6 +1352,16 @@
   ".gitlab-ci.yml": {
     "mtime": 1788346154.0852032,
     "ast_hash": "3da894acdba9cf476218248f7905f57e",
+    "semantic_hash": ""
+  },
+  "src/main/resources/assets/workhand_tools/models/item/chunk_anchor.json": {
+    "mtime": 1788374377.495359,
+    "ast_hash": "9fe797eaf025ae302400c7140de6faf0",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.3.md": {
+    "mtime": 1788374520.4042585,
+    "ast_hash": "c2ed10a134c82e541450d95a51b14d23",
     "semantic_hash": ""
   }
 }
