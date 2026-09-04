@@ -1,5 +1,7 @@
 {
   "itemGroup.workhand_tools": "Workhand Tools",
+  "key.categories.workhand_tools": "Workhand Tools",
+  "key.workhand_tools.cycle_hoe_mode": "Cycle Hoe Mode (Till/Harvest)",
   "book.workhand_tools.name": "Workhand Guide",
   "book.workhand_tools.landing": "Welcome to the Workhand Tools Guide!",
   "book.workhand_tools.subtitle": "Tool Reference",
@@ -21,6 +23,7 @@
   "tooltip.workhand_tools.mode.disabled": "§7AoE mining disabled",
   "tooltip.workhand_tools.hold_shift": "§7Hold Shift for normal mining",
   "tooltip.workhand_tools.right_click": "§7Right-click to toggle mode",
+  "tooltip.workhand_tools.hoe_mode.keybind_hint": "§7Rebindable in Controls > Workhand Tools",
   "item.workhand_tools.stone_workhand_pickaxe": "Stone Workhand Pickaxe",
   "item.workhand_tools.stone_workhand_shovel": "Stone Workhand Shovel",
   "item.workhand_tools.stone_workhand_advanced_pickaxe": "Stone Workhand Advanced Pickaxe",

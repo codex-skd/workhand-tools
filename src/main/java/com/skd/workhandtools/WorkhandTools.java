@@ -6,6 +6,7 @@ import com.mojang.logging.LogUtils;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -18,6 +19,8 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
+import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -80,6 +83,7 @@ for (DeferredHolder<Item, ? extends Item> holder : ModItems.SHOVELS) {
         // methods and would otherwise try to register it there too, which crashes mod loading with
         // "argument that is not valid for this bus").
         modEventBus.addListener(this::onLoadComplete);
+        modEventBus.addListener(this::registerPayloadHandlers);
 
         // Register the Deferred Registers to the mod event bus
         ITEMS.register(modEventBus);
@@ -99,6 +103,16 @@ for (DeferredHolder<Item, ? extends Item> holder : ModItems.SHOVELS) {
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC, MODID + "/" + MODID + "-common.toml");
+    }
+
+    // Registers the network payload used by the "cycle hoe mode" keybinding (WorkhandToolsClient).
+    private void registerPayloadHandlers(RegisterPayloadHandlersEvent event) {
+        PayloadRegistrar registrar = event.registrar("1");
+        registrar.playToServer(ToggleHoeModePayload.TYPE, ToggleHoeModePayload.STREAM_CODEC, (payload, context) -> {
+            if (context.player() instanceof ServerPlayer serverPlayer) {
+                context.enqueueWork(() -> CropHarvestHandler.cycleModeFromKeybind(serverPlayer));
+            }
+        });
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
