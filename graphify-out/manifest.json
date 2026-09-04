@@ -50,18 +50,18 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandTools.java": {
-    "mtime": 1788343427.623094,
-    "ast_hash": "fcefd33e201ea5442b771ae9104715ca",
+    "mtime": 1788538061.102841,
+    "ast_hash": "5560347b216750e7d4080e4e67d92051",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandToolsClient.java": {
-    "mtime": 1788347663.5241501,
-    "ast_hash": "6eefcc20fcb527700f59868bc711c29b",
+    "mtime": 1788538775.1287892,
+    "ast_hash": "b12399d3778c79a020e4461c1ac0fd3c",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/en_us.json": {
-    "mtime": 1788343427.099254,
-    "ast_hash": "446de754f8f0a6c75f6522ef5aee44dd",
+    "mtime": 1788538804.4705002,
+    "ast_hash": "b35bb4ce4ad300eef156b3a1b86c9d7f",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/models/item/diamond_workhand_advanced_pickaxe.json": {
@@ -360,8 +360,8 @@
     "semantic_hash": "08f225d06e8bf240b42698232f6f79ef"
   },
   "CHANGELOG.md": {
-    "mtime": 1788374503.740202,
-    "ast_hash": "474c1162b991a6850f16bed6cf71bb31",
+    "mtime": 1788539488.5164585,
+    "ast_hash": "9e034001c9134b057b640fea725e36fa",
     "semantic_hash": ""
   },
   "README.md": {
@@ -680,8 +680,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/es_es.json": {
-    "mtime": 1788343427.1068437,
-    "ast_hash": "501b92e4893dc982882b3ab77c95ef1a",
+    "mtime": 1788538807.6708162,
+    "ast_hash": "6eab08baa29252fcc4b8421bb39f9c49",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/fr_fr.json": {
@@ -1030,8 +1030,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/CropHarvestHandler.java": {
-    "mtime": 1788345306.929717,
-    "ast_hash": "be1a097bb5d8f9c370c5dfd53564eaf1",
+    "mtime": 1788538792.4158623,
+    "ast_hash": "5d027449076bb9162d08b25d42cf546c",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandHoeItem.java": {
@@ -1362,6 +1362,16 @@
   "docs/curseforge/versions/0.0.0-beta.3.md": {
     "mtime": 1788374520.4042585,
     "ast_hash": "c2ed10a134c82e541450d95a51b14d23",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/ToggleHoeModePayload.java": {
+    "mtime": 1788537986.2298317,
+    "ast_hash": "47ad645e85913282a27cfa539aaced79",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.4.md": {
+    "mtime": 1788539494.7020812,
+    "ast_hash": "3c127158b8da31caf248205831788878",
     "semantic_hash": ""
   }
 }

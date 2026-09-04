@@ -24,9 +24,11 @@
   "22": "0.0.0-beta.1.md",
   "23": "0.0.0-beta.2.md",
   "24": "0.0.0-beta.3.md",
+  "25": "FellingMode",
   "26": "0.0.0-beta.6.md",
   "27": "0.0.0-beta.10.md",
   "28": "0.0.0-beta.11.md",
+  "29": "0.0.0-beta.4.md",
   "46": "MeasurementBox",
   "49": "WorkhandToolsClient.java",
   "52": "WorkhandToolsClient.java",
@@ -60,11 +62,5 @@
   "150": "ModConfigSpec",
   "151": "InteractionResult",
   "152": "Override",
-  "153": "DyeColor",
-  "154": "DeferredHolder",
-  "155": "DeferredRegister",
-  "156": "IEventBus",
-  "157": "Mod",
-  "158": "ModContainer",
-  "159": "SubscribeEvent"
+  "153": "DyeColor"
 }

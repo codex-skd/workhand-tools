@@ -1,16 +1,16 @@
-# Graph Report - 1.21.1  (2026-09-02)
+# Graph Report - 1.21.1  (2026-09-04)
 
 ## Corpus Check
-- 232 files · ~39,885 words
+- 234 files · ~40,529 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 591 nodes · 912 edges · 68 communities (36 shown, 32 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 11 edges (avg confidence: 0.8)
+- 611 nodes · 957 edges · 64 communities (38 shown, 26 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 12 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a100b8f5`
+- Built from commit: `d3de9611`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -35,6 +35,7 @@
 - Workhand Tools 0.0.0-beta.5
 - CLAUDE.md — workhand_tools (26.2)
 - 0.0.0-beta.1.md
+- FellingMode
 - 0.0.0-beta.6.md
 - 0.0.0-beta.10.md
 - 0.0.0-beta.11.md
@@ -71,12 +72,6 @@
 - InteractionResult
 - Override
 - DyeColor
-- DeferredHolder
-- DeferredRegister
-- IEventBus
-- Mod
-- ModContainer
-- SubscribeEvent
 
 ## God Nodes (most connected - your core abstractions)
 1. `ChunkAnchorBlockEntity` - 23 edges
@@ -88,28 +83,28 @@
 7. `AoEMode` - 14 edges
 8. `ChunkAnchorBlock` - 13 edges
 9. `MiningHelper` - 13 edges
-10. `Flujo de trabajo — Workhand Tools (NeoForge)` - 12 edges
+10. `WorkhandTools` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `ModItems` --references--> `AnchorTomeItem`  [EXTRACTED]
   src/main/java/com/skd/workhandtools/ModItems.java → src/main/java/com/skd/workhandtools/AnchorTomeItem.java
 - `ModBlocks` --references--> `ChunkAnchorBlock`  [EXTRACTED]
   src/main/java/com/skd/workhandtools/ModBlocks.java → src/main/java/com/skd/workhandtools/ChunkAnchorBlock.java
-- `ChunkAnchorBorderRenderer` --references--> `ChunkAnchorBlockEntity`  [EXTRACTED]
-  src/main/java/com/skd/workhandtools/ChunkAnchorBorderRenderer.java → src/main/java/com/skd/workhandtools/ChunkAnchorBlockEntity.java
 - `ChunkAnchorRenderer` --references--> `ChunkAnchorBlockEntity`  [EXTRACTED]
   src/main/java/com/skd/workhandtools/ChunkAnchorRenderer.java → src/main/java/com/skd/workhandtools/ChunkAnchorBlockEntity.java
 - `ModBlocks` --references--> `ChunkAnchorBlockEntity`  [EXTRACTED]
   src/main/java/com/skd/workhandtools/ModBlocks.java → src/main/java/com/skd/workhandtools/ChunkAnchorBlockEntity.java
+- `ModItems` --references--> `Grade`  [EXTRACTED]
+  src/main/java/com/skd/workhandtools/ModItems.java → src/main/java/com/skd/workhandtools/Grade.java
 
 ## Import Cycles
 - None detected.
 
-## Communities (68 total, 32 thin omitted)
+## Communities (64 total, 26 thin omitted)
 
 ### Community 0 - "Block Break Handling"
-Cohesion: 0.09
-Nodes (20): LineColor, BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE (+12 more)
+Cohesion: 0.10
+Nodes (18): LineColor, BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, LIGHT_BLUE (+10 more)
 
 ### Community 1 - "Mod Initialization"
 Cohesion: 0.34
@@ -120,16 +115,16 @@ Cohesion: 0.07
 Nodes (27): AxeItem, BlockItem, DeferredItem, HoeItem, PickaxeItem, ShovelItem, Tier, KennestroyerPickaxeItem (+19 more)
 
 ### Community 3 - "Grade System"
-Cohesion: 0.22
-Nodes (6): PlayerLoggedInEvent, ResourceLocation, GuideBookGrantHandler, SubscribeEvent, ItemStack, VellumliCompat
+Cohesion: 0.10
+Nodes (19): CreativeModeTab, FMLCommonSetupEvent, FMLLoadCompleteEvent, Items, Logger, PlayerLoggedInEvent, RegisterPayloadHandlersEvent, ServerStartingEvent (+11 more)
 
 ### Community 4 - "AoE Mode"
-Cohesion: 0.05
-Nodes (31): DataComponentType, AoEMode, CUBIC, CUBIC_3, CUBIC_5, DISABLED, FLAT, FLAT_3 (+23 more)
+Cohesion: 0.08
+Nodes (20): AoEMode, CUBIC, CUBIC_3, CUBIC_5, DISABLED, FLAT, FLAT_3, FLAT_5 (+12 more)
 
 ### Community 5 - "Tool Materials"
-Cohesion: 0.17
-Nodes (14): BreakEvent, Block, BlockPos, BlockState, ItemStack, Level, Player, LogSearchNode (+6 more)
+Cohesion: 0.13
+Nodes (19): ResourceLocation, Block, BlockPos, BlockState, ItemStack, Level, Player, LogSearchNode (+11 more)
 
 ### Community 6 - "Data Components"
 Cohesion: 0.12
@@ -176,12 +171,16 @@ Cohesion: 0.40
 Nodes (5): ChunkAnchorBorderMode, ALWAYS, NEARBY, SNEAK_LOOKING, Config
 
 ### Community 20 - "CLAUDE.md — workhand_tools (26.2)"
-Cohesion: 0.20
-Nodes (9): [0.0.0-beta.1] - 2026-09-02, [0.0.0-beta.2] - 2026-09-02, [0.0.0-beta.3] - 2026-09-02, Added, Fixed, Fixed, Not ported, Technical (+1 more)
+Cohesion: 0.17
+Nodes (11): [0.0.0-beta.1] - 2026-09-02, [0.0.0-beta.2] - 2026-09-02, [0.0.0-beta.3] - 2026-09-02, [0.0.0-beta.4] - 2026-09-04, Added, Changed, Fixed, Fixed (+3 more)
 
 ### Community 22 - "0.0.0-beta.1.md"
 Cohesion: 0.50
 Nodes (3): CLAUDE.md — workhand_tools (26.2), Prioridad de instrucciones, Workflow del mod
+
+### Community 25 - "FellingMode"
+Cohesion: 0.14
+Nodes (12): DataComponentType, FellingMode, COMPOUND, DISABLED, SIMPLE, fromName(), fromName(), HoeMode (+4 more)
 
 ### Community 26 - "0.0.0-beta.6.md"
 Cohesion: 0.50
@@ -196,31 +195,31 @@ Cohesion: 0.83
 Nodes (3): gradlew script, die(), warn()
 
 ### Community 46 - "MeasurementBox"
-Cohesion: 0.17
-Nodes (10): BlockEntity, CompoundTag, Provider, RandomSource, ChunkAnchorBlockEntity, BlockPos, BlockState, ItemStack (+2 more)
+Cohesion: 0.12
+Nodes (16): BlockEntity, CompoundTag, Provider, RandomSource, ChunkAnchorBlockEntity, BlockPos, BlockState, ItemStack (+8 more)
 
 ### Community 49 - "WorkhandToolsClient.java"
-Cohesion: 0.14
-Nodes (13): NeighborNotifyEvent, ServerLevel, BlockPos, Post, SubscribeEvent, LeafDecayHandler, LeafKey, BreakEvent (+5 more)
+Cohesion: 0.27
+Nodes (8): NeighborNotifyEvent, ServerLevel, BlockPos, Post, SubscribeEvent, LeafDecayHandler, LeafKey, Unload
 
 ### Community 52 - "WorkhandToolsClient.java"
-Cohesion: 0.16
-Nodes (11): RegisterRenderers, ChunkAnchorBorderRenderer, BlockPos, BufferSource, PoseStack, RenderLevelStageEvent, SubscribeEvent, IEventBus (+3 more)
+Cohesion: 0.13
+Nodes (14): CustomPacketPayload, FriendlyByteBuf, KeyMapping, RegisterKeyMappingsEvent, RegisterRenderers, Override, ToggleHoeModePayload, IEventBus (+6 more)
 
 ### Community 56 - "AoEMiningHandler.java"
 Cohesion: 0.17
 Nodes (19): BaseEntityBlock, BlockEntityTicker, BlockHitResult, BooleanProperty, ItemInteractionResult, MapCodec, ChunkAnchorBlock, Block (+11 more)
 
 ### Community 64 - "[1.11.0] - 2026-08-14"
-Cohesion: 0.13
-Nodes (12): CreativeModeTab, FMLCommonSetupEvent, FMLLoadCompleteEvent, AnchorTomeItem, TapeMeasureItem, WorkhandTools, Item, Items (+4 more)
+Cohesion: 0.25
+Nodes (5): AnchorTomeItem, TapeMeasureItem, Item, NotNull, UseOnContext
 
 ### Community 67 - "[1.2.0] - 2026-08-08"
 Cohesion: 0.07
-Nodes (27): Axis, BlockEntityRenderer, BookModel, Context, getColor(), TextColor, BLACK, BLUE (+19 more)
+Nodes (29): Axis, BlockEntityRenderer, BookModel, Context, Client, TapeMeasureConfig, getColor(), TextColor (+21 more)
 
 ### Community 68 - "[1.2.1] - 2026-08-08"
-Cohesion: 0.18
+Cohesion: 0.17
 Nodes (12): LeftClickBlock, RightClickBlock, CropHarvestHandler, BlockPos, BlockState, InteractionHand, ItemStack, ItemTooltipEvent (+4 more)
 
 ### Community 72 - "[1.7.0] - 2026-08-11"
@@ -228,24 +227,24 @@ Cohesion: 0.21
 Nodes (10): Blocks, DeferredBlock, Ingredient, Block, BlockEntityType, DeferredHolder, DeferredRegister, ModBlocks (+2 more)
 
 ## Knowledge Gaps
-- **155 isolated node(s):** `CUBIC`, `FLAT`, `DISABLED`, `FLAT_3`, `CUBIC_3` (+150 more)
+- **156 isolated node(s):** `CUBIC`, `FLAT`, `DISABLED`, `FLAT_3`, `CUBIC_3` (+151 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **32 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **26 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `ModItems` connect `Item Data Management` to `[1.11.0] - 2026-08-14`, `AoE Mode`?**
-  _High betweenness centrality (0.106) - this node is a cross-community bridge._
-- **Why does `TextColor` connect `[1.2.0] - 2026-08-08` to `Block Break Handling`?**
-  _High betweenness centrality (0.094) - this node is a cross-community bridge._
+  _High betweenness centrality (0.105) - this node is a cross-community bridge._
 - **Why does `Grade` connect `AoE Mode` to `Mod Initialization`, `Item Data Management`?**
-  _High betweenness centrality (0.070) - this node is a cross-community bridge._
+  _High betweenness centrality (0.067) - this node is a cross-community bridge._
 - **What connects `CUBIC`, `FLAT`, `DISABLED` to the rest of the system?**
-  _155 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _156 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Block Break Handling` be split into smaller, more focused modules?**
-  _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
 - **Should `Item Data Management` be split into smaller, more focused modules?**
   _Cohesion score 0.06914893617021277 - nodes in this community are weakly interconnected._
+- **Should `Grade System` be split into smaller, more focused modules?**
+  _Cohesion score 0.09885057471264368 - nodes in this community are weakly interconnected._
 - **Should `AoE Mode` be split into smaller, more focused modules?**
-  _Cohesion score 0.05224963715529753 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07957957957957958 - nodes in this community are weakly interconnected._
