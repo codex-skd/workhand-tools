@@ -2,6 +2,16 @@
 
 Branch `minecraft/1.21.1/neoforge-21.1.249/production`. History independent of the 26.2 branch.
 
+## [0.0.0-beta.4] - 2026-09-04
+
+### Changed
+
+- **Workhand Hoe mode toggle now uses a dedicated, rebindable keybinding** (Options > Controls >
+  Workhand Tools), defaulted to the right mouse button so behavior is unchanged out of the box.
+  Previously the toggle relied on canceling `PlayerInteractEvent.RightClickBlock`/`RightClickItem`,
+  racing vanilla `HoeItem.useOn` on every click - this worked inconsistently. Right-click still
+  suppresses vanilla tilling on a held hoe; the mode itself now only changes through the keybinding.
+
 ## [0.0.0-beta.3] - 2026-09-02
 
 ### Fixed
