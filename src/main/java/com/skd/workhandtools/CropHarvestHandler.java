@@ -132,26 +132,45 @@ if (level instanceof ServerLevel serverLevel) {
         }
     }
 
+    // The Workhand Hoe's mode is cycled exclusively by the "cycle hoe mode" keybinding (default:
+    // right mouse button, see WorkhandToolsClient), not by these events directly. They only
+    // suppress the vanilla right-click/use-item interaction (which would otherwise till dirt
+    // via HoeItem.useOn) so a right-click never accidentally tills regardless of the current mode
+    // - actual tilling/harvesting always goes through onLeftClickBlock below.
     @SubscribeEvent
     public void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
-        Player player = event.getEntity();
-        ItemStack stack = player == null ? ItemStack.EMPTY : player.getItemInHand(event.getHand());
-        if (cycleModeIfHoe(player, stack, event.getHand())) {
+        if (isWorkhandHoe(event.getEntity(), event.getHand())) {
             event.setCanceled(true);
         }
     }
 
     @SubscribeEvent
     public void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
-        Player player = event.getEntity();
-        if (cycleModeIfHoe(player, event.getItemStack(), event.getHand())) {
+        if (isWorkhandHoe(event.getEntity(), event.getHand())) {
             event.setCanceled(true);
         }
     }
 
+    private static boolean isWorkhandHoe(Player player, InteractionHand hand) {
+        return player != null && player.getItemInHand(hand).getItem() instanceof WorkhandHoeItem;
+    }
+
+    // Entry point for the "cycle hoe mode" keybinding (ToggleHoeModePayload handler in
+    // WorkhandTools). Looks at both hands since the keybinding doesn't know which one the
+    // player intended.
+    public static void cycleModeFromKeybind(Player player) {
+        InteractionHand hand = player.getMainHandItem().getItem() instanceof WorkhandHoeItem
+                ? InteractionHand.MAIN_HAND
+                : player.getOffhandItem().getItem() instanceof WorkhandHoeItem ? InteractionHand.OFF_HAND : null;
+        if (hand == null) {
+            return;
+        }
+        cycleModeIfHoe(player, player.getItemInHand(hand), hand);
+    }
+
     // Cycles a Workhand Hoe between TILL and HARVEST mode. Returns true if it handled the click
     // (i.e. the stack is a Workhand Hoe and we're server-side), so the caller can cancel the event.
-    private boolean cycleModeIfHoe(Player player, ItemStack stack, InteractionHand hand) {
+    private static boolean cycleModeIfHoe(Player player, ItemStack stack, InteractionHand hand) {
         if (player == null || player.level().isClientSide()) {
             return false;
         }
@@ -183,6 +202,7 @@ if (level instanceof ServerLevel serverLevel) {
                 mode == HoeMode.TILL ? "tooltip.workhand_tools.hoe_mode.till"
                                      : "tooltip.workhand_tools.hoe_mode.harvest").withStyle(ChatFormatting.GOLD));
         event.getToolTip().add(Component.translatable("tooltip.workhand_tools.right_click"));
+        event.getToolTip().add(Component.translatable("tooltip.workhand_tools.hoe_mode.keybind_hint"));
         event.getToolTip().add(Component.translatable("tooltip.workhand_tools.hold_shift"));
     }
 

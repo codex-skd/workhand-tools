@@ -1,5 +1,7 @@
 {
   "itemGroup.workhand_tools": "Herramientas Workhand",
+  "key.categories.workhand_tools": "Herramientas Workhand",
+  "key.workhand_tools.cycle_hoe_mode": "Cambiar modo de azada (Arar/Cosechar)",
   "book.workhand_tools.name": "Guía Workhand",
   "book.workhand_tools.landing": "¡Bienvenido a la Guía de Herramientas Workhand!",
   "book.workhand_tools.subtitle": "Referencia Completa",
@@ -21,6 +23,7 @@
   "tooltip.workhand_tools.mode.disabled": "Modo: Desactivado",
   "tooltip.workhand_tools.hold_shift": "§7Mantén Shift para picado normal",
   "tooltip.workhand_tools.right_click": "§7Click derecho para cambiar modo",
+  "tooltip.workhand_tools.hoe_mode.keybind_hint": "§7Reasignable en Controles > Herramientas Workhand",
   "item.workhand_tools.stone_workhand_pickaxe": "Pico Workhand de Piedra",
   "item.workhand_tools.stone_workhand_shovel": "Pala Workhand de Piedra",
   "item.workhand_tools.stone_workhand_advanced_pickaxe": "Pico Workhand Avanzado de Piedra",
