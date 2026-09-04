@@ -15,8 +15,8 @@
     "semantic_hash": "58a5df05c6546d7d2671a516793e02e7"
   },
   "src/main/java/com/skd/workhandtools/AoEMiningHandler.java": {
-    "mtime": 1788345262.763965,
-    "ast_hash": "1e6085836e065ca7a4a91ed49c0949eb",
+    "mtime": 1788543331.202961,
+    "ast_hash": "4d1aabb05e64a2536d3b98230ff37c32",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/AoEMode.java": {
@@ -50,18 +50,18 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandTools.java": {
-    "mtime": 1788538061.102841,
-    "ast_hash": "5560347b216750e7d4080e4e67d92051",
+    "mtime": 1788543373.6335592,
+    "ast_hash": "d9baa18db7e61b374d42eecf99cfaa98",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandToolsClient.java": {
-    "mtime": 1788538775.1287892,
-    "ast_hash": "b12399d3778c79a020e4461c1ac0fd3c",
+    "mtime": 1788543399.7959566,
+    "ast_hash": "ade6f270aa262c62cf202acf20c205f3",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/en_us.json": {
-    "mtime": 1788538804.4705002,
-    "ast_hash": "b35bb4ce4ad300eef156b3a1b86c9d7f",
+    "mtime": 1788543411.7692702,
+    "ast_hash": "c9de5c39546009bb6c1351ec5133705c",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/models/item/diamond_workhand_advanced_pickaxe.json": {
@@ -360,8 +360,8 @@
     "semantic_hash": "08f225d06e8bf240b42698232f6f79ef"
   },
   "CHANGELOG.md": {
-    "mtime": 1788539488.5164585,
-    "ast_hash": "9e034001c9134b057b640fea725e36fa",
+    "mtime": 1788543511.363731,
+    "ast_hash": "993b25c18026d9b7036c371ba329d771",
     "semantic_hash": ""
   },
   "README.md": {
@@ -680,8 +680,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/es_es.json": {
-    "mtime": 1788538807.6708162,
-    "ast_hash": "6eab08baa29252fcc4b8421bb39f9c49",
+    "mtime": 1788543412.9765315,
+    "ast_hash": "93e6b55cb522df0ab3aa6ae9647b7f5f",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/fr_fr.json": {
@@ -730,8 +730,8 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/TreeFellingHandler.java": {
-    "mtime": 1788345269.3387527,
-    "ast_hash": "a0e0e0c6b66259483837733b31b47553",
+    "mtime": 1788543362.6554239,
+    "ast_hash": "c0fc9d03fcead20d7e7bf90e05090268",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/VeinMiningHandler.java": {
@@ -1372,6 +1372,21 @@
   "docs/curseforge/versions/0.0.0-beta.4.md": {
     "mtime": 1788539494.7020812,
     "ast_hash": "3c127158b8da31caf248205831788878",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/ToggleAoEModePayload.java": {
+    "mtime": 1788543279.1848974,
+    "ast_hash": "f4b7d47d45f77237acb97de965db3fb3",
+    "semantic_hash": ""
+  },
+  "src/main/java/com/skd/workhandtools/ToggleFellingModePayload.java": {
+    "mtime": 1788543281.2036026,
+    "ast_hash": "77d99eae63b3179008c63cac4978b0ab",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/0.0.0-beta.5.md": {
+    "mtime": 1788543517.9320233,
+    "ast_hash": "d323f1258db0da5eb0747473f7d7e050",
     "semantic_hash": ""
   }
 }
