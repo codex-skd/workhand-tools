@@ -35,6 +35,18 @@ public class WorkhandToolsClient {
             GLFW.GLFW_MOUSE_BUTTON_RIGHT,
             "key.categories.workhand_tools");
 
+    public static final KeyMapping CYCLE_AOE_MODE_KEY = new KeyMapping(
+            "key.workhand_tools.cycle_aoe_mode",
+            InputConstants.Type.MOUSE,
+            GLFW.GLFW_MOUSE_BUTTON_RIGHT,
+            "key.categories.workhand_tools");
+
+    public static final KeyMapping CYCLE_FELLING_MODE_KEY = new KeyMapping(
+            "key.workhand_tools.cycle_felling_mode",
+            InputConstants.Type.MOUSE,
+            GLFW.GLFW_MOUSE_BUTTON_RIGHT,
+            "key.categories.workhand_tools");
+
     public WorkhandToolsClient(IEventBus modEventBus, ModContainer container) {
         AreaHighlighter.register();
         ChunkAnchorBorderRenderer.register();
@@ -53,6 +65,8 @@ public class WorkhandToolsClient {
 
     private static void registerKeyMappings(RegisterKeyMappingsEvent event) {
         event.register(CYCLE_HOE_MODE_KEY);
+        event.register(CYCLE_AOE_MODE_KEY);
+        event.register(CYCLE_FELLING_MODE_KEY);
     }
 
     private static void onClientTick(ClientTickEvent.Post event) {
@@ -62,6 +76,12 @@ public class WorkhandToolsClient {
         }
         while (CYCLE_HOE_MODE_KEY.consumeClick()) {
             PacketDistributor.sendToServer(new ToggleHoeModePayload());
+        }
+        while (CYCLE_AOE_MODE_KEY.consumeClick()) {
+            PacketDistributor.sendToServer(new ToggleAoEModePayload());
+        }
+        while (CYCLE_FELLING_MODE_KEY.consumeClick()) {
+            PacketDistributor.sendToServer(new ToggleFellingModePayload());
         }
     }
 }

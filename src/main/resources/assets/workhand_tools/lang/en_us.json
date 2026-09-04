@@ -2,6 +2,8 @@
   "itemGroup.workhand_tools": "Workhand Tools",
   "key.categories.workhand_tools": "Workhand Tools",
   "key.workhand_tools.cycle_hoe_mode": "Cycle Hoe Mode (Till/Harvest)",
+  "key.workhand_tools.cycle_aoe_mode": "Cycle AoE Mining Mode",
+  "key.workhand_tools.cycle_felling_mode": "Cycle Tree Felling Mode",
   "book.workhand_tools.name": "Workhand Guide",
   "book.workhand_tools.landing": "Welcome to the Workhand Tools Guide!",
   "book.workhand_tools.subtitle": "Tool Reference",
