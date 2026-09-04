@@ -2,6 +2,8 @@
   "itemGroup.workhand_tools": "Herramientas Workhand",
   "key.categories.workhand_tools": "Herramientas Workhand",
   "key.workhand_tools.cycle_hoe_mode": "Cambiar modo de azada (Arar/Cosechar)",
+  "key.workhand_tools.cycle_aoe_mode": "Cambiar modo de minado AoE",
+  "key.workhand_tools.cycle_felling_mode": "Cambiar modo de tala de arboles",
   "book.workhand_tools.name": "Guía Workhand",
   "book.workhand_tools.landing": "¡Bienvenido a la Guía de Herramientas Workhand!",
   "book.workhand_tools.subtitle": "Referencia Completa",

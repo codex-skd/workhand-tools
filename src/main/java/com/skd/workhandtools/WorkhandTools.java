@@ -106,11 +106,25 @@ for (DeferredHolder<Item, ? extends Item> holder : ModItems.SHOVELS) {
     }
 
     // Registers the network payload used by the "cycle hoe mode" keybinding (WorkhandToolsClient).
+    // Marked optional() so connecting to a server still running an older Workhand Tools version
+    // (without this channel) doesn't trigger NeoForge's mod-mismatch disconnect - a required
+    // channel missing on either side is treated as an incompatibility and the client is kicked
+    // before it can even join.
     private void registerPayloadHandlers(RegisterPayloadHandlersEvent event) {
-        PayloadRegistrar registrar = event.registrar("1");
+        PayloadRegistrar registrar = event.registrar("1").optional();
         registrar.playToServer(ToggleHoeModePayload.TYPE, ToggleHoeModePayload.STREAM_CODEC, (payload, context) -> {
             if (context.player() instanceof ServerPlayer serverPlayer) {
                 context.enqueueWork(() -> CropHarvestHandler.cycleModeFromKeybind(serverPlayer));
+            }
+        });
+        registrar.playToServer(ToggleAoEModePayload.TYPE, ToggleAoEModePayload.STREAM_CODEC, (payload, context) -> {
+            if (context.player() instanceof ServerPlayer serverPlayer) {
+                context.enqueueWork(() -> AoEMiningHandler.cycleModeFromKeybind(serverPlayer));
+            }
+        });
+        registrar.playToServer(ToggleFellingModePayload.TYPE, ToggleFellingModePayload.STREAM_CODEC, (payload, context) -> {
+            if (context.player() instanceof ServerPlayer serverPlayer) {
+                context.enqueueWork(() -> TreeFellingHandler.cycleModeFromKeybind(serverPlayer));
             }
         });
     }

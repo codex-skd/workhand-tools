@@ -7,6 +7,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -76,7 +77,40 @@ public class AoEMiningHandler {
         if (player == null || player.level().isClientSide()) {
             return;
         }
+        if (ModItems.gradeOf(event.getItemStack()) != null) {
+            event.setCanceled(true);
+        }
+    }
+
+    @SubscribeEvent
+    public void onTooltip(ItemTooltipEvent event) {
         ItemStack stack = event.getItemStack();
+        Grade grade = ModItems.gradeOf(stack);
+        if (grade == null) {
+            return;
+        }
+
+        AoEMode mode = stack.getOrDefault(ModDataComponents.AOE_MODE, defaultModeFor(grade));
+        if (mode == AoEMode.DISABLED) {
+            event.getToolTip().add(Component.translatable("tooltip.workhand_tools.mode.disabled").withStyle(ChatFormatting.GRAY));
+            event.getToolTip().add(Component.translatable("tooltip.workhand_tools.right_click"));
+            event.getToolTip().add(Component.translatable("tooltip.workhand_tools.hoe_mode.keybind_hint"));
+        } else {
+            event.getToolTip().add(Component.translatable(areaKey(grade, mode)).withStyle(ChatFormatting.GOLD));
+            if (grade.hasMode()) {
+                event.getToolTip().add(Component.translatable(modeMessageKey(mode)).withStyle(ChatFormatting.GRAY));
+            }
+            event.getToolTip().add(Component.translatable("tooltip.workhand_tools.right_click"));
+            event.getToolTip().add(Component.translatable("tooltip.workhand_tools.hoe_mode.keybind_hint"));
+        }
+
+        event.getToolTip().add(Component.translatable("tooltip.workhand_tools.hold_shift"));
+    }
+
+    // Entry point for the "cycle AoE mode" keybinding (ToggleAoEModePayload handler in
+    // WorkhandTools). Looks only at the main hand.
+    public static void cycleModeFromKeybind(ServerPlayer player) {
+        ItemStack stack = player.getMainHandItem();
         Grade grade = ModItems.gradeOf(stack);
         if (grade == null) {
             return;
@@ -106,34 +140,8 @@ public class AoEMiningHandler {
             next = (current == AoEMode.DISABLED) ? AoEMode.FLAT : AoEMode.DISABLED;
         }
         stack.set(ModDataComponents.AOE_MODE, next);
-        if (player instanceof ServerPlayer serverPlayer) {
-            serverPlayer.sendSystemMessage(Component.translatable(modeMessageKey(next)), true);
-        }
-        player.swing(event.getHand());
-        event.setCanceled(true);
-    }
-
-    @SubscribeEvent
-    public void onTooltip(ItemTooltipEvent event) {
-        ItemStack stack = event.getItemStack();
-        Grade grade = ModItems.gradeOf(stack);
-        if (grade == null) {
-            return;
-        }
-
-        AoEMode mode = stack.getOrDefault(ModDataComponents.AOE_MODE, defaultModeFor(grade));
-        if (mode == AoEMode.DISABLED) {
-            event.getToolTip().add(Component.translatable("tooltip.workhand_tools.mode.disabled").withStyle(ChatFormatting.GRAY));
-            event.getToolTip().add(Component.translatable("tooltip.workhand_tools.right_click"));
-        } else {
-            event.getToolTip().add(Component.translatable(areaKey(grade, mode)).withStyle(ChatFormatting.GOLD));
-            if (grade.hasMode()) {
-                event.getToolTip().add(Component.translatable(modeMessageKey(mode)).withStyle(ChatFormatting.GRAY));
-            }
-            event.getToolTip().add(Component.translatable("tooltip.workhand_tools.right_click"));
-        }
-
-        event.getToolTip().add(Component.translatable("tooltip.workhand_tools.hold_shift"));
+        player.sendSystemMessage(Component.translatable(modeMessageKey(next)), true);
+        player.swing(InteractionHand.MAIN_HAND);
     }
 
     // Kennestroyer's default (freshly crafted, no data component set yet) must be DISABLED so the

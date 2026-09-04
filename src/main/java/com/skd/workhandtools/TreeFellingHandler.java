@@ -3,6 +3,7 @@ package com.skd.workhandtools;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -38,7 +39,17 @@ public class TreeFellingHandler {
         if (player == null || player.level().isClientSide()) {
             return;
         }
-        ItemStack stack = event.getItemStack();
+        if (MiningHelper.isFellingAxe(event.getItemStack())) {
+            event.setCanceled(true);
+        }
+    }
+
+    // Unlike the hoe handler, this handler does NOT cancel PlayerInteractEvent.RightClickBlock,
+    // so vanilla AxeItem.useOn (log stripping / copper scraping) still runs independently on a
+    // targeted block. The keybinding fires purely on input state, so right-clicking a strippable
+    // log with a felling axe will now also toggle felling mode alongside the vanilla strip.
+    public static void cycleModeFromKeybind(ServerPlayer player) {
+        ItemStack stack = player.getMainHandItem();
         if (!MiningHelper.isFellingAxe(stack)) {
             return;
         }
@@ -52,19 +63,16 @@ public class TreeFellingHandler {
             next = FellingMode.DISABLED;
         }
         stack.set(ModDataComponents.FELLING_MODE, next);
-        if (player instanceof ServerPlayer serverPlayer) {
-            String messageKey;
-            if (next == FellingMode.SIMPLE) {
-                messageKey = "message.workhand_tools.felling.simple";
-            } else if (next == FellingMode.COMPOUND) {
-                messageKey = "message.workhand_tools.felling.compound";
-            } else {
-                messageKey = "message.workhand_tools.felling.disabled";
-            }
-            serverPlayer.sendSystemMessage(Component.translatable(messageKey), true);
+        String messageKey;
+        if (next == FellingMode.SIMPLE) {
+            messageKey = "message.workhand_tools.felling.simple";
+        } else if (next == FellingMode.COMPOUND) {
+            messageKey = "message.workhand_tools.felling.compound";
+        } else {
+            messageKey = "message.workhand_tools.felling.disabled";
         }
-        player.swing(event.getHand());
-        event.setCanceled(true);
+        player.sendSystemMessage(Component.translatable(messageKey), true);
+        player.swing(InteractionHand.MAIN_HAND);
     }
 
     @SubscribeEvent
@@ -84,5 +92,6 @@ public class TreeFellingHandler {
         }
         event.getToolTip().add(Component.translatable(tooltipKey).withStyle(ChatFormatting.GOLD));
         event.getToolTip().add(Component.translatable("tooltip.workhand_tools.right_click"));
+        event.getToolTip().add(Component.translatable("tooltip.workhand_tools.hoe_mode.keybind_hint"));
     }
 }

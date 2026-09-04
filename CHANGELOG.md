@@ -2,6 +2,22 @@
 
 Branch `minecraft/1.21.1/neoforge-21.1.249/production`. History independent of the 26.2 branch.
 
+## [0.0.0-beta.5] - 2026-09-04
+
+### Fixed
+
+- **Network channel could disconnect players from a server on an older Workhand Tools version.**
+  The `toggle_hoe_mode` channel added in beta.4 was registered as required on both sides;
+  connecting to a server still running an older jar (missing the channel) triggered NeoForge's
+  mod-mismatch disconnect screen instead of just degrading gracefully. The registrar is now
+  `.optional()`.
+- **AoE mining mode (pickaxes/shovels) and tree felling mode (axes) could silently stop
+  responding to right-click** in modpacks where another mod intercepts right-click on those item
+  types before our listener runs (e.g. a combat-rework mod treating axes/pickaxes as weapons with
+  their own right-click ability). Both now use a dedicated, rebindable keybinding (Options >
+  Controls > Workhand Tools) defaulted to the right mouse button, same as the Hoe fix in beta.4.
+  Right-click still suppresses the vanilla interaction; the keybinding does the actual toggle.
+
 ## [0.0.0-beta.4] - 2026-09-04
 
 ### Changed
