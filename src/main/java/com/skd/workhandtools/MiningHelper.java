@@ -47,22 +47,41 @@ public final class MiningHelper {
     private MiningHelper() {
     }
 
+    // Mirrors ServerPlayerGameMode.destroyBlock: playerWillDestroy → onDestroyedByPlayer (removal)
+    // → block.destroy (multi-part cleanup) → playerDestroy (drops + stats + XP). The old hand-rolled
+    // sequence called Block.dropResources on top of playerWillDestroy, which already drops items for
+    // multi-part / special blocks (Waystones waystone, beds, tall flowers, this mod's Chunk Anchor).
     static void breakBlock(Level level, BlockPos pos, BlockState state, Player player, ItemStack stack) {
+        Block block = state.getBlock();
         FluidState fluidState = level.getFluidState(pos);
         BlockEntity blockEntity = state.hasBlockEntity() ? level.getBlockEntity(pos) : null;
 
-        state.getBlock().playerWillDestroy(level, pos, state, player);
+        // Snapshot before removal — multi-part blocks may alter state in playerWillDestroy.
+        boolean canHarvest = state.canHarvestBlock(level, pos, player);
+
+        // Phase 1: notify the block it is about to be destroyed (multi-part blocks drop here).
+        block.playerWillDestroy(level, pos, state, player);
+
+        // Show break particles before the block is removed.
         level.levelEvent(2001, pos, Block.getId(state));
 
-        if (!player.getAbilities().instabuild) {
-            Block.dropResources(state, level, pos, blockEntity, player, stack);
+        // Phase 2: remove the block from the world.
+        boolean removed = state.onDestroyedByPlayer(level, pos, player, true, fluidState);
+        if (!removed) {
+            return;
+        }
+
+        // Phase 3: notify neighbours / clean up connected parts (double-plant lower half, etc.).
+        block.destroy(level, pos, state);
+
+        // Phase 4: drops + stats (playerDestroy calls Block.dropResources once).
+        if (!player.getAbilities().instabuild && canHarvest) {
             int xp = state.getExpDrop(level, pos, blockEntity, player, stack);
+            block.playerDestroy(level, player, pos, state, blockEntity, stack);
             if (xp > 0) {
                 player.giveExperiencePoints(xp);
             }
         }
-
-        level.setBlock(pos, fluidState.createLegacyBlock(), 3);
     }
 
     static boolean isOre(BlockState state) {
