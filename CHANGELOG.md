@@ -2,6 +2,23 @@
 
 Branch `minecraft/1.21.1/neoforge-21.1.249/production`. History independent of the 26.2 branch.
 
+## [0.0.0-beta.6] - 2026-09-05
+
+### Fixed
+
+- **AoE mining, vein mining and tree felling duplicated the drops of multi-part or
+  special blocks.** Breaking such a block (a Waystones waystone, a bed, a tall
+  flower, this mod's own Chunk Anchor, etc.) as a *secondary* block of an AoE /
+  vein / felling action dropped its item twice - roughly once per sub-block it
+  occupies. `MiningHelper.breakBlock` hand-rolled the break as
+  `playerWillDestroy` + `Block.dropResources` + `setBlock`, but many of these
+  blocks already drop their item from inside `playerWillDestroy`, so
+  `Block.dropResources` was an extra drop on top. The helper now mirrors the
+  vanilla player-break sequence (`playerWillDestroy` -> `onDestroyedByPlayer` ->
+  `Block.destroy` -> `Block.playerDestroy`), so every block drops exactly once,
+  just like breaking it by hand. The player's directly targeted block was never
+  affected - only the extra blocks broken by the tool's area/vein/felling pass.
+
 ## [0.0.0-beta.5] - 2026-09-04
 
 ### Fixed
