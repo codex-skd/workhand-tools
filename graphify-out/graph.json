@@ -86,7 +86,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_anchortomeitem_java",
-      "community": 64,
+      "community": 2,
       "norm_label": "anchortomeitem.java"
     },
     {
@@ -96,7 +96,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_anchortomeitem_anchortomeitem",
-      "community": 64,
+      "community": 2,
       "norm_label": "anchortomeitem"
     },
     {
@@ -106,7 +106,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "item",
-      "community": 64,
+      "community": 2,
       "norm_label": "item"
     },
     {
@@ -116,7 +116,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_anchortomeitem_anchortomeitem_anchortomeitem",
-      "community": 64,
+      "community": 2,
       "norm_label": ".anchortomeitem()"
     },
     {
@@ -146,7 +146,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoemininghandler_aoemininghandler_onblockbreak",
-      "community": 5,
+      "community": 25,
       "norm_label": ".onblockbreak()"
     },
     {
@@ -156,7 +156,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoemininghandler_java_breakevent",
-      "community": 5,
+      "community": 25,
       "norm_label": "breakevent"
     },
     {
@@ -286,7 +286,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "stringrepresentable",
-      "community": 25,
+      "community": 4,
       "norm_label": "stringrepresentable"
     },
     {
@@ -396,7 +396,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoepatterns",
-      "community": 1,
+      "community": 25,
       "norm_label": "aoepatterns.java"
     },
     {
@@ -406,7 +406,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns",
-      "community": 1,
+      "community": 25,
       "norm_label": "aoepatterns"
     },
     {
@@ -416,7 +416,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_aoepatterns",
-      "community": 1,
+      "community": 25,
       "norm_label": ".aoepatterns()"
     },
     {
@@ -426,7 +426,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computepattern",
-      "community": 1,
+      "community": 25,
       "norm_label": ".computepattern()"
     },
     {
@@ -436,7 +436,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoepatterns_java_blockpos",
-      "community": 1,
+      "community": 25,
       "norm_label": "blockpos"
     },
     {
@@ -446,7 +446,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "direction",
-      "community": 1,
+      "community": 25,
       "norm_label": "direction"
     },
     {
@@ -456,7 +456,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_digdirection",
-      "community": 1,
+      "community": 25,
       "norm_label": ".digdirection()"
     },
     {
@@ -466,7 +466,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoepatterns_java_player",
-      "community": 1,
+      "community": 25,
       "norm_label": "player"
     },
     {
@@ -476,7 +476,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoepatterns_java_level",
-      "community": 1,
+      "community": 25,
       "norm_label": "level"
     },
     {
@@ -486,7 +486,7 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_raytracehitface",
-      "community": 1,
+      "community": 25,
       "norm_label": ".raytracehitface()"
     },
     {
@@ -496,7 +496,7 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_nearestdirection",
-      "community": 1,
+      "community": 25,
       "norm_label": ".nearestdirection()"
     },
     {
@@ -506,7 +506,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoepatterns_java_vec3",
-      "community": 1,
+      "community": 25,
       "norm_label": "vec3"
     },
     {
@@ -516,7 +516,7 @@
       "source_location": "L77",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computehorizontalpattern",
-      "community": 1,
+      "community": 25,
       "norm_label": ".computehorizontalpattern()"
     },
     {
@@ -526,7 +526,7 @@
       "source_location": "L93",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_computeverticalpattern",
-      "community": 1,
+      "community": 25,
       "norm_label": ".computeverticalpattern()"
     },
     {
@@ -536,7 +536,7 @@
       "source_location": "L106",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_aoepatterns_aoepatterns_verticaloffsets",
-      "community": 1,
+      "community": 25,
       "norm_label": ".verticaloffsets()"
     },
     {
@@ -606,7 +606,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_boxhandler_java",
-      "community": 64,
+      "community": 2,
       "norm_label": "boxhandler.java"
     },
     {
@@ -906,7 +906,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "blockhitresult",
-      "community": 56,
+      "community": 7,
       "norm_label": "blockhitresult"
     },
     {
@@ -1356,7 +1356,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_chunkanchorrenderer",
-      "community": 1,
+      "community": 67,
       "norm_label": "chunkanchorrenderer.java"
     },
     {
@@ -1366,7 +1366,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_chunkanchorrenderer_chunkanchorrenderer",
-      "community": 1,
+      "community": 67,
       "norm_label": "chunkanchorrenderer"
     },
     {
@@ -1376,7 +1376,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "blockentityrenderer",
-      "community": 1,
+      "community": 67,
       "norm_label": "blockentityrenderer"
     },
     {
@@ -1386,7 +1386,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "bookmodel",
-      "community": 1,
+      "community": 67,
       "norm_label": "bookmodel"
     },
     {
@@ -1396,7 +1396,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_chunkanchorrenderer_chunkanchorrenderer_chunkanchorrenderer",
-      "community": 1,
+      "community": 67,
       "norm_label": ".chunkanchorrenderer()"
     },
     {
@@ -1406,7 +1406,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "context",
-      "community": 1,
+      "community": 67,
       "norm_label": "context"
     },
     {
@@ -1416,7 +1416,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_chunkanchorrenderer_chunkanchorrenderer_render",
-      "community": 1,
+      "community": 67,
       "norm_label": ".render()"
     },
     {
@@ -1426,7 +1426,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_chunkanchorrenderer_java_posestack",
-      "community": 1,
+      "community": 67,
       "norm_label": "posestack"
     },
     {
@@ -1446,7 +1446,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_chunkanchorrenderer_java_override",
-      "community": 1,
+      "community": 67,
       "norm_label": "override"
     },
     {
@@ -1786,7 +1786,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_fellingmode_java",
-      "community": 25,
+      "community": 4,
       "norm_label": "fellingmode.java"
     },
     {
@@ -1796,7 +1796,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_fellingmode_fellingmode",
-      "community": 25,
+      "community": 4,
       "norm_label": "fellingmode"
     },
     {
@@ -1806,7 +1806,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_fellingmode_fellingmode_disabled",
-      "community": 25,
+      "community": 4,
       "norm_label": "disabled"
     },
     {
@@ -1816,7 +1816,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_fellingmode_fellingmode_simple",
-      "community": 25,
+      "community": 4,
       "norm_label": "simple"
     },
     {
@@ -1826,7 +1826,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_fellingmode_fellingmode_compound",
-      "community": 25,
+      "community": 4,
       "norm_label": "compound"
     },
     {
@@ -1836,7 +1836,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_fellingmode_getserializedname",
-      "community": 25,
+      "community": 4,
       "norm_label": "getserializedname()"
     },
     {
@@ -1856,7 +1856,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_fellingmode_fromname",
-      "community": 25,
+      "community": 4,
       "norm_label": "fromname()"
     },
     {
@@ -1866,7 +1866,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_grade_java",
-      "community": 25,
+      "community": 30,
       "norm_label": "grade.java"
     },
     {
@@ -1936,7 +1936,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_grade_lateralhalf",
-      "community": 25,
+      "community": 30,
       "norm_label": "lateralhalf()"
     },
     {
@@ -1946,7 +1946,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_grade_height",
-      "community": 25,
+      "community": 30,
       "norm_label": "height()"
     },
     {
@@ -1956,7 +1956,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_grade_hasmode",
-      "community": 25,
+      "community": 30,
       "norm_label": "hasmode()"
     },
     {
@@ -1966,7 +1966,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_grade_depth",
-      "community": 25,
+      "community": 30,
       "norm_label": "depth()"
     },
     {
@@ -1976,7 +1976,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_grade_lateralhalfformode",
-      "community": 25,
+      "community": 30,
       "norm_label": "lateralhalfformode()"
     },
     {
@@ -1986,7 +1986,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_grade_heightformode",
-      "community": 25,
+      "community": 30,
       "norm_label": "heightformode()"
     },
     {
@@ -1996,7 +1996,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_guidebookgranthandler",
-      "community": 4,
+      "community": 3,
       "norm_label": "guidebookgranthandler.java"
     },
     {
@@ -2006,7 +2006,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_guidebookgranthandler_guidebookgranthandler",
-      "community": 4,
+      "community": 3,
       "norm_label": "guidebookgranthandler"
     },
     {
@@ -2016,7 +2016,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_guidebookgranthandler_guidebookgranthandler_onplayerloggedin",
-      "community": 4,
+      "community": 3,
       "norm_label": ".onplayerloggedin()"
     },
     {
@@ -2026,7 +2026,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "playerloggedinevent",
-      "community": 4,
+      "community": 3,
       "norm_label": "playerloggedinevent"
     },
     {
@@ -2036,7 +2036,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_guidebookgranthandler_java_subscribeevent",
-      "community": 4,
+      "community": 3,
       "norm_label": "subscribeevent"
     },
     {
@@ -2046,7 +2046,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_hoemode_java",
-      "community": 25,
+      "community": 4,
       "norm_label": "hoemode.java"
     },
     {
@@ -2056,7 +2056,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_hoemode_hoemode",
-      "community": 25,
+      "community": 4,
       "norm_label": "hoemode"
     },
     {
@@ -2066,7 +2066,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_hoemode_hoemode_till",
-      "community": 25,
+      "community": 4,
       "norm_label": "till"
     },
     {
@@ -2076,7 +2076,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_hoemode_hoemode_harvest",
-      "community": 25,
+      "community": 4,
       "norm_label": "harvest"
     },
     {
@@ -2086,7 +2086,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_hoemode_getserializedname",
-      "community": 25,
+      "community": 4,
       "norm_label": "getserializedname()"
     },
     {
@@ -2106,7 +2106,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_hoemode_fromname",
-      "community": 25,
+      "community": 4,
       "norm_label": "fromname()"
     },
     {
@@ -2336,7 +2336,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_java",
-      "community": 67,
+      "community": 1,
       "norm_label": "linecolor.java"
     },
     {
@@ -2346,7 +2346,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_linecolor",
-      "community": 67,
+      "community": 1,
       "norm_label": "linecolor"
     },
     {
@@ -2356,7 +2356,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_linecolor_random",
-      "community": 67,
+      "community": 1,
       "norm_label": "random"
     },
     {
@@ -2366,7 +2366,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_linecolor_white",
-      "community": 67,
+      "community": 1,
       "norm_label": "white"
     },
     {
@@ -2376,7 +2376,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_linecolor_orange",
-      "community": 67,
+      "community": 1,
       "norm_label": "orange"
     },
     {
@@ -2386,7 +2386,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_linecolor_magenta",
-      "community": 67,
+      "community": 1,
       "norm_label": "magenta"
     },
     {
@@ -2396,7 +2396,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_linecolor_light_blue",
-      "community": 67,
+      "community": 1,
       "norm_label": "light_blue"
     },
     {
@@ -2406,7 +2406,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_linecolor_yellow",
-      "community": 67,
+      "community": 1,
       "norm_label": "yellow"
     },
     {
@@ -2416,7 +2416,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_linecolor_lime",
-      "community": 67,
+      "community": 1,
       "norm_label": "lime"
     },
     {
@@ -2426,7 +2426,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_linecolor_pink",
-      "community": 67,
+      "community": 1,
       "norm_label": "pink"
     },
     {
@@ -2436,7 +2436,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_linecolor_gray",
-      "community": 67,
+      "community": 1,
       "norm_label": "gray"
     },
     {
@@ -2446,7 +2446,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_linecolor_light_gray",
-      "community": 67,
+      "community": 1,
       "norm_label": "light_gray"
     },
     {
@@ -2456,7 +2456,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_linecolor_cyan",
-      "community": 67,
+      "community": 1,
       "norm_label": "cyan"
     },
     {
@@ -2466,7 +2466,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_linecolor_purple",
-      "community": 67,
+      "community": 1,
       "norm_label": "purple"
     },
     {
@@ -2476,7 +2476,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_linecolor_blue",
-      "community": 67,
+      "community": 1,
       "norm_label": "blue"
     },
     {
@@ -2486,7 +2486,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_linecolor_brown",
-      "community": 67,
+      "community": 1,
       "norm_label": "brown"
     },
     {
@@ -2496,7 +2496,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_linecolor_green",
-      "community": 67,
+      "community": 1,
       "norm_label": "green"
     },
     {
@@ -2506,7 +2506,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_linecolor_red",
-      "community": 67,
+      "community": 1,
       "norm_label": "red"
     },
     {
@@ -2516,7 +2516,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_linecolor_black",
-      "community": 67,
+      "community": 1,
       "norm_label": "black"
     },
     {
@@ -2536,7 +2536,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_linecolor_getcolor",
-      "community": 67,
+      "community": 1,
       "norm_label": "getcolor()"
     },
     {
@@ -3126,7 +3126,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_moddatacomponents_java",
-      "community": 25,
+      "community": 4,
       "norm_label": "moddatacomponents.java"
     },
     {
@@ -3136,7 +3136,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_moddatacomponents_moddatacomponents",
-      "community": 25,
+      "community": 4,
       "norm_label": "moddatacomponents"
     },
     {
@@ -3156,7 +3156,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "datacomponenttype",
-      "community": 25,
+      "community": 4,
       "norm_label": "datacomponenttype"
     },
     {
@@ -3176,7 +3176,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_moddatacomponents_moddatacomponents_moddatacomponents",
-      "community": 25,
+      "community": 4,
       "norm_label": ".moddatacomponents()"
     },
     {
@@ -3666,7 +3666,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_tapemeasureitem_java",
-      "community": 64,
+      "community": 2,
       "norm_label": "tapemeasureitem.java"
     },
     {
@@ -3676,7 +3676,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_tapemeasureitem_tapemeasureitem",
-      "community": 64,
+      "community": 2,
       "norm_label": "tapemeasureitem"
     },
     {
@@ -3686,7 +3686,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_tapemeasureitem_tapemeasureitem_tapemeasureitem",
-      "community": 64,
+      "community": 2,
       "norm_label": ".tapemeasureitem()"
     },
     {
@@ -3696,7 +3696,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_tapemeasureitem_tapemeasureitem_useon",
-      "community": 64,
+      "community": 2,
       "norm_label": ".useon()"
     },
     {
@@ -3706,7 +3706,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "useoncontext",
-      "community": 64,
+      "community": 2,
       "norm_label": "useoncontext"
     },
     {
@@ -3726,7 +3726,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "notnull",
-      "community": 64,
+      "community": 2,
       "norm_label": "notnull"
     },
     {
@@ -3746,7 +3746,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_textcolor_java",
-      "community": 1,
+      "community": 67,
       "norm_label": "textcolor.java"
     },
     {
@@ -3956,7 +3956,7 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "g_proyectos_mods_minecraft_workhand_tools_neoforge_26_2_src_main_java_com_skd_workhandtools_textcolor_getcolor",
-      "community": 1,
+      "community": 67,
       "norm_label": "getcolor()"
     },
     {
@@ -3966,7 +3966,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "axis",
-      "community": 1,
+      "community": 67,
       "norm_label": "axis"
     },
     {
@@ -4196,7 +4196,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_treefellinghandler",
-      "community": 3,
+      "community": 5,
       "norm_label": "treefellinghandler.java"
     },
     {
@@ -4206,7 +4206,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_treefellinghandler_treefellinghandler",
-      "community": 3,
+      "community": 5,
       "norm_label": "treefellinghandler"
     },
     {
@@ -4216,7 +4216,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_treefellinghandler_treefellinghandler_onblockbreak",
-      "community": 3,
+      "community": 5,
       "norm_label": ".onblockbreak()"
     },
     {
@@ -4226,7 +4226,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_treefellinghandler_java_breakevent",
-      "community": 3,
+      "community": 5,
       "norm_label": "breakevent"
     },
     {
@@ -4236,7 +4236,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_treefellinghandler_java_subscribeevent",
-      "community": 3,
+      "community": 5,
       "norm_label": "subscribeevent"
     },
     {
@@ -4246,7 +4246,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_treefellinghandler_treefellinghandler_onrightclickitem",
-      "community": 3,
+      "community": 5,
       "norm_label": ".onrightclickitem()"
     },
     {
@@ -4256,7 +4256,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_treefellinghandler_java_rightclickitem",
-      "community": 3,
+      "community": 5,
       "norm_label": "rightclickitem"
     },
     {
@@ -4266,7 +4266,7 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_treefellinghandler_treefellinghandler_cyclemodefromkeybind",
-      "community": 3,
+      "community": 5,
       "norm_label": ".cyclemodefromkeybind()"
     },
     {
@@ -4276,7 +4276,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_treefellinghandler_java_serverplayer",
-      "community": 3,
+      "community": 5,
       "norm_label": "serverplayer"
     },
     {
@@ -4286,7 +4286,7 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_treefellinghandler_treefellinghandler_ontooltip",
-      "community": 3,
+      "community": 5,
       "norm_label": ".ontooltip()"
     },
     {
@@ -4296,7 +4296,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_treefellinghandler_java_itemtooltipevent",
-      "community": 3,
+      "community": 5,
       "norm_label": "itemtooltipevent"
     },
     {
@@ -4376,7 +4376,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_vellumlicompat",
-      "community": 4,
+      "community": 3,
       "norm_label": "vellumlicompat.java"
     },
     {
@@ -4386,7 +4386,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_vellumlicompat_vellumlicompat",
-      "community": 4,
+      "community": 3,
       "norm_label": "vellumlicompat"
     },
     {
@@ -4396,7 +4396,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_vellumlicompat_vellumlicompat_vellumlicompat",
-      "community": 4,
+      "community": 3,
       "norm_label": ".vellumlicompat()"
     },
     {
@@ -4406,7 +4406,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_vellumlicompat_vellumlicompat_createguidebookstack",
-      "community": 4,
+      "community": 3,
       "norm_label": ".createguidebookstack()"
     },
     {
@@ -4416,7 +4416,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_main_java_com_skd_workhandtools_vellumlicompat_java_itemstack",
-      "community": 4,
+      "community": 3,
       "norm_label": "itemstack"
     },
     {
@@ -4990,14 +4990,14 @@
       "norm_label": "workhand tools (1.21.1) \u2014 changelog"
     },
     {
-      "label": "[0.0.0-beta.6] - 2026-09-05",
+      "label": "[0.0.0-beta.7] - 2026-09-08",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "changelog_0_0_0_beta_6_2026_09_05",
+      "id": "changelog_0_0_0_beta_7_2026_09_08",
       "community": 20,
-      "norm_label": "[0.0.0-beta.6] - 2026-09-05"
+      "norm_label": "[0.0.0-beta.7] - 2026-09-08"
     },
     {
       "label": "Fixed",
@@ -5010,10 +5010,30 @@
       "norm_label": "fixed"
     },
     {
+      "label": "[0.0.0-beta.6] - 2026-09-05",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "changelog_0_0_0_beta_6_2026_09_05",
+      "community": 20,
+      "norm_label": "[0.0.0-beta.6] - 2026-09-05"
+    },
+    {
+      "label": "Fixed",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "changelog_fixed_17",
+      "community": 20,
+      "norm_label": "fixed"
+    },
+    {
       "label": "[0.0.0-beta.5] - 2026-09-04",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L22",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "changelog_0_0_0_beta_5_2026_09_04",
       "community": 20,
@@ -5023,9 +5043,9 @@
       "label": "Fixed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L24",
+      "source_location": "L34",
       "_origin": "ast",
-      "id": "changelog_fixed_24",
+      "id": "changelog_fixed_34",
       "community": 20,
       "norm_label": "fixed"
     },
@@ -5033,7 +5053,7 @@
       "label": "[0.0.0-beta.4] - 2026-09-04",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L38",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "changelog_0_0_0_beta_4_2026_09_04",
       "community": 20,
@@ -5043,7 +5063,7 @@
       "label": "Changed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L40",
+      "source_location": "L50",
       "_origin": "ast",
       "id": "changelog_changed",
       "community": 20,
@@ -5053,7 +5073,7 @@
       "label": "[0.0.0-beta.3] - 2026-09-02",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L48",
+      "source_location": "L58",
       "_origin": "ast",
       "id": "changelog_0_0_0_beta_3_2026_09_02",
       "community": 20,
@@ -5063,9 +5083,9 @@
       "label": "Fixed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L50",
+      "source_location": "L60",
       "_origin": "ast",
-      "id": "changelog_fixed_50",
+      "id": "changelog_fixed_60",
       "community": 20,
       "norm_label": "fixed"
     },
@@ -5073,7 +5093,7 @@
       "label": "[0.0.0-beta.2] - 2026-09-02",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L61",
+      "source_location": "L71",
       "_origin": "ast",
       "id": "changelog_0_0_0_beta_2_2026_09_02",
       "community": 20,
@@ -5083,9 +5103,9 @@
       "label": "Fixed",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L63",
+      "source_location": "L73",
       "_origin": "ast",
-      "id": "changelog_fixed_63",
+      "id": "changelog_fixed_73",
       "community": 20,
       "norm_label": "fixed"
     },
@@ -5093,7 +5113,7 @@
       "label": "[0.0.0-beta.1] - 2026-09-02",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L72",
+      "source_location": "L82",
       "_origin": "ast",
       "id": "changelog_0_0_0_beta_1_2026_09_02",
       "community": 20,
@@ -5103,7 +5123,7 @@
       "label": "Added",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L74",
+      "source_location": "L84",
       "_origin": "ast",
       "id": "changelog_added",
       "community": 20,
@@ -5113,7 +5133,7 @@
       "label": "Technical",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L83",
+      "source_location": "L93",
       "_origin": "ast",
       "id": "changelog_technical",
       "community": 20,
@@ -5123,7 +5143,7 @@
       "label": "Not ported",
       "file_type": "document",
       "source_file": "CHANGELOG.md",
-      "source_location": "L113",
+      "source_location": "L123",
       "_origin": "ast",
       "id": "changelog_not_ported",
       "community": 20,
@@ -6348,6 +6368,26 @@
       "id": "docs_curseforge_versions_0_0_0_beta_5",
       "community": 31,
       "norm_label": "0.0.0-beta.5.md"
+    },
+    {
+      "label": "0.0.0-beta.6.md",
+      "file_type": "document",
+      "source_file": "docs/curseforge/versions/0.0.0-beta.6.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_curseforge_versions_0_0_0_beta_6",
+      "community": 32,
+      "norm_label": "0.0.0-beta.6.md"
+    },
+    {
+      "label": "0.0.0-beta.7.md",
+      "file_type": "document",
+      "source_file": "docs/curseforge/versions/0.0.0-beta.7.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_curseforge_versions_0_0_0_beta_7",
+      "community": 33,
+      "norm_label": "0.0.0-beta.7.md"
     },
     {
       "file_type": "image",
@@ -15718,7 +15758,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L72",
+      "source_location": "L82",
       "weight": 1.0,
       "source": "changelog_workhand_tools_1_21_1_changelog",
       "target": "changelog_0_0_0_beta_1_2026_09_02",
@@ -15728,7 +15768,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L61",
+      "source_location": "L71",
       "weight": 1.0,
       "source": "changelog_workhand_tools_1_21_1_changelog",
       "target": "changelog_0_0_0_beta_2_2026_09_02",
@@ -15738,7 +15778,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L48",
+      "source_location": "L58",
       "weight": 1.0,
       "source": "changelog_workhand_tools_1_21_1_changelog",
       "target": "changelog_0_0_0_beta_3_2026_09_02",
@@ -15748,7 +15788,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L38",
+      "source_location": "L48",
       "weight": 1.0,
       "source": "changelog_workhand_tools_1_21_1_changelog",
       "target": "changelog_0_0_0_beta_4_2026_09_04",
@@ -15758,7 +15798,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L22",
+      "source_location": "L32",
       "weight": 1.0,
       "source": "changelog_workhand_tools_1_21_1_changelog",
       "target": "changelog_0_0_0_beta_5_2026_09_04",
@@ -15768,7 +15808,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L5",
+      "source_location": "L15",
       "weight": 1.0,
       "source": "changelog_workhand_tools_1_21_1_changelog",
       "target": "changelog_0_0_0_beta_6_2026_09_05",
@@ -15778,9 +15818,19 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "changelog_workhand_tools_1_21_1_changelog",
+      "target": "changelog_0_0_0_beta_7_2026_09_08",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
       "source_location": "L7",
       "weight": 1.0,
-      "source": "changelog_0_0_0_beta_6_2026_09_05",
+      "source": "changelog_0_0_0_beta_7_2026_09_08",
       "target": "changelog_fixed",
       "confidence_score": 1.0
     },
@@ -15788,17 +15838,27 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L24",
+      "source_location": "L17",
       "weight": 1.0,
-      "source": "changelog_0_0_0_beta_5_2026_09_04",
-      "target": "changelog_fixed_24",
+      "source": "changelog_0_0_0_beta_6_2026_09_05",
+      "target": "changelog_fixed_17",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L40",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "changelog_0_0_0_beta_5_2026_09_04",
+      "target": "changelog_fixed_34",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L50",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_4_2026_09_04",
       "target": "changelog_changed",
@@ -15808,27 +15868,27 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L50",
+      "source_location": "L60",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_3_2026_09_02",
-      "target": "changelog_fixed_50",
+      "target": "changelog_fixed_60",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L63",
+      "source_location": "L73",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_2_2026_09_02",
-      "target": "changelog_fixed_63",
+      "target": "changelog_fixed_73",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L74",
+      "source_location": "L84",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_1_2026_09_02",
       "target": "changelog_added",
@@ -15838,7 +15898,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L113",
+      "source_location": "L123",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_1_2026_09_02",
       "target": "changelog_not_ported",
@@ -15848,7 +15908,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "CHANGELOG.md",
-      "source_location": "L83",
+      "source_location": "L93",
       "weight": 1.0,
       "source": "changelog_0_0_0_beta_1_2026_09_02",
       "target": "changelog_technical",
@@ -16956,5 +17016,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "99295c95492792af348e5c724659bcd6faf274e1"
+  "built_at_commit": "c1334584ad747fc85d590a585286a71dfc99a6e9"
 }
