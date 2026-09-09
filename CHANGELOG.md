@@ -2,6 +2,18 @@
 
 Branch `minecraft/1.21.1/neoforge-21.1.249/production`. History independent of the 26.2 branch.
 
+## [1.1.0] - 2026-09-09
+
+### Added
+
+- **Tree-felling axes now respect sneak.** Holding Shift while breaking a log suppresses the
+  felling cascade — the targeted log still breaks via vanilla, but connected logs stay standing.
+  Releasing Shift restores normal felling in whichever mode (Simple / Compound) the axe is set
+  to. This matches the sneak-to-disable behaviour the AoE pickaxes and shovels already had, so
+  every Workhand tool now reacts to Shift the same way. `TreeFellingHandler.onBlockBreak` returns
+  early on `player.isShiftKeyDown()`; the axe tooltip gains the shared
+  `tooltip.workhand_tools.hold_shift` line.
+
 ## [1.0.0] - 2026-09-09
 
 First stable release for **Minecraft 1.21.1 / NeoForge 21.1.249** (Java 21). Consolidates the
