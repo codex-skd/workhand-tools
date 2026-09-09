@@ -2,6 +2,45 @@
 
 Branch `minecraft/1.21.1/neoforge-21.1.249/production`. History independent of the 26.2 branch.
 
+## [1.0.0] - 2026-09-09
+
+First stable release for **Minecraft 1.21.1 / NeoForge 21.1.249** (Java 21). Consolidates the
+`0.0.0-beta.1` → `0.0.0-beta.7` line with no further code changes. This build has been running in
+the *(Develop) Mystical Realms* modded-server pack.
+
+### Summary of the beta line
+
+- **beta.1** — initial API port of the 26.2 source (41 classes, no mixins). Full tool line
+  unchanged: 12 pickaxes + 12 shovels (Stone/Iron/Diamond × 4 grades) with 3×3→5×5 area mining
+  and the Cubic/Flat toggle; 4 vein-mining pickaxes; 2 tree-felling axes; 2 crop-harvesting hoes;
+  Kennestroyer Pickaxe/Shovel; Reinforced Deepslate Pickaxe; Robust Stick; Tape Measure; Chunk
+  Anchor + Anchor Tome. Tool material system ported from the 26.2 `ToolMaterial` record to
+  `SimpleTier` with explicit repair ingredients; client render layer reverted from the 26.2
+  render-graph to `RenderLevelStageEvent` + `LevelRenderer.renderLineBox`. Guide book via
+  Vellumli.
+- **beta.2** — fixed a client mod-loading crash: `WorkhandToolsClient` carried
+  `@EventBusSubscriber` with no `@SubscribeEvent` methods, so `AutomaticEventSubscriber` aborted
+  mod loading. Annotation removed.
+- **beta.3** — added the missing `models/item/chunk_anchor.json`, so the Chunk Anchor no longer
+  renders as the missing-texture placeholder (1.21.1 resolves a `BlockItem`'s inventory model
+  from `models/item/<name>.json`; the `assets/.../items/` folder is inert on this version).
+- **beta.4 – beta.5** — the Hoe / AoE-mining / tree-felling mode toggles moved off
+  right-click-event cancellation (which raced vanilla and other mods) onto dedicated, rebindable
+  keybindings (Options → Controls → Workhand Tools), defaulted to the right mouse button; the
+  optional network channel is now `.optional()` so an older-jar server no longer disconnects
+  clients.
+- **beta.6** — fixed AoE / vein / felling duplicating the drops of multi-part or special blocks
+  (waystones, beds, tall flowers, this mod's own Chunk Anchor): `MiningHelper.breakBlock` now
+  mirrors the vanilla player-break sequence, so every block drops exactly once.
+- **beta.7** — completed the Spanish (`es_es`) locale (Chunk Anchor / Anchor Tome keys).
+
+### Notes
+
+- No code change relative to `0.0.0-beta.7`. Verified: `./gradlew clean build` is green;
+  `./gradlew runServer` reaches `Done` with 0 FATAL and 0 recipe/datapack parse errors.
+- Same CurseForge project as the 26.2 line (`1640361`); pick the file that matches your Minecraft
+  version. Requires Vellumli for the in-game guide book.
+
 ## [0.0.0-beta.7] - 2026-09-08
 
 ### Fixed
