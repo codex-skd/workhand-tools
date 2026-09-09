@@ -2,6 +2,19 @@
 
 Branch `minecraft/1.21.1/neoforge-21.1.249/production`. History independent of the 26.2 branch.
 
+## [1.3.0] - 2026-09-09
+
+### Changed
+
+- **The Workhand Hoe no longer breaks blocks.** It is now a pure mode tool: the primary (left)
+  button only runs the selected mode (Till / Harvest & Replant), never mining.
+  - `WorkhandHoeItem` overrides `canAttackBlock` to return `!player.isCreative()` (same pattern
+    as vanilla `SwordItem`), so survival players cannot start breaking a block with the hoe.
+  - `CropHarvestHandler.onLeftClickBlock` now cancels the `LeftClickBlock` event on every path
+    for a Workhand Hoe, in both modes. Left-clicking a non-tillable block or an **immature
+    crop** does nothing instead of destroying it — immature crops are left to keep growing.
+    Mature-crop area harvest/replant, drops, sounds and durability cost are unchanged.
+
 ## [1.2.0] - 2026-09-09
 
 ### Added
