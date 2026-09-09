@@ -2,6 +2,21 @@
 
 Branch `minecraft/1.21.1/neoforge-21.1.249/production`. History independent of the 26.2 branch.
 
+## [1.2.0] - 2026-09-09
+
+### Added
+
+- **Advancements.** A dedicated Workhand Tools advancement tab with nine milestone
+  advancements, each unlocked by the `minecraft:recipe_crafted` trigger the moment the matching
+  tool is crafted: *Workhand Tools* (Robust Stick, root) → *Getting to Work* (any base pickaxe/
+  shovel) → *Bigger Is Better* (any Professional pickaxe/shovel) → *The Kennestroyer* (challenge)
+  and *Overbuilt* (Reinforced Deepslate Pickaxe); *Follow the Vein* (any Improved vein pickaxe),
+  *Timber!* (any Workhand Axe) and *Reap What You Sow* (any Workhand Hoe) branch off *Getting to
+  Work*; *Stay Loaded* (Chunk Anchor) branches off the root. Data-only: nine files under
+  `data/workhand_tools/advancement/` plus `advancement.workhand_tools.*` strings in `en_us` and
+  `es_es` (other locales fall back to English). Verified with `./gradlew runServer` — datapack
+  loads, 0 parse errors.
+
 ## [1.1.0] - 2026-09-09
 
 ### Added
