@@ -60,8 +60,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/en_us.json": {
-    "mtime": 1788543411.7692702,
-    "ast_hash": "c9de5c39546009bb6c1351ec5133705c",
+    "mtime": 1788986504.418077,
+    "ast_hash": "c1206e95b1563ade0004bc0aef206d36",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/models/item/diamond_workhand_advanced_pickaxe.json": {
@@ -360,8 +360,8 @@
     "semantic_hash": "08f225d06e8bf240b42698232f6f79ef"
   },
   "CHANGELOG.md": {
-    "mtime": 1788980025.6307375,
-    "ast_hash": "1cb4659cc79b6c58c130826741ea1be0",
+    "mtime": 1788987270.025398,
+    "ast_hash": "95e798860d001ea0d11381db61ce8b38",
     "semantic_hash": ""
   },
   "README.md": {
@@ -680,8 +680,8 @@
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/es_es.json": {
-    "mtime": 1788828215.8894162,
-    "ast_hash": "2834c4dd07fd0a2e509142d84f976df4",
+    "mtime": 1788986508.2432427,
+    "ast_hash": "5a962efa7bcef9a451b9f61caaefb9d1",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/lang/fr_fr.json": {
@@ -1407,6 +1407,56 @@
   "docs/curseforge/versions/1.1.0.md": {
     "mtime": 1788980019.733297,
     "ast_hash": "f9d7e76a5edad5fed61579120a7d99d1",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/workhand_tools/advancement/area_master.json": {
+    "mtime": 1788986482.4821005,
+    "ast_hash": "2b77c4d44a526b9c2d78bdea07051ea6",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/workhand_tools/advancement/chunk_anchor.json": {
+    "mtime": 1788986493.592744,
+    "ast_hash": "2c96693f3aecddd4e48bd93fff612399",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/workhand_tools/advancement/first_workhand_tool.json": {
+    "mtime": 1788986478.9251091,
+    "ast_hash": "bde2e498940eefd1c61b49e78012f7f8",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/workhand_tools/advancement/harvester.json": {
+    "mtime": 1788986488.877432,
+    "ast_hash": "ec9372188e29a86517de051104b4242d",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/workhand_tools/advancement/kennestroyer.json": {
+    "mtime": 1788986490.4336002,
+    "ast_hash": "5f3e9a572ff28641d107a1778a360475",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/workhand_tools/advancement/lumberjack.json": {
+    "mtime": 1788986487.3298466,
+    "ast_hash": "c5f16d716ee250df32051aa0f3a5aa57",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/workhand_tools/advancement/reinforced_deepslate.json": {
+    "mtime": 1788986492.4196956,
+    "ast_hash": "c31c54214840209d26f2a08fc4042d24",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/workhand_tools/advancement/root.json": {
+    "mtime": 1788986476.9393725,
+    "ast_hash": "6e3062fdda9f19c82ab420d55f0ea418",
+    "semantic_hash": ""
+  },
+  "src/main/resources/data/workhand_tools/advancement/vein_miner.json": {
+    "mtime": 1788986485.0032964,
+    "ast_hash": "c4ef59e150af83eb6439e80def3a851c",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.2.0.md": {
+    "mtime": 1788987262.505703,
+    "ast_hash": "35fd5d404520f0b1bbb2b3f163838bba",
     "semantic_hash": ""
   }
 }
