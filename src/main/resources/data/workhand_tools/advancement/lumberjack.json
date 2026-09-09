@@ -1,0 +1,35 @@
+{
+  "parent": "workhand_tools:first_workhand_tool",
+  "display": {
+    "icon": {
+      "id": "workhand_tools:iron_workhand_axe"
+    },
+    "title": {
+      "translate": "advancement.workhand_tools.lumberjack.title"
+    },
+    "description": {
+      "translate": "advancement.workhand_tools.lumberjack.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "frame": "task"
+  },
+  "criteria": {
+    "iron_axe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:iron_workhand_axe"
+      }
+    },
+    "diamond_axe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:diamond_workhand_axe"
+      }
+    }
+  },
+  "requirements": [
+    ["iron_axe", "diamond_axe"]
+  ]
+}

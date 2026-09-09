@@ -1,0 +1,47 @@
+{
+  "parent": "workhand_tools:first_workhand_tool",
+  "display": {
+    "icon": {
+      "id": "workhand_tools:diamond_workhand_professional_improved_pickaxe"
+    },
+    "title": {
+      "translate": "advancement.workhand_tools.vein_miner.title"
+    },
+    "description": {
+      "translate": "advancement.workhand_tools.vein_miner.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "frame": "task"
+  },
+  "criteria": {
+    "iron_adv": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:iron_workhand_advanced_improved_pickaxe"
+      }
+    },
+    "iron_prof": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:iron_workhand_professional_improved_pickaxe"
+      }
+    },
+    "diamond_adv": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:diamond_workhand_advanced_improved_pickaxe"
+      }
+    },
+    "diamond_prof": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:diamond_workhand_professional_improved_pickaxe"
+      }
+    }
+  },
+  "requirements": [
+    ["iron_adv", "iron_prof", "diamond_adv", "diamond_prof"]
+  ]
+}

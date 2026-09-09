@@ -1,0 +1,35 @@
+{
+  "parent": "workhand_tools:area_master",
+  "display": {
+    "icon": {
+      "id": "workhand_tools:kennestroyer_pickaxe"
+    },
+    "title": {
+      "translate": "advancement.workhand_tools.kennestroyer.title"
+    },
+    "description": {
+      "translate": "advancement.workhand_tools.kennestroyer.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "frame": "challenge"
+  },
+  "criteria": {
+    "pickaxe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:kennestroyer_pickaxe"
+      }
+    },
+    "shovel": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:kennestroyer_shovel"
+      }
+    }
+  },
+  "requirements": [
+    ["pickaxe", "shovel"]
+  ]
+}

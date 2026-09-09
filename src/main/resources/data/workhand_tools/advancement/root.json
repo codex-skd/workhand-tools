@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "workhand_tools:diamond_workhand_professional_pickaxe"
+    },
+    "title": {
+      "translate": "advancement.workhand_tools.root.title"
+    },
+    "description": {
+      "translate": "advancement.workhand_tools.root.description"
+    },
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "frame": "task"
+  },
+  "criteria": {
+    "robust_stick": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:robust_stick"
+      }
+    }
+  },
+  "requirements": [
+    ["robust_stick"]
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "parent": "workhand_tools:root",
+  "display": {
+    "icon": {
+      "id": "workhand_tools:chunk_anchor"
+    },
+    "title": {
+      "translate": "advancement.workhand_tools.chunk_anchor.title"
+    },
+    "description": {
+      "translate": "advancement.workhand_tools.chunk_anchor.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "frame": "task"
+  },
+  "criteria": {
+    "chunk_anchor": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:chunk_anchor"
+      }
+    }
+  },
+  "requirements": [
+    ["chunk_anchor"]
+  ]
+}
