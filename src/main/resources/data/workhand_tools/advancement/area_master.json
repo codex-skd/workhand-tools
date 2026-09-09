@@ -1,0 +1,59 @@
+{
+  "parent": "workhand_tools:first_workhand_tool",
+  "display": {
+    "icon": {
+      "id": "workhand_tools:diamond_workhand_professional_pickaxe"
+    },
+    "title": {
+      "translate": "advancement.workhand_tools.area_master.title"
+    },
+    "description": {
+      "translate": "advancement.workhand_tools.area_master.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "frame": "goal"
+  },
+  "criteria": {
+    "stone_pick": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:stone_workhand_professional_pickaxe"
+      }
+    },
+    "iron_pick": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:iron_workhand_professional_pickaxe"
+      }
+    },
+    "diamond_pick": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:diamond_workhand_professional_pickaxe"
+      }
+    },
+    "stone_shovel": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:stone_workhand_professional_shovel"
+      }
+    },
+    "iron_shovel": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:iron_workhand_professional_shovel"
+      }
+    },
+    "diamond_shovel": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:diamond_workhand_professional_shovel"
+      }
+    }
+  },
+  "requirements": [
+    ["stone_pick", "iron_pick", "diamond_pick", "stone_shovel", "iron_shovel", "diamond_shovel"]
+  ]
+}
