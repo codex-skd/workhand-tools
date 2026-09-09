@@ -55,10 +55,10 @@ if (level instanceof ServerLevel serverLevel) {
                     // Consume durability
                     stack.hurtAndBreak(1, player, EquipmentSlot.MAINHAND);
                     player.swing(event.getHand());
-                    event.setCanceled(true);
                 }
             }
-            // If not tillable, let normal breaking proceed (don't cancel)
+            // Hoe is a pure mode tool: always cancel so vanilla never breaks a block
+            event.setCanceled(true);
         } else if (mode == HoeMode.HARVEST) {
             // Check if the clicked block is a mature crop/cocoa/nether_wart
             boolean isMature = false;
@@ -126,9 +126,10 @@ if (level instanceof ServerLevel serverLevel) {
                     }
                 }
                 player.swing(event.getHand());
-                event.setCanceled(true);
             }
-            // If not mature, let normal breaking proceed (don't cancel)
+            // Hoe is a pure mode tool: always cancel so vanilla never breaks a block
+            // (immature crops are left untouched and keep growing)
+            event.setCanceled(true);
         }
     }
 
