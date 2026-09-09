@@ -21,6 +21,11 @@ public class TreeFellingHandler {
         if (player == null) {
             return;
         }
+        // Sneaking suppresses the felling cascade (mirrors AoEMiningHandler): the targeted log
+        // is still broken by vanilla, but no connected logs are taken down.
+        if (player.isShiftKeyDown()) {
+            return;
+        }
         Level level = event.getLevel() instanceof Level l ? l : null;
         if (level == null || level.isClientSide()) {
             return;
@@ -93,5 +98,6 @@ public class TreeFellingHandler {
         event.getToolTip().add(Component.translatable(tooltipKey).withStyle(ChatFormatting.GOLD));
         event.getToolTip().add(Component.translatable("tooltip.workhand_tools.right_click"));
         event.getToolTip().add(Component.translatable("tooltip.workhand_tools.hoe_mode.keybind_hint"));
+        event.getToolTip().add(Component.translatable("tooltip.workhand_tools.hold_shift"));
     }
 }
