@@ -360,8 +360,8 @@
     "semantic_hash": "08f225d06e8bf240b42698232f6f79ef"
   },
   "CHANGELOG.md": {
-    "mtime": 1788987270.025398,
-    "ast_hash": "95e798860d001ea0d11381db61ce8b38",
+    "mtime": 1788987508.792775,
+    "ast_hash": "0970b5e41c7051c44519de652f8eacb4",
     "semantic_hash": ""
   },
   "README.md": {
@@ -1030,13 +1030,13 @@
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/CropHarvestHandler.java": {
-    "mtime": 1788538792.4158623,
-    "ast_hash": "5d027449076bb9162d08b25d42cf546c",
+    "mtime": 1788987438.570226,
+    "ast_hash": "43079fdf42407dcbd084dbfbc8dcf7cb",
     "semantic_hash": ""
   },
   "src/main/java/com/skd/workhandtools/WorkhandHoeItem.java": {
-    "mtime": 1788344209.7441072,
-    "ast_hash": "2973d4166ad87730aca04d6273e1db46",
+    "mtime": 1788987423.3275607,
+    "ast_hash": "80ccf37b2d1bd577198f076afee241b4",
     "semantic_hash": ""
   },
   "src/main/resources/assets/workhand_tools/items/diamond_workhand_hoe.json": {
@@ -1457,6 +1457,11 @@
   "docs/curseforge/versions/1.2.0.md": {
     "mtime": 1788987262.505703,
     "ast_hash": "35fd5d404520f0b1bbb2b3f163838bba",
+    "semantic_hash": ""
+  },
+  "docs/curseforge/versions/1.3.0.md": {
+    "mtime": 1788987502.2859578,
+    "ast_hash": "a340a461c57ef87e3c96cfcd29e49c95",
     "semantic_hash": ""
   }
 }
