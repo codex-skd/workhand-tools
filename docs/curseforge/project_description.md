@@ -153,7 +153,7 @@
 
 <table>
 <tr><th align="left">Minecraft</th><th align="left">NeoForge</th><th align="left">Java</th><th align="left">Vellumli</th><th align="left">Latest build</th><th align="left">Status</th></tr>
-<tr><td>1.21.1</td><td>21.1.249+</td><td>21</td><td>1.21.1 beta.1+</td><td><code>0.0.0-beta.1</code></td><td>Beta</td></tr>
+<tr><td>1.21.1</td><td>21.1.249+</td><td>21</td><td>1.21.1 1.0.0+</td><td><code>1.0.0</code></td><td>Stable</td></tr>
 <tr><td>26.2</td><td>26.2.0.37-beta+</td><td>25</td><td>1.2.0+</td><td><code>1.23.2</code></td><td>Stable</td></tr>
 </table>
 

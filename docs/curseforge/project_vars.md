@@ -1,6 +1,6 @@
 # Project Variables — Workhand Tools (1.21.1)
 
-> **Rama 1.21.1**: `game_versions = 9638, 9639, 11779, 10150` (Client, Server, **1.21.1** id `11779`, NeoForge). `release_type = beta`. JAR `workhand_tools-1.21.1-neoforge-21.1.249-<version>.jar`. Tag `1.21.1-neoforge-<version>`. Proyecto CurseForge compartido con la rama 26.2 (`1640361`).
+> **Rama 1.21.1**: `game_versions = 9638, 9639, 11779, 10150` (Client, Server, **1.21.1** id `11779`, NeoForge). `release_type = release`. JAR `workhand_tools-1.21.1-neoforge-21.1.249-<version>.jar`. Tag `1.21.1-neoforge-<version>`. Proyecto CurseForge compartido con la rama 26.2 (`1640361`).
 
 ## Proyecto
 
@@ -27,7 +27,7 @@ Autenticación Core: cabecera `x-api-key`
 
 project_id = 1640361
 api_token = ee776b0a-ee95-4850-b554-06be02a8657f
-release_type = beta
+release_type = release
 game_versions = 9638, 9639, 11779, 10150
 relations =
 
@@ -39,9 +39,9 @@ El script lee `project_id`, `api_token` y `game_versions` de este archivo, y `mo
 
 ## Nota
 
-Proyecto CurseForge **compartido** con la rama 26.2 (`1640361`). La primera subida de la rama
-1.21.1 se hace con el mismo script; el `release_type` es `beta` mientras la línea 1.21.1 no salga
-de beta.
+Proyecto CurseForge **compartido** con la rama 26.2 (`1640361`). Todas las subidas de la rama
+1.21.1 se hacen con el mismo script. Desde `1.0.0` el `release_type` de la línea 1.21.1 es
+`release`.
 
 ## Rama
 
