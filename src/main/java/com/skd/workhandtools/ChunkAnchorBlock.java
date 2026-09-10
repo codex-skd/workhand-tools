@@ -18,6 +18,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.level.block.RenderShape;
 
 public class ChunkAnchorBlock extends BaseEntityBlock {
     public static final MapCodec<ChunkAnchorBlock> CODEC = simpleCodec(ChunkAnchorBlock::new);
@@ -35,6 +36,15 @@ public class ChunkAnchorBlock extends BaseEntityBlock {
     @Override
     protected MapCodec<? extends BaseEntityBlock> codec() {
         return CODEC;
+    }
+
+    // BaseEntityBlock defaults getRenderShape() to INVISIBLE (it assumes a BlockEntityRenderer draws
+    // the block). The Chunk Anchor's body is a normal JSON model in blockstates/chunk_anchor.json and
+    // ChunkAnchorRenderer only draws the floating tome, so without this override the placed block is
+    // invisible. Same override vanilla uses on SpawnerBlock / BeehiveBlock.
+    @Override
+    protected RenderShape getRenderShape(BlockState state) {
+        return RenderShape.MODEL;
     }
 
     @Override

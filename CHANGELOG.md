@@ -2,6 +2,18 @@
 
 Branch `minecraft/1.21.1/neoforge-21.1.249/production`. History independent of the 26.2 branch.
 
+## [1.3.1] - 2026-09-10
+
+### Fixed
+
+- **The placed Chunk Anchor block was invisible.** `ChunkAnchorBlock` extends `BaseEntityBlock`,
+  whose `getRenderShape()` defaults to `RenderShape.INVISIBLE`; the block's body is a normal
+  blockstate model and `ChunkAnchorRenderer` only draws the floating tome, so the pedestal never
+  rendered in the world (the inventory / in-hand item was unaffected, and an inserted tome still
+  showed). Added the `getRenderShape() -> RenderShape.MODEL` override (same one vanilla uses on
+  `SpawnerBlock` / `BeehiveBlock`). Present since the 1.21.1 port; beta.3 only fixed the item
+  model, not the placed block.
+
 ## [1.3.0] - 2026-09-09
 
 ### Changed
