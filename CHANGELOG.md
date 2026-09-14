@@ -2,6 +2,41 @@
 
 Branch `minecraft/1.21.1/neoforge-21.1.249/production`. History independent of the 26.2 branch.
 
+## [1.4.0] - 2026-09-14
+
+### Added
+
+- **Silent Anchor Tome** (`silent_anchor_tome`). Same chunk force-load behavior as the Anchor
+  Tome, but the Chunk Anchor's border corner lines stay hidden always, regardless of the
+  `chunkAnchorBorderMode` config. Crafted with an iron ingot instead of an amethyst shard
+  (amethyst + book + diamond stays the recipe for the regular tome). Uses a placeholder texture
+  duplicated from the Anchor Tome's.
+- **Chunk Anchor border color config** (`chunkAnchorBorderColor`). The border corner lines were
+  hardcoded to white; this now reuses the tape measure's `LineColor` enum so the color is
+  configurable, same as the tape measure's own line color.
+
+### Changed
+
+- **`NEARBY` chunk border mode redesigned.** Instead of a flat 20-block radius, it now shows the
+  border corners whenever the player is standing anywhere within the same chunk column as the
+  anchor, at any Y level (above or below).
+
+### Fixed
+
+- **Missing Configured translations for the COMMON config.** `pitchThresholdDegrees`,
+  `maxLeafDistanceFromLog`, `chunkAnchorBorderMode` and the new `chunkAnchorBorderColor` were
+  showing as raw config keys in the Configured mod's screen instead of translated labels (only
+  the tape measure's CLIENT config options had lang entries). Added to all 10 lang files.
+- **AoE mining direction bug.** `AoEPatterns.digDirection` recomputed the dig direction from the
+  player's current look angle at `BreakEvent` time (when the original block finished breaking),
+  not from when they started mining it. Moving the crosshair onto an adjacent block mid-break
+  could make the AoE pattern extend onto that block instead of the intended dig direction —
+  noticeable on any Workhand pickaxe or shovel, since AoE mining is on by default even for
+  grade-1 tools. `AoEMiningHandler` now caches the direction at `LeftClickBlock` time and reuses
+  it if it still matches the block that actually broke, falling back to the original raytrace
+  when no cache entry matches (insta-mine, creative, etc.). Axes and hoes use separate handlers
+  and were unaffected.
+
 ## [1.3.1] - 2026-09-10
 
 ### Fixed
