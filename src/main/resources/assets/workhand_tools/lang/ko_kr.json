@@ -39,6 +39,8 @@
   "item.workhand_tools.diamond_workhand_professional_pickaxe": "프로 다이아몬드 워크핸드 곡괭이",
   "item.workhand_tools.diamond_workhand_professional_shovel": "프로 다이아몬드 워크핸드 삽",
   "item.workhand_tools.robust_stick": "튼튼한 막대기",
+  "item.workhand_tools.anchor_tome": "앵커 톰",
+  "item.workhand_tools.silent_anchor_tome": "고요한 앵커 톰",
   "item.workhand_tools.iron_workhand_advated_improved_pickaxe": "개량된 고급 철 워크핸드 곡괭이",
   "item.workhand_tools.iron_workhand_professional_improved_pickaxe": "개량된 전문 철 워크핸드 곡괭이",
   "item.workhand_tools.diamond_workhand_advated_improved_pickaxe": "개량된 고급 다이아몬드 워크핸드 곡괭이",
@@ -63,6 +65,10 @@
   "workhand_tools.configuration.textSize": "글자 크기",
   "workhand_tools.configuration.lineWidth": "선 두께",
   "workhand_tools.configuration.lineWidthMax": "선 두께 최대",
+  "workhand_tools.configuration.pitchThresholdDegrees": "피치 임계값 (도)",
+  "workhand_tools.configuration.maxLeafDistanceFromLog": "줄기로부터 최대 잎 거리",
+  "workhand_tools.configuration.chunkAnchorBorderMode": "청크 앵커 테두리 모드",
+  "workhand_tools.configuration.chunkAnchorBorderColor": "청크 앵커 테두리 색상",
   "message.workhand_tools.mode.disabled": "모드: 비활성화",
   "tooltip.workhand_tools.mode.disabled": "§7범위 채굴이 비활성화됨"
 }

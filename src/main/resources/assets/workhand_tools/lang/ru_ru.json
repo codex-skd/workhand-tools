@@ -39,6 +39,8 @@
   "item.workhand_tools.diamond_workhand_professional_pickaxe": "Профессиональная алмазная рабочая кирка",
   "item.workhand_tools.diamond_workhand_professional_shovel": "Профессиональная алмазная рабочая лопата",
   "item.workhand_tools.robust_stick": "Прочная палка",
+  "item.workhand_tools.anchor_tome": "Том якоря",
+  "item.workhand_tools.silent_anchor_tome": "Тихий том якоря",
   "item.workhand_tools.iron_workhand_advated_improved_pickaxe": "Улучшенная продвинутая железная Workhand-кирка",
   "item.workhand_tools.iron_workhand_professional_improved_pickaxe": "Улучшенная профессиональная железная Workhand-кирка",
   "item.workhand_tools.diamond_workhand_advated_improved_pickaxe": "Улучшенная продвинутая алмазная Workhand-кирка",
@@ -63,6 +65,10 @@
   "workhand_tools.configuration.textSize": "Размер текста",
   "workhand_tools.configuration.lineWidth": "Толщина линии",
   "workhand_tools.configuration.lineWidthMax": "Макс. толщина линии",
+  "workhand_tools.configuration.pitchThresholdDegrees": "Порог наклона (Градусы)",
+  "workhand_tools.configuration.maxLeafDistanceFromLog": "Макс. расстояние листвы до ствола",
+  "workhand_tools.configuration.chunkAnchorBorderMode": "Режим границы якоря чанка",
+  "workhand_tools.configuration.chunkAnchorBorderColor": "Цвет границы якоря чанка",
   "message.workhand_tools.mode.disabled": "Режим: Отключен",
   "tooltip.workhand_tools.mode.disabled": "§7Добыча по области отключена"
 }
