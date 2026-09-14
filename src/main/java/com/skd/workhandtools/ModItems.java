@@ -30,6 +30,10 @@ public final class ModItems {
             WorkhandTools.ITEMS.registerItem("anchor_tome",
                     props -> new AnchorTomeItem(props),
                     new Item.Properties().stacksTo(1).rarity(Rarity.RARE));
+    public static final DeferredItem<SilentAnchorTomeItem> SILENT_ANCHOR_TOME =
+            WorkhandTools.ITEMS.registerItem("silent_anchor_tome",
+                    props -> new SilentAnchorTomeItem(props),
+                    new Item.Properties().stacksTo(1).rarity(Rarity.RARE));
 
     public static final DeferredItem<BlockItem> CHUNK_ANCHOR =
             WorkhandTools.ITEMS.registerSimpleBlockItem("chunk_anchor", ModBlocks.CHUNK_ANCHOR);
@@ -321,6 +325,8 @@ public final class ModItems {
         BY_ID.put("diamond_workhand_professional_shovel", DIAMOND_WORKHAND_PROFESSIONAL_SHOVEL);
         BY_ID.put("iron_workhand_axe", IRON_WORKHAND_AXE);
         BY_ID.put("diamond_workhand_axe", DIAMOND_WORKHAND_AXE);
+        BY_ID.put("anchor_tome", ANCHOR_TOME);
+        BY_ID.put("silent_anchor_tome", SILENT_ANCHOR_TOME);
         BY_ID.put("tape_measure", TAPE_MEASURE);
 
         BY_ID.put("iron_workhand_hoe", IRON_WORKHAND_HOE);

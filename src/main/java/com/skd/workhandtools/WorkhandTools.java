@@ -60,6 +60,7 @@ for (DeferredHolder<Item, ? extends Item> holder : ModItems.SHOVELS) {
                 output.accept(ModItems.TAPE_MEASURE.get());
                 output.accept(ModItems.CHUNK_ANCHOR.get());
                 output.accept(ModItems.ANCHOR_TOME.get());
+                output.accept(ModItems.SILENT_ANCHOR_TOME.get());
                 // The guide book itself is NOT added here: Vellumli's own BuildCreativeModeTabContentsEvent
                 // listener already adds every book that declares a matching "creative_tab" in its book.json
                 // (see data/workhand_tools/vellumli_books/workhand_guide/book.json) — adding it here too

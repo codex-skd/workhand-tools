@@ -39,6 +39,8 @@
   "item.workhand_tools.diamond_workhand_professional_pickaxe": "专业钻石工作手镐",
   "item.workhand_tools.diamond_workhand_professional_shovel": "专业钻石工作手铲",
   "item.workhand_tools.robust_stick": "坚固木棍",
+  "item.workhand_tools.anchor_tome": "锚定之书",
+  "item.workhand_tools.silent_anchor_tome": "静默锚定之书",
   "item.workhand_tools.iron_workhand_advated_improved_pickaxe": "改良高级铁制工作手镐",
   "item.workhand_tools.iron_workhand_professional_improved_pickaxe": "改良专业铁制工作手镐",
   "item.workhand_tools.diamond_workhand_advated_improved_pickaxe": "改良高级钻石工作手镐",
@@ -63,6 +65,10 @@
   "workhand_tools.configuration.textSize": "文字大小",
   "workhand_tools.configuration.lineWidth": "线条宽度",
   "workhand_tools.configuration.lineWidthMax": "最大线条宽度",
+  "workhand_tools.configuration.pitchThresholdDegrees": "俯仰角阈值（度）",
+  "workhand_tools.configuration.maxLeafDistanceFromLog": "距树干最大树叶距离",
+  "workhand_tools.configuration.chunkAnchorBorderMode": "区块锚点边框模式",
+  "workhand_tools.configuration.chunkAnchorBorderColor": "区块锚点边框颜色",
   "message.workhand_tools.mode.disabled": "模式：禁用",
   "tooltip.workhand_tools.mode.disabled": "§7范围挖掘已禁用"
 }

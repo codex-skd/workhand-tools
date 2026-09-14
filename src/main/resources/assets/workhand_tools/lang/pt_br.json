@@ -39,6 +39,8 @@
   "item.workhand_tools.diamond_workhand_professional_pickaxe": "Picareta Workhand Profissional de Diamante",
   "item.workhand_tools.diamond_workhand_professional_shovel": "Pá Workhand Profissional de Diamante",
   "item.workhand_tools.robust_stick": "Graveto Robusto",
+  "item.workhand_tools.anchor_tome": "Tomo de Ancoragem",
+  "item.workhand_tools.silent_anchor_tome": "Tomo de Ancoragem Silencioso",
   "item.workhand_tools.iron_workhand_advated_improved_pickaxe": "Picareta Workhand Avançada Melhorada de Ferro",
   "item.workhand_tools.iron_workhand_professional_improved_pickaxe": "Picareta Workhand Profissional Melhorada de Ferro",
   "item.workhand_tools.diamond_workhand_advated_improved_pickaxe": "Picareta Workhand Avançada Melhorada de Diamante",
@@ -63,6 +65,10 @@
   "workhand_tools.configuration.textSize": "Tamanho do Texto",
   "workhand_tools.configuration.lineWidth": "Espessura da Linha",
   "workhand_tools.configuration.lineWidthMax": "Espessura da Linha Máx.",
+  "workhand_tools.configuration.pitchThresholdDegrees": "Limite de Inclinação (Graus)",
+  "workhand_tools.configuration.maxLeafDistanceFromLog": "Distância Máx. das Folhas ao Tronco",
+  "workhand_tools.configuration.chunkAnchorBorderMode": "Modo de Borda da Âncora de Chunk",
+  "workhand_tools.configuration.chunkAnchorBorderColor": "Cor da Borda da Âncora de Chunk",
   "message.workhand_tools.mode.disabled": "Modo: Desativado",
   "tooltip.workhand_tools.mode.disabled": "§7Mineração em área desativada"
 }

@@ -1,6 +1,9 @@
 package com.skd.workhandtools;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.UUID;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -19,6 +22,21 @@ import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
 
 public class AoEMiningHandler {
+
+    // Cached dig direction per player: captures the intended direction at the moment the player
+    // starts breaking a block, so BreakEvent can reuse it even if the player moved their view
+    // mid-break (see Task 5).
+    private static final Map<UUID, BlockPosAndDirection> DIG_DIRECTION_CACHE = new HashMap<>();
+
+    private static final class BlockPosAndDirection {
+        final BlockPos pos;
+        final Direction direction;
+
+        BlockPosAndDirection(BlockPos pos, Direction direction) {
+            this.pos = pos;
+            this.direction = direction;
+        }
+    }
 
     @SubscribeEvent
     public void onBlockBreak(BlockEvent.BreakEvent event) {
@@ -41,7 +59,18 @@ public class AoEMiningHandler {
             return;
         }
         boolean lookingUp = player.getXRot() < Config.PITCH_THRESHOLD_DEGREES.get();
-        Direction digDir = AoEPatterns.digDirection(player, level, event.getPos());
+
+        // Use the cached dig direction if it matches the block being broken (captured at
+        // LeftClickBlock time when the player started mining), falling back to fresh raytrace
+        // if no cache entry exists (e.g. insta-mine / creative / cache never populated).
+        BlockPosAndDirection cached = DIG_DIRECTION_CACHE.remove(player.getUUID());
+        Direction digDir;
+        if (cached != null && cached.pos.equals(event.getPos())) {
+            digDir = cached.direction;
+        } else {
+            digDir = AoEPatterns.digDirection(player, level, event.getPos());
+        }
+
         List<BlockPos> pattern = AoEPatterns.computePattern(event.getPos(), grade, mode, digDir, lookingUp);
 
         for (BlockPos pos : pattern) {
@@ -69,6 +98,24 @@ public class AoEMiningHandler {
                 break;
             }
         }
+    }
+
+    // Capture the dig direction at the moment the player starts breaking a block, so BreakEvent
+    // can reuse it even if the player moved their view mid-break (see Task 5).
+    @SubscribeEvent
+    public void onLeftClickBlock(PlayerInteractEvent.LeftClickBlock event) {
+        Player player = event.getEntity();
+        if (player == null || player.level().isClientSide()) {
+            return;
+        }
+        ItemStack stack = player.getMainHandItem();
+        if (ModItems.gradeOf(stack) == null) {
+            return;
+        }
+        Level level = player.level();
+        BlockPos pos = event.getPos();
+        Direction dir = AoEPatterns.digDirection(player, level, pos);
+        DIG_DIRECTION_CACHE.put(player.getUUID(), new BlockPosAndDirection(pos, dir));
     }
 
     @SubscribeEvent

@@ -39,8 +39,13 @@ public class Config {
             .comment("When to render the chunk border corners for active Chunk Anchors.",
                     "ALWAYS = always render within render distance (default).",
                     "SNEAK_LOOKING = only when sneaking and looking at the anchor within 20 blocks.",
-                    "NEARBY = only when within 20 blocks of the anchor (regardless of looking/sneaking).")
+                    "NEARBY = only when standing within the same chunk column as the anchor (any Y level).")
             .defineEnum("chunkAnchorBorderMode", ChunkAnchorBorderMode.ALWAYS);
+
+    public static final ModConfigSpec.EnumValue<LineColor> CHUNK_ANCHOR_BORDER_COLOR = BUILDER
+            .comment("Color of the chunk border corner lines rendered for active Chunk Anchors.",
+                    "WHITE = default white lines. RANDOM = random dye color per frame.")
+            .defineEnum("chunkAnchorBorderColor", LineColor.WHITE);
 
     public static final ModConfigSpec SPEC = BUILDER.build();
 }

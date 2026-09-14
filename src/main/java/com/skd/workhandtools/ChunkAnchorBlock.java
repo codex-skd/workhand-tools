@@ -27,10 +27,11 @@ public class ChunkAnchorBlock extends BaseEntityBlock {
     // react to it without needing to query the block entity every frame (see docs/DESIGN_WORKHAND_TOOLS.md,
     // "Chunk Anchor + Anchor Tome"). The actual tome ItemStack lives in ChunkAnchorBlockEntity.
     public static final BooleanProperty HAS_TOME = BooleanProperty.create("has_tome");
+    public static final BooleanProperty HIDE_BORDER = BooleanProperty.create("hide_border");
 
     public ChunkAnchorBlock(Properties properties) {
         super(properties);
-        registerDefaultState(stateDefinition.any().setValue(HAS_TOME, false));
+        registerDefaultState(stateDefinition.any().setValue(HAS_TOME, false).setValue(HIDE_BORDER, false));
     }
 
     @Override
@@ -49,7 +50,7 @@ public class ChunkAnchorBlock extends BaseEntityBlock {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(HAS_TOME);
+        builder.add(HAS_TOME, HIDE_BORDER);
     }
 
     @Override
@@ -64,12 +65,13 @@ public class ChunkAnchorBlock extends BaseEntityBlock {
             return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
         }
 
-        if (!anchor.hasTome() && stack.is(ModItems.ANCHOR_TOME.get())) {
+        if (!anchor.hasTome() && (stack.is(ModItems.ANCHOR_TOME.get()) || stack.is(ModItems.SILENT_ANCHOR_TOME.get()))) {
             if (!level.isClientSide()) {
                 ItemStack tome = stack.copyWithCount(1);
                 anchor.setTome(tome);
                 stack.shrink(1);
-                level.setBlock(pos, state.setValue(HAS_TOME, true), 3);
+                boolean isSilent = tome.is(ModItems.SILENT_ANCHOR_TOME.get());
+                level.setBlock(pos, state.setValue(HAS_TOME, true).setValue(HIDE_BORDER, isSilent), 3);
             }
             return ItemInteractionResult.SUCCESS;
         }
@@ -88,7 +90,7 @@ public class ChunkAnchorBlock extends BaseEntityBlock {
             if (!player.getInventory().add(extracted)) {
                 player.drop(extracted, false);
             }
-            level.setBlock(pos, state.setValue(HAS_TOME, false), 3);
+            level.setBlock(pos, state.setValue(HAS_TOME, false).setValue(HIDE_BORDER, false), 3);
         }
         return InteractionResult.SUCCESS;
     }
