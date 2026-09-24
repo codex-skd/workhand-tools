@@ -1,0 +1,31 @@
+{
+  "name": "Reinforced Deepslate Pickaxe",
+  "icon": "workhand_tools:reinforced_deepslate_pickaxe",
+  "category": "workhand_tools:pickaxes",
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "The Reinforced Deepslate Pickaxe is a highly specialized tool designed for a single purpose: mining Reinforced Deepslate at very high speed. It is completely useless as a general-purpose pickaxe — it cannot mine stone, ores, or any other block efficiently."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "How It Works",
+      "text": "This pickaxe has been engineered to break Reinforced Deepslate blocks at the same speed a Diamond Pickaxe breaks regular stone. Against any other block, it cannot mine at all in Survival — mining progress never advances, no matter how long you hold it."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Crafting Requirement",
+      "text": "To craft this pickaxe, you first need to obtain a Reinforced Deepslate block. In vanilla Minecraft, these blocks drop nothing when broken. This mod adds a special override: breaking a Reinforced Deepslate block with a Diamond Workhand Professional Improved Pickaxe — or with this pickaxe once you already have one — will drop the block itself."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Stats",
+      "text": "Durability: 50,000\nMining Speed (Reinforced Deepslate): ~293\nMining Speed (other blocks): 0 (cannot mine)\nAttack Damage: +4\nEnchantability: 15\nRepair: Netherite Ingots"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:reinforced_deepslate_pickaxe",
+      "title": "Reinforced Deepslate Pickaxe"
+    }
+  ]
+}

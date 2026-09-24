@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "has_tome=false": {
+      "model": "workhand_tools:block/chunk_anchor"
+    },
+    "has_tome=true": {
+      "model": "workhand_tools:block/chunk_anchor"
+    }
+  }
+}

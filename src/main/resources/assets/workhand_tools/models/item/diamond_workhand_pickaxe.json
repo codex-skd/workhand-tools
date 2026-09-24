@@ -1,0 +1,6 @@
+{
+    "textures": {
+        "layer0": "workhand_tools:item/diamond_workhand_pickaxe"
+    },
+    "parent": "minecraft:item/handheld"
+}

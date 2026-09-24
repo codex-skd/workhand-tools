@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    " pa",
+    " p "
+  ],
+  "key": {
+    "a": "minecraft:iron_block",
+    "p": "minecraft:stick"
+  },
+  "result": {
+    "count": 1,
+    "id": "workhand_tools:iron_workhand_advanced_pickaxe"
+  }
+}

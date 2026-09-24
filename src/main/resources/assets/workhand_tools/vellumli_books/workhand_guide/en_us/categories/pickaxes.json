@@ -1,0 +1,5 @@
+{
+  "name": "Workhand Pickaxes",
+  "description": "Workhand Pickaxes feature area mining capabilities with progressive grades. Each grade increases the mining area and adds new features like cubic/flat mode toggling.",
+  "icon": "workhand_tools:diamond_workhand_professional_pickaxe"
+}

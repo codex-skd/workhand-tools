@@ -1,0 +1,31 @@
+{
+  "name": "Pala Kennestroyer",
+  "icon": "workhand_tools:kennestroyer_shovel",
+  "category": "workhand_tools:shovels",
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "La Pala Kennestroyer es la herramienta de excavación definitiva, fabricada con Netherita, Bloques de Diamante, Obsidiana y las mejores Palas Workhand de Diamante. Combina todos los modos de excavación en una sola herramienta."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Progresión de Modos (Clic derecho para ciclar)",
+      "text": "$(bold)Desactivado$(): Sin excavación en área\n$(bold)Rango 3 Plano$(): área 3x3x1 (una sola capa)\n$(bold)Rango 3 Cúbico$(): área 3x3x3 cúbica\n$(bold)Rango 5 Plano$(): área 5x5x1 (una sola capa)\n$(bold)Rango 5 Cúbico$(): área 5x5x5 cúbica"
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Controles",
+      "text": "$(bold)Clic izquierdo$(): Excavación en área (sin agacharse)\n$(bold)Shift + Clic izquierdo$(): Excavación de un solo bloque\n$(bold)Clic derecho$(): Cicla entre los 5 modos"
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Estadísticas",
+      "text": "Durabilidad: 50,000\nVelocidad de minado: 12.0\nDaño de ataque: +4\nEncantabilidad: 15\nReparación: Lingotes de Netherita"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:kennestroyer_shovel",
+      "title": "Pala Kennestroyer"
+    }
+  ]
+}

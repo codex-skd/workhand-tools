@@ -1,0 +1,41 @@
+{
+  "name": "Hachas Workhand",
+  "icon": "workhand_tools:diamond_workhand_axe",
+  "category": "workhand_tools:axes",
+  "pages": [
+    {
+      "type": "vellumli:text",
+      "text": "Las Hachas Workhand tienen capacidad de talado conmutable. El clic derecho cicla entre distintos modos de talado para controlar cómo se cortan los árboles."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Modos de Talado",
+      "text": "$(bold)Desactivado$(): comportamiento normal de hacha\n$(bold)Simple$(): tala solo troncos directamente conectados (sin cruzar huecos de hojas)\n$(bold)Compuesto$(): tala troncos conectados y también cruza huecos de hojas para alcanzar troncos desplazados/diagonales"
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Cómo Funciona el Talado",
+      "text": "El talado solo se propaga desde un tronco apoyado en suelo sólido. Romper un tronco en otra parte del tallo solo rompe ese bloque.\nSin embargo, un fragmento de árbol huérfano/flotante sin ningún tronco apoyado cerca se tala igualmente con normalidad."
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Controles",
+      "text": "$(bold)Clic derecho$(): Cicla entre los modos de talado (Desactivado -> Simple -> Compuesto -> Desactivado)\n$(bold)Clic izquierdo$(): Corta según el modo de talado activo"
+    },
+    {
+      "type": "vellumli:text",
+      "title": "Materiales y Durabilidad",
+      "text": "Hacha Workhand de Hierro: 3750 de durabilidad\nHacha Workhand de Diamante: 23415 de durabilidad"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:iron_workhand_axe",
+      "title": "Hacha Workhand de Hierro"
+    },
+    {
+      "type": "vellumli:crafting",
+      "recipe": "workhand_tools:diamond_workhand_axe",
+      "title": "Hacha Workhand de Diamante"
+    }
+  ]
+}

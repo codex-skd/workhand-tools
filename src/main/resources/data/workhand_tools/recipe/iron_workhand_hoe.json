@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BIB",
+    " R ",
+    " R "
+  ],
+  "key": {
+    "B": "minecraft:iron_block",
+    "I": "minecraft:iron_ingot",
+    "R": "workhand_tools:robust_stick"
+  },
+  "result": {
+    "count": 1,
+    "id": "workhand_tools:iron_workhand_hoe"
+  }
+}

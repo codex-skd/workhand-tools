@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OOO",
+    "ODO",
+    "ONO"
+  ],
+  "key": {
+    "O": "minecraft:obsidian",
+    "D": "minecraft:diamond_block",
+    "N": "minecraft:netherite_ingot"
+  },
+  "result": {
+    "count": 1,
+    "id": "workhand_tools:chunk_anchor"
+  }
+}

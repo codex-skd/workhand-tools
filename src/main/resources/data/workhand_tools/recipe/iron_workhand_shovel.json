@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " mm",
+    " p ",
+    " p "
+  ],
+  "key": {
+    "m": "minecraft:iron_ingot",
+    "p": "minecraft:stick"
+  },
+  "result": {
+    "count": 1,
+    "id": "workhand_tools:iron_workhand_shovel"
+  }
+}
