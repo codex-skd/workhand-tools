@@ -1,0 +1,58 @@
+Workhand Tools
+Copyright (c) 2026 Stalking Dragons
+
+All Rights Reserved.
+
+Workhand Tools is an original mod by Stalking Dragons. It is not a port or
+fork of another mod. You may not copy, modify, redistribute, or reuse the
+source code or original assets of this mod without prior written permission
+from Stalking Dragons, except as required to run the mod as distributed.
+
+--------------------------------------------------------------------------------
+THIRD-PARTY COMPONENTS
+--------------------------------------------------------------------------------
+
+Some parts of this mod originate from other projects and are NOT covered by the
+"All Rights Reserved" statement above. Each is used under its own terms:
+
+1. Tape Measure (code + texture) — from "Measurements" by Mrbysco
+   https://github.com/Mrbysco/Measurements
+   Licensed under the MIT License. The wireframe-box math, length-label
+   placement and the `tape_measure.png` item texture were ported essentially
+   as-is (the multi-loader plumbing was dropped). The original `MeasurementBox`
+   algorithm credits https://github.com/MadeBaruna/BlockMeter .
+
+   MIT License — Copyright (c) Mrbysco
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of this software and associated documentation files (the "Software"), to
+   deal in the Software without restriction, including without limitation the
+   rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+   sell copies of the Software, and to permit persons to whom the Software is
+   furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in
+   all copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+   IN THE SOFTWARE.
+
+2. Chunk Anchor block model/texture and Anchor Tome item texture — from
+   "Occultism" by klikli-dev
+   https://github.com/klikli-dev/occultism
+   Adapted, with the permission of klikli-dev, from the `otherstone_pedestal`
+   block (model + texture) and the `book_of_binding_djinni` item texture, and
+   renamed into the `workhand_tools` namespace. These asset files remain the
+   work of the Occultism authors and are used here by permission only; the
+   permission does not extend to third parties. Not affiliated with or
+   endorsed by klikli-dev.
+
+--------------------------------------------------------------------------------
+
+The in-game guide book is provided through Vellumli (a required dependency),
+which ships and is licensed separately.

@@ -1,0 +1,5 @@
+{
+  "name": "Palas Workhand",
+  "description": "Las Palas Workhand tienen capacidad de excavación en área con grados progresivos. Cada grado aumenta el área de excavación y añade funciones nuevas como el cambio de modo cúbico/plano.",
+  "icon": "workhand_tools:diamond_workhand_professional_shovel"
+}

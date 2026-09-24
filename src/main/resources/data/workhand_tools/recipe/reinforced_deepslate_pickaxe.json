@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NDN",
+    "NRN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_block"
+    },
+    "D": {
+      "item": "workhand_tools:diamond_workhand_professional_improved_pickaxe"
+    },
+    "R": {
+      "item": "minecraft:reinforced_deepslate"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "workhand_tools:reinforced_deepslate_pickaxe"
+  }
+}

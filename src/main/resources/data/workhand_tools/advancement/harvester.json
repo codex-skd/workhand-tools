@@ -1,0 +1,35 @@
+{
+  "parent": "workhand_tools:first_workhand_tool",
+  "display": {
+    "icon": {
+      "id": "workhand_tools:iron_workhand_hoe"
+    },
+    "title": {
+      "translate": "advancement.workhand_tools.harvester.title"
+    },
+    "description": {
+      "translate": "advancement.workhand_tools.harvester.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "frame": "task"
+  },
+  "criteria": {
+    "iron_hoe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:iron_workhand_hoe"
+      }
+    },
+    "diamond_hoe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:diamond_workhand_hoe"
+      }
+    }
+  },
+  "requirements": [
+    ["iron_hoe", "diamond_hoe"]
+  ]
+}

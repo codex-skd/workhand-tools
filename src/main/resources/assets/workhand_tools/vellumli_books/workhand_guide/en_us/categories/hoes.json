@@ -1,0 +1,5 @@
+{
+  "name": "Workhand Hoes",
+  "description": "Workhand Hoes feature toggleable Till/Harvest modes. Left-click in Till mode tills one block, while left-click in Harvest mode harvests and replants mature crops in an area with preview.",
+  "icon": "workhand_tools:diamond_workhand_hoe"
+}

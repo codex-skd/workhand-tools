@@ -1,0 +1,29 @@
+{
+  "parent": "workhand_tools:area_master",
+  "display": {
+    "icon": {
+      "id": "workhand_tools:reinforced_deepslate_pickaxe"
+    },
+    "title": {
+      "translate": "advancement.workhand_tools.reinforced_deepslate.title"
+    },
+    "description": {
+      "translate": "advancement.workhand_tools.reinforced_deepslate.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "frame": "task"
+  },
+  "criteria": {
+    "pickaxe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "workhand_tools:reinforced_deepslate_pickaxe"
+      }
+    }
+  },
+  "requirements": [
+    ["pickaxe"]
+  ]
+}

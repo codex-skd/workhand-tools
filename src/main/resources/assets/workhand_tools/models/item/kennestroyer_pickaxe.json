@@ -1,0 +1,6 @@
+{
+    "textures": {
+        "layer0": "workhand_tools:item/kennestroyer_pickaxe"
+    },
+    "parent": "minecraft:item/handheld"
+}

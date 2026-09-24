@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mam",
+    " ra",
+    " r "
+  ],
+  "key": {
+    "m": {
+      "item": "minecraft:diamond"
+    },
+    "a": {
+      "item": "minecraft:diamond_block"
+    },
+    "r": {
+      "item": "workhand_tools:robust_stick"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "workhand_tools:diamond_workhand_expert_pickaxe"
+  }
+}

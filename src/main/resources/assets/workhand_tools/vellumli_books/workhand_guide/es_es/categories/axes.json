@@ -1,0 +1,5 @@
+{
+  "name": "Hachas Workhand",
+  "description": "Las Hachas Workhand tienen modos de talado conmutables. El clic derecho cicla entre Desactivado, Simple (solo troncos directamente conectados) y Compuesto (también cruza huecos de hojas).",
+  "icon": "workhand_tools:diamond_workhand_axe"
+}
